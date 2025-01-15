@@ -1046,7 +1046,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [374157] = { itemID = 192785, versionID = 10, source = 17 },      -- 黏黏的蜗牛元素
     [374162] = { itemID = 192786, versionID = 10, source = 44 },      -- 好斗的界螺
     [374172] = { itemID = 192788, versionID = 10, source = 1 },      -- 拜赐拖网猛犸象
-    [374194] = { itemID = 192790, versionID = 10, source = 7 },      -- 青苔猛犸象
+    [374194] = { itemID = 192790, versionID = 10, source = 17 },      -- 青苔猛犸象
     [374196] = { itemID = 192791, versionID = 10, source = 7 },      -- 平原行者运载兽
     [374204] = { itemID = 192796, versionID = 10, source = 2 },      -- 探险者的石皮驮兽
     [374247] = { itemID = 192779, versionID = 10, source = 0 },      -- 莉姬，雷背践踏者

@@ -195,7 +195,7 @@ CupckoFrame:RegisterForDrag("LeftButton")
 CupckoFrame:SetScript("OnDragStart", CupckoFrame.StartMoving)
 CupckoFrame:SetScript("OnDragStop", CupckoFrame.StopMovingOrSizing)
 CupckoFrame:SetClampedToScreen(true)
-CupckoFrame:SetBackdropColor(1, 1, 1)
+-- CupckoFrame:SetBackdropColor(1, 1, 1)
 -- CupckoFrame:Hide()
 print(0.02)
 -- 允许缩放
