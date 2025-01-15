@@ -44,7 +44,8 @@ local expansions = {
     { versionID = 101, name = "促销" },
     { versionID = 102, name = "专业" },
     { versionID = 103, name = "打架" },
-    { versionID = 104, name = "任务成就" },
+    { versionID = 104, name = "其他" },
+    { versionID = 106, name = "特殊" },
     { versionID = 105, name = "绝版" },
     { versionID = 0, name = "未分类" },
     
@@ -59,10 +60,10 @@ local source = {
     { cls = 2,  name = "声望" },
     { cls = 3,  name = "副本掉落" },
     { cls = 4,  name = "野外稀有" },
-    { cls = 5,  name = "解密" },
+    { cls = 5,  name = "团本掉落" },
     { cls = 6,  name = "商人出售" },
     { cls = 7,  name = "宝箱" },
-    { cls = 8,  name = "专业" },
+    { cls = 8,  name = "世界BOSS" },
     { cls = 9,  name = "版本活动" },
     { cls = 10, name = "版本玩法" },
     { cls = 11, name = "法夜" },
@@ -71,7 +72,7 @@ local source = {
     { cls = 14, name = "格里恩" },
     { cls = 15, name = "指挥台" },
     { cls = 16, name = "巅峰大使" },
-    { cls = 17, name = "宝箱" },
+    { cls = 17, name = "碎片合成" },
     { cls = 18, name = "商栈" },
     { cls = 19, name = "招募/复活卷轴" },
     { cls = 20, name = "商城出售" },
@@ -94,8 +95,87 @@ local source = {
     { cls = 37, name = "采药" },
     { cls = 38, name = "挖矿" },
     { cls = 39, name = "烹饪" },
-    { cls = 40, name = "情人节" },
+    { cls = 40, name = "公会商人" },
     { cls = 41, name = "黑市" },
+    { cls = 42, name = "角斗士" },
+    { cls = 43, name = "占位符" },
+    { cls = 44,  name = "解密" },
+    { cls = 45,  name = "商城下架" },
+    { cls = 46,  name = "商人下架" },
+    { cls = 47,  name = "美酒节" },
+    { cls = 48,  name = "卡牌" },
+    { cls = 49,  name = "万圣节" },
+    { cls = 50,  name = "情人节" },
+    { cls = 51,  name = "暗月马戏团" },
+    { cls = 52,  name = "复活节" },
+    { cls = 53,  name = "冬幕节" },
+    { cls = 101,  name = "死亡骑士" },
+    { cls = 102,  name = "圣骑士" },
+    { cls = 150,  name = "兽人" },
+    { cls = 151,  name = "牛头人" },
+    { cls = 152,  name = "亡灵" },
+    { cls = 153,  name = "巨魔" },
+    { cls = 154,  name = "暗夜精灵" },
+    { cls = 155,  name = "狼人" },
+    { cls = 156,  name = "熊猫人" },
+    { cls = 157,  name = "光铸德莱尼" },
+    { cls = 158,  name = "至高岭牛头人" },
+    { cls = 159,  name = "夜之子" },
+    { cls = 160,  name = "虚空精灵" },
+    { cls = 161,  name = "赞达拉巨魔" },
+    { cls = 162,  name = "玛格汉兽人" },
+    { cls = 163,  name = "黑铁矮人" },
+    { cls = 164,  name = "库尔提拉斯人" },
+    { cls = 165,  name = "机械侏儒" },
+    { cls = 166,  name = "狐人" },
+    { cls = 167,  name = "血精灵" },
+    { cls = 168,  name = "龙希尔" },
+    { cls = 169,  name = "土灵" },
+    { cls = 301,  name = "银色锦标赛" },
+    { cls = 302,  name = "霍迪尔之子" },
+    { cls = 303,  name = "龙眠联军" },
+    { cls = 401,  name = "巴拉丁" },
+    { cls = 402,  name = "拉穆卡恒" },
+    { cls = 501,  name = "云端祥龙骑士团" },
+    { cls = 502,  name = "影踪派" },
+    { cls = 503,  name = "阡陌客" },
+    { cls = 601,  name = "要塞兽栏" },
+    { cls = 602,  name = "要塞入侵" },
+    { cls = 603,  name = "德拉诺黄金挑战" },
+    { cls = 801,  name = "阿拉希" },
+    { cls = 802,  name = "黑海岸" },
+    { cls = 803,  name = "突袭" },
+    { cls = 804,  name = "惊魂幻象" },
+    { cls = 904,  name = "温西尔" },
+    { cls = 905,  name = "法夜" },
+    { cls = 906,  name = "通灵" },
+    { cls = 907,  name = "格里恩" },
+    { cls = 908,  name = "原生体合成" },
+    { cls = 909,  name = "托加斯特" },
+    { cls = 908,  name = "盟约通用" },
+    { cls = 1001,  name = "熊猫人幻境新生" },
+    { cls = 1002,  name = "时光漫游" },
+    { cls = 1003,  name = "熊猫人黄金挑战" },
+    { cls = 1004,  name = "炉石传说" },
+    { cls = 1005,  name = "搏击俱乐部" },
+    { cls = 1006,  name = "邪气鞍座" },
+    { cls = 1007,  name = "典藏版" },
+    { cls = 1008,  name = "投票" },
+    { cls = 1009,  name = "荣誉等级" },
+    { cls = 1010,  name = "职业坐骑" },
+    { cls = 1011,  name = "风暴英雄" },
+    { cls = 1012,  name = "地区" },
+    { cls = 1013,  name = "限时" },
+    { cls = 1014,  name = "海岛探险" },
+    { cls = 1015,  name = "霸业风暴" },
+    { cls = 1016,  name = "魔兽争霸" },
+    { cls = 1017,  name = "钥石大师" },
+    { cls = 1018,  name = "怀旧服" },
+    { cls = 1019,  name = "暗黑破坏神" },
+    { cls = 1020,  name = "临时" },
+    { cls = 1021,  name = "时光裂隙" },
+    { cls = 1022,  name = "翡翠梦境" },
+    { cls = 1023,  name = "地心之战前夕" },
 }
 print(0.01)
 -- 当前选中版本（Tab）
@@ -108,19 +188,20 @@ local overviewCategorySpacing = 40
 ----------------------------------------------------------------
 local CupckoFrame = CreateFrame("Frame", "CupckoMainFrame", UIParent, "BackdropTemplate")
 CupckoFrame:SetPoint("CENTER")
-CupckoFrame:SetSize(600, 500)  -- 默认初始大小（可自行调整）
+CupckoFrame:SetSize(800, 600)  -- 默认初始大小（可自行调整）
 CupckoFrame:SetMovable(true)
 CupckoFrame:EnableMouse(true)
 CupckoFrame:RegisterForDrag("LeftButton")
 CupckoFrame:SetScript("OnDragStart", CupckoFrame.StartMoving)
 CupckoFrame:SetScript("OnDragStop", CupckoFrame.StopMovingOrSizing)
 CupckoFrame:SetClampedToScreen(true)
+CupckoFrame:SetBackdropColor(1, 1, 1)
 -- CupckoFrame:Hide()
 print(0.02)
 -- 允许缩放
 CupckoFrame:SetResizable(true)
 print(0.021)
--- CupckoFrame:SetMinResize(400, 300)  -- 可根据需要改成更大或更小
+CupckoFrame:SetResizeBounds(400, 300)  -- 可根据需要改成更大或更小
 print(0.022)
 -- CupckoFrame:SetMaxResize(1200, 900)
 -- 背景
@@ -132,12 +213,13 @@ CupckoFrame:SetBackdrop({
     insets   = { left = 8, right = 8, top = 8, bottom = 8 }
 })
 CupckoFrame:Hide()
-
+-- 允许通过 ESC 键关闭 CupckoFrame
+tinsert(UISpecialFrames, "CupckoMainFrame")
 print(0.1)
 -- 标题
 local title = CupckoFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
 title:SetPoint("TOP", 0, -16)
-title:SetText("cupcko - Mount list")
+title:SetText("cupcko坐骑收集")
 
 -- 右上角关闭按钮
 local closeButton = CreateFrame("Button", nil, CupckoFrame, "UIPanelCloseButton")
@@ -230,9 +312,9 @@ for i, expInfo in ipairs(expansions) do
 
     -- 设置Tab按钮的位置（演示放在左上叠排）
     if i == 1 then
-        tab:SetPoint("TOPLEFT", CupckoFrame, "TOPLEFT", -120, -40)
+        tab:SetPoint("TOPLEFT", CupckoFrame, "TOPLEFT", -120, 0)
     else
-        tab:SetPoint("TOPLEFT", tabs[i-1], "BOTTOMLEFT", 0, -2)
+        tab:SetPoint("TOPLEFT", tabs[i-1], "BOTTOMLEFT", 0, -1)
     end
 end
 
@@ -296,39 +378,66 @@ end
                 end
             end
         end
+        
+        --------------------------------------------------------
+        -- 让“总览”里的每个资料片进度块从左往右排，超出后换行
+        --------------------------------------------------------
+        -- 计算可用宽度
+        local usableWidth = contentFrame:GetWidth()
+        if usableWidth < 50 then
+            usableWidth = CupckoFrame:GetWidth() - 60  -- 兼容在窗口初始化时 contentFrame 宽度尚未就绪
+        end
 
-        local yOff = -5  -- 初始向下偏移
+        -- 这里你可以根据需要调整块的尺寸、间距
+        local catWidth  = 140   -- 每个“资料片进度块”的宽度
+        local catHeight = 50    -- 每个“资料片进度块”的高度
+        local catSpacing = 10   -- 水平/垂直间隔
+
+        -- 初始“光标”位置（相对于 contentFrame 的左上角）
+        local xOff = 10
+        local yOff = -10  -- 初始向下偏移
+
+
 
         for i, expInfo in ipairs(expansions) do
             local stats = versionStats[expInfo.versionID]
             if stats and stats.total > 0 then
                 local percentage = (stats.owned / stats.total) * 100
-
+                -- 若下一个 catWidth 超出 usableWidth，则换行
+                if xOff + catWidth > usableWidth then
+                    xOff = 10
+                    yOff = yOff - (catHeight + catSpacing)
+                end
                 -----------------------------------------
-                -- 新增：先创建一个承载这一“行/块”的按钮Frame
+                -- 创建一个 Button 代表此资料片进度
                 -----------------------------------------
                 local catFrame = CreateFrame("Button", nil, contentFrame, "BackdropTemplate")
-                catFrame:SetPoint("TOPLEFT", contentFrame, "TOPLEFT", 20, yOff)
-                catFrame:SetSize(300, 30)  -- 大小随意设置，让它能容纳标题+进度条
+                catFrame:SetSize(catWidth, catHeight)
+                catFrame:SetPoint("TOPLEFT", contentFrame, "TOPLEFT", xOff, yOff)
                 catFrame:EnableMouse(true)
                 catFrame:RegisterForClicks("AnyUp")
-
+                
                 -- 给 catFrame 设置个浅色背景，调试用；实际可不需要
                 -- catFrame:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground" })
-                -- catFrame:SetBackdropColor(1,1,1,0.1)
+                -- catFrame:SetBackdropColor(0,0,0,0.8)
 
                 -----------------------------------------
                 -- 标题
                 -----------------------------------------
+                -- 点击 => 跳转到相应版本Tab
+                catFrame:SetScript("OnClick", function()
+                GotoTabByVersionID(expInfo.versionID)
+                end)
+
                 local tabName = catFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-                tabName:SetPoint("TOPLEFT", catFrame, "TOPLEFT", 0, 0)
+                tabName:SetPoint("TOPLEFT", catFrame, "TOPLEFT", 5, -5)
                 tabName:SetText(expInfo.name)
 
                 -----------------------------------------
                 -- 进度条背景
                 -----------------------------------------
                 local progressBarBg = catFrame:CreateTexture(nil, "BACKGROUND")
-                progressBarBg:SetSize(200, 15)
+                progressBarBg:SetSize(catWidth - 10, 16)  -- 宽度稍微留点边距
                 progressBarBg:SetPoint("TOPLEFT", tabName, "BOTTOMLEFT", 0, -5)
                 progressBarBg:SetColorTexture(0.2, 0.2, 0.2, 1)
 
@@ -336,10 +445,14 @@ end
                 -- 进度条前景
                 -----------------------------------------
                 local progressBar = catFrame:CreateTexture(nil, "ARTWORK")
-                progressBar:SetSize(200 * (percentage / 100), 15)
+                progressBar:SetSize((catWidth - 10) * (percentage / 100), 16)
                 progressBar:SetPoint("LEFT", progressBarBg, "LEFT", 0, 0)
-                progressBar:SetColorTexture(0, 0.8, 0, 0.7)
-
+                if percentage==100 then
+                    progressBar:SetColorTexture(0, 0.8, 0, 0.7)
+                else
+                    progressBar:SetColorTexture(1-(0.8*percentage/100), 0.8*percentage/100, 0, 0.7)
+                end
+                -- print(percentage)
                 -----------------------------------------
                 -- 百分比文字
                 -----------------------------------------
@@ -348,7 +461,7 @@ end
                 -- percentageText:SetText(string.format("%.1f%%", percentage))
                 local countText = catFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
                 countText:SetPoint("CENTER", progressBarBg, "CENTER", 0, 0)
-                countText:SetText(string.format("%d/%d (%d)", stats.owned, stats.total,percentage))
+                countText:SetText(string.format("%d/%d (%d%%)", stats.owned, stats.total,percentage))
                 -----------------------------------------
                 -- 新增：点击事件 => 跳转对应Tab
                 -- 不管点击标题还是进度条，都算点在 catFrame 上
@@ -358,12 +471,12 @@ end
                 end)
 
                 -- 最后更新 yOff
-                -- 这里用 overviewCategorySpacing 替换你原来的写死数值
-                yOff = yOff - overviewCategorySpacing
+                xOff = xOff + catWidth + catSpacing
             end
         end
 
-        contentFrame:SetHeight(math.abs(yOff) + 20)
+        -- contentFrame 的高度要足够大，以容纳 yOff 的排布
+        contentFrame:SetHeight(math.abs(yOff) + catHeight + 20)
         return
     end
     
@@ -454,12 +567,12 @@ end
             header:SetText(srcInfo.name or ("Source "..srcID))
             yOff = yOff - headerGap
 
-            xOff = 0  -- 从左侧开始摆放
+            xOff = 2  -- 从左侧开始摆放
             print(1.3)
             for _, mountData in ipairs(mountsThisSource) do
                 -- 如果即将超出可用宽度，则换行
                 if xOff + cellWidth > usableWidth then
-                    xOff = 0
+                    xOff = 2
                     yOff = yOff - cellHeight- rowSpacing  -- 添加垂直间隔
                 end
 
@@ -483,6 +596,12 @@ end
                 greenBorder:SetSize(cellHeight + 2.5, cellHeight + 2.5)  -- 比图标略大
                 greenBorder:SetPoint("CENTER", iconTexture, "CENTER", 0, 0)
                 greenBorder:SetColorTexture(0, 1, 0.2, 0.6)  -- 绿色 (R=0, G=1, B=0, A=1)
+
+                -- 红色边框
+                local redBorder = row:CreateTexture(nil, "BORDER")
+                redBorder:SetSize(cellHeight + 2.5, cellHeight + 2.5)  -- 比图标略大
+                redBorder:SetPoint("CENTER", iconTexture, "CENTER", 0, 0)
+                redBorder:SetColorTexture(1, 0, 0.2, 0.6)  -- 红色 (R=0, G=1, B=0, A=1)
                 -- greenBorder:SetDrawLayer("OVERLAY", 1)
                 -- 坐骑名称
                 -- local text = row:CreateFontString(nil, "OVERLAY", "GameFontNormal")
@@ -496,6 +615,7 @@ end
                 else
                     -- text:SetTextColor(1, 1, 1, 1)
                     iconTexture:SetVertexColor(1, 1, 1, 1)
+                    redBorder:Hide()
                 end
                 print(1.5)
                 -- 鼠标提示
@@ -660,5 +780,6 @@ SlashCmdList["CUPCKO"] = function()
     else
         RefreshMountList()
         CupckoFrame:Show()
+        CupckoFrame:SetFrameLevel(999)  -- 设置为较高的层级
     end
 end
