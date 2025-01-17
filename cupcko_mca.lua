@@ -46,7 +46,7 @@ local expansions = {
     { versionID = 106, name = "限时活动" },
     { versionID = 105, name = "绝版" },
     { versionID = 0, name = "未分类" },
-    { versionID = 107, name = "收藏" },
+    --{ versionID = 107, name = "收藏" },
 }
 
 -- 定义坐骑来源（source）列表
