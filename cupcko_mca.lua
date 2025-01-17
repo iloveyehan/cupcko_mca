@@ -1,4 +1,3 @@
--------------------------------------------------------------------------------
 -- cupcko+mca.lua
 -- 作者: 你的名字
 -- 功能：
@@ -8,7 +7,6 @@
 --   3) 对比游戏内坐骑 SpellID，找出新增/未记录的坐骑
 --   4) 插件界面加个按钮弹窗，显示新增坐骑的数据（可复制）
 --   5) 额外：在当前版本筛选下，按 source 进行分组显示
--------------------------------------------------------------------------------
 
 print("|cff00ff00[cupcko debug]|r cupcko.lua loaded!")
 
@@ -45,17 +43,15 @@ local expansions = {
     { versionID = 102, name = "专业" },
     { versionID = 103, name = "打架" },
     { versionID = 104, name = "其他" },
-    { versionID = 106, name = "特殊" },
+    { versionID = 106, name = "限时活动" },
     { versionID = 105, name = "绝版" },
     { versionID = 0, name = "未分类" },
-    
     { versionID = 107, name = "收藏" },
-    
 }
 
 -- 定义坐骑来源（source）列表
-local source = {
-    { cls = 0,  name = "任务" },
+local sources = {
+    { cls = 0,  name = "无用占位符" },
     { cls = 1,  name = "成就" },
     { cls = 2,  name = "声望" },
     { cls = 3,  name = "副本掉落" },
@@ -65,7 +61,7 @@ local source = {
     { cls = 7,  name = "宝箱" },
     { cls = 8,  name = "世界BOSS" },
     { cls = 9,  name = "版本活动" },
-    { cls = 10, name = "版本玩法" },
+    { cls = 10, name = "任务" },
     { cls = 11, name = "法夜" },
     { cls = 12, name = "通灵" },
     { cls = 13, name = "温西尔" },
@@ -111,6 +107,8 @@ local source = {
     { cls = 53,  name = "冬幕节" },
     { cls = 101,  name = "死亡骑士" },
     { cls = 102,  name = "圣骑士" },
+    { cls = 103,  name = "恶魔猎手" },
+    { cls = 104,  name = "术士" },
     { cls = 150,  name = "兽人" },
     { cls = 151,  name = "牛头人" },
     { cls = 152,  name = "亡灵" },
@@ -131,6 +129,15 @@ local source = {
     { cls = 167,  name = "血精灵" },
     { cls = 168,  name = "龙希尔" },
     { cls = 169,  name = "土灵" },
+    { cls = 170,  name = "矮人" },
+    { cls = 171,  name = "人类" },
+    { cls = 172,  name = "侏儒" },
+    { cls = 173,  name = "地精" },
+    { cls = 174,  name = "德莱尼" },
+    { cls = 201,  name = "哈兰" },
+    { cls = 202,  name = "灵翼之龙" },
+    { cls = 203,  name = "沙塔尔天空卫队" },
+    { cls = 203,  name = "纳格兰" },
     { cls = 301,  name = "银色锦标赛" },
     { cls = 302,  name = "霍迪尔之子" },
     { cls = 303,  name = "龙眠联军" },
@@ -139,6 +146,9 @@ local source = {
     { cls = 501,  name = "云端祥龙骑士团" },
     { cls = 502,  name = "影踪派" },
     { cls = 503,  name = "阡陌客" },
+    { cls = 504,  name = "永恒岛" },
+    { cls = 505,  name = "金莲教" },
+    { cls = 506,  name = "至尊天神" },
     { cls = 601,  name = "要塞兽栏" },
     { cls = 602,  name = "要塞入侵" },
     { cls = 603,  name = "德拉诺黄金挑战" },
@@ -175,13 +185,17 @@ local source = {
     { cls = 1020,  name = "临时" },
     { cls = 1021,  name = "时光裂隙" },
     { cls = 1022,  name = "翡翠梦境" },
-    { cls = 1023,  name = "地心之战前夕" },
+    { cls = 1023,  name = "前夕绝版" },
+    { cls = 1024,  name = "坐骑收集" },
+    { cls = 1025,  name = "传家宝" },
+    { cls = 1026,  name = "未实装" },
+    { cls = 1027,  name = "无用占位符" },
+    { cls = 1028,  name = "奥特兰克山谷" },
+    { cls = 1029,  name = "甲虫的召唤" },
 }
 print(0.01)
 -- 当前选中版本（Tab）
 local currentVersionFilter = 1000  -- 0表示显示全部
--- 可以自由修改“总览分类”之间的间隔
-local overviewCategorySpacing = 40
 
 ----------------------------------------------------------------
 -- 1) 主插件框体
@@ -195,13 +209,13 @@ CupckoFrame:RegisterForDrag("LeftButton")
 CupckoFrame:SetScript("OnDragStart", CupckoFrame.StartMoving)
 CupckoFrame:SetScript("OnDragStop", CupckoFrame.StopMovingOrSizing)
 CupckoFrame:SetClampedToScreen(true)
--- CupckoFrame:SetBackdropColor(1, 1, 1)
+--CupckoFrame:SetBackdropColor(1, 1, 1)
 -- CupckoFrame:Hide()
 print(0.02)
 -- 允许缩放
 CupckoFrame:SetResizable(true)
 print(0.021)
-CupckoFrame:SetResizeBounds(400, 300)  -- 可根据需要改成更大或更小
+CupckoFrame:SetResizeBounds(400, 300, 1200, 900)  -- 可根据需要改成更大或更小
 print(0.022)
 -- CupckoFrame:SetMaxResize(1200, 900)
 -- 背景
@@ -209,7 +223,7 @@ print(0.03)
 CupckoFrame:SetBackdrop({
     bgFile   = "Interface\\DialogFrame\\UI-DialogBox-Background",
     edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
-    tile     = true, tileSize = 32, edgeSize = 32,
+    tile     = true, tileSize = 32, edgeSize = 24,
     insets   = { left = 8, right = 8, top = 8, bottom = 8 }
 })
 CupckoFrame:Hide()
@@ -223,11 +237,21 @@ title:SetText("cupcko坐骑收集")
 
 -- 右上角关闭按钮
 local closeButton = CreateFrame("Button", nil, CupckoFrame, "UIPanelCloseButton")
-closeButton:SetPoint("TOPRIGHT", -3, -3)
+closeButton:SetPoint("TOPRIGHT", -5, -5)
+closeButton:SetFrameLevel(CupckoFrame:GetFrameLevel() + 10)  -- 确保关闭按钮位于顶层
+-- 新增部分：左上角重置大小按钮
+--local resetButton = CreateFrame("Button", nil, CupckoFrame, "UIPanelButtonTemplate")
+--resetButton:SetSize(100, 24)
+--resetButton:SetPoint("TOPLEFT", 10, -10) -- 相对于CupckoFrame的左上角，稍微内移
+--resetButton:SetText("重置大小")
+--resetButton:SetScript("OnClick", function()
+--    CupckoFrame:SetSize(800, 600)
+--    print("|cff00ff00[cupcko]|r 已将画布大小重置为默认值。")
+--end)
 
 -- 右下角拖拽手柄
 local resizeGrip = CreateFrame("Frame", nil, CupckoFrame)
-resizeGrip:SetSize(16, 16)
+resizeGrip:SetSize(32, 32)
 resizeGrip:SetPoint("BOTTOMRIGHT")
 resizeGrip:EnableMouse(true)
 print(0.2)
@@ -310,7 +334,7 @@ for i, expInfo in ipairs(expansions) do
     tab:SetScript("OnClick", OnTabClick)
     tabs[i] = tab
 
-    -- 设置Tab按钮的位置（演示放在左上叠排）
+    -- 设置Tab按钮的位置（垂直排列在左上）
     if i == 1 then
         tab:SetPoint("TOPLEFT", CupckoFrame, "TOPLEFT", -120, 0)
     else
@@ -318,7 +342,7 @@ for i, expInfo in ipairs(expansions) do
     end
 end
 
--- 默认选中第1个Tab(“全部”)
+-- 默认选中第1个Tab(“总览”)
 SetSelectedTab(1)
 
 -- 根据 versionID 找到 expansions 里的下标 i，执行 SetSelectedTab(i) + RefreshMountList
@@ -339,7 +363,7 @@ end
 --    并且在当前版本过滤下，根据 source 进行分类排布
 ----------------------------------------------------------------
 function RefreshMountList()
-    -- 1) 先清理旧行
+    -- 1) 先清理旧内容
     for _, child in ipairs({contentFrame:GetChildren()}) do
         child:Hide()
         child:SetParent(nil)
@@ -348,8 +372,8 @@ function RefreshMountList()
     for _, region in ipairs({contentFrame:GetRegions()}) do
         region:Hide()
         region:ClearAllPoints()
-    -- region:SetParent(nil) -- 注意有些 Region 不支持 SetParent(nil)，可不调用
-end
+    end
+
     -- 如果当前选择是总览，则执行总览逻辑
     if currentVersionFilter == 1000 then
       
@@ -448,7 +472,7 @@ end
                 progressBar:SetSize((catWidth - 10) * (percentage / 100), 16)
                 progressBar:SetPoint("LEFT", progressBarBg, "LEFT", 0, 0)
                 if percentage==100 then
-                    progressBar:SetColorTexture(0, 0.8, 0, 0.7)
+                    progressBar:SetColorTexture(0.35, 0.66, 0.8, 0.7)
                 else
                     progressBar:SetColorTexture(1-(0.8*percentage/100), 0.8*percentage/100, 0, 0.7)
                 end
@@ -479,41 +503,31 @@ end
         contentFrame:SetHeight(math.abs(yOff) + catHeight + 20)
         return
     end
-    
 
-    -- 如果没能拿到 C_MountJournal，则不处理
+    -- 非总览部分的布局调整
     if not C_MountJournal or not C_MountJournal.GetMountIDs then
         return
     end
-    print(10)
-    -- 拿到游戏内所有坐骑ID
+
+    -- 获取所有坐骑ID
     local mountIDs = C_MountJournal.GetMountIDs()
     if not mountIDs then return end
-    
-    wipe(newMounts)-- 每次刷新前先清空 newMounts
 
-    -- 2) 先按照 source 分组 => groupedMounts[sourceID] = { { spellID=xxx, name=xxx, icon=xxx, isCollected=xxx, itemID=xxx }, ... }
+    wipe(newMounts) -- 每次刷新前先清空 newMounts
+
+    -- 按source分组坐骑
     local groupedMounts = {}
-    print(0)
     for _, mID in ipairs(mountIDs) do
         local name, spellID, icon, _, _, _, _, _, _, _, isCollected =
             C_MountJournal.GetMountInfoByID(mID)
         if name and spellID then
-            -- 从 externalMountData 里拿 itemID, versionID, source
             local data = externalMountData[spellID]
-            local mountItemID  = 0
-            local mountVersion = 0
-            local mountSource  = 0  -- 未记录则归0或你想要的默认值
+            local mountItemID  = data and data.itemID    or 0
+            local mountVersion = data and data.versionID or 0
+            local mountSource  = data and data.source    or 0
 
-            if data then
-                mountItemID  = data.itemID    or 0
-                mountVersion = data.versionID or 0
-                mountSource  = data.source    or 0
-            end
-
-            -- 版本过滤 (0=显示全部，非0=只显示指定版本)
+            -- 版本过滤 (1000=总览，显示全部; 非1000=只显示指定版本)
             if currentVersionFilter == 1000 or mountVersion == currentVersionFilter then
-                -- 放入 groupedMounts
                 if not groupedMounts[mountSource] then
                     groupedMounts[mountSource] = {}
                 end
@@ -523,7 +537,7 @@ end
                     icon        = icon,
                     isCollected = isCollected,
                     itemID      = mountItemID,
-                    mountID     = mID,  -- 用于试衣间DressUpMount
+                    mountID     = mID,
                 })
             end
 
@@ -538,88 +552,103 @@ end
             end
         end
     end
-    print(1)
-    -- 接下来，横向排列
-    -- 计算可用宽度（减去滚动条 & 边距）
+
+    -- 获取所有有坐骑的source信息
+    local activeSources = {}
+    for _, srcInfo in ipairs(sources) do
+        if groupedMounts[srcInfo.cls] and #groupedMounts[srcInfo.cls] > 0 then
+            table.insert(activeSources, srcInfo)
+        end
+    end
+
+    -- 计算列数和列宽
     local usableWidth = contentFrame:GetWidth()
     if usableWidth < 50 then
-        -- 如果 contentFrame 宽度还没初始化好，就先用 CupckoFrame 的整体宽度来估算
-        usableWidth = CupckoFrame:GetWidth() - 60
+        usableWidth = CupckoFrame:GetWidth() - 60  -- 兼容在窗口初始化时 contentFrame 宽度尚未就绪
     end
-    print(1.1)
-    local cellWidth  = 30  -- 每个坐骑块的宽度，你可以调大/调小
-    local cellHeight = 30   -- 每个坐骑块的高度
-    local headerGap  = 20   -- 标题行高度
-    local groupSpace = 5   -- 每个分类之间的额外间隔
-    local iconSpacing = 7  -- 图标之间的水平间隔
-    local rowSpacing = 7  -- 图标之间的垂直间隔
-    local xOff       = 0
-    local yOff       = -5
 
-    for _, srcInfo in ipairs(source) do
-        print(1.2)
-        local srcID = srcInfo.cls
-        local mountsThisSource = groupedMounts[srcID]
+    local numColumns = math.floor(usableWidth / 300)
+    if numColumns < 1 then numColumns = 1 end
+    local columnWidth = usableWidth / numColumns
+
+    -- 初始化列的位置
+    local columns = {}
+    for col = 1, numColumns do
+        columns[col] = {
+            x = (col - 1) * columnWidth + 10, -- 左边距10
+            y = -10, -- 顶部偏移
+        }
+    end
+
+    -- 分配源到列（每300像素增加一列）
+    for i, srcInfo in ipairs(activeSources) do
+        local columnIndex = math.floor((i - 1) / math.floor(#activeSources / numColumns + 0.5)) + 1
+        if columnIndex > numColumns then
+            columnIndex = numColumns
+        end
+        local col = columns[columnIndex]
+
+        -- 创建源标题
+        local header = contentFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+        header:SetPoint("TOPLEFT", contentFrame, "TOPLEFT", col.x, col.y)
+        header:SetText(srcInfo.name)
+        header:SetWidth(columnWidth - 20) -- 预留边距
+        header:SetJustifyH("LEFT")
+
+        col.y = col.y - 25 -- 标题高度和间距
+
+        -- 获取该source的所有坐骑
+        local mountsThisSource = groupedMounts[srcInfo.cls]
         if mountsThisSource and #mountsThisSource > 0 then
-            -- 绘制分类标题（单独占一行）
-            local header = contentFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-            header:SetPoint("TOPLEFT", contentFrame, "TOPLEFT", 0, yOff)
-            header:SetText(srcInfo.name or ("Source "..srcID))
-            yOff = yOff - headerGap
+            local mountIconSize = 30
+            local mountSpacing = 6
+            local currentX = col.x
+            local currentY = col.y
 
-            xOff = 2  -- 从左侧开始摆放
-            print(1.3)
             for _, mountData in ipairs(mountsThisSource) do
-                -- 如果即将超出可用宽度，则换行
-                if xOff + cellWidth > usableWidth then
-                    xOff = 2
-                    yOff = yOff - cellHeight- rowSpacing  -- 添加垂直间隔
+                -- 如果即将超出列宽，则换行
+                if currentX + mountIconSize > col.x + columnWidth - 10 then
+                    currentX = col.x
+                    currentY = currentY - mountIconSize - mountSpacing
                 end
 
                 -- 创建按钮来显示坐骑
-                local row = CreateFrame("Button", nil, contentFrame, "BackdropTemplate")
-                row:SetSize(cellWidth, cellHeight)
-                row:SetPoint("TOPLEFT", contentFrame, "TOPLEFT", xOff, yOff)
-                row:EnableMouse(true)
-                row:RegisterForClicks("AnyUp")
-
-                xOff = xOff + cellWidth+ iconSpacing  -- 添加水平间隔
-
+                local mountButton = CreateFrame("Button", nil, contentFrame, "BackdropTemplate")
+                mountButton:SetSize(mountIconSize, mountIconSize)
+                mountButton:SetPoint("TOPLEFT", contentFrame, "TOPLEFT", currentX, currentY)
+                mountButton:EnableMouse(true)
+                mountButton:RegisterForClicks("AnyUp")
                 -- 图标
-                local iconTexture = row:CreateTexture(nil, "ARTWORK")
-                iconTexture:SetSize(cellHeight, cellHeight)
-                iconTexture:SetPoint("LEFT", row, "LEFT", 0, 0)
+                local iconTexture = mountButton:CreateTexture(nil, "ARTWORK")
+                iconTexture:SetAllPoints()
                 iconTexture:SetTexture(mountData.icon)
-                print(1.4)
-                -- 绿色边框
-                local greenBorder = row:CreateTexture(nil, "BORDER")
-                greenBorder:SetSize(cellHeight + 2.5, cellHeight + 2.5)  -- 比图标略大
+
+                -- 创建绿圈边框
+                local greenBorder = mountButton:CreateTexture(nil, "BORDER")
+                greenBorder:SetSize(mountIconSize + 4, mountIconSize + 4)  -- 略大于图标
                 greenBorder:SetPoint("CENTER", iconTexture, "CENTER", 0, 0)
-                greenBorder:SetColorTexture(0, 1, 0.2, 0.6)  -- 绿色 (R=0, G=1, B=0, A=1)
+                greenBorder:SetColorTexture(0, 1, 0.2, 0.6)  -- 绿色
+                greenBorder:Hide()  -- 默认隐藏
 
-                -- 红色边框
-                local redBorder = row:CreateTexture(nil, "BORDER")
-                redBorder:SetSize(cellHeight + 2.5, cellHeight + 2.5)  -- 比图标略大
+                -- 创建红圈边框
+                local redBorder = mountButton:CreateTexture(nil, "BORDER")
+                redBorder:SetSize(mountIconSize + 4, mountIconSize + 4)  -- 略大于图标
                 redBorder:SetPoint("CENTER", iconTexture, "CENTER", 0, 0)
-                redBorder:SetColorTexture(1, 0, 0.2, 0.6)  -- 红色 (R=0, G=1, B=0, A=1)
-                -- greenBorder:SetDrawLayer("OVERLAY", 1)
-                -- 坐骑名称
-                -- local text = row:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-                -- text:SetPoint("LEFT", iconTexture, "RIGHT", 3, 0)
-                -- text:SetText(mountData.name)
+                redBorder:SetColorTexture(1, 0, 0.2, 0.6)    -- 红色
+                redBorder:Hide()  -- 默认隐藏
 
+                -- 根据是否收集，显示相应的边框
                 if not mountData.isCollected then
-                    -- text:SetTextColor(0.5, 0.5, 0.5, 1)
+                    redBorder:Show()
                     iconTexture:SetVertexColor(1, 0.5, 0.5, 1)
-                    greenBorder:Hide()
                 else
-                    -- text:SetTextColor(1, 1, 1, 1)
+                    greenBorder:Show()
                     iconTexture:SetVertexColor(1, 1, 1, 1)
-                    redBorder:Hide()
                 end
-                print(1.5)
+
+
                 -- 鼠标提示
-                row:SetScript("OnEnter", function(self)
+                mountButton:SetScript("OnEnter", function(self)
                     GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
                     GameTooltip:ClearLines()
                     if mountData.itemID > 0 then
@@ -629,14 +658,19 @@ end
                     end
                     GameTooltip:Show()
                 end)
-                row:SetScript("OnLeave", function()
+                mountButton:SetScript("OnLeave", function()
                     GameTooltip:Hide()
                 end)
-                print(1.6)
-                -- 点击(Ctrl=试衣间,Shift=分享)
-                row:SetScript("OnClick", function(self, button)
-                    if button == "LeftButton" then
-                        -- SHIFT =>分享
+
+                -- 点击事件
+                mountButton:SetScript("OnClick", function(self, button)
+                    if button == "RightButton" then
+                        if mountData.isCollected then
+                            -- 如果坐骑已被收集，召唤坐骑
+                            C_MountJournal.SummonByID(mountData.mountID)
+                        end
+
+                    elseif button == "LeftButton" then
                         if IsShiftKeyDown() then
                             local mountLink = C_MountJournal.GetMountLink(mountData.spellID)
                             if mountData.itemID > 0 then
@@ -648,7 +682,6 @@ end
                             if mountLink then
                                 ChatEdit_InsertLink(mountLink)
                             end
-                        -- CTRL =>试衣间
                         elseif IsControlKeyDown() then
                             if DressUpMount and type(DressUpMount)=="function" then
                                 DressUpMount(mountData.mountID)
@@ -661,16 +694,25 @@ end
                         end
                     end
                 end)
+
+                -- 更新坐骑图标的位置
+                currentX = currentX + mountIconSize + mountSpacing
             end
-            print(1.7)
-            -- 当前分类摆放完后，再往下留一点空隙
-            yOff = yOff - (cellHeight + groupSpace)
-            xOff = 0
+
+            -- 更新列的y坐标，留出额外空隙
+            col.y = currentY - mountIconSize - mountSpacing
         end
-        print(1.8)
     end
 
-    contentFrame:SetHeight(math.abs(yOff) + 20)
+    -- 设置 contentFrame 的高度为所有列中最低的Y坐标
+    local maxHeight = 0
+    for _, col in ipairs(columns) do
+        local height = math.abs(col.y) + 20
+        if height > maxHeight then
+            maxHeight = height
+        end
+    end
+    contentFrame:SetHeight(maxHeight)
 end
 print(11)
 ----------------------------------------------------------------
@@ -698,7 +740,7 @@ showDiffButton:SetScript("OnClick", function()
     })
 
     local close = CreateFrame("Button", nil, diffFrame, "UIPanelCloseButton")
-    close:SetPoint("TOPRIGHT", -3, -3)
+    close:SetPoint("TOPRIGHT", -5, -5)
 
     local scroll = CreateFrame("ScrollFrame", nil, diffFrame, "UIPanelScrollFrameTemplate")
     scroll:SetPoint("TOPLEFT", 15, -15)
@@ -740,14 +782,14 @@ print(12)
 ----------------------------------------------------------------
 -- 新增功能按钮：Scan Items
 ----------------------------------------------------------------
-local scanItemsButton = CreateFrame("Button", nil, CupckoFrame, "UIPanelButtonTemplate")
-scanItemsButton:SetSize(100, 24)
--- 放在 showDiffButton 右侧 10 像素，视你布局而定
-scanItemsButton:SetPoint("LEFT", showDiffButton, "RIGHT", 10, 0)
-scanItemsButton:SetText("Scan Items")
-scanItemsButton:SetScript("OnClick", function()
-    MyScanner.StartScan(CupckoFrame) -- 传入 CupckoFrame, 让扫描协程在其 OnUpdate 里跑
-end)
+--local scanItemsButton = CreateFrame("Button", nil, CupckoFrame, "UIPanelButtonTemplate")
+--scanItemsButton:SetSize(100, 24)
+---- 放在 showDiffButton 右侧 10 像素，视你布局而定
+--scanItemsButton:SetPoint("LEFT", showDiffButton, "RIGHT", 10, 0)
+--scanItemsButton:SetText("Scan Items")
+--scanItemsButton:SetScript("OnClick", function()
+--    MyScanner.StartScan(CupckoFrame) -- 传入 CupckoFrame, 让扫描协程在其 OnUpdate 里跑
+--end)
 
 ----------------------------------------------------------------
 -- 5) 注册事件, Slash命令
@@ -783,3 +825,10 @@ SlashCmdList["CUPCKO"] = function()
         CupckoFrame:SetFrameLevel(999)  -- 设置为较高的层级
     end
 end
+
+----------------------------------------------------------------
+-- 6) 监听画布大小变化以动态调整布局
+----------------------------------------------------------------
+--CupckoFrame:SetScript("OnSizeChanged", function(self, width, height)
+--    RefreshMountList()
+--end)
