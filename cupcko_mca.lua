@@ -1,5 +1,5 @@
 -- cupcko+mca.lua
--- 作者: 你的名字
+-- 作者: cupcko
 -- 功能：
 --   1) 读取外部数据 externalMountData(模拟.json -> lua)，形如：
 --         externalMountData[spellID] = { itemID=xxxxx, versionID=2, source=3 }
@@ -162,7 +162,7 @@ local sources = {
     { cls = 907,  name = "格里恩" },
     { cls = 908,  name = "原生体合成" },
     { cls = 909,  name = "托加斯特" },
-    { cls = 908,  name = "盟约通用" },
+    { cls = 910,  name = "盟约通用" },
     { cls = 1001,  name = "熊猫人幻境新生" },
     { cls = 1002,  name = "时光漫游" },
     { cls = 1003,  name = "熊猫人黄金挑战" },
@@ -193,7 +193,7 @@ local sources = {
     { cls = 1028,  name = "奥特兰克山谷" },
     { cls = 1029,  name = "甲虫的召唤" },
 }
-print(0.01)
+-- print(0.01)
 -- 当前选中版本（Tab）
 local currentVersionFilter = 1000  -- 0表示显示全部
 
@@ -211,15 +211,15 @@ CupckoFrame:SetScript("OnDragStop", CupckoFrame.StopMovingOrSizing)
 CupckoFrame:SetClampedToScreen(true)
 --CupckoFrame:SetBackdropColor(1, 1, 1)
 -- CupckoFrame:Hide()
-print(0.02)
+-- print(0.02)
 -- 允许缩放
 CupckoFrame:SetResizable(true)
-print(0.021)
+-- print(0.021)
 CupckoFrame:SetResizeBounds(400, 300, 1200, 900)  -- 可根据需要改成更大或更小
-print(0.022)
+-- print(0.022)
 -- CupckoFrame:SetMaxResize(1200, 900)
 -- 背景
-print(0.03)
+-- print(0.03)
 CupckoFrame:SetBackdrop({
     bgFile   = "Interface\\DialogFrame\\UI-DialogBox-Background",
     edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
@@ -229,11 +229,11 @@ CupckoFrame:SetBackdrop({
 CupckoFrame:Hide()
 -- 允许通过 ESC 键关闭 CupckoFrame
 tinsert(UISpecialFrames, "CupckoMainFrame")
-print(0.1)
+-- print(0.1)
 -- 标题
 local title = CupckoFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
 title:SetPoint("TOP", 0, -16)
-title:SetText("cupcko坐骑收集")
+title:SetText("坐骑收集")
 
 -- 右上角关闭按钮
 local closeButton = CreateFrame("Button", nil, CupckoFrame, "UIPanelCloseButton")
@@ -254,7 +254,7 @@ local resizeGrip = CreateFrame("Frame", nil, CupckoFrame)
 resizeGrip:SetSize(32, 32)
 resizeGrip:SetPoint("BOTTOMRIGHT")
 resizeGrip:EnableMouse(true)
-print(0.2)
+-- print(0.2)
 -- 给拖拽手柄加个简单的纹理，也可用 SizeGrabber
 local rgTexture = resizeGrip:CreateTexture(nil, "BACKGROUND")
 rgTexture:SetAllPoints()
@@ -276,7 +276,7 @@ resizeGrip:SetScript("OnMouseUp", function(self, button)
         RefreshMountList()
     end
 end)
-print(0.3)
+-- print(0.3)
 ----------------------------------------------------------------
 -- 1.1) “滚动区域” + 内容容器
 ----------------------------------------------------------------
@@ -316,7 +316,7 @@ local function OnTabClick(self)
     local idx = self:GetID()
     currentVersionFilter = expansions[idx].versionID
     SetSelectedTab(idx)
-    print("当前选中 =>", currentVersionFilter)
+    -- print("当前选中 =>", currentVersionFilter)
     RefreshMountList()
 end
 
@@ -714,7 +714,7 @@ function RefreshMountList()
     end
     contentFrame:SetHeight(maxHeight)
 end
-print(11)
+-- print(11)
 ----------------------------------------------------------------
 -- 4) “显示差异”按钮 + 弹出复制窗口
 ----------------------------------------------------------------
@@ -778,7 +778,7 @@ showDiffButton:SetScript("OnClick", function()
 
     diffFrame:Show()
 end)
-print(12)
+-- print(12)
 ----------------------------------------------------------------
 -- 新增功能按钮：Scan Items
 ----------------------------------------------------------------
@@ -815,7 +815,7 @@ CupckoFrame:RegisterEvent("PLAYER_LOGIN")
 CupckoFrame:RegisterEvent("COMPANION_UPDATE")
 CupckoFrame:RegisterEvent("NEW_MOUNT_ADDED")
 
-SLASH_CUPCKO1 = "/*"
+SLASH_CUPCKO1 = "/."
 SlashCmdList["CUPCKO"] = function()
     if CupckoFrame:IsShown() then
         CupckoFrame:Hide()

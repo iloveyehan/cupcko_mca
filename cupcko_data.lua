@@ -1,4 +1,4 @@
--- 模拟你从 JSON 转成的 Lua 表
+
 externalMountData =                                            -- 新增坐骑SpellID -> itemID(默认为0)
 {
     [458] = { itemID = 5656, versionID = 1, source = 171 },     -- 棕马
@@ -15,7 +15,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [6653] = { itemID = 5665, versionID = 1, source = 150 },    -- 恐狼
     [6654] = { itemID = 5668, versionID = 1, source = 150 },    -- 棕狼
     [6777] = { itemID = 5864, versionID = 1, source = 170 },        -- 灰山羊
-    [6896] = { itemID = 0, versionID = 105, source = 46 },        -- 黑山羊
+    [6896] = { itemID = 0, versionID = 105, source = 25 },        -- 黑山羊
     [6898] = { itemID = 0, versionID = 1, source = 170 },        -- 白山羊
     [6899] = { itemID = 0, versionID = 1, source = 170 },        -- 棕山羊
     [8394] = { itemID = 0, versionID = 1, source = 154 },        -- 条纹霜刃豹
@@ -30,7 +30,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [10873] = { itemID = 8563, versionID = 1, source = 172 },       -- 红色机械陆行鸟
     [10969] = { itemID = 8595, versionID = 1, source = 172 },       -- 蓝色机械陆行鸟
     [13819] = { itemID = 0, versionID = 104, source = 102 },       -- 战马
-    [15779] = { itemID = 13326, versionID = 105, source = 46 },       -- 白色机械陆行鸟B型
+    [15779] = { itemID = 13326, versionID = 105, source = 25 },       -- 白色机械陆行鸟B型
     [15780] = { itemID = 0, versionID = 105, source = 25 },       -- 绿色机械陆行鸟
     [16055] = { itemID = 12303, versionID = 105, source = 25 },       -- 黑色夜刃豹
     [16056] = { itemID = 12302, versionID = 105, source = 25 },       -- 上古霜刃豹
@@ -54,8 +54,8 @@ externalMountData =                                            -- 新增坐骑Sp
     [18363] = { itemID = 0, versionID = 0, source = 0 },       -- 科多兽坐骑
     [18989] = { itemID = 15277, versionID = 1, source = 151 },       -- 灰色科多兽
     [18990] = { itemID = 15290, versionID = 1, source = 151 },       -- 棕色科多兽
-    [18991] = { itemID = 15292, versionID = 105, source = 46 },       -- 绿色科多兽
-    [18992] = { itemID = 15293, versionID = 105, source = 46 },       -- 蓝色科多兽
+    [18991] = { itemID = 15292, versionID = 105, source = 25 },       -- 绿色科多兽
+    [18992] = { itemID = 15293, versionID = 105, source = 25 },       -- 蓝色科多兽
     [22717] = { itemID = 19468, versionID = 103, source = 6 },       -- 黑色战驹
     [22718] = { itemID = 29466, versionID = 103, source = 6 },       -- 黑色作战科多兽
     [22719] = { itemID = 29465, versionID = 103, source = 6 },       -- 黑色作战陆行鸟
@@ -547,7 +547,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [213350] = { itemID = 137614, versionID = 104, source = 1024 },      -- 霜裂地狱火
     [214791] = { itemID = 138811, versionID = 102, source = 34 },      -- 深海喂食者
     [215159] = { itemID = 138258, versionID = 7, source = 44 },      -- 失落已久的角鹰兽
-    [215545] = { itemID = 186479, versionID = 9, source = 4 },      -- 精铸墓翼蝠
+    [215545] = { itemID = 186479, versionID = 9, source = 904 },      -- 精铸墓翼蝠
     [215558] = { itemID = 138387, versionID = 104, source = 1 },      -- 骑乘巨鼠
     [222202] = { itemID = 140228, versionID = 103, source = 1009 },      -- 声威青铜骏马
     [222236] = { itemID = 140230, versionID = 103, source = 1009 },      -- 声威皇室骏马
@@ -804,11 +804,11 @@ externalMountData =                                            -- 新增坐骑Sp
     [312759] = { itemID = 180263, versionID = 9, source = 905 },      -- 梦光符文牡鹿
     [312761] = { itemID = 180721, versionID = 9, source = 905 },      -- 魔化梦光符文牡鹿
     [312762] = { itemID = 184167, versionID = 9, source = 4 },      -- 渊誓猎魂犬
-    [312763] = { itemID = 183052, versionID = 9, source = 908 },      -- 暗穴硬壳虫
+    [312763] = { itemID = 183052, versionID = 9, source = 910 },      -- 暗穴硬壳虫
     [312765] = { itemID = 180773, versionID = 9, source = 4 },      -- 日舞者
     [312767] = { itemID = 180728, versionID = 9, source = 4 },      -- 迅捷厄蹄马
-    [312776] = { itemID = 183617, versionID = 8, source = 908 },      -- 啾鸣心蛛
-    [312777] = { itemID = 181316, versionID = 9, source = 908 },      -- 银端惊惧之翼
+    [312776] = { itemID = 183617, versionID = 9, source = 910 },      -- 啾鸣心蛛
+    [312777] = { itemID = 181316, versionID = 9, source = 910 },      -- 银端惊惧之翼
     [315014] = { itemID = 174752, versionID = 8, source = 803 },      -- 皎白云端翔龙
     [315132] = { itemID = 0, versionID = 101, source = 20 },      -- 奔波尔鲲
     [315427] = { itemID = 174649, versionID = 8, source = 803 },      -- 莱加尼战争翔龙
@@ -864,7 +864,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [333027] = { itemID = 182589, versionID = 9, source = 4 },      -- 忠诚的饕餮者
     [334352] = { itemID = 180731, versionID = 9, source = 7 },      -- 灵种摇篮
     [334364] = { itemID = 180725, versionID = 9, source = 4 },      -- 锥喉林地咀嚼者
-    [334365] = { itemID = 180726, versionID = 9, source = 908 },      -- 灰白酸喉者
+    [334365] = { itemID = 180726, versionID = 9, source = 910 },      -- 灰白酸喉者
     [334366] = { itemID = 180730, versionID = 9, source = 905 },      -- 野生烁裘徘徊者
     [334382] = { itemID = 180761, versionID = 9, source = 907 },      -- 忠诚灵豹
     [334386] = { itemID = 180762, versionID = 9, source = 907 },      -- 谦逊灵豹
@@ -878,11 +878,11 @@ externalMountData =                                            -- 新增坐骑Sp
     [334482] = { itemID = 192557, versionID = 105, source = 1017 },      -- 复苏死亡行者
     [336036] = { itemID = 181819, versionID = 9, source = 3 },      -- 髓牙
     [336038] = { itemID = 181818, versionID = 9, source = 1012 },      -- 羽翼未丰的绽翼兽
-    [336039] = { itemID = 181300, versionID = 9, source = 908 },      -- 阴森绽翼兽
+    [336039] = { itemID = 181300, versionID = 9, source = 910 },      -- 阴森绽翼兽
     [336041] = { itemID = 182078, versionID = 9, source = 906 },      -- 骨缝血肉大鹏
     [336042] = { itemID = 182079, versionID = 9, source = 4 },      -- 巨型死亡大鹏
     [336045] = { itemID = 182080, versionID = 9, source = 906 },      -- 掠食的凋零大鹏
-    [336064] = { itemID = 181317, versionID = 9, source = 2 },      -- 无畏的暮行者
+    [336064] = { itemID = 181317, versionID = 9, source = 910 },      -- 无畏的暮行者
     [339588] = { itemID = 182614, versionID = 9, source = 4 },      -- 罪奔者布兰契
     [339632] = { itemID = 182650, versionID = 9, source = 4 },      -- 树栖巨口蟾
     [339956] = { itemID = 186655, versionID = 9, source = 1 },      -- 渊誓军马
@@ -890,8 +890,8 @@ externalMountData =                                            -- 新增坐骑Sp
     [340068] = { itemID = 182717, versionID = 105, source = 1017 },      -- 罪触死亡行者
     [340503] = { itemID = 183053, versionID = 9, source = 905 },      -- 幽影镰角虫
     [341639] = { itemID = 183518, versionID = 9, source = 2 },      -- 王庭罪奔者
-    [341766] = { itemID = 183615, versionID = 9, source = 908 },      -- 战缝黑暗犬
-    [341776] = { itemID = 183618, versionID = 9, source = 908 },      -- 高风暗鬃狮
+    [341766] = { itemID = 183615, versionID = 9, source = 910 },      -- 战缝黑暗犬
+    [341776] = { itemID = 183618, versionID = 9, source = 910 },      -- 高风暗鬃狮
     [341821] = { itemID = 0, versionID = 101, source = 20 },   -- 雪暴
     [342334] = { itemID = 183740, versionID = 9, source = 2 },      -- 鎏金徘徊者
     [342335] = { itemID = 183741, versionID = 9, source = 4 },      -- 晋升天鬃马
@@ -944,7 +944,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [353872] = { itemID = 186476, versionID = 9, source = 904 },      -- 堕罪墓翼蝠
     [353873] = { itemID = 186477, versionID = 9, source = 904 },      -- 苍白的墓翼蝠
     [353875] = { itemID = 186482, versionID = 9, source = 907 },      -- 极乐北风长
-    [353877] = { itemID = 186483, versionID = 9, source = 907 },      -- 弃誓北风长
+    [353877] = { itemID = 186483, versionID = 9, source = 10 },      -- 弃誓北风长
     [353880] = { itemID = 186485, versionID = 9, source = 907 },      -- 晋升者的北风长
     [353883] = { itemID = 186487, versionID = 9, source = 906 },      -- 玛卓克萨斯冥蝇
     [353884] = { itemID = 186488, versionID = 9, source = 906 },      -- 君威冥蝇
@@ -992,7 +992,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [359407] = { itemID = 187682, versionID = 105, source = 1017 },      -- 荒折死亡行者
     [359409] = { itemID = 198871, versionID = 10, source = 6 },      -- 伊斯卡拉商人的奥獭
     [359413] = { itemID = 187683, versionID = 9, source = 908 },      -- 金甲元蟾
-    [359545] = { itemID = 190771, versionID = 9, source = 10 },      -- 蟹化的扎雷骁骑
+    [359545] = { itemID = 190771, versionID = 105, source = 1023 },      -- 蟹化的扎雷骁骑
     [359622] = { itemID = 201440, versionID = 10, source = 4 },      -- 被解放的狐龙
     [359843] = { itemID = 0, versionID = 101, source = 1007 },      -- 绿绦织梦者
     [360954] = { itemID = 194705, versionID = 10, source = 10 },      -- 高地幼龙
@@ -1161,7 +1161,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [431049] = { itemID = 206156, versionID = 0, source = 0 },      -- 岩洞灵翼幼龙
     [431050] = { itemID = 210412, versionID = 0, source = 0 },      -- 繁盛奇想幼龙
     [431357] = { itemID = 212227, versionID = 106, source = 18 }, -- 裘谊之狐
-    [431359] = { itemID = 212228, versionID = 105, source = 45 }, -- 翔天之狐
+    [431359] = { itemID = 212228, versionID = 101, source = 20 }, -- 翔天之狐
     [431360] = { itemID = 212229, versionID = 106, source = 18 }, -- 暮光巡天狐
     [431992] = { itemID = 212522, versionID = 101, source = 1004 },      -- 罗盘玫瑰
     [432455] = { itemID = 212599, versionID = 100, source = 52 },      -- 复活节飞毯

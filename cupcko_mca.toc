@@ -1,7 +1,7 @@
 ## Interface: 110007, 110100
 ## Title: cupcko_mca
-## Author: 你的名字
-## Version: 1.0
+## Author: cupcko
+## Version: 1.01
 ## Notes: 一个显示所有已知坐骑的插件，未拥有的坐骑以灰色显示
 ## DefaultState: Enabled
 
