@@ -1156,7 +1156,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [428005] = { itemID = 211074, versionID = 106, source = 18 },      -- 珠光铜色圣甲虫
     [428013] = { itemID = 229348, versionID = 106, source = 26 },      -- 氮素魔影，无法解密的邪能摩托
     [428060] = { itemID = 211084, versionID = 105, source = 41 },      -- 金色皇家圣甲虫
-    [428067] = { itemID = 211087, versionID = 101, source = 20 },      -- 仇铸炽火摩托
+    [428067] = { itemID = 211087, versionID = 101, source = 1030 },      -- 仇铸炽火摩托
     [430225] = { itemID = 211873, versionID = 10, source = 10 },      -- 吉尔尼斯徘徊者
     [431049] = { itemID = 206156, versionID = 0, source = 0 },      -- 岩洞灵翼幼龙
     [431050] = { itemID = 210412, versionID = 0, source = 0 },      -- 繁盛奇想幼龙
@@ -1277,9 +1277,9 @@ externalMountData =                                            -- 新增坐骑Sp
     [471538] = { itemID = 232624, versionID = 100, source = 1002 },      -- 时空鸣蜂
     [471562] = { itemID = 232639, versionID = 11, source = 17 },      -- 萨伊尔，海妖之目
     [471696] = { itemID = 233241, versionID = 106, source = 1015 },      -- 铁钩爪
-    [472253] = { itemID = 232901, versionID = 101, source = 20 },      -- 奔月发射器
-    [472479] = { itemID = 232926, versionID = 0, source = 1026 },      -- 爱情女巫的扫帚
-    [472487] = { itemID = 233023, versionID = 0, source = 1026 },      -- 银月城扫帚
+    [472253] = { itemID = 232901, versionID = 100, source = 54 },      -- 奔月发射器
+    [472479] = { itemID = 232926, versionID = 100, source = 50 },      -- 爱情女巫的扫帚
+    [472487] = { itemID = 233023, versionID = 106, source = 18 },      -- 银月城扫帚
     [472488] = { itemID = 233020, versionID = 0, source = 1026 },      -- 暮光女巫的扫帚
     [472489] = { itemID = 233019, versionID = 0, source = 1026 },      -- 苍穹女巫的扫帚
     [472752] = { itemID = 232991, versionID = 11, source = 1 },      -- 毁灭者之歌号

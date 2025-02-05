@@ -105,6 +105,7 @@ local sources = {
     { cls = 51,  name = "暗月马戏团" },
     { cls = 52,  name = "复活节" },
     { cls = 53,  name = "冬幕节" },
+    { cls = 54,  name = "春节" },
     { cls = 101,  name = "死亡骑士" },
     { cls = 102,  name = "圣骑士" },
     { cls = 103,  name = "恶魔猎手" },
@@ -192,6 +193,7 @@ local sources = {
     { cls = 1027,  name = "无用占位符" },
     { cls = 1028,  name = "奥特兰克山谷" },
     { cls = 1029,  name = "甲虫的召唤" },
+    { cls = 1030,  name = "联名活动" },
 }
 -- print(0.01)
 -- 当前选中版本（Tab）
@@ -200,57 +202,57 @@ local currentVersionFilter = 1000  -- 0表示显示全部
 ----------------------------------------------------------------
 -- 1) 主插件框体
 ----------------------------------------------------------------
-local CupckoFrame = CreateFrame("Frame", "CupckoMainFrame", UIParent, "BackdropTemplate")
-CupckoFrame:SetPoint("CENTER")
-CupckoFrame:SetSize(800, 600)  -- 默认初始大小（可自行调整）
-CupckoFrame:SetMovable(true)
-CupckoFrame:EnableMouse(true)
-CupckoFrame:RegisterForDrag("LeftButton")
-CupckoFrame:SetScript("OnDragStart", CupckoFrame.StartMoving)
-CupckoFrame:SetScript("OnDragStop", CupckoFrame.StopMovingOrSizing)
-CupckoFrame:SetClampedToScreen(true)
---CupckoFrame:SetBackdropColor(1, 1, 1)
--- CupckoFrame:Hide()
+local CupckoFrame_MCA = CreateFrame("Frame", "CupckoMainFrame", UIParent, "BackdropTemplate")
+CupckoFrame_MCA:SetPoint("CENTER")
+CupckoFrame_MCA:SetSize(800, 600)  -- 默认初始大小（可自行调整）
+CupckoFrame_MCA:SetMovable(true)
+CupckoFrame_MCA:EnableMouse(true)
+CupckoFrame_MCA:RegisterForDrag("LeftButton")
+CupckoFrame_MCA:SetScript("OnDragStart", CupckoFrame_MCA.StartMoving)
+CupckoFrame_MCA:SetScript("OnDragStop", CupckoFrame_MCA.StopMovingOrSizing)
+CupckoFrame_MCA:SetClampedToScreen(true)
+--CupckoFrame_MCA:SetBackdropColor(1, 1, 1)
+-- CupckoFrame_MCA:Hide()
 -- print(0.02)
 -- 允许缩放
-CupckoFrame:SetResizable(true)
+CupckoFrame_MCA:SetResizable(true)
 -- print(0.021)
-CupckoFrame:SetResizeBounds(400, 300, 1200, 900)  -- 可根据需要改成更大或更小
+CupckoFrame_MCA:SetResizeBounds(400, 300, 1200, 900)  -- 可根据需要改成更大或更小
 -- print(0.022)
--- CupckoFrame:SetMaxResize(1200, 900)
+-- CupckoFrame_MCA:SetMaxResize(1200, 900)
 -- 背景
 -- print(0.03)
-CupckoFrame:SetBackdrop({
+CupckoFrame_MCA:SetBackdrop({
     bgFile   = "Interface\\DialogFrame\\UI-DialogBox-Background",
     edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
     tile     = true, tileSize = 32, edgeSize = 24,
     insets   = { left = 8, right = 8, top = 8, bottom = 8 }
 })
-CupckoFrame:Hide()
--- 允许通过 ESC 键关闭 CupckoFrame
+CupckoFrame_MCA:Hide()
+-- 允许通过 ESC 键关闭 CupckoFrame_MCA
 tinsert(UISpecialFrames, "CupckoMainFrame")
 -- print(0.1)
 -- 标题
-local title = CupckoFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
+local title = CupckoFrame_MCA:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
 title:SetPoint("TOP", 0, -16)
 title:SetText("坐骑收集")
 
 -- 右上角关闭按钮
-local closeButton = CreateFrame("Button", nil, CupckoFrame, "UIPanelCloseButton")
+local closeButton = CreateFrame("Button", nil, CupckoFrame_MCA, "UIPanelCloseButton")
 closeButton:SetPoint("TOPRIGHT", -5, -5)
-closeButton:SetFrameLevel(CupckoFrame:GetFrameLevel() + 10)  -- 确保关闭按钮位于顶层
+closeButton:SetFrameLevel(CupckoFrame_MCA:GetFrameLevel() + 10)  -- 确保关闭按钮位于顶层
 -- 新增部分：左上角重置大小按钮
---local resetButton = CreateFrame("Button", nil, CupckoFrame, "UIPanelButtonTemplate")
+--local resetButton = CreateFrame("Button", nil, CupckoFrame_MCA, "UIPanelButtonTemplate")
 --resetButton:SetSize(100, 24)
---resetButton:SetPoint("TOPLEFT", 10, -10) -- 相对于CupckoFrame的左上角，稍微内移
+--resetButton:SetPoint("TOPLEFT", 10, -10) -- 相对于CupckoFrame_MCA的左上角，稍微内移
 --resetButton:SetText("重置大小")
 --resetButton:SetScript("OnClick", function()
---    CupckoFrame:SetSize(800, 600)
+--    CupckoFrame_MCA:SetSize(800, 600)
 --    print("|cff00ff00[cupcko]|r 已将画布大小重置为默认值。")
 --end)
 
 -- 右下角拖拽手柄
-local resizeGrip = CreateFrame("Frame", nil, CupckoFrame)
+local resizeGrip = CreateFrame("Frame", nil, CupckoFrame_MCA)
 resizeGrip:SetSize(32, 32)
 resizeGrip:SetPoint("BOTTOMRIGHT")
 resizeGrip:EnableMouse(true)
@@ -263,14 +265,14 @@ rgTexture:SetTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up")
 -- 按下时更换纹理
 resizeGrip:SetScript("OnMouseDown", function(self, button)
     if button == "LeftButton" then
-        CupckoFrame:StartSizing("BOTTOMRIGHT")
+        CupckoFrame_MCA:StartSizing("BOTTOMRIGHT")
         rgTexture:SetTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Down")
     end
 end)
 -- 松开时停止缩放，并更新纹理 & 重新刷新布局
 resizeGrip:SetScript("OnMouseUp", function(self, button)
     if button == "LeftButton" then
-        CupckoFrame:StopMovingOrSizing()
+        CupckoFrame_MCA:StopMovingOrSizing()
         rgTexture:SetTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up")
         -- 调整完大小后，刷新布局
         RefreshMountList()
@@ -280,7 +282,7 @@ end)
 ----------------------------------------------------------------
 -- 1.1) “滚动区域” + 内容容器
 ----------------------------------------------------------------
-local scrollFrame = CreateFrame("ScrollFrame", "CupckoScrollFrame", CupckoFrame, "UIPanelScrollFrameTemplate")
+local scrollFrame = CreateFrame("ScrollFrame", "CupckoScrollFrame", CupckoFrame_MCA, "UIPanelScrollFrameTemplate")
 scrollFrame:SetPoint("TOPLEFT", 20, -60)
 scrollFrame:SetPoint("BOTTOMRIGHT", -30, 60)
 
@@ -322,7 +324,7 @@ end
 
 -- 创建各个Tab按钮
 for i, expInfo in ipairs(expansions) do
-    local tab = CreateFrame("Button", "CupckoTab"..i, CupckoFrame, "UIPanelButtonTemplate")
+    local tab = CreateFrame("Button", "CupckoTab"..i, CupckoFrame_MCA, "UIPanelButtonTemplate")
     tab:SetID(i)
     tab:SetSize(120, 24)
 
@@ -336,7 +338,7 @@ for i, expInfo in ipairs(expansions) do
 
     -- 设置Tab按钮的位置（垂直排列在左上）
     if i == 1 then
-        tab:SetPoint("TOPLEFT", CupckoFrame, "TOPLEFT", -120, 0)
+        tab:SetPoint("TOPLEFT", CupckoFrame_MCA, "TOPLEFT", -120, 0)
     else
         tab:SetPoint("TOPLEFT", tabs[i-1], "BOTTOMLEFT", 0, -1)
     end
@@ -409,7 +411,7 @@ function RefreshMountList()
         -- 计算可用宽度
         local usableWidth = contentFrame:GetWidth()
         if usableWidth < 50 then
-            usableWidth = CupckoFrame:GetWidth() - 60  -- 兼容在窗口初始化时 contentFrame 宽度尚未就绪
+            usableWidth = CupckoFrame_MCA:GetWidth() - 60  -- 兼容在窗口初始化时 contentFrame 宽度尚未就绪
         end
 
         -- 这里你可以根据需要调整块的尺寸、间距
@@ -564,7 +566,7 @@ function RefreshMountList()
     -- 计算列数和列宽
     local usableWidth = contentFrame:GetWidth()
     if usableWidth < 50 then
-        usableWidth = CupckoFrame:GetWidth() - 60  -- 兼容在窗口初始化时 contentFrame 宽度尚未就绪
+        usableWidth = CupckoFrame_MCA:GetWidth() - 60  -- 兼容在窗口初始化时 contentFrame 宽度尚未就绪
     end
 
     local numColumns = math.floor(usableWidth / 300)
@@ -718,7 +720,7 @@ end
 ----------------------------------------------------------------
 -- 4) “显示差异”按钮 + 弹出复制窗口
 ----------------------------------------------------------------
-local showDiffButton = CreateFrame("Button", nil, CupckoFrame, "UIPanelButtonTemplate")
+local showDiffButton = CreateFrame("Button", nil, CupckoFrame_MCA, "UIPanelButtonTemplate")
 showDiffButton:SetSize(100, 24)
 showDiffButton:SetPoint("BOTTOMLEFT", 20, 20)
 showDiffButton:SetText("差异")
@@ -782,13 +784,13 @@ end)
 ----------------------------------------------------------------
 -- 新增功能按钮：Scan Items
 ----------------------------------------------------------------
---local scanItemsButton = CreateFrame("Button", nil, CupckoFrame, "UIPanelButtonTemplate")
+--local scanItemsButton = CreateFrame("Button", nil, CupckoFrame_MCA, "UIPanelButtonTemplate")
 --scanItemsButton:SetSize(100, 24)
 ---- 放在 showDiffButton 右侧 10 像素，视你布局而定
 --scanItemsButton:SetPoint("LEFT", showDiffButton, "RIGHT", 10, 0)
 --scanItemsButton:SetText("Scan Items")
 --scanItemsButton:SetScript("OnClick", function()
---    MyScanner.StartScan(CupckoFrame) -- 传入 CupckoFrame, 让扫描协程在其 OnUpdate 里跑
+--    MyScanner.StartScan(CupckoFrame_MCA) -- 传入 CupckoFrame_MCA, 让扫描协程在其 OnUpdate 里跑
 --end)
 
 ----------------------------------------------------------------
@@ -809,26 +811,26 @@ local function OnEvent(self, event, ...)
     end
 end
 
-CupckoFrame:SetScript("OnEvent", OnEvent)
-CupckoFrame:RegisterEvent("ADDON_LOADED")
-CupckoFrame:RegisterEvent("PLAYER_LOGIN")
-CupckoFrame:RegisterEvent("COMPANION_UPDATE")
-CupckoFrame:RegisterEvent("NEW_MOUNT_ADDED")
+CupckoFrame_MCA:SetScript("OnEvent", OnEvent)
+CupckoFrame_MCA:RegisterEvent("ADDON_LOADED")
+CupckoFrame_MCA:RegisterEvent("PLAYER_LOGIN")
+CupckoFrame_MCA:RegisterEvent("COMPANION_UPDATE")
+CupckoFrame_MCA:RegisterEvent("NEW_MOUNT_ADDED")
 
-SLASH_CUPCKO1 = "/."
-SlashCmdList["CUPCKO"] = function()
-    if CupckoFrame:IsShown() then
-        CupckoFrame:Hide()
+SLASH_CUPCKO_MCA1 = "/."
+SlashCmdList["CUPCKO_MCA"] = function()
+    if CupckoFrame_MCA:IsShown() then
+        CupckoFrame_MCA:Hide()
     else
         RefreshMountList()
-        CupckoFrame:Show()
-        CupckoFrame:SetFrameLevel(999)  -- 设置为较高的层级
+        CupckoFrame_MCA:Show()
+        CupckoFrame_MCA:SetFrameLevel(999)  -- 设置为较高的层级
     end
 end
 
 ----------------------------------------------------------------
 -- 6) 监听画布大小变化以动态调整布局
 ----------------------------------------------------------------
---CupckoFrame:SetScript("OnSizeChanged", function(self, width, height)
+--CupckoFrame_MCA:SetScript("OnSizeChanged", function(self, width, height)
 --    RefreshMountList()
 --end)
