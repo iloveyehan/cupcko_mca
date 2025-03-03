@@ -51,7 +51,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [17464] = { itemID = 13333, versionID = 1, source = 152 },       -- 棕色骸骨军马
     [17465] = { itemID = 13334, versionID = 1, source = 152 },       -- 绿色骷髅战马
     [17481] = { itemID = 13335, versionID = 1, source = 3 },       -- 瑞文戴尔的死亡战马
-    [18363] = { itemID = 0, versionID = 0, source = 0 },       -- 科多兽坐骑
+    [18363] = { itemID = 0, versionID = 0, source = 43 },       -- 科多兽坐骑
     [18989] = { itemID = 15277, versionID = 1, source = 151 },       -- 灰色科多兽
     [18990] = { itemID = 15290, versionID = 1, source = 151 },       -- 棕色科多兽
     [18991] = { itemID = 15292, versionID = 105, source = 25 },       -- 绿色科多兽
@@ -99,7 +99,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [26056] = { itemID = 21324, versionID = 1, source = 3 },       -- 绿色其拉作战坦克
     [26655] = { itemID = 0, versionID = 105, source = 25 },       -- 黑色其拉作战坦克
     [26656] = { itemID = 21176, versionID = 105, source = 25 },       -- 黑色其拉作战坦克
-    [28828] = { itemID = 0, versionID = 0, source = 0 },       -- 虚空幼龙
+    [28828] = { itemID = 0, versionID = 0, source = 43 },       -- 虚空幼龙
     [30174] = { itemID = 23720, versionID = 6, source = 34 },       -- 乌龟坐骑
     [32235] = { itemID = 25470, versionID = 2, source = 6 },       -- 金色狮鹫
     [32239] = { itemID = 25471, versionID = 2, source = 6 },       -- 黑色狮鹫
@@ -173,7 +173,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [48025] = { itemID = 37012, versionID = 100, source = 49 },       -- 无头骑士的坐骑
     [48027] = { itemID = 35906, versionID = 103, source = 6 },       -- 黑色作战雷象
     [48778] = { itemID = 0, versionID = 104, source = 101 },       -- 阿彻鲁斯死亡战马
-    [48954] = { itemID = 0, versionID = 0, source = 0 },       -- 迅捷斑马
+    [48954] = { itemID = 0, versionID = 0, source = 43 },       -- 迅捷斑马
     [49193] = { itemID = 37676, versionID = 105, source = 42 },       -- 复仇角斗士的虚空幼龙
     [49322] = { itemID = 37719, versionID = 105, source = 19 },       -- 迅捷斑马
     [49378] = { itemID = 0, versionID = 0, source = 43 },       -- 美酒节科多兽
@@ -1078,7 +1078,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [394220] = { itemID = 201719, versionID = 1, source = 168 },      -- 黑曜龙麒
     [394737] = { itemID = 201789, versionID = 103, source = 1006 },      -- 勇猛的剑齿兽
     [394738] = { itemID = 201788, versionID = 103, source = 1006 },      -- 勇猛的剑齿兽
-    [395095] = { itemID = 0, versionID = 0, source = 0 },      -- 雏龙
+    [395095] = { itemID = 0, versionID = 0, source = 43 },      -- 雏龙
     [395644] = { itemID = 0, versionID = 10, source = 10 },      -- 欧恩哈拉的神圣之吻
     [397406] = { itemID = 206167, versionID = 101, source = 20 },      -- 神谜掠波者
     [400733] = { itemID = 204091, versionID = 105, source = 19 },      -- 火箭伐木机9001型
@@ -1100,7 +1100,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [409034] = { itemID = 205246, versionID = 103, source = 1006 },      -- 勇猛的作战蜗牛
     [411565] = { itemID = 206027, versionID = 106, source = 18 },      -- 邪晶战蝎
     [412088] = { itemID = 206156, versionID = 10, source = 10 },      -- 岩洞灵翼幼龙
-    [413409] = { itemID = 194705, versionID = 0, source = 0 },      -- 高地幼龙
+    [413409] = { itemID = 194705, versionID = 0, source = 43 },      -- 高地幼龙
     [413825] = { itemID = 206566, versionID = 8, source = 10 },      -- 猩红翼手龙
     [413827] = { itemID = 206567, versionID = 8, source = 10 },      -- 海港狮鹫
     [413922] = { itemID = 206585, versionID = 10, source = 44 },      -- 英勇
@@ -1113,10 +1113,10 @@ externalMountData =                                            -- 新增坐骑Sp
     [414334] = { itemID = 206680, versionID = 10, source = 1021 },      -- 灾缚征服者
     [414986] = { itemID = 206976, versionID = 106, source = 18 }, -- 皇家群聚者
     [417245] = { itemID = 207821, versionID = 106, source = 18 },      -- 先祖裂蹄牛
-    [417548] = { itemID = 194034, versionID = 0, source = 0 },      -- 复苏始祖幼龙
-    [417552] = { itemID = 194549, versionID = 0, source = 0 },     -- 载风迅疾幼龙
-    [417554] = { itemID = 194521, versionID = 0, source = 0 },     -- 崖际荒狂幼龙
-    [417556] = { itemID = 204361, versionID = 0, source = 0 },     -- 盘曲蜿变幼龙
+    [417548] = { itemID = 194034, versionID = 0, source = 43 },      -- 复苏始祖幼龙
+    [417552] = { itemID = 194549, versionID = 0, source = 43 },     -- 载风迅疾幼龙
+    [417554] = { itemID = 194521, versionID = 0, source = 43 },     -- 崖际荒狂幼龙
+    [417556] = { itemID = 204361, versionID = 0, source = 43 },     -- 盘曲蜿变幼龙
     [417888] = { itemID = 0, versionID = 101, source = 1007 },      -- 阿加驭雷者
     [418078] = { itemID = 208152, versionID = 10, source = 44 },      -- 帕蒂
     [418286] = { itemID = 0, versionID = 101, source = 20 },      -- 福星木蛟
@@ -1158,8 +1158,8 @@ externalMountData =                                            -- 新增坐骑Sp
     [428060] = { itemID = 211084, versionID = 105, source = 41 },      -- 金色皇家圣甲虫
     [428067] = { itemID = 211087, versionID = 101, source = 1030 },      -- 仇铸炽火摩托
     [430225] = { itemID = 211873, versionID = 10, source = 10 },      -- 吉尔尼斯徘徊者
-    [431049] = { itemID = 206156, versionID = 0, source = 0 },      -- 岩洞灵翼幼龙
-    [431050] = { itemID = 210412, versionID = 0, source = 0 },      -- 繁盛奇想幼龙
+    [431049] = { itemID = 206156, versionID = 0, source = 43 },      -- 岩洞灵翼幼龙
+    [431050] = { itemID = 210412, versionID = 0, source = 43 },      -- 繁盛奇想幼龙
     [431357] = { itemID = 212227, versionID = 106, source = 18 }, -- 裘谊之狐
     [431359] = { itemID = 212228, versionID = 101, source = 20 }, -- 翔天之狐
     [431360] = { itemID = 212229, versionID = 106, source = 18 }, -- 暮光巡天狐
@@ -1280,8 +1280,8 @@ externalMountData =                                            -- 新增坐骑Sp
     [472253] = { itemID = 232901, versionID = 100, source = 54 },      -- 奔月发射器
     [472479] = { itemID = 232926, versionID = 100, source = 50 },      -- 爱情女巫的扫帚
     [472487] = { itemID = 233023, versionID = 106, source = 18 },      -- 银月城扫帚
-    [472488] = { itemID = 233020, versionID = 0, source = 1026 },      -- 暮光女巫的扫帚
-    [472489] = { itemID = 233019, versionID = 0, source = 1026 },      -- 苍穹女巫的扫帚
+    [472488] = { itemID = 233020, versionID = 101, source = 20 },      -- 暮光女巫的扫帚
+    [472489] = { itemID = 233019, versionID = 101, source = 20 },      -- 苍穹女巫的扫帚
     [472752] = { itemID = 232991, versionID = 11, source = 1 },      -- 毁灭者之歌号
     [473137] = { itemID = 233058, versionID = 11, source = 6 },      -- 索伊兹的复古斩浪者
     [473472] = { itemID = 235515, versionID = 8, source = 1 },      -- 加尼的垃圾堆
@@ -1293,6 +1293,54 @@ externalMountData =                                            -- 新增坐骑Sp
     [1214974] = { itemID = 234740, versionID = 100, source = 1002 },     -- 铜色鬃毛魁麟
     [1216542] = { itemID = 235344, versionID = 101, source = 20 },     -- 炽燃皇家火鹰
     [468205] = { itemID=0, versionID=101, source=20 }, -- 木雕翔天巨蛇
+
+
+    [465999] = { itemID=229935, versionID=11, source=6 }, -- 猩红装甲惊哮犬
+    [466000] = { itemID=0, versionID=11, source=6 }, -- 暗索嚼压者
+    [466001] = { itemID=0, versionID=11, source=1012 }, -- 黑水碾骨者
+    [466002] = { itemID=229936, versionID=11, source=6 }, -- 紫罗兰装甲惊哮犬
+    [466013] = { itemID=229946, versionID=11, source=6 }, -- 黄褐运载火箭
+    [466014] = { itemID=0, versionID=11, source=1012 }, -- 热砂补给机
+    [466016] = { itemID=229944, versionID=11, source=6 }, -- 紧身特快
+    [466017] = { itemID=229941, versionID=11, source=6 }, -- 创新调查者
+    [466018] = { itemID=229950, versionID=11, source=6 }, -- 暗索歼灭者
+    [466019] = { itemID=229948, versionID=11, source=6 }, -- 黑水伐木机尊享版MK2型
+    [466020] = { itemID=229949, versionID=11, source=6 }, -- 私人订制地精S.C.R.A.P拆废机
+    [466022] = { itemID=0, versionID=11, source=1012 }, -- 风险投资协调器
+    [466023] = { itemID=229952, versionID=11, source=6 }, -- 资产倡导者
+    [466024] = { itemID=0, versionID=11, source=1012 }, -- 锈水轰炸机
+    [466025] = { itemID=229954, versionID=11, source=6 }, -- 差额操纵者
+    [466026] = { itemID=229953, versionID=11, source=4 }, -- 回收的地精亿万富豪飞行器
+    [466027] = { itemID=229955, versionID=11, source=4 }, -- 暗索谍眼飞行器
+    [466028] = { itemID=229956, versionID=11, source=6 }, -- 钞绿色飞行器
+    [466133] = { itemID=229974, versionID=11, source=10 }, -- 地下堡行者的地精疾行器
+    [466145] = { itemID=0, versionID=103, source=1006 }, -- 勇猛的电鳗
+    [466146] = { itemID=0, versionID=103, source=1006 }, -- 勇猛的电鳗
+    [466423] = { itemID=0, versionID=0, source=43 }, -- 不稳定的火箭
+    [466464] = { itemID=0, versionID=0, source=43 }, -- 不稳定的火箭
+    [473188] = { itemID=233064, versionID=11, source=10 }, -- 青铜地精斩浪者
+    [473739] = { itemID=0, versionID=101, source=20 }, -- 绒毛米克西
+    [473741] = { itemID=0, versionID=101, source=20 }, -- 柔爪米克西
+    [473743] = { itemID=0, versionID=101, source=20 }, -- 滚爪米克西
+    [473744] = { itemID=0, versionID=101, source=20 }, -- 茶毛米克西
+    [473745] = { itemID=0, versionID=101, source=20 }, -- 酿盗米克西
+    [1216422] = { itemID=235286, versionID=101, source=1018 }, -- 附煞云端翔龙
+    [1216430] = { itemID=235287, versionID=101, source=1018 }, -- 附煞骑乘虎
+    [1217235] = { itemID=0, versionID=0, source=43 }, -- 赤红切割坦克
+    [1217340] = { itemID=235554, versionID=106, source=18 }, -- 午夜暗月军马
+    [1217341] = { itemID=235555, versionID=106, source=18 }, -- 活跃暗月军马
+    [1217342] = { itemID=235556, versionID=106, source=18 }, -- 紫罗兰暗月军马
+    [1217343] = { itemID=235557, versionID=106, source=18 }, -- 雪白暗月军马
+    [1217760] = { itemID=235626, versionID=11, source=5 }, -- 加老大
+    [1217965] = { itemID=235646, versionID=106, source=18 }, -- 闪雾自由奔行者
+    [1217994] = { itemID=235650, versionID=106, source=18 }, -- 珠光彩蝶
+    [1218012] = { itemID=235657, versionID=106, source=18 }, -- 红玉彩蝶
+    [1218013] = { itemID=235658, versionID=106, source=18 }, -- 春日彩蝶
+    [1218014] = { itemID=235659, versionID=106, source=18 }, -- 午夜彩蝶
+    [1218069] = { itemID=235662, versionID=106, source=18 }, -- 翡翠蜗牛
+    [1221155] = { itemID=236960, versionID=11, source=5 }, -- 原型A.S.M.R.
+    [1221694] = { itemID=237141, versionID=105, source=1017 }, -- 进取型切割坦克
+  
 }
 -- 测试打印
 print("|cff00ff00[cupcko debug]|r [cupcko_data.lua] externalMountData content:")

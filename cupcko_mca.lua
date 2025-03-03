@@ -190,7 +190,7 @@ local sources = {
     { cls = 1024,  name = "坐骑收集" },
     { cls = 1025,  name = "传家宝" },
     { cls = 1026,  name = "未实装" },
-    { cls = 1027,  name = "无用占位符" },
+    { cls = 1027,  name = "未分类" },
     { cls = 1028,  name = "奥特兰克山谷" },
     { cls = 1029,  name = "甲虫的召唤" },
     { cls = 1030,  name = "联名活动" },
