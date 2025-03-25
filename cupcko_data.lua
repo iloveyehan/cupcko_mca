@@ -1292,12 +1292,12 @@ externalMountData =                                            -- 新增坐骑Sp
     [1214946] = { itemID = 234730, versionID = 100, source = 1002 },     -- 希奈丝特拉幼龙
     [1214974] = { itemID = 234740, versionID = 100, source = 1002 },     -- 铜色鬃毛魁麟
     [1216542] = { itemID = 235344, versionID = 101, source = 20 },     -- 炽燃皇家火鹰
-    [468205] = { itemID=0, versionID=101, source=20 }, -- 木雕翔天巨蛇
+    [468205] = { itemID=231297, versionID=101, source=20 }, -- 木雕翔天巨蛇
 
 
     [465999] = { itemID=229935, versionID=11, source=6 }, -- 猩红装甲惊哮犬
-    [466000] = { itemID=0, versionID=11, source=6 }, -- 暗索嚼压者
-    [466001] = { itemID=0, versionID=11, source=1012 }, -- 黑水碾骨者
+    [466000] = { itemID=229924, versionID=11, source=6 }, -- 暗索嚼压者
+    [466001] = { itemID=229937, versionID=11, source=1012 }, -- 黑水碾骨者
     [466002] = { itemID=229936, versionID=11, source=6 }, -- 紫罗兰装甲惊哮犬
     [466013] = { itemID=229946, versionID=11, source=6 }, -- 黄褐运载火箭
     [466014] = { itemID=0, versionID=11, source=1012 }, -- 热砂补给机
@@ -1306,27 +1306,27 @@ externalMountData =                                            -- 新增坐骑Sp
     [466018] = { itemID=229950, versionID=11, source=6 }, -- 暗索歼灭者
     [466019] = { itemID=229948, versionID=11, source=6 }, -- 黑水伐木机尊享版MK2型
     [466020] = { itemID=229949, versionID=11, source=6 }, -- 私人订制地精S.C.R.A.P拆废机
-    [466022] = { itemID=0, versionID=11, source=1012 }, -- 风险投资协调器
+    [466022] = { itemID=229951, versionID=11, source=1012 }, -- 风险投资协调器
     [466023] = { itemID=229952, versionID=11, source=6 }, -- 资产倡导者
-    [466024] = { itemID=0, versionID=11, source=1012 }, -- 锈水轰炸机
+    [466024] = { itemID=229957, versionID=11, source=1012 }, -- 锈水轰炸机
     [466025] = { itemID=229954, versionID=11, source=6 }, -- 差额操纵者
     [466026] = { itemID=229953, versionID=11, source=4 }, -- 回收的地精亿万富豪飞行器
     [466027] = { itemID=229955, versionID=11, source=4 }, -- 暗索谍眼飞行器
     [466028] = { itemID=229956, versionID=11, source=6 }, -- 钞绿色飞行器
     [466133] = { itemID=229974, versionID=11, source=10 }, -- 地下堡行者的地精疾行器
-    [466145] = { itemID=0, versionID=103, source=1006 }, -- 勇猛的电鳗
-    [466146] = { itemID=0, versionID=103, source=1006 }, -- 勇猛的电鳗
+    [466145] = { itemID=229988, versionID=103, source=1006 }, -- 勇猛的电鳗
+    [466146] = { itemID=229989, versionID=103, source=1006 }, -- 勇猛的电鳗
     [466423] = { itemID=0, versionID=0, source=43 }, -- 不稳定的火箭
     [466464] = { itemID=0, versionID=0, source=43 }, -- 不稳定的火箭
     [473188] = { itemID=233064, versionID=11, source=10 }, -- 青铜地精斩浪者
-    [473739] = { itemID=0, versionID=101, source=20 }, -- 绒毛米克西
-    [473741] = { itemID=0, versionID=101, source=20 }, -- 柔爪米克西
-    [473743] = { itemID=0, versionID=101, source=20 }, -- 滚爪米克西
-    [473744] = { itemID=0, versionID=101, source=20 }, -- 茶毛米克西
-    [473745] = { itemID=0, versionID=101, source=20 }, -- 酿盗米克西
+    [473739] = { itemID=233282, versionID=101, source=20 }, -- 绒毛米克西
+    [473741] = { itemID=233283, versionID=101, source=20 }, -- 柔爪米克西
+    [473743] = { itemID=233284, versionID=101, source=20 }, -- 滚爪米克西
+    [473744] = { itemID=233285, versionID=101, source=20 }, -- 茶毛米克西
+    [473745] = { itemID=233286, versionID=101, source=20 }, -- 酿盗米克西
     [1216422] = { itemID=235286, versionID=101, source=1018 }, -- 附煞云端翔龙
     [1216430] = { itemID=235287, versionID=101, source=1018 }, -- 附煞骑乘虎
-    [1217235] = { itemID=0, versionID=0, source=43 }, -- 赤红切割坦克
+    [1217235] = { itemID=235549, versionID=0, source=43 }, -- 赤红切割坦克
     [1217340] = { itemID=235554, versionID=106, source=18 }, -- 午夜暗月军马
     [1217341] = { itemID=235555, versionID=106, source=18 }, -- 活跃暗月军马
     [1217342] = { itemID=235556, versionID=106, source=18 }, -- 紫罗兰暗月军马
@@ -1340,7 +1340,11 @@ externalMountData =                                            -- 新增坐骑Sp
     [1218069] = { itemID=235662, versionID=106, source=18 }, -- 翡翠蜗牛
     [1221155] = { itemID=236960, versionID=11, source=5 }, -- 原型A.S.M.R.
     [1221694] = { itemID=237141, versionID=105, source=1017 }, -- 进取型切割坦克
-  
+    [466011] = { itemID=229940, versionID=11, source=1012 }, -- 狂龙弗莱兰多
+    [466012] = { itemID=229945, versionID=11, source=6 }, -- 雷鼓哑炮火箭
+    [466021] = { itemID=229947, versionID=11, source=1012 }, -- 紫罗兰地精伐木机
+    [466144] = { itemID=229987, versionID=105, source=42 }, -- 至臻角斗士的魔蝠
+    [468068] = { itemID=231173, versionID=11, source=1 }, -- 渣客大师的磁力机甲
 }
 -- 测试打印
 print("|cff00ff00[cupcko debug]|r [cupcko_data.lua] externalMountData content:")
