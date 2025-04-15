@@ -1326,7 +1326,7 @@ externalMountData =                                            -- 新增坐骑Sp
     [473745] = { itemID=233286, versionID=101, source=20 }, -- 酿盗米克西
     [1216422] = { itemID=235286, versionID=101, source=1018 }, -- 附煞云端翔龙
     [1216430] = { itemID=235287, versionID=101, source=1018 }, -- 附煞骑乘虎
-    [1217235] = { itemID=235549, versionID=0, source=43 }, -- 赤红切割坦克
+    [1217235] = { itemID=235549, versionID=105, source=1017 }, -- 赤红切割坦克
     [1217340] = { itemID=235554, versionID=106, source=18 }, -- 午夜暗月军马
     [1217341] = { itemID=235555, versionID=106, source=18 }, -- 活跃暗月军马
     [1217342] = { itemID=235556, versionID=106, source=18 }, -- 紫罗兰暗月军马
