@@ -164,7 +164,8 @@ local sources = {
     { cls = 908,  name = "原生体合成" },
     { cls = 909,  name = "托加斯特" },
     { cls = 910,  name = "盟约通用" },
-    { cls = 1001,  name = "熊猫人幻境新生" },
+    { cls = 1001,  name = "幻境新生:熊猫人" },
+    { cls = 1031,  name = "幻境新生:军团" },
     { cls = 1002,  name = "时光漫游" },
     { cls = 1003,  name = "熊猫人黄金挑战" },
     { cls = 1004,  name = "炉石传说" },
@@ -194,6 +195,8 @@ local sources = {
     { cls = 1028,  name = "奥特兰克山谷" },
     { cls = 1029,  name = "甲虫的召唤" },
     { cls = 1030,  name = "联名活动" },
+    { cls = 1032,  name = "惊魂幻象" },
+    { cls = 1033,  name = "卑鄙双雄" },
 }
 -- print(0.01)
 -- 当前选中版本（Tab）
