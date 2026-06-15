@@ -27,6 +27,7 @@ end
 ----------------------------------------------------------------
 local expansions = {
     { versionID = 1000,  name = "总览" },
+    { versionID = 12, name = "至暗之夜" },
     { versionID = 11, name = "地心之战" },
     { versionID = 10, name = "巨龙时代" },
     { versionID = 9,  name = "暗影国度" },
@@ -197,6 +198,7 @@ local sources = {
     { cls = 1030,  name = "联名活动" },
     { cls = 1032,  name = "惊魂幻象" },
     { cls = 1033,  name = "卑鄙双雄" },
+    { cls = 9999,  name = "不知道" },
 }
 -- print(0.01)
 -- 当前选中版本（Tab）
@@ -653,14 +655,26 @@ function RefreshMountList()
 
 
                 -- 鼠标提示
+                -- mountButton:SetScript("OnEnter", function(self)
+                --     GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+                --     GameTooltip:ClearLines()
+                --     if mountData.itemID > 0 then
+                --         GameTooltip:SetItemByID(mountData.itemID)
+                --     else
+                --         GameTooltip:SetSpellByID(mountData.spellID)
+                --     end
+                --     GameTooltip:Show()
+                -- end)
                 mountButton:SetScript("OnEnter", function(self)
-                    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+                    GameTooltip:SetOwner(UIParent, "ANCHOR_CURSOR")
                     GameTooltip:ClearLines()
+
                     if mountData.itemID > 0 then
                         GameTooltip:SetItemByID(mountData.itemID)
                     else
                         GameTooltip:SetSpellByID(mountData.spellID)
                     end
+
                     GameTooltip:Show()
                 end)
                 mountButton:SetScript("OnLeave", function()
