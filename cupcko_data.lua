@@ -1,1581 +1,1581 @@
 
 externalMountData =                                            -- 新增坐骑SpellID -> itemID(默认为0)
 {
-    [458] = { itemID = 5656, versionID = 1, source = 171 },     -- 棕马
-    [459] = { itemID = 0, versionID = 105, source = 25 },      -- 灰狼
-    [468] = { itemID = 0, versionID = 105, source = 25 },     -- 白马
-    [470] = { itemID = 2411, versionID = 1, source = 171 },     -- 黑马
-    [472] = { itemID = 2414, versionID = 1, source = 171 },     -- 杂色马
-    [578] = { itemID = 0, versionID = 105, source = 25 },      -- 黑狼
-    [579] = { itemID = 0, versionID = 105, source = 25 },      -- 赤狼
-    [580] = { itemID = 1132, versionID = 1, source = 150 },     -- 森林狼
-    [581] = { itemID = 0, versionID = 105, source = 25 },      -- 冬狼
-    [5784] = { itemID = 0, versionID = 104, source = 104 },     -- 地狱战马
-    [6648] = { itemID = 5655, versionID = 1, source = 171 },    -- 栗色马
-    [6653] = { itemID = 5665, versionID = 1, source = 150 },    -- 恐狼
-    [6654] = { itemID = 5668, versionID = 1, source = 150 },    -- 棕狼
-    [6777] = { itemID = 5864, versionID = 1, source = 170 },        -- 灰山羊
-    [6896] = { itemID = 0, versionID = 105, source = 25 },        -- 黑山羊
-    [6898] = { itemID = 0, versionID = 1, source = 170 },        -- 白山羊
-    [6899] = { itemID = 0, versionID = 1, source = 170 },        -- 棕山羊
-    [8394] = { itemID = 0, versionID = 1, source = 154 },        -- 条纹霜刃豹
-    [8395] = { itemID = 0, versionID = 1, source = 153 },        -- 绿色迅猛龙
-    [8980] = { itemID = 0, versionID = 105, source = 25 },        -- 骸骨军马
-    [10789] = { itemID = 8632, versionID = 1, source = 154 },       -- 斑点霜刃豹
-    [10790] = { itemID = 0, versionID = 105, source = 25 },       -- 丛林虎
-    [10793] = { itemID = 8629, versionID = 1, source = 154 },       -- 条纹夜刃豹
-    [10795] = { itemID = 0, versionID = 105, source = 25 },       -- 白色迅猛龙
-    [10796] = { itemID = 8591, versionID = 1, source = 153 },       -- 青色迅猛龙
-    [10799] = { itemID = 8592, versionID = 1, source = 153 },       -- 紫色迅猛龙
-    [10873] = { itemID = 8563, versionID = 1, source = 172 },       -- 红色机械陆行鸟
-    [10969] = { itemID = 8595, versionID = 1, source = 172 },       -- 蓝色机械陆行鸟
-    [13819] = { itemID = 0, versionID = 104, source = 102 },       -- 战马
-    [15779] = { itemID = 13326, versionID = 105, source = 25 },       -- 白色机械陆行鸟B型
-    [15780] = { itemID = 0, versionID = 105, source = 25 },       -- 绿色机械陆行鸟
-    [16055] = { itemID = 12303, versionID = 105, source = 25 },       -- 黑色夜刃豹
-    [16056] = { itemID = 12302, versionID = 105, source = 25 },       -- 上古霜刃豹
-    [16080] = { itemID = 12330, versionID = 105, source = 25 },       -- 赤狼
-    [16081] = { itemID = 12351, versionID = 105, source = 25 },       -- 冰狼
-    [16082] = { itemID = 12354, versionID = 105, source = 25 },       -- 褐色马
-    [16083] = { itemID = 12353, versionID = 105, source = 25 },       -- 白马
-    [16084] = { itemID = 8586, versionID = 105, source = 25 },       -- 杂斑红色迅猛龙
-    [17229] = { itemID = 13086, versionID = 1, source = 10 },       -- 冬泉霜刃豹
-    [17450] = { itemID = 13317, versionID = 105, source = 25 },       -- 白色迅猛龙
-    [17453] = { itemID = 13321, versionID = 1, source = 172 },       -- 绿色机械陆行鸟
-    [17454] = { itemID = 13322, versionID = 1, source = 172 },       -- 原色机械陆行鸟
-    [17459] = { itemID = 13327, versionID = 105, source = 25 },       -- 冰蓝色机械陆行鸟A型
-    [17460] = { itemID = 13329, versionID = 105, source = 25 },       -- 霜山羊
-    [17461] = { itemID = 13328, versionID = 105, source = 25 }, -- 黑山羊
-    [17462] = { itemID = 13331, versionID = 1, source = 152 },       -- 红色骸骨军马
-    [17463] = { itemID = 13332, versionID = 1, source = 152 },       -- 蓝色骸骨军马
-    [17464] = { itemID = 13333, versionID = 1, source = 152 },       -- 棕色骸骨军马
-    [17465] = { itemID = 13334, versionID = 1, source = 152 },       -- 绿色骷髅战马
-    [17481] = { itemID = 13335, versionID = 1, source = 3 },       -- 瑞文戴尔的死亡战马
-    [18363] = { itemID = 0, versionID = 0, source = 43 },       -- 科多兽坐骑
-    [18989] = { itemID = 15277, versionID = 1, source = 151 },       -- 灰色科多兽
-    [18990] = { itemID = 15290, versionID = 1, source = 151 },       -- 棕色科多兽
-    [18991] = { itemID = 15292, versionID = 105, source = 25 },       -- 绿色科多兽
-    [18992] = { itemID = 15293, versionID = 105, source = 25 },       -- 蓝色科多兽
-    [22717] = { itemID = 19468, versionID = 103, source = 6 },       -- 黑色战驹
-    [22718] = { itemID = 29466, versionID = 103, source = 6 },       -- 黑色作战科多兽
-    [22719] = { itemID = 29465, versionID = 103, source = 6 },       -- 黑色作战陆行鸟
-    [22720] = { itemID = 29467, versionID = 103, source = 6 },       -- 黑色战羊
-    [22721] = { itemID = 29472, versionID = 103, source = 6 },       -- 黑色作战迅猛龙
-    [22722] = { itemID = 29470, versionID = 103, source = 6 },       -- 红色骷髅战马
-    [22723] = { itemID = 29471, versionID = 103, source = 6 },       -- 黑色战虎
-    [22724] = { itemID = 29469, versionID = 103, source = 6 },       -- 黑色战狼
-    [23161] = { itemID = 0, versionID = 104, source = 104 },       -- 恐惧战马
-    [23214] = { itemID = 0, versionID = 104, source = 102 },       -- 军马
-    [23219] = { itemID = 18767, versionID = 1, source = 154 },  -- 迅捷雾刃豹
-    [23221] = { itemID = 18766, versionID = 1, source = 154 },  -- 迅捷霜刃豹
-    [23222] = { itemID = 18774, versionID = 1, source = 172 },       -- 迅捷黄色机械陆行鸟
-    [23223] = { itemID = 18773, versionID = 1, source = 172 },       -- 迅捷白色机械陆行鸟
-    [23225] = { itemID = 18772, versionID = 1, source = 172 },       -- 迅捷绿色机械陆行鸟
-    [23227] = { itemID = 18776, versionID = 1, source = 171 },       -- 迅捷褐色马
-    [23228] = { itemID = 18778, versionID = 1, source = 171 },       -- 迅捷白马
-    [23229] = { itemID = 18777, versionID = 1, source = 171 },       -- 迅捷棕马
-    [23238] = { itemID = 18786, versionID = 1, source = 170 },       -- 迅捷棕山羊
-    [23239] = { itemID = 18787, versionID = 1, source = 170 },       -- 迅捷灰山羊
-    [23240] = { itemID = 18785, versionID = 1, source = 170 },       -- 迅捷白山羊
-    [23241] = { itemID = 18788, versionID = 1, source = 153 },       -- 迅捷蓝色迅猛龙
-    [23242] = { itemID = 18789, versionID = 1, source = 153 },       -- 迅捷绿色迅猛龙
-    [23243] = { itemID = 18790, versionID = 1, source = 153 },       -- 迅捷橙色迅猛龙
-    [23246] = { itemID = 18791, versionID = 1, source = 152 },       -- 紫色骷髅战马
-    [23247] = { itemID = 18793, versionID = 1, source = 151 },       -- 大型白色科多兽
-    [23248] = { itemID = 18795, versionID = 1, source = 151 },       -- 大型灰色科多兽
-    [23249] = { itemID = 18794, versionID = 1, source = 151 },  -- 大型棕色科多兽
-    [23250] = { itemID = 18796, versionID = 1, source = 150 },  -- 迅捷棕狼
-    [23251] = { itemID = 18797, versionID = 1, source = 150 },  -- 迅捷森林狼
-    [23252] = { itemID = 18798, versionID = 1, source = 150 },       -- 迅捷灰狼
-    [23338] = { itemID = 18902, versionID = 1, source = 154 },       -- 迅捷雷刃豹
-    [23509] = { itemID = 19029, versionID = 103, source = 1028 },       -- 霜狼嗥叫者
-    [23510] = { itemID = 19030, versionID = 103, source = 1028 },       -- 雷矛军用坐骑
-    [24242] = { itemID = 19872, versionID = 105, source = 41 }, -- 拉扎什迅猛龙
-    [24252] = { itemID = 19902, versionID = 105, source = 41 },       -- 迅捷祖利安猛虎
-    [25863] = { itemID = 0, versionID = 105, source = 25 },       -- 黑色其拉作战坦克
-    [25953] = { itemID = 21218, versionID = 1, source = 3 },       -- 蓝色其拉作战坦克
-    [26054] = { itemID = 21321, versionID = 1, source = 3 },       -- 红色其拉作战坦克
-    [26055] = { itemID = 21323, versionID = 1, source = 3 },       -- 黄色其拉作战坦克
-    [26056] = { itemID = 21324, versionID = 1, source = 3 },       -- 绿色其拉作战坦克
-    [26655] = { itemID = 0, versionID = 105, source = 25 },       -- 黑色其拉作战坦克
-    [26656] = { itemID = 21176, versionID = 105, source = 25 },       -- 黑色其拉作战坦克
-    [28828] = { itemID = 0, versionID = 0, source = 43 },       -- 虚空幼龙
-    [30174] = { itemID = 23720, versionID = 6, source = 34 },       -- 乌龟坐骑
-    [32235] = { itemID = 25470, versionID = 2, source = 6 },       -- 金色狮鹫
-    [32239] = { itemID = 25471, versionID = 2, source = 6 },       -- 黑色狮鹫
-    [32240] = { itemID = 25472, versionID = 2, source = 6 },       -- 雪色狮鹫
-    [32242] = { itemID = 25473, versionID = 2, source = 6 },       -- 迅捷蓝色狮鹫
-    [32243] = { itemID = 25474, versionID = 2, source = 6 },       -- 茶色驭风者
-    [32244] = { itemID = 25475, versionID = 2, source = 6 },       -- 蓝色驭风者
-    [32245] = { itemID = 25476, versionID = 2, source = 6 },       -- 绿色驭风者
-    [32246] = { itemID = 25477, versionID = 2, source = 6 },       -- 迅捷红色驭风者
-    [32289] = { itemID = 25527, versionID = 2, source = 6 },       -- 迅捷红色狮鹫
-    [32290] = { itemID = 25528, versionID = 2, source = 6 },       -- 迅捷绿色狮鹫
-    [32292] = { itemID = 25529, versionID = 2, source = 6 },       -- 迅捷紫色狮鹫
-    [32295] = { itemID = 25531, versionID = 2, source = 6 },       -- 迅捷绿色驭风者
-    [32296] = { itemID = 25532, versionID = 2, source = 6 },       -- 迅捷黄色驭风者
-    [32297] = { itemID = 25533, versionID = 2, source = 6 },       -- 迅捷紫色驭风者
-    [33630] = { itemID = 0, versionID = 105, source = 25 },       -- 蓝色机械陆行鸟
-    [33660] = { itemID = 28936, versionID = 1, source = 167 },       -- 迅捷粉色陆行鸟
-    [34406] = { itemID = 28481, versionID = 1, source = 174 },       -- 棕色雷象
-    [34767] = { itemID = 0, versionID = 2, source = 106 },       -- 萨拉斯军马
-    [34769] = { itemID = 0, versionID = 2, source = 106 },       -- 萨拉斯战马
-    [34790] = { itemID = 29228, versionID = 103, source = 201 },       -- 暗色作战塔布羊
-    [34795] = { itemID = 28927, versionID = 1, source = 167 },       -- 红色陆行鸟
-    [34896] = { itemID = 29227, versionID = 2, source = 203 },       -- 蓝色作战塔布羊
-    [34897] = { itemID = 29231, versionID = 2, source = 203 },       -- 白色作战塔布羊
-    [34898] = { itemID = 29229, versionID = 2, source = 203 },       -- 银色作战塔布羊
-    [34899] = { itemID = 29230, versionID = 2, source = 203 },       -- 褐色作战塔布羊
-    [35018] = { itemID = 29222, versionID = 1, source = 167 },       -- 紫色陆行鸟
-    [35020] = { itemID = 29220, versionID = 1, source = 167 },       -- 蓝色陆行鸟
-    [35022] = { itemID = 29221, versionID = 1, source = 167 },       -- 黑色陆行鸟
-    [35025] = { itemID = 29223, versionID = 1, source = 167 },       -- 迅捷绿色陆行鸟
-    [35027] = { itemID = 29224, versionID = 1, source = 167 },       -- 迅捷紫色陆行鸟
-    [35028] = { itemID = 34129, versionID = 103, source = 6 },       -- 迅捷作战陆行鸟
-    [35710] = { itemID = 29744, versionID = 1, source = 174 },       -- 灰色雷象
-    [35711] = { itemID = 29743, versionID = 1, source = 174 },       -- 紫色雷象
-    [35712] = { itemID = 29746, versionID = 1, source = 174 },       -- 重型绿色雷象
-    [35713] = { itemID = 29745, versionID = 1, source = 174 },       -- 重型蓝色雷象
-    [35714] = { itemID = 29747, versionID = 1, source = 174 },       -- 重型紫色雷象
-    [36702] = { itemID = 30480, versionID = 2, source = 5 },       -- 炽热战马
-    [37015] = { itemID = 30609, versionID = 105, source = 42 }, -- 迅捷虚空幼龙
-    [39315] = { itemID = 31830, versionID = 2, source = 203 },       -- 蓝色骑乘塔布羊
-    [39316] = { itemID = 28915, versionID = 103, source = 201 },       -- 暗色骑乘塔布羊
-    [39317] = { itemID = 31831, versionID = 2, source = 203 },   -- 银色骑乘塔布羊
-    [39318] = { itemID = 31833, versionID = 2, source = 203 },   -- 褐色骑乘塔布羊
-    [39319] = { itemID = 31835, versionID = 2, source = 203 },   -- 白色骑乘塔布羊
-    [39798] = { itemID = 32314, versionID = 2, source = 203 },       -- 绿色骑乘虚空鳐
-    [39800] = { itemID = 32317, versionID = 2, source = 203 },       -- 红色骑乘虚空鳐
-    [39801] = { itemID = 32316, versionID = 2, source = 203 },       -- 紫色骑乘虚空鳐
-    [39802] = { itemID = 32318, versionID = 2, source = 203 },       -- 银色骑乘虚空鳐
-    [39803] = { itemID = 32319, versionID = 2, source = 203 },       -- 蓝色骑乘虚空鳐
-    [40192] = { itemID = 32458, versionID = 2, source = 5 },       -- 奥的灰烬
-    [41252] = { itemID = 32768, versionID = 2, source = 3 },       -- 乌鸦之神
-    [41513] = { itemID = 32857, versionID = 2, source = 202 },       -- 黑色灵翼幼龙
-    [41514] = { itemID = 32858, versionID = 2, source = 202 },       -- 青色灵翼幼龙
-    [41515] = { itemID = 32859, versionID = 2, source = 202 },       -- 蓝色灵翼幼龙
-    [41516] = { itemID = 32860, versionID = 2, source = 202 },       -- 紫色灵翼幼龙
-    [41517] = { itemID = 32861, versionID = 2, source = 202 },       -- 绿色灵翼幼龙
-    [41518] = { itemID = 32862, versionID = 2, source = 202 },       -- 红色灵翼幼龙
-    [42776] = { itemID = 49283, versionID = 101, source = 48 },       -- 幽灵虎
-    [42777] = { itemID = 49284, versionID = 101, source = 48 },       -- 迅捷幽灵虎
-    [43688] = { itemID = 33809, versionID = 105, source = 3 },       -- 阿曼尼战熊
-    [43899] = { itemID = 33976, versionID = 105, source = 47 },       -- 美酒节赛羊
-    [43900] = { itemID = 33977, versionID = 100, source = 47 },       -- 迅捷美酒节赛羊
-    [43927] = { itemID = 33999, versionID = 2, source = 2 },   -- 塞纳里奥作战角鹰兽
-    [44151] = { itemID = 34061, versionID = 102, source = 27 },       -- 涡轮加速飞行器
-    [44153] = { itemID = 34060, versionID = 102, source = 27 },       -- 飞行器
-    [44317] = { itemID = 0, versionID = 105, source = 42 },       -- 残酷角斗士的虚空幼龙
-    [44744] = { itemID = 34092, versionID = 105, source = 42 },       -- 残酷角斗士的虚空幼龙
-    [46197] = { itemID = 49285, versionID = 101, source = 48 },       -- X-51虚空火箭
-    [46199] = { itemID = 49286, versionID = 101, source = 48 },       -- X-51虚空火箭特别加强版
-    [46628] = { itemID = 35513, versionID = 2, source = 3 },       -- 迅捷白色陆行鸟
-    [48025] = { itemID = 37012, versionID = 100, source = 49 },       -- 无头骑士的坐骑
-    [48027] = { itemID = 35906, versionID = 103, source = 6 },       -- 黑色作战雷象
-    [48778] = { itemID = 0, versionID = 104, source = 101 },       -- 阿彻鲁斯死亡战马
-    [48954] = { itemID = 0, versionID = 0, source = 43 },       -- 迅捷斑马
-    [49193] = { itemID = 37676, versionID = 105, source = 42 },       -- 复仇角斗士的虚空幼龙
-    [49322] = { itemID = 37719, versionID = 105, source = 19 },       -- 迅捷斑马
-    [49378] = { itemID = 0, versionID = 0, source = 43 },       -- 美酒节科多兽
-    [49379] = { itemID = 37828, versionID = 100, source = 47 },       -- 大型美酒节科多兽
-    [51412] = { itemID = 49282, versionID = 101, source = 48 },       -- 大战熊
-    [54729] = { itemID = 40775, versionID = 104, source = 101 },       -- 黑锋骸骨狮鹫
-    [54753] = { itemID = 43962, versionID = 3, source = 2 },       -- 白色北极熊坐骑
-    [55164] = { itemID = 0, versionID = 0, source = 43 },       -- 迅捷幽灵狮鹫
-    [55531] = { itemID = 44413, versionID = 102, source = 27 },       -- 机械路霸
-    [58615] = { itemID = 43516, versionID = 105, source = 42 },       -- 野蛮角斗士的虚空幼龙
-    [58983] = { itemID = 43599, versionID = 101, source = 22 },       -- 暴雪巨熊
-    [59567] = { itemID = 43952, versionID = 3, source = 5 },       -- 碧蓝幼龙
-    [59568] = { itemID = 43953, versionID = 3, source = 5 },       -- 蓝色幼龙
-    [59569] = { itemID = 43951, versionID = 3, source = 3 },       -- 青铜幼龙
-    [59570] = { itemID = 43955, versionID = 3, source = 303 },       -- 红色幼龙
-    [59571] = { itemID = 43954, versionID = 3, source = 5 },       -- 暮光幼龙
-    [59572] = { itemID = 0, versionID = 0, source = 43 },       -- 黑色北极熊
-    [59650] = { itemID = 43986, versionID = 3, source = 1 },       -- 黑色幼龙
-    [59785] = { itemID = 43956, versionID = 103, source = 6 },       -- 黑色猛犸战象
-    [59788] = { itemID = 44077, versionID = 103, source = 6 },       -- 黑色猛犸战象
-    [59791] = { itemID = 44230, versionID = 3, source = 6 },       -- 长毛猛犸象
-    [59793] = { itemID = 44231, versionID = 3, source = 6 },       -- 长毛猛犸象
-    [59797] = { itemID = 44080, versionID = 3, source = 302 },       -- 冰雪猛犸象
-    [59799] = { itemID = 43958, versionID = 3, source = 302 },       -- 冰雪猛犸象
-    [59961] = { itemID = 44160, versionID = 3, source = 1 },       -- 红色始祖幼龙
-    [59976] = { itemID = 44164, versionID = 105, source = 1 },       -- 黑色始祖幼龙
-    [59996] = { itemID = 44151, versionID = 3, source = 3 },       -- 蓝色始祖幼龙
-    [60002] = { itemID = 44168, versionID = 3, source = 4 },       -- 迷时始祖幼龙
-    [60021] = { itemID = 44175, versionID = 105, source = 41 },       -- 被感染的始祖幼龙
-    [60024] = { itemID = 44177, versionID = 100, source = 1 },       -- 紫色始祖幼龙
-    [60025] = { itemID = 44178, versionID = 104, source = 1024 },       -- 白色幼龙
-    [60114] = { itemID = 44225, versionID = 3, source = 6 },       -- 装甲棕熊
-    [60116] = { itemID = 44226, versionID = 3, source = 6 },       -- 装甲棕熊
-    [60118] = { itemID = 44223, versionID = 103, source = 1 },       -- 黑色战熊
-    [60119] = { itemID = 44224, versionID = 103, source = 1 },       -- 黑色战熊
-    [60136] = { itemID = 0, versionID = 0, source = 43 },       -- 重型旅行猛犸象
-    [60140] = { itemID = 0, versionID = 0, source = 43 },       -- 重型旅行猛犸象
-    [60424] = { itemID = 44413, versionID = 102, source = 27 },       -- 机械师的摩托车
-    [61229] = { itemID = 44689, versionID = 3, source = 6 },       -- 装甲雪色狮鹫
-    [61230] = { itemID = 44690, versionID = 3, source = 6 },       -- 装甲蓝色驭风者
-    [61294] = { itemID = 44707, versionID = 3, source = 2 },       -- 绿色始祖幼龙
-    [61309] = { itemID = 44558, versionID = 102, source = 31 },       -- 华丽的飞毯
-    [61425] = { itemID = 44235, versionID = 3, source = 6 },       -- 旅行者的苔原猛犸象
-    [61447] = { itemID = 44234, versionID = 3, source = 6 },       -- 旅行者的苔原猛犸象
-    [61451] = { itemID = 44554, versionID = 102, source = 31 },  -- 飞毯
-    [61465] = { itemID = 43959, versionID = 3, source = 5 },       -- 重型黑色猛犸战象
-    [61467] = { itemID = 44083, versionID = 3, source = 5 },       -- 重型黑色猛犸战象
-    [61469] = { itemID = 44086, versionID = 3, source = 302 },       -- 重型冰雪猛犸象
-    [61470] = { itemID = 43961, versionID = 3, source = 302 },       -- 重型冰雪猛犸象
-    [61996] = { itemID = 44843, versionID = 104, source = 1024 },       -- 蓝色龙鹰
-    [61997] = { itemID = 44842, versionID = 104, source = 1024 },       -- 红色龙鹰
-    [62048] = { itemID = 186469, versionID = 100, source = 26 },       -- 伊利达雷末日龙鹰
-    [63232] = { itemID = 45125, versionID = 3, source = 301 },       -- 暴风城战马
-    [63635] = { itemID = 45593, versionID = 3, source = 301 },       -- 暗矛迅猛龙
-    [63636] = { itemID = 45586, versionID = 3, source = 301 },       -- 铁炉堡战羊
-    [63637] = { itemID = 45591, versionID = 3, source = 301 },       -- 达纳苏斯夜刃豹
-    [63638] = { itemID = 45589, versionID = 3, source = 301 },       -- 诺莫瑞根机械陆行鸟
-    [63639] = { itemID = 45590, versionID = 3, source = 301 },       -- 埃索达雷象
-    [63640] = { itemID = 45595, versionID = 3, source = 301 },       -- 奥格瑞玛战狼
-    [63641] = { itemID = 45592, versionID = 3, source = 301 },       -- 雷霆崖科多兽
-    [63642] = { itemID = 45596, versionID = 3, source = 301 },       -- 银月城陆行鸟
-    [63643] = { itemID = 45597, versionID = 3, source = 301 },       -- 被遗忘者战马
-    [63796] = { itemID = 45693, versionID = 3, source = 5 },       -- 米米尔隆的头部
-    [63844] = { itemID = 45725, versionID = 3, source = 301 },       -- 银色角鹰兽
-    [63956] = { itemID = 45801, versionID = 3, source = 1 },       -- 铁箍始祖幼龙
-    [63963] = { itemID = 45802, versionID = 3, source = 1 },       -- 铁锈始祖幼龙
-    [64656] = { itemID = 0, versionID = 0, source = 43 },       -- 蓝色骷髅战马
-    [64657] = { itemID = 46100, versionID = 1, source = 151 },       -- 白色科多兽
-    [64658] = { itemID = 46099, versionID = 1, source = 150 },       -- 黑狼
-    [64659] = { itemID = 46102, versionID = 1, source = 10 },       -- 毒皮暴掠龙
-    [64731] = { itemID = 46109, versionID = 6, source = 34 },       -- 海龟
-    [64927] = { itemID = 46708, versionID = 105, source = 42 },       -- 致命角斗士的冰霜巨龙
-    [64977] = { itemID = 46308, versionID = 1, source = 152 },       -- 黑色骸骨军马
-    [65439] = { itemID = 46171, versionID = 105, source = 42 },       -- 狂怒角斗士的冰霜巨龙
-    [65637] = { itemID = 46745, versionID = 3, source = 301 },       -- 重型红色雷象
-    [65638] = { itemID = 46744, versionID = 3, source = 301 },       -- 迅捷月刃豹
-    [65639] = { itemID = 46751, versionID = 3, source = 301 },       -- 迅捷红色陆行鸟
-    [65640] = { itemID = 46752, versionID = 3, source = 301 },       -- 迅捷灰马
-    [65641] = { itemID = 46750, versionID = 3, source = 301 },       -- 大型金色科多兽
-    [65642] = { itemID = 46747, versionID = 3, source = 301 },       -- 涡轮机械陆行鸟
-    [65643] = { itemID = 46748, versionID = 3, source = 301 },       -- 迅捷紫色战羊
-    [65644] = { itemID = 46743, versionID = 3, source = 301 },       -- 迅捷紫色迅猛龙
-    [65645] = { itemID = 46746, versionID = 3, source = 301 },       -- 白色骷髅战马
-    [65646] = { itemID = 46749, versionID = 3, source = 301 },       -- 迅捷紫鬃战狼
-    [65917] = { itemID = 49290, versionID = 101, source = 48 },       -- 魔法公鸡
-    [66087] = { itemID = 46813, versionID = 3, source = 301 },       -- 银色盟约角鹰兽
-    [66088] = { itemID = 46814, versionID = 3, source = 301 },       -- 夺日者龙鹰
-    [66090] = { itemID = 46815, versionID = 3, source = 301 },       -- 奎尔多雷战马
-    [66091] = { itemID = 46816, versionID = 3, source = 301 },       -- 夺日者陆行鸟
-    [66122] = { itemID = 0, versionID = 0, source = 43 },       -- 魔法公鸡
-    [66123] = { itemID = 0, versionID = 0, source = 43 },       -- 魔法公鸡
-    [66124] = { itemID = 0, versionID = 0, source = 43 },       -- 魔法公鸡
-    [66846] = { itemID = 47101, versionID = 1, source = 152 },       -- 赭色骷髅战马
-    [66847] = { itemID = 47100, versionID = 1, source = 154 },       -- 条纹晨刃豹
-    [66906] = { itemID = 47179, versionID = 3, source = 301 },       -- 银色军马
-    [67336] = { itemID = 47840, versionID = 105, source = 42 },       -- 无情角斗士的冰霜巨龙
-    [67466] = { itemID = 47180, versionID = 3, source = 301 },       -- 银色战马
-    [68056] = { itemID = 49046, versionID = 105, source = 1 },       -- 迅捷部落战狼
-    [68057] = { itemID = 49044, versionID = 105, source = 1 },       -- 迅捷联盟战马
-    [68187] = { itemID = 49096, versionID = 105, source = 1 },       -- 十字军的白色战马
-    [68188] = { itemID = 49098, versionID = 105, source = 1 },       -- 十字军的黑色战马
-    [69395] = { itemID = 49636, versionID = 3, source = 5 },   -- 奥妮克希亚幼龙
-    [69820] = { itemID = 0, versionID = 104, source = 102 },       -- 烈日行者科多兽
-    [69826] = { itemID = 0, versionID = 104, source = 102 },       -- 巨型烈日行者科多兽
-    [71342] = { itemID = 50250, versionID = 100, source = 50 },       -- X-45偷心火箭
-    [71810] = { itemID = 50435, versionID = 105, source = 42 },       -- 暴怒角斗士的冰霜巨龙
-    [72286] = { itemID = 50818, versionID = 3, source = 5 },       -- 无敌
-    [72807] = { itemID = 51955, versionID = 3, source = 1 },       -- 缚寒冰霜征服者
-    [72808] = { itemID = 51954, versionID = 3, source = 1 },       -- 浴血冰霜征服者
-    [73313] = { itemID = 52200, versionID = 3, source = 10 },       -- 血色死亡战马
-    [73629] = { itemID = 0, versionID = 104, source = 102 },       -- 主教的雷象
-    [73630] = { itemID = 0, versionID = 104, source = 102 },       -- 大主教的雷象
-    [74856] = { itemID = 54069, versionID = 101, source = 48 },       -- 炽焰角鹰兽
-    [74918] = { itemID = 54068, versionID = 101, source = 48 },       -- 白毛犀牛
-    [75207] = { itemID = 54465, versionID = 4, source = 10 },       -- 瓦丝琪尔海马
-    [75596] = { itemID = 54797, versionID = 102, source = 31 },       -- 凝霜飞毯
-    [75614] = { itemID = 54811, versionID = 101, source = 20 },       -- 星骓
-    [75973] = { itemID = 54860, versionID = 106, source = 18 },       -- X-53型观光火箭
-    [84751] = { itemID = 60954, versionID = 102, source = 35 },  -- 化石迅猛龙
-    [87090] = { itemID = 0, versionID = 1, source = 173 },       -- 地精三轮摩托
-    [87091] = { itemID = 0, versionID = 1, source = 173 },       -- 地精三轮摩托涡轮增压型
-    [88331] = { itemID = 62900, versionID = 4, source = 1 },   -- 火山石幼龙
-    [88335] = { itemID = 62901, versionID = 4, source = 1 },       -- 东风幼龙
-    [88718] = { itemID = 63042, versionID = 4, source = 4 },       -- 磷光石幼龙
-    [88741] = { itemID = 65356, versionID = 4, source = 401 },       -- 西风幼龙
-    [88742] = { itemID = 63040, versionID = 4, source = 3 },       -- 北风幼龙
-    [88744] = { itemID = 63041, versionID = 4, source = 5 },       -- 南风幼龙
-    [88746] = { itemID = 63043, versionID = 4, source = 3 },       -- 琉璃石幼龙
-    [88748] = { itemID = 63044, versionID = 4, source = 402 },       -- 棕色骑乘骆驼
-    [88749] = { itemID = 63045, versionID = 4, source = 402 },       -- 褐色骑乘骆驼
-    [88750] = { itemID = 63046, versionID = 4, source = 7 },       -- 灰色骑乘骆驼
-    [88990] = { itemID = 63125, versionID = 104, source = 40 },       -- 暗色凤凰
-    [90621] = { itemID = 62298, versionID = 104, source = 40 },       -- 黄金狮王
-    [92155] = { itemID = 64883, versionID = 102, source = 35 },       -- 深蓝其拉作战坦克
-    [92231] = { itemID = 64998, versionID = 4, source = 401 },       -- 鬼灵战马
-    [92232] = { itemID = 64999, versionID = 4, source = 401 },       -- 鬼灵座狼
-    [93326] = { itemID = 65891, versionID = 102, source = 33 },       -- 沙石幼龙
-    [93623] = { itemID = 68008, versionID = 101, source = 48 },       -- 斑纹幼龙
-    [93644] = { itemID = 67107, versionID = 104, source = 40 },       -- 库卡隆横扫者
-    [96491] = { itemID = 68823, versionID = 4, source = 3 },       -- 装甲拉扎什迅猛龙
-    [96499] = { itemID = 68824, versionID = 4, source = 3 },       -- 迅捷祖利安黑豹
-    [96503] = { itemID = 68825, versionID = 101, source = 48 },       -- 阿曼尼龙鹰
-    [97359] = { itemID = 69213, versionID = 4, source = 1 },       -- 浴火角鹰兽
-    [97493] = { itemID = 69224, versionID = 4, source = 5 },       -- 纯血火鹰
-    [97501] = { itemID = 69226, versionID = 104, source = 1024 },       -- 魔能火鹰
-    [97560] = { itemID = 69230, versionID = 4, source = 1 },       -- 堕落火鹰
-    [97581] = { itemID = 69228, versionID = 101, source = 48 },       -- 野蛮迅猛龙
-    [98204] = { itemID = 69747, versionID = 4, source = 3 },       -- 阿曼尼斗熊
-    [98718] = { itemID = 67151, versionID = 4, source = 4 },       -- 驯服的海马
-    [98727] = { itemID = 69846, versionID = 101, source = 20 }, -- 飞翼守护者
-    [100332] = { itemID = 70909, versionID = 103, source = 1 },      -- 勇猛的战驹
-    [100333] = { itemID = 70910, versionID = 103, source = 1 },      -- 勇猛的战狼
-    [101282] = { itemID = 71339, versionID = 105, source = 42 },      -- 残忍角斗士的暮光幼龙
-    [101542] = { itemID = 71665, versionID = 4, source = 5 },      -- 奥利瑟拉佐尔的烈焰之爪
-    [101573] = { itemID = 71718, versionID = 101, source = 48 },      -- 迅捷海滨陆行鸟
-    [101821] = { itemID = 71954, versionID = 105, source = 42 },      -- 冷酷角斗士的暮光幼龙
-    [102346] = { itemID = 72140, versionID = 100, source = 51 },      -- 迅捷森林陆行鸟
-    [102349] = { itemID = 72145, versionID = 100, source = 52 },      -- 迅捷春日陆行鸟
-    [102350] = { itemID = 72146, versionID = 100, source = 50 },      -- 迅捷爱情鸟
-    [102488] = { itemID = 72575, versionID = 101, source = 48 },      -- 白色骑乘骆驼
-    [102514] = { itemID = 72582, versionID = 101, source = 48 },      -- 堕落角鹰兽
-    [103081] = { itemID = 73766, versionID = 100, source = 51 },      -- 暗月跳舞熊
-    [103195] = { itemID = 73838, versionID = 1, source = 155 },      -- 高山马
-    [103196] = { itemID = 73839, versionID = 1, source = 155 },      -- 迅捷高山马
-    [107203] = { itemID = 0, versionID = 101, source = 20 },      -- 泰瑞尔的天使战马
-    [107516] = { itemID = 76889, versionID = 106, source = 18 }, -- 幽灵狮鹫
-    [107517] = { itemID = 76902, versionID = 106, source = 18 }, -- 幽灵驭风者
-    [107842] = { itemID = 77067, versionID = 4, source = 5 },      -- 炽炎幼龙
-    [107844] = { itemID = 77068, versionID = 4, source = 1 },      -- 暮光先驱者
-    [107845] = { itemID = 77069, versionID = 4, source = 5 },      -- 生命缚誓者的仆从
-    [110039] = { itemID = 78919, versionID = 4, source = 5 },      -- 实验体12-B
-    [110051] = { itemID = 78924, versionID = 101, source = 20 },       -- 守护巨龙之心
-    [113120] = { itemID = 79771, versionID = 101, source = 48 },      -- 邪能幼龙
-    [113199] = { itemID = 79802, versionID = 5, source = 501 },      -- 翠绿云端翔龙
-    [118089] = { itemID = 81354, versionID = 5, source = 2 },      -- 天蓝水黾
-    [118737] = { itemID = 81559, versionID = 5, source = 1 },      -- 熊猫人风筝
-    [120043] = { itemID = 82453, versionID = 102, source = 30 },      -- 宝石玛瑙猎豹
-    [120395] = { itemID = 82765, versionID = 1, source = 156 },      -- 绿色龙龟
-    [120822] = { itemID = 82811, versionID = 1, source = 156 },  -- 巨型红色龙龟
-    [121820] = { itemID = 83086, versionID = 105, source = 19 },      -- 黑曜夜之翼
-    [121836] = { itemID = 83090, versionID = 102, source = 30 },      -- 蓝宝石猎豹
-    [121837] = { itemID = 83088, versionID = 102, source = 30 },      -- 翡翠猎豹
-    [121838] = { itemID = 83087, versionID = 102, source = 30 },      -- 红宝石猎豹
-    [121839] = { itemID = 83089, versionID = 102, source = 30 },      -- 日长石猎豹
-    [122708] = { itemID = 84101, versionID = 5, source = 6 },      -- 雄壮远足牦牛
-    [123182] = { itemID = 84753, versionID = 106, source = 1001 },      -- 咔啡牦牛
-    [123886] = { itemID = 85262, versionID = 5, source = 1 },      -- 琥珀巨蝎
-    [123992] = { itemID = 85430, versionID = 5, source = 501 },      -- 碧蓝云端翔龙
-    [123993] = { itemID = 85429, versionID = 5, source = 501 },      -- 金色云端翔龙
-    [124408] = { itemID = 85666, versionID = 104, source = 40 },  -- 雷霆翡翠云端翔龙
-    [124550] = { itemID = 85785, versionID = 105, source = 42 },      -- 灾变角斗士暮光幼龙
-    [124659] = { itemID = 85870, versionID = 101, source = 1007 }, -- 皇家魁麟
-    [126507] = { itemID = 87250, versionID = 102, source = 27 },      -- 衰变凯帕铀火箭
-    [126508] = { itemID = 87251, versionID = 102, source = 27 },      -- 对地同步世界旋转器
-    [127154] = { itemID = 87768, versionID = 5, source = 10 },      -- 玛瑙云端翔龙
-    [127156] = { itemID = 87769, versionID = 5, source = 1 },      -- 猩红云端翔龙
-    [127158] = { itemID = 87771, versionID = 5, source = 8 },      -- 神圣玛瑙云端翔龙
-    [127161] = { itemID = 87773, versionID = 5, source = 1 },      -- 神圣猩红云端翔龙
-    [127164] = { itemID = 87774, versionID = 5, source = 2 },      -- 神圣金色云端翔龙
-    [127165] = { itemID = 87775, versionID = 100, source = 1002 },      -- 玉蕾，青龙之女
-    [127169] = { itemID = 87776, versionID = 104 , source = 1024 },      -- 神圣碧蓝云端翔龙
-    [127170] = { itemID = 87777, versionID = 5, source = 5 },      -- 星光云端翔龙
-    [127174] = { itemID = 87781, versionID = 5, source = 505 },      -- 天蓝骑乘仙鹤
-    [127176] = { itemID = 87782, versionID = 5, source = 505 },      -- 金黄骑乘仙鹤
-    [127177] = { itemID = 87783, versionID = 5, source = 505 },      -- 帝王骑乘仙鹤
-    [127178] = { itemID = 87784, versionID = 106, source = 1001 },      -- 丛林骑乘仙鹤
-    [127209] = { itemID = 87786, versionID = 106, source = 1001 },      -- 黑色骑乘牦牛
-    [127213] = { itemID = 87787, versionID = 106, source = 1001 },      -- 谦逊远足牦牛
-    [127216] = { itemID = 87788, versionID = 5, source = 6 },      -- 灰色骑乘牦牛
-    [127220] = { itemID = 87789, versionID = 5, source = 6 },      -- 金色骑乘牦牛
-    [127271] = { itemID = 87791, versionID = 102, source = 34 },      -- 猩红水黾
-    [127286] = { itemID = 87795, versionID = 1, source = 156 },      -- 黑色龙龟
-    [127287] = { itemID = 91008, versionID = 1, source = 156 },      -- 蓝色龙龟
-    [127288] = { itemID = 91005, versionID = 1, source = 156 },      -- 棕色龙龟
-    [127289] = { itemID = 91006, versionID = 1, source = 156 },      -- 紫色龙龟
-    [127290] = { itemID = 91007, versionID = 1, source = 156 },      -- 红色龙龟
-    [127293] = { itemID = 91012, versionID = 1, source = 156 },      -- 巨型绿色龙龟
-    [127295] = { itemID = 91011, versionID = 1, source = 156 },      -- 巨型黑色龙龟
-    [127302] = { itemID = 91013, versionID = 1, source = 156 },      -- 巨型蓝色龙龟
-    [127308] = { itemID = 91014, versionID = 1, source = 156 },      -- 巨型棕色龙龟
-    [127310] = { itemID = 91015, versionID = 1, source = 156 },      -- 巨型紫色龙龟
-    [129552] = { itemID = 89154, versionID = 105, source = 1003 },      -- 赤红熊猫人凤凰
-    [129918] = { itemID = 89304, versionID = 5, source = 2 },      -- 雷霆天神云端翔龙
-    [129932] = { itemID = 89305, versionID = 5, source = 502 },      -- 绿色影踪派骑乘虎
-    [129934] = { itemID = 89307, versionID = 5, source = 502 },      -- 蓝色影踪派骑乘虎
-    [129935] = { itemID = 89306, versionID = 5, source = 502 },      -- 红色影踪派骑乘虎
-    [130086] = { itemID = 89362, versionID = 5, source = 503 },      -- 棕色骑乘山羊
-    [130092] = { itemID = 89363, versionID = 5, source = 2 },     -- 红色筋斗云
-    [130137] = { itemID = 89390, versionID = 5, source = 503 },      -- 白色骑乘山羊
-    [130138] = { itemID = 89391, versionID = 5, source = 503 },      -- 黑色骑乘山羊
-    [130965] = { itemID = 89783, versionID = 5, source = 8 },      -- 炮舰之子
-    [130985] = { itemID = 89785, versionID = 5, source = 1 },      -- 熊猫人风筝
-    [132036] = { itemID = 90655, versionID = 5, source = 4 },      -- 雷霆红玉云端翔龙
-    [132117] = { itemID = 90710, versionID = 105, source = 1003 },      -- 燃灰熊猫人凤凰
-    [132118] = { itemID = 90711, versionID = 105, source = 1003 },      -- 翠绿熊猫人凤凰
-    [132119] = { itemID = 90712, versionID = 105, source = 1003 },      -- 蓝紫熊猫人凤凰
-    [133023] = { itemID = 91802, versionID = 104, source = 1024 },      -- 翠绿熊猫人风筝
-    [134359] = { itemID = 95416, versionID = 102, source = 27 },      -- 飞天魔像
-    [134573] = { itemID = 92724, versionID = 101, source = 20 },      -- 追风
-    [135416] = { itemID = 93168, versionID = 5, source = 1 },      -- 重装狮鹫
-    [135418] = { itemID = 93169, versionID = 5, source = 1 },      -- 重装双足飞龙
-    [136163] = { itemID = 93385, versionID = 5, source = 10 },  -- 雄壮狮鹫
-    [136164] = { itemID = 93386, versionID = 5, source = 10 },  -- 雄壮双足飞龙
-    [136400] = { itemID = 93662, versionID = 5, source = 1 },      -- 装甲啸天龙
-    [136471] = { itemID = 93666, versionID = 5, source = 5 },      -- 赫利东的子嗣
-    [136505] = { itemID = 93671, versionID = 101, source = 48 },      -- 幽灵军马
-    [138423] = { itemID = 94228, versionID = 5, source = 8 },      -- 冰蓝原始恐角龙
-    [138424] = { itemID = 94230, versionID = 5, source = 4 },      -- 珀光原始恐角龙
-    [138425] = { itemID = 94229, versionID = 5, source = 4 },      -- 岩灰原始恐角龙
-    [138426] = { itemID = 94231, versionID = 5, source = 4 },      -- 翡翠原始恐角龙
-    [138640] = { itemID = 94290, versionID = 5, source = 10 },      -- 白色原始迅猛龙
-    [138641] = { itemID = 94291, versionID = 5, source = 4 },      -- 红色原始迅猛龙
-    [138642] = { itemID = 94292, versionID = 5, source = 4 },      -- 黑色原始迅猛龙
-    [138643] = { itemID = 94293, versionID = 5, source = 4 },      -- 绿色原始迅猛龙
-    [139407] = { itemID = 95041, versionID = 105, source = 42 },      -- 恶毒角斗士云端翔龙
-    [139442] = { itemID = 95057, versionID = 5, source = 8 },      -- 雷霆蓝晶云端翔龙
-    [139448] = { itemID = 95059, versionID = 5, source = 5 },      -- 季鹍之嗣
-    [139595] = { itemID = 95341, versionID = 101, source = 20 },      -- 装甲血翼蝠
-    [140249] = { itemID = 95564, versionID = 5, source = 1 },      -- 黄金原始恐角龙
-    [140250] = { itemID = 95565, versionID = 5, source = 1 },      -- 深红原始恐角龙
-    [142073] = { itemID = 98618, versionID = 101, source = 1004 },      -- 炉石天马
-    [142266] = { itemID = 98104, versionID = 104, source = 1024 },      -- 红色装甲龙鹰
-    [142478] = { itemID = 98259, versionID = 104, source = 1024 },      -- 蓝色装甲龙鹰
-    [142641] = { itemID = 98405, versionID = 105, source = 1005 },      -- 拳手的健壮穆山兽
-    [142878] = { itemID = 97989, versionID = 101, source = 20 },      -- 魔法灵龙
-    [142910] = { itemID = 129922, versionID = 100, source = 1002 },      -- 铁箍鬼灵战马
-    [146615] = { itemID = 102514, versionID = 103, source = 1006 },      -- 勇猛卡多雷作战刃豹
-    [146622] = { itemID = 102533, versionID = 103, source = 1006 },      -- 邪恶骷髅战马
-    [148392] = { itemID = 104208, versionID = 5, source = 1 },      -- 迦拉卡斯的子嗣
-    [148396] = { itemID = 104246, versionID = 105, source = 1 },      -- 库卡隆战狼
-    [148417] = { itemID = 104253, versionID = 5, source = 5 },      -- 库卡隆战蝎
-    [148428] = { itemID = 103638, versionID = 103, source = 504 },      -- 灰皮穆山兽
-    [148476] = { itemID = 104269, versionID = 5, source = 4 },      -- 雷霆玛瑙云端翔龙
-    [148618] = { itemID = 104325, versionID = 105, source = 42 },      -- 暴虐角斗士云端翔龙
-    [148619] = { itemID = 104326, versionID = 105, source = 42 },      -- 恶孽角斗士云端翔龙
-    [148620] = { itemID = 104327, versionID = 105, source = 42 },      -- 骄矜角斗士云端翔龙
-    [149801] = { itemID = 106246, versionID = 105, source = 19 },      -- 翡翠角鹰兽
-    [153489] = { itemID = 107951, versionID = 101, source = 20 },      -- 钢铁碎天兽
-    [155741] = { itemID = 109013, versionID = 101, source = 1007 },      -- 恐惧渡鸦
-    [163024] = { itemID = 112326, versionID = 101, source = 20 }, -- 战火梦魇兽
-    [163025] = { itemID = 112327, versionID = 101, source = 20 }, -- 狞笑掠夺者
-    [169952] = { itemID = 115363, versionID = 102, source = 31 },      -- 蠕行飞毯
-    [170347] = { itemID = 115484, versionID = 106, source = 26 },      -- 熔火恶犬
-    [171436] = { itemID = 116383, versionID = 6, source = 1 },      -- 踏血小戈隆
-    [171616] = { itemID = 116655, versionID = 6, source = 6 },      -- 枯皮悬崖践踏者
-    [171617] = { itemID = 116656, versionID = 6, source = 601 },      -- 驯养的冰蹄牛
-    [171619] = { itemID = 116658, versionID = 6, source = 4 },      -- 苔原冰蹄牛
-    [171620] = { itemID = 116659, versionID = 6, source = 4 },      -- 血蹄公牛
-    [171621] = { itemID = 116660, versionID = 6, source = 5 },      -- 铁蹄毁灭者
-    [171622] = { itemID = 116661, versionID = 6, source = 4 },      -- 斑点草地践踏者
-    [171623] = { itemID = 116662, versionID = 6, source = 601 },      -- 驯养的草地践踏者
-    [171624] = { itemID = 116663, versionID = 6, source = 602 },      -- 暗皮珠齿象
-    [171625] = { itemID = 116664, versionID = 6, source = 2 },      -- 土色岩皮雷象
-    [171626] = { itemID = 116665, versionID = 6, source = 18 },      -- 装甲铁牙践踏者
-    [171627] = { itemID = 116666, versionID = 104, source = 40 },      -- 黑钢斗猪
-    [171628] = { itemID = 116667, versionID = 6, source = 6 },      -- 石牙斗猪
-    [171629] = { itemID = 116668, versionID = 6, source = 601 },      -- 装甲霜鬃野猪
-    [171630] = { itemID = 116669, versionID = 6, source = 4 },      -- 装甲刀脊野猪
-    [171632] = { itemID = 116670, versionID = 6, source = 1 },      -- 霜原斗猪
-    [171633] = { itemID = 116671, versionID = 6, source = 2 },      -- 野生血牙野猪
-    [171634] = { itemID = 116672, versionID = 6, source = 6 },      -- 驯养的刀脊野猪
-    [171635] = { itemID = 116673, versionID = 6, source = 602 },      -- 巨型冻吻野猪
-    [171636] = { itemID = 116674, versionID = 6, source = 4 },      -- 巨型灰牙野猪
-    [171637] = { itemID = 116675, versionID = 6, source = 601 },      -- 驯养的石牙野猪
-    [171638] = { itemID = 116676, versionID = 6, source = 601 },      -- 驯养的淡水兽
-    [171824] = { itemID = 116767, versionID = 6, source = 4 },      -- 天蓝淡水兽
-    [171825] = { itemID = 116768, versionID = 6, source = 6 },      -- 苔皮淡水兽
-    [171826] = { itemID = 116769, versionID = 6, source = 10 },      -- 泥背淡水兽
-    [171827] = { itemID = 137575, versionID = 7, source = 5 },      -- 炎狱地狱火
-    [171828] = { itemID = 116771, versionID = 6, source = 8 },      -- 日光峰林飞鹰
-    [171829] = { itemID = 116772, versionID = 6, source = 2 },      -- 暗鬃冲锋者
-    [171830] = { itemID = 116773, versionID = 6, source = 4 },      -- 迅捷风蹄塔布羊
-    [171831] = { itemID = 116774, versionID = 6, source = 601 },      -- 驯养的银鬃塔布羊
-    [171832] = { itemID = 116775, versionID = 6, source = 2 },      -- 风蹄公羊
-    [171833] = { itemID = 116776, versionID = 6, source = 2 },      -- 苍白食棘者
-    [171834] = { itemID = 116777, versionID = 103, source = 1006 },      -- 勇猛战羊
-    [171835] = { itemID = 116778, versionID = 103, source = 1006 },      -- 勇猛作战迅猛龙
-    [171836] = { itemID = 116779, versionID = 6, source = 602 },      -- 钢喉铁颚狼
-    [171837] = { itemID = 116780, versionID = 6, source = 4 },      -- 战歌恐牙狼
-    [171838] = { itemID = 116781, versionID = 6, source = 601 },      -- 装甲霜狼
-    [171839] = { itemID = 116782, versionID = 6, source = 18 },      -- 铁甲战狼
-    [171840] = { itemID = 137576, versionID = 106, source = 18 },      -- 冷焰地狱火
-    [171841] = { itemID = 116784, versionID = 6, source = 601 },      -- 驯养的啸狼
-    [171842] = { itemID = 116785, versionID = 6, source = 2 },      -- 迅捷霜狼
-    [171843] = { itemID = 116786, versionID = 6, source = 602 },      -- 烟灰恐狼
-    [171844] = { itemID = 108883, versionID = 102, source = 29 },      -- 灰鬃恐狼
-    [171845] = { itemID = 116788, versionID = 104, source = 1008 },      -- 督军的死亡之轮
-    [171846] = { itemID = 116789, versionID = 104, source = 1008 },      -- 勇士的践踏之刃
-    [171847] = { itemID = 118515, versionID = 106, source = 18 },      -- 烬鬃战马
-    [171848] = { itemID = 116791, versionID = 105, source = 603 },      -- 挑战者的作战雪人
-    [171849] = { itemID = 116792, versionID = 6, source = 4 },      -- 阳炎之肤小戈隆
-    [171850] = { itemID = 137573, versionID = 7, source = 10 },      -- 洛希恩徘徊者
-    [171851] = { itemID = 116794, versionID = 6, source = 4 },      -- 夜嚎铁颚狼
-    [175700] = { itemID = 118676, versionID = 104, source = 1024 },      -- 翡翠幼龙
-    [179244] = { itemID = 122703, versionID = 104, source = 1025 },      -- 代驾型机械路霸
-    [179245] = { itemID = 120968, versionID = 104, source = 1025 },      -- 代驾型机械师的摩托车
-    [179478] = { itemID = 121815, versionID = 6, source = 4 },      -- 黑暗之星的灵爪飞鹰
-    [180545] = { itemID = 122469, versionID = 101, source = 20 },      -- 秘魔刃豹
-    [182912] = { itemID = 123890, versionID = 6, source = 5 },      -- 魔钢歼灭者
-    [183117] = { itemID = 123974, versionID = 6, source = 2 },      -- 腐化恐翼鸦
-    [183889] = { itemID = 124089, versionID = 103, source = 1006 },      -- 勇猛的战斗机械陆行鸟
-    [185052] = { itemID = 124540, versionID = 103, source = 1006 },      -- 勇猛的科多战兽
-    [186305] = { itemID = 127140, versionID = 6, source = 1 },      -- 地火恐狼
-    [186828] = { itemID = 128277, versionID = 105, source = 42 }, -- 原祖角斗士的魔血小戈隆
-    [189043] = { itemID = 128281, versionID = 105, source = 42 },      -- 狂野角斗士的魔血小戈隆
-    [189044] = { itemID = 128282, versionID = 105, source = 42 },      -- 好战角斗士的魔血小戈隆
-    [189364] = { itemID = 128311, versionID = 6, source = 10 },      -- 煤拳小戈隆
-    [189998] = { itemID = 128425, versionID = 101, source = 1007 },      -- 伊利达雷魔犬
-    [189999] = { itemID = 128422, versionID = 105, source = 1023 },      -- 林地守卫者
-    [190690] = { itemID = 128480, versionID = 6, source = 2 },      -- 钢鬃地狱野猪
-    [190977] = { itemID = 128526, versionID = 6, source = 2 },      -- 死牙魔能野猪
-    [191314] = { itemID = 128671, versionID = 100, source = 53 },      -- 格噜普斯的爪牙
-    [191633] = { itemID = 128706, versionID = 6, source = 1 },      -- 飞天魔龙
-    [193007] = { itemID = 141216, versionID = 7, source = 1 },      -- 林地污染者
-    [193695] = { itemID = 129280, versionID = 103, source = 1 },      -- 声威战马
-    [194046] = { itemID = 0, versionID = 0, source = 43 },      -- 迅捷幽灵双头飞龙
-    [194464] = { itemID = 129923, versionID = 100, source = 1002 },      -- 日蚀龙鹰
-    [196681] = { itemID = 131734, versionID = 102, source = 35 },      -- 艾特洛之魂
-    [200175] = { itemID = 0, versionID = 104, source = 103 },      -- 邪刃豹
-    [201098] = { itemID = 133543, versionID = 100, source = 1002 },      -- 永恒时空撕裂者
-    [204166] = { itemID = 143864, versionID = 103, source = 1 },      -- 声威战狼
-    [213115] = { itemID = 137570, versionID = 7, source = 6 },      -- 血牙寡妇蛛
-    [213134] = { itemID = 137574, versionID = 7, source = 5 },      -- 邪焰地狱火
-    [213158] = { itemID = 137577, versionID = 7, source = 10 },      -- 掠食血眼龙
-    [213163] = { itemID = 137578, versionID = 7, source = 10 },      -- 雪羽猎龙
-    [213164] = { itemID = 137579, versionID = 7, source = 10 },      -- 火羽恐嘴龙
-    [213165] = { itemID = 137580, versionID = 7, source = 10 },      -- 翠绿利爪龙
-    [213209] = { itemID = 137686, versionID = 102, source = 28 },      -- 钢缚吞噬者
-    [213339] = { itemID = 129962, versionID = 102, source = 29 },      -- 巨型北地大角鹿
-    [213349] = { itemID = 137615, versionID = 0, source = 1026 },      -- 炎核地狱火
-    [213350] = { itemID = 137614, versionID = 104, source = 1024 },      -- 霜裂地狱火
-    [214791] = { itemID = 138811, versionID = 102, source = 34 },      -- 深海喂食者
-    [215159] = { itemID = 138258, versionID = 7, source = 44 },      -- 失落已久的角鹰兽
-    [215545] = { itemID = 186479, versionID = 9, source = 904 },      -- 精铸墓翼蝠
-    [215558] = { itemID = 138387, versionID = 104, source = 1 },      -- 骑乘巨鼠
-    [222202] = { itemID = 140228, versionID = 103, source = 1009 },      -- 声威青铜骏马
-    [222236] = { itemID = 140230, versionID = 103, source = 1009 },      -- 声威皇室骏马
-    [222237] = { itemID = 140232, versionID = 103, source = 1009 },      -- 声威森林骏马
-    [222238] = { itemID = 140233, versionID = 103, source = 1009 },      -- 声威牙白骏马
-    [222240] = { itemID = 140408, versionID = 103, source = 1009 },      -- 声威蔚蓝骏马
-    [222241] = { itemID = 140407, versionID = 103, source = 1009 },      -- 声威午夜骏马
-    [223018] = { itemID = 138201, versionID = 7, source = 44 },      -- 深海水母
-    [223341] = { itemID = 140353, versionID = 103, source = 1006 },      -- 勇猛的吉尔尼斯战马
-    [223354] = { itemID = 140354, versionID = 103, source = 1006 },      -- 勇猛的战车
-    [223363] = { itemID = 140348, versionID = 103, source = 1006 },      -- 勇猛作战陆行鸟
-    [223578] = { itemID = 140350, versionID = 103, source = 1006 },      -- 勇猛的作战雷象
-    [223814] = { itemID = 140500, versionID = 104, source = 1 },      -- 机械化木材采集器
-    [225765] = { itemID = 141217, versionID = 7, source = 1 },      -- 魔羽角鹰兽
-    [227956] = { itemID = 141713, versionID = 7, source = 6 },      -- 阿坎迪安战龟
-    [227986] = { itemID = 141843, versionID = 105, source = 42 },      -- 血仇角斗士的风暴巨龙
-    [227988] = { itemID = 141844, versionID = 105, source = 42 },      -- 无畏角斗士的风暴巨龙
-    [227989] = { itemID = 141845, versionID = 105, source = 42 },      -- 残虐角斗士的风暴巨龙
-    [227991] = { itemID = 141846, versionID = 105, source = 42 },      -- 凶猛角斗士的风暴巨龙
-    [227994] = { itemID = 141847, versionID = 105, source = 42 },      -- 暴烈角斗士的风暴巨龙
-    [227995] = { itemID = 141848, versionID = 105, source = 42 },      -- 专横角斗士的风暴巨龙
-    [228919] = { itemID = 142398, versionID = 100, source = 51 },      -- 暗水鳐鱼
-    [229376] = { itemID = 0, versionID = 7, source = 1010 },      -- 大法师的棱光飞碟
-    [229377] = { itemID = 0, versionID = 7, source = 1010 },      -- 大祭司的光誓寻觅者
-    [229385] = { itemID = 142225, versionID = 7, source = 1010 },      -- 班禄，大宗师的伙伴
-    [229386] = { itemID = 142227, versionID = 7, source = 1010 },      -- 狩猎大师的忠诚狼鹰
-    [229387] = { itemID = 142231, versionID = 7, source = 1010 },      -- 死亡领主的邪嗣征服者
-    [229388] = { itemID = 142232, versionID = 7, source = 1010 },      -- 战争领主的嗜血战龙
-    [229417] = { itemID = 0, versionID = 7, source = 1010 },      -- 屠魔者的破邪尖啸者
-    [229438] = { itemID = 142226, versionID = 7, source = 1010 },      -- 狩猎大师的凶猛狼鹰
-    [229439] = { itemID = 142228, versionID = 7, source = 1010 },      -- 狩猎大师的恐怖狼鹰
-    [229486] = { itemID = 142235, versionID = 103, source = 1006 },      -- 邪恶战熊
-    [229487] = { itemID = 142234, versionID = 103, source = 1006 },      -- 邪恶战熊
-    [229499] = { itemID = 142236, versionID = 7, source = 3 },      -- 午夜
-    [229512] = { itemID = 142237, versionID = 103, source = 1006 },      -- 邪恶战狮
-    [230401] = { itemID = 142369, versionID = 103, source = 2 },      -- 乳白陆行鸟
-    [230844] = { itemID = 142403, versionID = 105, source = 1005 }, -- 拳手的健壮蜥蜴
-    [230987] = { itemID = 142436, versionID = 7, source = 10 },      -- 奥术师的魔刃豹
-    [230988] = { itemID = 142437, versionID = 103, source = 1006 },      -- 邪恶战蝎
-    [231428] = { itemID = 142552, versionID = 7, source = 3 },      -- 燃烬巨龙
-    [231434] = { itemID = 143493, versionID = 7, source = 1010 },      -- 暗影之刃的谋杀预兆
-    [231435] = { itemID = 143502, versionID = 7, source = 1010 },      -- 大领主的金辉战马
-    [231442] = { itemID = 143489, versionID = 7, source = 1010 },      -- 先知的狂怒风暴
-    [231523] = { itemID = 143492, versionID = 7, source = 1010 },      -- 暗影之刃的致命预兆
-    [231524] = { itemID = 143491, versionID = 7, source = 1010 },      -- 暗影之刃的怨恨预兆
-    [231525] = { itemID = 143490, versionID = 7, source = 1010 },      -- 暗影之刃的猩红预兆
-    [231587] = { itemID = 143503, versionID = 7, source = 1010 },      -- 大领主的复仇战马
-    [231588] = { itemID = 143504, versionID = 7, source = 1010 },      -- 大领主的警戒战马
-    [231589] = { itemID = 143505, versionID = 7, source = 1010 },      -- 大领主的英勇战马
-    [232405] = { itemID = 143631, versionID = 105, source = 1011 },      -- 原始火刃豹
-    [232412] = { itemID = 0, versionID = 7, source = 1010 },      -- 虚空之王的混沌愤怒战马
-    [232519] = { itemID = 143643, versionID = 7, source = 5 },      -- 深渊蠕虫
-    [232523] = { itemID = 143648, versionID = 103, source = 1006 },      -- 邪恶战龟
-    [232525] = { itemID = 143649, versionID = 103, source = 1006 },      -- 邪恶战龟
-    [233364] = { itemID = 143764, versionID = 7, source = 16 },      -- 织魔飞毯
-    [235764] = { itemID = 152843, versionID = 7, source = 4 },      -- 暗孢法力鳐
-    [237286] = { itemID = 163576, versionID = 8, source = 1012 },      -- 沙丘食腐狼
-    [237287] = { itemID = 161773, versionID = 8, source = 2 },      -- 灰白土狼
-    [238452] = { itemID = 143637, versionID = 7, source = 1010 },      -- 虚空之王的硫磺愤怒战马
-    [238454] = { itemID = 142233, versionID = 7, source = 1010 },      -- 虚空之王的诅咒愤怒战马
-    [239013] = { itemID = 152788, versionID = 7, source = 2 },      -- 光铸战争机甲
-    [239049] = { itemID = 161215, versionID = 8, source = 1 },      -- 黑曜三叶虫
-    [239363] = { itemID = 0, versionID = 0, source = 43 },      -- 迅捷幽灵角鹰兽
-    [239766] = { itemID = 151626, versionID = 106, source = 1029 },      -- 蓝色其拉主战坦克
-    [239767] = { itemID = 151625, versionID = 106, source = 1029 },      -- 红色其拉主战坦克
-    [239770] = { itemID = 0, versionID = 106, source = 1029 },      -- 黑色其拉主战坦克
-    [242305] = { itemID = 152791, versionID = 7, source = 2 },      -- 黑色废墟游荡者
-    [242874] = { itemID = 147807, versionID = 7, source = 16 }, -- 至高岭大角鹿
-    [242875] = { itemID = 147804, versionID = 7, source = 16 }, -- 野生梦境角马
-    [242881] = { itemID = 147806, versionID = 7, source = 16 },      -- 云翼角鹰兽
-    [242882] = { itemID = 147805, versionID = 7, source = 16 },      -- 瓦拉加尔风暴之翼幼龙
-    [242896] = { itemID = 152870, versionID = 103, source = 1006 },      -- 勇猛的战狐
-    [242897] = { itemID = 152869, versionID = 103, source = 1006 },      -- 勇猛的战狐
-    [243025] = { itemID = 147835, versionID = 7, source = 44 },      -- 谜语人的灵蛇
-    [243201] = { itemID = 153493, versionID = 105, source = 42 },      -- 恶魔角斗士的风暴巨龙
-    [243512] = { itemID = 147901, versionID = 101, source = 20 },      -- 微光逐星者
-    [243651] = { itemID = 152789, versionID = 7, source = 5 },      -- 带镣铐的乌祖尔
-    [243652] = { itemID = 152790, versionID = 7, source = 4 },      -- 邪犬
-    [243795] = { itemID = 163575, versionID = 8, source = 1012 },      -- 跃泽巨蛛
-    [244712] = { itemID = 161664, versionID = 8, source = 2 },      -- 幽灵飞翼龙
-    [245723] = { itemID = 151618, versionID = 101, source = 22 },      -- 暴风城逐天战机
-    [245725] = { itemID = 151617, versionID = 101, source = 22 },      -- 奥格瑞玛拦截飞艇
-    [247402] = { itemID = 151623, versionID = 7, source = 44 },      -- 清醒的梦魇
-    [247448] = { itemID = 153485, versionID = 100, source = 51 },      -- 暗月飞船
-    [250735] = { itemID = 163216, versionID = 8, source = 1 },      -- 充血抱齿兽
-    [253004] = { itemID = 152794, versionID = 7, source = 2 },      -- 紫色废墟游荡者
-    [253005] = { itemID = 152795, versionID = 7, source = 2 },      -- 绿色废墟游荡者
-    [253006] = { itemID = 152793, versionID = 7, source = 2 },      -- 褐色废墟游荡者
-    [253007] = { itemID = 152797, versionID = 7, source = 2 },      -- 蓝色废墟游荡者
-    [253008] = { itemID = 152796, versionID = 7, source = 2 },      -- 棕色废墟游荡者
-    [253058] = { itemID = 152814, versionID = 7, source = 4 },      -- 疯狂的混沌奔行者
-    [253087] = { itemID = 152815, versionID = 7, source = 1 },      -- 安托兰阴暗恶犬
-    [253088] = { itemID = 152816, versionID = 7, source = 5 },      -- 安托兰灼焦恶犬
-    [253106] = { itemID = 152842, versionID = 7, source = 4 }, -- 活跃法力鳐
-    [253107] = { itemID = 152844, versionID = 7, source = 4 }, -- 柔光法力鳐
-    [253108] = { itemID = 152841, versionID = 7, source = 4 }, -- 邪光法力鳐
-    [253109] = { itemID = 152840, versionID = 7, source = 4 }, -- 荧光法力鳐
-    [253639] = { itemID = 152901, versionID = 105, source = 1023 },      -- 紫罗兰魔翼鸦
-    [253660] = { itemID = 152903, versionID = 7, source = 4 },      -- 毒牙撕咬者
-    [253661] = { itemID = 152905, versionID = 7, source = 4 },      -- 赤红涎喉者
-    [253662] = { itemID = 152904, versionID = 7, source = 4 },      -- 酸液喷射者
-    [253711] = { itemID = 152912, versionID = 102, source = 34 },      -- 池塘水母
-    [254069] = { itemID = 153042, versionID = 7, source = 16 },      -- 荣耀邪能碾压者
-    [254258] = { itemID = 153043, versionID = 7, source = 16 },      -- 祝福邪能碾压者
-    [254259] = { itemID = 153044, versionID = 7, source = 16 },      -- 复仇邪能碾压者
-    [254260] = { itemID = 153041, versionID = 7, source = 1 },      -- 黯蹄废墟游荡者
-    [254811] = { itemID = 163586, versionID = 8, source = 1014 },      -- 呱呱鹦鹉
-    [254812] = { itemID = 233242, versionID = 106, source = 1015 },      -- 皇家海羽鹦鹉
-    [254813] = { itemID = 159842, versionID = 8, source = 3 },      -- 鲨鱼饵
-    [255695] = { itemID = 153539, versionID = 101, source = 1007 },      -- 海鬃骏马
-    [255696] = { itemID = 153540, versionID = 101, source = 1007 },      -- 奢华暴掠龙
-    [256123] = { itemID = 153594, versionID = 102, source = 27 },      -- 斯克维里加全地形载具
-    [258022] = { itemID = 155656, versionID = 1, source = 157 },      -- 光铸邪能碾压者
-    [258060] = { itemID = 155662, versionID = 1, source = 158 },      -- 至高岭雷蹄驼鹿
-    [258845] = { itemID = 156487, versionID = 1, source = 159 },      -- 夜之子魔刃豹
-    [259202] = { itemID = 156486, versionID = 1, source = 160 },      -- 星怨虚空陆行鸟
-    [259213] = { itemID = 161911, versionID = 8, source = 2 },      -- 海军骏马
-    [259395] = { itemID = 156564, versionID = 101, source = 20 },      -- 戌禅，神圣护卫
-    [259740] = { itemID = 163183, versionID = 8, source = 6 },      -- 青绿沼泽跃蛙
-    [259741] = { itemID = 170069, versionID = 8, source = 10 },      -- 蜜背收割者
-    [260172] = { itemID = 161912, versionID = 8, source = 2 },      -- 暗斑灰马
-    [260173] = { itemID = 161910, versionID = 8, source = 2 },      -- 雾黑军马
-    [260174] = { itemID = 163574, versionID = 8, source = 1012 },      -- 惊怖驮骡
-    [260175] = { itemID = 163573, versionID = 8, source = 1012 },      -- 金鬃
-    [261395] = { itemID = 156798, versionID = 8, source = 44 },      -- 主脑
-    [261433] = { itemID = 163122, versionID = 103, source = 1006},      -- 勇猛的战蜥
-    [261434] = { itemID = 163121, versionID = 103, source = 1006},      -- 勇猛的战蜥
-    [261437] = { itemID = 161134, versionID = 102, source = 27 },      -- 机甲大亨Mk2型
-    [262022] = { itemID = 156879, versionID = 105, source = 42 },      -- 悚然角斗士的始祖幼龙
-    [262023] = { itemID = 156880, versionID = 105, source = 42 },      -- 惊恶角斗士的始祖幼龙
-    [262024] = { itemID = 156881, versionID = 105, source = 42 },      -- 罪邪角斗士的始祖幼龙
-    [262027] = { itemID = 156884, versionID = 105, source = 42 },      -- 腐化角斗士的始祖幼龙
-    [263707] = { itemID = 157870, versionID = 1, source = 161 },      -- 赞达拉恐角龙
-    [264058] = { itemID = 163042, versionID = 105, source = 41 },      -- 雄壮商队雷龙
-    [266058] = { itemID = 159921, versionID = 8, source = 3 }, -- 墓穴猎手
-    [266925] = { itemID = 166745, versionID = 8, source = 1014 },      -- 泥翼信天翁
-    [267270] = { itemID = 159146, versionID = 8, source = 10 },      -- 库亚冯
-    [267274] = { itemID = 161330, versionID = 1, source = 162 },      -- 玛格汉恐狼
-    [270560] = { itemID = 163124, versionID = 103, source = 1006 },      -- 勇猛的作战裂蹄牛
-    [270562] = { itemID = 0, versionID = 104, source = 102 },      -- 暗炉山羊
-    [270564] = { itemID = 0, versionID = 104, source = 102 },      -- 晨炉山羊
-    [271646] = { itemID = 161331, versionID = 1, source = 163 },      -- 黑铁熔火犬
-    [272472] = { itemID = 163128, versionID = 8, source = 10 },      -- 幽暗城天灾蝙蝠
-    [272481] = { itemID = 163123, versionID = 103, source = 1006 },      -- 勇猛的作战淡水兽
-    [272770] = { itemID = 160589, versionID = 101, source = 20 },      -- 惊魂号
-    [273541] = { itemID = 160829, versionID = 8, source = 3 },      -- 孢林抱齿兽
-    [274610] = { itemID = 163127, versionID = 8, source = 10 },      -- 泰达希尔角鹰兽
-    [275623] = { itemID = 161479, versionID = 8, source = 4 },      -- 纳沙塔尔鲜血巨蛇
-    [275837] = { itemID = 161665, versionID = 8, source = 2 },      -- 钴蓝翼手龙
-    [275838] = { itemID = 161666, versionID = 8, source = 2 },      -- 捕获的沼泽追猎者
-    [275840] = { itemID = 161667, versionID = 8, source = 2 },      -- 沃顿奈破沙者
-    [275841] = { itemID = 161774, versionID = 8, source = 2 },      -- 远征队群居血虱
-    [275859] = { itemID = 161908, versionID = 8, source = 2 },      -- 薄暮维克雷斯狮鹫
-    [275866] = { itemID = 161909, versionID = 8, source = 2 },      -- 斯托颂眺海狮鹫
-    [275868] = { itemID = 161879, versionID = 8, source = 2 },      -- 普罗德摩尔观潮狮鹫
-    [278803] = { itemID = 163131, versionID = 102, source = 34 },      -- 无尽之海鳐鱼
-    [278966] = { itemID = 163186, versionID = 101, source = 1004 },      -- 炽焰炉石天马
-    [278979] = { itemID = 163585, versionID = 8, source = 1014 },      -- 拍浪水母
-    [279454] = { itemID = 163577, versionID = 8, source = 1 },      -- 征服者的镰牙之喉
-    [279456] = { itemID = 163579, versionID = 8, source = 801 },      -- 高地野马
-    [279457] = { itemID = 163578, versionID = 8, source = 801 },      -- 失意高地野马
-    [279466] = { itemID = 163584, versionID = 8, source = 1014 },      -- 暮光复仇者
-    [279467] = { itemID = 163583, versionID = 8, source = 1014 },      -- 岩角跃渊者
-    [279469] = { itemID = 163582, versionID = 8, source = 1014 },      -- 秦薛的永恒魁麟
-    [279474] = { itemID = 163589, versionID = 8, source = 6 },      -- 灰皮恐角龙
-    [279569] = { itemID = 163644, versionID = 8, source = 801 },      -- 迅捷白化迅猛龙
-    [279608] = { itemID = 163646, versionID = 8, source = 801 },      -- 小毛驴
-    [279611] = { itemID = 163645, versionID = 8, source = 801 },      -- 啮颅者
-    [279868] = { itemID = 163706, versionID = 8, source = 801 },      -- 枯木恐翼蝠
-    [280729] = { itemID = 163981, versionID = 8, source = 1 },      -- 狂暴的邪能之爪
-    [280730] = { itemID = 163982, versionID = 104, source = 1 },      -- 纯心骏马
-    [281044] = { itemID = 164250, versionID = 103, source = 1009 },      -- 声威血铸骏马
-    [281554] = { itemID = 164571, versionID = 101, source = 1016 },      -- 清道夫
-    [281887] = { itemID = 165019, versionID = 103, source = 1006 },      -- 黑色邪恶作战刃豹
-    [281888] = { itemID = 173714, versionID = 103, source = 1006 },      -- 白色邪恶作战刃豹
-    [281889] = { itemID = 173713, versionID = 103, source = 1006 },      -- 白色邪恶骨骥
-    [281890] = { itemID = 165020, versionID = 103, source = 1006 },      -- 黑色邪恶骨骥
-    [282682] = { itemID = 164762, versionID = 1, source = 164 },      -- 库尔提拉斯军马
-    [288438] = { itemID = 166438, versionID = 8, source = 802 },      -- 黑掌
-    [288495] = { itemID = 166432, versionID = 8, source = 802 },      -- 灰谷奇美拉
-    [288499] = { itemID = 166433, versionID = 8, source = 802 },      -- 惊恐的科多兽
-    [288503] = { itemID = 166803, versionID = 8, source = 802 },      -- 珀色夜刃豹
-    [288505] = { itemID = 166435, versionID = 8, source = 802 },      -- 卡多雷夜刃豹
-    [288506] = { itemID = 166436, versionID = 8, source = 6 },      -- 沙色夜刃豹
-    [288587] = { itemID = 166442, versionID = 8, source = 6 }, -- 靛蓝沼泽跃蛙
-    [288589] = { itemID = 166443, versionID = 8, source = 6 }, -- 土黄沼泽跃蛙
-    [288711] = { itemID = 166471, versionID = 8, source = 1014 },      -- 咸水海马
-    [288712] = { itemID = 166470, versionID = 8, source = 1014 },      -- 石皮大角鹿
-    [288714] = { itemID = 166469, versionID = 8, source = 6 },      -- 嗜血恐翼蝠
-    [288720] = { itemID = 166468, versionID = 8, source = 1014 },      -- 充血猎蝠
-    [288721] = { itemID = 166467, versionID = 8, source = 1014 },      -- 海岛雷鳞龙
-    [288722] = { itemID = 166466, versionID = 8, source = 1014 },      -- 复活的骒马
-    [288735] = { itemID = 166464, versionID = 8, source = 6 },      -- 赤壳三叶虫
-    [288736] = { itemID = 166465, versionID = 8, source = 6 },      -- 靛壳三叶虫
-    [288740] = { itemID = 166463, versionID = 8, source = 6 },      -- 女祭司的月刃豹
-    [289083] = { itemID = 166518, versionID = 8, source = 5 }, -- 加氏灭世机甲
-    [289101] = { itemID = 166539, versionID = 8, source = 1 }, -- 达萨罗破风龙
-    [289555] = { itemID = 166705, versionID = 8, source = 5 },      -- 冰川狂潮
-    [289639] = { itemID = 166724, versionID = 105, source = 1005 },      -- 布鲁斯
-    [290132] = { itemID = 166776, versionID = 101, source = 20 }, -- 希尔维安神游者
-    [290133] = { itemID = 166775, versionID = 101, source = 20 }, -- 狡狐魔使
-    [290134] = { itemID = 166774, versionID = 101, source = 20 }, -- 霍格鲁斯，鸿运亥客
-    [290328] = { itemID = 169162, versionID = 8, source = 1 },      -- 奇迹之翼2.0版
-    [290608] = { itemID = 0, versionID = 104, source = 102 },      -- 十字军恐角龙
-    [290718] = { itemID = 168830, versionID = 8, source = 3 },      -- R-21/X型空中单位
-    [291492] = { itemID = 168823, versionID = 8, source = 4 },      -- 生锈的机械爬蛛
-    [291538] = { itemID = 167170, versionID = 8, source = 2 },      -- 破镣者海波鳐
-    [292407] = { itemID = 167167, versionID = 8, source = 2 },      -- 剑鱼人海波鳐
-    [292419] = { itemID = 167171, versionID = 8, source = 1 },      -- 艾萨莉膨水鳐
-    [294038] = { itemID = 169198, versionID = 8, source = 16 },      -- 皇家毒鳍龙
-    [294039] = { itemID = 169194, versionID = 8, source = 1 },      -- 劈背凿孔蟹
-    [294143] = { itemID = 167751, versionID = 8, source = 17 },      -- X-995型机械猫
-    [294197] = { itemID = 172012, versionID = 106, source = 26 }, -- 黑曜石灭世者
-    [294568] = { itemID = 167894, versionID = 100, source = 1002 },      -- 兽王的钢牙雷象
-    [294569] = { itemID = 167895, versionID = 100, source = 1002 },      -- 兽王的战狼
-    [295386] = { itemID = 168056, versionID = 8, source = 1 },      -- 铁甲霜爪狼
-    [295387] = { itemID = 168055, versionID = 8, source = 1 },      -- 血肋战马
-    [296788] = { itemID = 168329, versionID = 8, source = 1 },      -- 机轮车W型
-    [297157] = { itemID = 168370, versionID = 8, source = 4 },      -- 锈废漂移者
-    [297560] = { itemID = 168408, versionID = 8, source = 10 },      -- 托卡利的子嗣
-    [298367] = { itemID = 174842, versionID = 8, source = 4 },      -- 茉莉
-    [299158] = { itemID = 168826, versionID = 8, source = 3 },      -- 麦卡贡维和者
-    [299159] = { itemID = 168827, versionID = 8, source = 10 },      -- 废铁机甲蛛
-    [299170] = { itemID = 168829, versionID = 8, source = 2 },      -- 锈栓抵抗者
-    [300146] = { itemID = 169199, versionID = 8, source = 10 },      -- 毒鳍龙猎藻者
-    [300147] = { itemID = 169200, versionID = 8, source = 10 },      -- 深瑚毒鳍龙
-    [300149] = { itemID = 169163, versionID = 8, source = 4 },      -- 喑声翔渊者
-    [300150] = { itemID = 169201, versionID = 8, source = 4 },      -- 法比乌斯
-    [300151] = { itemID = 169203, versionID = 8, source = 6 },      -- 墨鳞觅暗者
-    [300153] = { itemID = 169202, versionID = 8, source = 6 },      -- 赤红浪骁
-    [300154] = { itemID = 233243, versionID = 106, source = 1015 },      -- 银白浪骁
-    [302143] = { itemID = 174862, versionID = 105, source = 1023 },      -- 纯净的虚空之翼
-    [302361] = { itemID = 207964, versionID = 101, source = 20 },      -- 大理石暴风之爪
-    [302362] = { itemID = 207963, versionID = 101, source = 20 },      -- 大理石雷霆之翼
-    [302794] = { itemID = 0, versionID = 0, source = 43 },      -- 迅捷幽灵深水鳐
-    [302795] = { itemID = 0, versionID = 0, source = 43 },      -- 迅捷幽灵磁力飞行器
-    [302796] = { itemID = 0, versionID = 0, source = 43 },      -- 迅捷幽灵装甲狮鹫
-    [302797] = { itemID = 0, versionID = 0, source = 43 },      -- 迅捷幽灵翼手龙
-    [303767] = { itemID = 0, versionID = 11, source = 1 },      -- 蜜背巢母
-    [305182] = { itemID = 174654, versionID = 8, source = 1 },      -- 恩佐斯的黑蟒
-    [305592] = { itemID = 174067, versionID = 1, source = 165 },      -- 麦卡贡机械陆行鸟
-    [306421] = { itemID = 172023, versionID = 106, source = 1028 },      -- 霜狼咆哮者
-    [306423] = { itemID = 174066, versionID = 1, source = 166 },      -- 商队土狼
-    [307256] = { itemID = 173299, versionID = 105, source = 19 },      -- 探险者的丛林中转机
-    [307263] = { itemID = 173297, versionID = 105, source = 19 },      -- 探险者的迷沙骆驼
-    [307932] = { itemID = 0, versionID = 101, source = 20 },      -- 咒缚恒龙
-    [308078] = { itemID = 0, versionID = 101, source = 20 },      -- 吱吱，狡黠灵兽
-    [308087] = { itemID = 0, versionID = 101, source = 20 },      -- 祥韵，天佑金犊
-    [308250] = { itemID = 172022, versionID = 106, source = 1028 },      -- 雷矛军用山羊
-    [308814] = { itemID = 174872, versionID = 8, source = 5 },      -- 尼奥罗萨全视者
-    [312751] = { itemID = 173887, versionID = 8, source = 803 },      -- 亥离之嗣
-    [312753] = { itemID = 180581, versionID = 9, source = 904 },      -- 碎愿者加尔贡
-    [312754] = { itemID = 180948, versionID = 9, source = 904 },      -- 战斗加尔贡弗雷德尼克
-    [312759] = { itemID = 180263, versionID = 9, source = 905 },      -- 梦光符文牡鹿
-    [312761] = { itemID = 180721, versionID = 9, source = 905 },      -- 魔化梦光符文牡鹿
-    [312762] = { itemID = 184167, versionID = 9, source = 4 },      -- 渊誓猎魂犬
-    [312763] = { itemID = 183052, versionID = 9, source = 910 },      -- 暗穴硬壳虫
-    [312765] = { itemID = 180773, versionID = 9, source = 4 },      -- 日舞者
-    [312767] = { itemID = 180728, versionID = 9, source = 4 },      -- 迅捷厄蹄马
-    [312776] = { itemID = 183617, versionID = 9, source = 910 },      -- 啾鸣心蛛
-    [312777] = { itemID = 181316, versionID = 9, source = 910 },      -- 银端惊惧之翼
-    [315014] = { itemID = 174752, versionID = 8, source = 803 },      -- 皎白云端翔龙
-    [315132] = { itemID = 0, versionID = 101, source = 20 },      -- 奔波尔鲲
-    [315427] = { itemID = 174649, versionID = 8, source = 803 },      -- 莱加尼战争翔龙
-    [315847] = { itemID = 174641, versionID = 8, source = 803 },      -- 四风幼龙
-    [315987] = { itemID = 174653, versionID = 8, source = 804 },      -- 邮件吞噬者
-    [316275] = { itemID = 174753, versionID = 8, source = 803 },      -- 废土劫掠者
-    [316276] = { itemID = 174754, versionID = 8, source = 2 },      -- 废土恐天鹫
-    [316337] = { itemID = 174769, versionID = 8, source = 803 },      -- 恶毒工蜂
-    [316339] = { itemID = 174771, versionID = 8, source = 10 },      -- 影钩工蜂
-    [316340] = { itemID = 174770, versionID = 8, source = 6 },      -- 邪恶群居蜂
-    [316343] = { itemID = 174861, versionID = 8, source = 1 },      -- 蠕动的寄生虫
-    [316493] = { itemID = 174860, versionID = 8, source = 4 },      -- 轻盈的迅蹄驼
-    [316637] = { itemID = 174836, versionID = 105, source = 1017 },      -- 觉醒的钻心之蛇
-    [316722] = { itemID = 174841, versionID = 8, source = 803 }, -- 任衙的忠犬
-    [316723] = { itemID = 174840, versionID = 8, source = 803 }, -- 馨劳
-    [316802] = { itemID = 174859, versionID = 8, source = 10 },      -- 春裘羊驼
-    [317177] = { itemID = 0, versionID = 101, source = 20 },      -- 暖日绒猫
-    [318051] = { itemID = 180748, versionID = 9, source = 905 },      -- 丝柔烁光蛾
-    [326390] = { itemID = 0, versionID = 101, source = 20 },      -- 汽鳞焚化者
-    [327405] = { itemID = 182081, versionID = 9, source = 16 },      -- 巨型灭爪鹏
-    [327407] = { itemID = 184014, versionID = 103, source = 1006 },      -- 邪恶战蛛
-    [327408] = { itemID = 184013, versionID = 103, source = 1006 },      -- 邪恶战蛛
-    [332243] = { itemID = 180413, versionID = 9, source = 905 },      -- 影叶符文牡鹿
-    [332244] = { itemID = 180414, versionID = 9, source = 905 },      -- 唤醒者的符文牡鹿
-    [332245] = { itemID = 180415, versionID = 9, source = 905 },      -- 冬脉符文牡鹿
-    [332246] = { itemID = 180722, versionID = 9, source = 905 },      -- 魔化影叶符文牡鹿
-    [332247] = { itemID = 180723, versionID = 9, source = 905 },      -- 魔化唤醒者的符文牡鹿
-    [332248] = { itemID = 180724, versionID = 9, source = 905 },      -- 魔化冬脉符文牡鹿
-    [332252] = { itemID = 180727, versionID = 9, source = 4 },      -- 闪雾奔行者
-    [332256] = { itemID = 180729, versionID = 9, source = 2 },      -- 暮舞炽蓝蛾
-    [332400] = { itemID = 183937, versionID = 105, source = 42 },      -- 罪孽角斗士的噬魂者
-    [332455] = { itemID = 182077, versionID = 9, source = 906 },      -- 战育荒牛
-    [332456] = { itemID = 182076, versionID = 9, source = 906 },      -- 凋腐荒牛
-    [332457] = { itemID = 182075, versionID = 9, source = 906 },      -- 骨蹄荒牛
-    [332460] = { itemID = 182074, versionID = 9, source = 906 },      -- 魂选荒牛
-    [332462] = { itemID = 181822, versionID = 9, source = 906 },      -- 重装战育荒牛
-    [332464] = { itemID = 181821, versionID = 9, source = 906 },      -- 重装凋腐荒牛
-    [332466] = { itemID = 181815, versionID = 9, source = 906 },      -- 重装骨蹄荒牛
-    [332467] = { itemID = 181820, versionID = 9, source = 906 },      -- 重装魂选荒牛
-    [332478] = { itemID = 182085, versionID = 9, source = 4 },      -- 灼背血牙猪
-    [332480] = { itemID = 182084, versionID = 9, source = 4 },      -- 血刺
-    [332484] = { itemID = 182082, versionID = 9, source = 2 },      -- 艳丽血牙猪
-    [332882] = { itemID = 180461, versionID = 9, source = 904 },      -- 可怖的惊惧之翼
-    [332903] = { itemID = 182596, versionID = 9, source = 1 },      -- 城墙尖啸者
-    [332904] = { itemID = 185996, versionID = 9, source = 16 },      -- 收割者的惊惧之翼
-    [332905] = { itemID = 180582, versionID = 9, source = 4 },      -- 末日迷沼飞虫
-    [332923] = { itemID = 182954, versionID = 9, source = 904 },      -- 裁决加尔贡
-    [332927] = { itemID = 183715, versionID = 9, source = 904 },      -- 堕罪加尔贡
-    [332932] = { itemID = 180945, versionID = 9, source = 904 },      -- 地穴加尔贡
-    [332949] = { itemID = 182209, versionID = 9, source = 904 },      -- 欲望之战斗加尔贡
-    [333021] = { itemID = 182332, versionID = 9, source = 904 },      -- 墓碑战斗加尔贡
-    [333023] = { itemID = 183798, versionID = 9, source = 904 },      -- 战斗加尔贡西勒莎
-    [333027] = { itemID = 182589, versionID = 9, source = 4 },      -- 忠诚的饕餮者
-    [334352] = { itemID = 180731, versionID = 9, source = 7 },      -- 灵种摇篮
-    [334364] = { itemID = 180725, versionID = 9, source = 4 },      -- 锥喉林地咀嚼者
-    [334365] = { itemID = 180726, versionID = 9, source = 910 },      -- 灰白酸喉者
-    [334366] = { itemID = 180730, versionID = 9, source = 905 },      -- 野生烁裘徘徊者
-    [334382] = { itemID = 180761, versionID = 9, source = 907 },      -- 忠诚灵豹
-    [334386] = { itemID = 180762, versionID = 9, source = 907 },      -- 谦逊灵豹
-    [334391] = { itemID = 180763, versionID = 9, source = 907 },      -- 勇气灵豹
-    [334398] = { itemID = 180764, versionID = 9, source = 907 },      -- 纯洁灵豹
-    [334403] = { itemID = 180765, versionID = 9, source = 907 },      -- 永恒纯洁灵豹
-    [334406] = { itemID = 180766, versionID = 9, source = 907 },      -- 永恒勇气灵豹
-    [334408] = { itemID = 180767, versionID = 9, source = 907 },      -- 永恒忠诚灵豹
-    [334409] = { itemID = 180768, versionID = 9, source = 907 },      -- 永恒谦逊灵豹
-    [334433] = { itemID = 180772, versionID = 9, source = 7 },      -- 银风翼狮
-    [334482] = { itemID = 192557, versionID = 105, source = 1017 },      -- 复苏死亡行者
-    [336036] = { itemID = 181819, versionID = 9, source = 3 },      -- 髓牙
-    [336038] = { itemID = 181818, versionID = 9, source = 1012 },      -- 羽翼未丰的绽翼兽
-    [336039] = { itemID = 181300, versionID = 9, source = 910 },      -- 阴森绽翼兽
-    [336041] = { itemID = 182078, versionID = 9, source = 906 },      -- 骨缝血肉大鹏
-    [336042] = { itemID = 182079, versionID = 9, source = 4 },      -- 巨型死亡大鹏
-    [336045] = { itemID = 182080, versionID = 9, source = 906 },      -- 掠食的凋零大鹏
-    [336064] = { itemID = 181317, versionID = 9, source = 910 },      -- 无畏的暮行者
-    [339588] = { itemID = 182614, versionID = 9, source = 4 },      -- 罪奔者布兰契
-    [339632] = { itemID = 182650, versionID = 9, source = 4 },      -- 树栖巨口蟾
-    [339956] = { itemID = 186655, versionID = 9, source = 1 },      -- 渊誓军马
-    [339957] = { itemID = 186653, versionID = 9, source = 1 },      -- 赫雷斯迪莫拉克之手
-    [340068] = { itemID = 182717, versionID = 105, source = 1017 },      -- 罪触死亡行者
-    [340503] = { itemID = 183053, versionID = 9, source = 905 },      -- 幽影镰角虫
-    [341639] = { itemID = 183518, versionID = 9, source = 2 },      -- 王庭罪奔者
-    [341766] = { itemID = 183615, versionID = 9, source = 910 },      -- 战缝黑暗犬
-    [341776] = { itemID = 183618, versionID = 9, source = 910 },      -- 高风暗鬃狮
-    [341821] = { itemID = 0, versionID = 101, source = 20 },   -- 雪暴
-    [342334] = { itemID = 183740, versionID = 9, source = 2 },      -- 鎏金徘徊者
-    [342335] = { itemID = 183741, versionID = 9, source = 4 },      -- 晋升天鬃马
-    [342666] = { itemID = 183800, versionID = 9, source = 16 },      -- 琥珀炽蓝蛾
-    [342667] = { itemID = 183801, versionID = 9, source = 905 },      -- 活力炽蓝蛾
-    [342668] = { itemID = 187666, versionID = 9, source = 908 },      -- 砂翼猎鹰
-    [342671] = { itemID = 187639, versionID = 9, source = 908 },      -- 灰白皇家元鹿
-    [342678] = { itemID = 187660, versionID = 9, source = 908 },      -- 蹁跹元蜂
-    [342680] = { itemID = 187676, versionID = 9, source = 4 },      -- 深星元水母
-    [343550] = { itemID = 186480, versionID = 9, source = 2 },      -- 饱经战火的北风长
-    [344228] = { itemID = 184062, versionID = 9, source = 4 },      -- 战缚军犬
-    [344574] = { itemID = 184160, versionID = 9, source = 16 },      -- 浑圆通灵鳐
-    [344575] = { itemID = 184162, versionID = 9, source = 16 },      -- 致命通灵鳐
-    [344576] = { itemID = 184161, versionID = 9, source = 16 },      -- 群居通灵鳐
-    [344577] = { itemID = 184168, versionID = 9, source = 44 },      -- 被缚的影犬
-    [344578] = { itemID = 184166, versionID = 9, source = 909 },      -- 回廊潜行猎犬
-    [344659] = { itemID = 184183, versionID = 9, source = 1 },      -- 贪食的饕餮者
-    [346136] = { itemID = 0, versionID = 101, source = 1018 },      -- 翠绿相位捕猎者
-    [346141] = { itemID = 0, versionID = 9, source = 3 },      -- 软泥之蛇
-    [346554] = { itemID = 186637, versionID = 9, source = 1 },      -- 塔扎维什齿轮滑翔器
-    [346719] = { itemID = 187669, versionID = 9, source = 908 },      -- 小夜曲
-    [347250] = { itemID = 186489, versionID = 9, source = 906 },      -- 冥蝇王
-    [347251] = { itemID = 186648, versionID = 9, source = 2 },      -- 翔天刀翼兽
-    [347255] = { itemID = 0, versionID = 103, source = 1006 },      -- 勇猛的战蟾
-    [347256] = { itemID = 0, versionID = 103, source = 1006 },      -- 勇猛的战蟾
-    [347536] = { itemID = 186641, versionID = 9, source = 16 },      -- 驯养的重殴者
-    [347810] = { itemID = 186644, versionID = 9, source = 16 },      -- 绿柱石碎皮兽
-    [347812] = { itemID = 0, versionID = 101, source = 20 },      -- 蓝玉灼天者
-    [348162] = { itemID = 0, versionID = 101, source = 20 },      -- 漫游古树
-    [348769] = { itemID = 186179, versionID = 103, source = 1006 },      -- 邪恶的战争戈姆
-    [348770] = { itemID = 186178, versionID = 103, source = 1006 },      -- 邪恶的战争戈姆
-    [349823] = { itemID = 184672, versionID = 103, source = 1006 },      -- 勇猛的战争追猎者
-    [349824] = { itemID = 187644, versionID = 103, source = 1006 },      -- 勇猛的战争追猎者
-    [349935] = { itemID = 204382, versionID = 10, source = 6 },      -- 高贵的驼牛
-    [349943] = { itemID = 192766, versionID = 106, source = 18 },      -- 琥珀掠蜓
-    [350219] = { itemID = 192777, versionID = 10, source = 7 },      -- 岩浆之壳
-    [351195] = { itemID = 186642, versionID = 9, source = 5 },      -- 复仇
-    [351408] = { itemID = 192792, versionID = 10, source = 1 },      -- 拜赐雷背蜥蜴头领
-    [352309] = { itemID = 185973, versionID = 9, source = 909 },      -- 芭美兹拉之手
-    [352441] = { itemID = 186000, versionID = 9, source = 16 },      -- 荒猎团斩肢者
-    [352742] = { itemID = 186103, versionID = 9, source = 16 },      -- 不朽的黑暗犬
-    [352926] = { itemID = 192800, versionID = 10, source = 17 },      -- 天皮角行鸟
-    [353036] = { itemID = 186177, versionID = 105, source = 42 },      -- 不羁角斗士的噬魂者
-    [353263] = { itemID = 186638, versionID = 9, source = 3 },      -- 财团主宰的齿轮滑翔器
-    [353856] = { itemID = 186493, versionID = 9, source = 905 },      -- 炽蓝仙野荒蚺
-    [353857] = { itemID = 186494, versionID = 9, source = 905 },      -- 金秋荒蚺
-    [353858] = { itemID = 186495, versionID = 9, source = 905 },      -- 寒冬荒蚺
-    [353859] = { itemID = 186492, versionID = 9, source = 905 },      -- 盛夏荒蚺
-    [353866] = { itemID = 186478, versionID = 9, source = 904 },      -- 黑曜墓翼蝠
-    [353872] = { itemID = 186476, versionID = 9, source = 904 },      -- 堕罪墓翼蝠
-    [353873] = { itemID = 186477, versionID = 9, source = 904 },      -- 苍白的墓翼蝠
-    [353875] = { itemID = 186482, versionID = 9, source = 907 },      -- 极乐北风长
-    [353877] = { itemID = 186483, versionID = 9, source = 10 },      -- 弃誓北风长
-    [353880] = { itemID = 186485, versionID = 9, source = 907 },      -- 晋升者的北风长
-    [353883] = { itemID = 186487, versionID = 9, source = 906 },      -- 玛卓克萨斯冥蝇
-    [353884] = { itemID = 186488, versionID = 9, source = 906 },      -- 君威冥蝇
-    [353885] = { itemID = 186490, versionID = 9, source = 2 },      -- 战场群聚者
-    [354351] = { itemID = 186656, versionID = 9, source = 5 },      -- 圣所阴郁军马
-    [354352] = { itemID = 186657, versionID = 9, source = 16 },      -- 灵魂羁绊阴郁军马
-    [354353] = { itemID = 186659, versionID = 9, source = 4 },      -- 堕落军马
-    [354354] = { itemID = 186713, versionID = 9, source = 44 },      -- 耐迦尼赫玛特之手
-    [354355] = { itemID = 186654, versionID = 9, source = 1 },      -- 莎莱兰佳之手
-    [354356] = { itemID = 186647, versionID = 9, source = 2 },      -- 琥珀碎皮兽
-    [354357] = { itemID = 186645, versionID = 9, source = 4 },      -- 猩红碎皮兽
-    [354358] = { itemID = 186646, versionID = 9, source = 10 },      -- 暗殴
-    [354359] = { itemID = 186649, versionID = 9, source = 16 },      -- 暴躁的刀翼兽
-    [354360] = { itemID = 186652, versionID = 9, source = 4 },      -- 榴石刀翼兽
-    [354361] = { itemID = 186651, versionID = 9, source = 10 },      -- 黯光刀翼兽
-    [354362] = { itemID = 186643, versionID = 9, source = 10 },      -- 游荡者梅莉
-    [356488] = { itemID = 0, versionID = 101, source = 1004 },      -- 传说中的萨齐
-    [356501] = { itemID = 187183, versionID = 9, source = 4 },      -- 暴怒的重殴者
-    [358072] = { itemID = 0, versionID = 101, source = 20 },      -- 魔缚暴风雪
-    [358319] = { itemID = 187525, versionID = 105, source = 1017 },      -- 曲魂死亡行者
-    [359013] = { itemID = 187595, versionID = 100, source = 1002 },      -- 瓦尔莎拉角鹰兽
-    [359229] = { itemID = 187629, versionID = 9, source = 2 },      -- 舒心元袋熊
-    [359230] = { itemID = 187630, versionID = 9, source = 908 },      -- 好奇的水晶探嗅者
-    [359231] = { itemID = 187631, versionID = 9, source = 908 },      -- 黑化的元袋熊
-    [359232] = { itemID = 187632, versionID = 9, source = 908 },      -- 吉饰元袋熊
-    [359276] = { itemID = 187640, versionID = 9, source = 2 },      -- 祝圣原型牡鹿
-    [359277] = { itemID = 187641, versionID = 9, source = 908 },      -- 断离之扎雷骁骑
-    [359278] = { itemID = 187638, versionID = 9, source = 908 },      -- 亡奔者
-    [359317] = { itemID = 0, versionID = 101, source = 20 },      -- 纹洛，天河之威
-    [359318] = { itemID = 188674, versionID = 100, source = 1002 },      -- 御风法典
-    [359364] = { itemID = 187663, versionID = 9, source = 908 },      -- 铜翼元蜂
-    [359366] = { itemID = 187665, versionID = 9, source = 908 },      -- 嗡嗡
-    [359367] = { itemID = 187664, versionID = 9, source = 908 },      -- 打造的怨恨飞蜂
-    [359372] = { itemID = 187667, versionID = 9, source = 908 },      -- 抗渊元鹰
-    [359373] = { itemID = 187668, versionID = 9, source = 908 },      -- 俯冲元鹰
-    [359376] = { itemID = 187670, versionID = 9, source = 908 },      -- 青铜元螺
-    [359377] = { itemID = 187671, versionID = 9, source = 908 },      -- 未成功的迅螺原型
-    [359378] = { itemID = 187672, versionID = 9, source = 908 },      -- 猩红元螺
-    [359379] = { itemID = 187675, versionID = 9, source = 1 },      -- 闪光元水母
-    [359380] = { itemID = 187674, versionID = 106, source = 18 },      -- 邃渊追猎者
-    [359381] = { itemID = 187673, versionID = 9, source = 1 },      -- 晦言元水母
-    [359401] = { itemID = 187677, versionID = 9, source = 908 },      -- 源生爬蛛
-    [359402] = { itemID = 187678, versionID = 9, source = 908 },      -- 匍匐元蛛
-    [359403] = { itemID = 187679, versionID = 9, source = 908 },      -- 不可言喻的掠行者
-    [359407] = { itemID = 187682, versionID = 105, source = 1017 },      -- 荒折死亡行者
-    [359409] = { itemID = 198871, versionID = 10, source = 6 },      -- 伊斯卡拉商人的奥獭
-    [359413] = { itemID = 187683, versionID = 9, source = 908 },      -- 金甲元蟾
-    [359545] = { itemID = 190771, versionID = 105, source = 1023 },      -- 蟹化的扎雷骁骑
-    [359622] = { itemID = 201440, versionID = 10, source = 4 },      -- 被解放的狐龙
-    [359843] = { itemID = 0, versionID = 101, source = 1007 },      -- 绿绦织梦者
-    [360954] = { itemID = 194705, versionID = 10, source = 10 },      -- 高地幼龙
-    [363136] = { itemID = 188696, versionID = 9, source = 909 },      -- 巨型黑檀之爪噬渊鼠
-    [363178] = { itemID = 188700, versionID = 9, source = 909 },      -- 巨型影皮噬渊鼠
-    [363297] = { itemID = 188736, versionID = 9, source = 1 }, -- 巨型碎魂噬渊鼠
-    [363613] = { itemID = 0, versionID = 104, source = 102 },      -- 光铸废墟奔踏者
-    [363701] = { itemID = 188808, versionID = 9, source = 10 },      -- 耐心的元蟾
-    [363703] = { itemID = 188809, versionID = 9, source = 908 },      -- 跃蟾原型
-    [363706] = { itemID = 188810, versionID = 9, source = 908 },      -- 褐红元蟾
-    [365559] = { itemID = 189507, versionID = 105, source = 42 },      -- 宇宙角斗士的噬魂者
-    [366647] = { itemID = 189978, versionID = 106, source = 18 },      -- 品红云端翔龙
-    [366789] = { itemID = 190168, versionID = 106, source = 18 },      -- 硬壳爬蟹
-    [366790] = { itemID = 190169, versionID = 106, source = 18 },      -- 呆鸣鹦鹉
-    [366791] = { itemID = 190170, versionID = 9, source = 1 },      -- 老基格沃斯先生
-    [366962] = { itemID = 190231, versionID = 101, source = 20 },      -- 艾什阿达，晨曦使者
-    [367190] = { itemID = 0, versionID = 0, source = 43 },      -- [DND] Test Mount JZB
-    [367620] = { itemID = 190539, versionID = 106, source = 18 },      -- 潜瑚海波鳐
-    [367673] = { itemID = 190580, versionID = 9, source = 908 },      -- 心契元狼
-    [367676] = { itemID = 190581, versionID = 101, source = 20 },      -- 虚空巨噬浮龙
-    [367826] = { itemID = 190613, versionID = 106, source = 18 },      -- 野绿战龟
-    [367875] = { itemID = 190636, versionID = 101, source = 20 },      -- 重装攻城科多兽
-    [368105] = { itemID = 190765, versionID = 9, source = 4 },      -- 巨型降祸噬渊鼠
-    [368126] = { itemID = 190767, versionID = 106, source = 18 },      -- 重装金色翼手龙
-    [368128] = { itemID = 190766, versionID = 9, source = 7 },      -- 巨型怨缚噬渊鼠
-    [368158] = { itemID = 190768, versionID = 9, source = 5 },      -- 扎雷监察者
-    [368893] = { itemID = 204361, versionID = 10, source = 10 },      -- 盘曲蜿变幼龙
-    [368896] = { itemID = 194034, versionID = 10, source = 10 },      -- 复苏始祖幼龙
-    [368899] = { itemID = 194549, versionID = 10, source = 10 },      -- 载风迅疾幼龙
-    [368901] = { itemID = 194521, versionID = 10, source = 10 },      -- 崖际荒狂幼龙
-    [369451] = { itemID = 0, versionID = 101, source = 20 },   -- 玉儿，皓月先知
-    [369476] = { itemID = 191114, versionID = 101, source = 1019 },      -- 愤怒阿玛甘
-    [369480] = { itemID = 0, versionID = 106, source = 18 },      -- 天蓝沼泽跃蛙
-    [369666] = { itemID = 191123, versionID = 1, source = 163 },      -- 恐吼
-    [370346] = { itemID = 191290, versionID = 105, source = 42 },      -- 永恒角斗士的噬魂者
-    [370620] = { itemID = 191566, versionID = 1, source = 167 },      -- 珍稀的翡翠陆行鸟
-    [370770] = { itemID = 0, versionID = 101, source = 1018 },      -- 海象人踏浪风筝
-    [371176] = { itemID = 191838, versionID = 10, source = 6 },      -- 地底岩浆猛犸
-    [372995] = { itemID = 0, versionID = 0, source = 43 },      -- 迅捷幽灵幼龙
-    [373859] = { itemID = 192601, versionID = 10, source = 6 },      -- 忠诚的岩浆猛犸
-    [373967] = { itemID = 192751, versionID = 10, source = 1 },      -- 雷触驼牛
-    [374032] = { itemID = 192761, versionID = 10, source = 2 }, -- 驯服的掠蜓
-    [374034] = { itemID = 192762, versionID = 10, source = 2 }, -- 碧蓝掠蜓
-    [374048] = { itemID = 192764, versionID = 10, source = 2 }, -- 翠绿掠蜓
-    [374071] = { itemID = 192765, versionID = 10, source = 1 },      -- 拜赐扬沙蜓
-    [374090] = { itemID = 192772, versionID = 10, source = 4 },      -- 远古蝾螈
-    [374097] = { itemID = 192774, versionID = 10, source = 1 },      -- 珊鳞蝾螈
-    [374098] = { itemID = 192775, versionID = 10, source = 6 },      -- 雷革蝾螈
-    [374138] = { itemID = 192779, versionID = 10, source = 7 },      -- 沸涌蛞蝓
-    [374155] = { itemID = 192784, versionID = 10, source = 1 },      -- 谢拉克
-    [374157] = { itemID = 192785, versionID = 10, source = 17 },      -- 黏黏的蜗牛元素
-    [374162] = { itemID = 192786, versionID = 10, source = 44 },      -- 好斗的界螺
-    [374172] = { itemID = 192788, versionID = 10, source = 1 },      -- 拜赐拖网猛犸象
-    [374194] = { itemID = 192790, versionID = 10, source = 17 },      -- 青苔猛犸象
-    [374196] = { itemID = 192791, versionID = 10, source = 7 },      -- 平原行者运载兽
-    [374204] = { itemID = 192796, versionID = 10, source = 2 },      -- 探险者的石皮驮兽
-    [374247] = { itemID = 192799, versionID = 10, source = 10 },      -- 莉姬，雷背践踏者
-    [374275] = { itemID = 192806, versionID = 10, source = 1 },      -- 狂怒的岩浆猛犸
-    [374278] = { itemID = 192807, versionID = 10, source = 4 },      -- 复苏岩浆猛犸
-    [376873] = { itemID = 198870, versionID = 10, source = 10 },      -- 奥图
-    [376875] = { itemID = 198872, versionID = 10, source = 2 },      -- 棕色侦查奥獭
-    [376879] = { itemID = 198873, versionID = 10, source = 10 },      -- 象牙商人的奥獭
-    [376880] = { itemID = 200118, versionID = 10, source = 2 },      -- 黄色侦查奥獭
-    [376898] = { itemID = 211862, versionID = 10, source = 1 },      -- 拜赐奥獭先锋
-    [376910] = { itemID = 201426, versionID = 10, source = 2 },      -- 棕色战争奥獭
-    [376912] = { itemID = 198654, versionID = 104, source = 1024 },      -- 热忱的载人奥獭
-    [376913] = { itemID = 201425, versionID = 10, source = 2 },      -- 黄色战争奥獭
-    [377071] = { itemID = 202086, versionID = 105, source = 42 },      -- 猩红角斗士的幼龙
-    [381529] = { itemID = 0, versionID = 101, source = 20 },      -- 雷角兜虫泰利克斯
-    [384963] = { itemID = 198808, versionID = 1, source = 168 },      -- 护卫龙麒
-    [385115] = { itemID = 198811, versionID = 1, source = 168 },      -- 威严的重装龙麒
-    [385131] = { itemID = 198809, versionID = 1, source = 168 },      -- 重装龙麒踏魔者
-    [385134] = { itemID = 198810, versionID = 1, source = 168 },      -- 迅捷的重装龙麒
-    [385260] = { itemID = 198822, versionID = 10, source = 1 },      -- 拜赐欧胡纳侦察者
-    [385262] = { itemID = 198824, versionID = 10, source = 6 },      -- 暗翼欧胡纳
-    [385266] = { itemID = 198825, versionID = 10, source = 4 },      -- 泽尼特幼隼
-    [385738] = { itemID = 201454, versionID = 10, source = 10 },      -- 喜怒无常的天爪狐龙
-    [386452] = { itemID = 0, versionID = 101, source = 10 },      -- 霜巢始祖魔龙
-    [387231] = { itemID = 199412, versionID = 105, source = 1017 },      -- 雹风厚甲龙
-    [394216] = { itemID = 201702, versionID = 1, source = 168 },      -- 猩红龙麒
-    [394218] = { itemID = 201704, versionID = 1, source = 168 },      -- 蓝玉龙麒
-    [394219] = { itemID = 201720, versionID = 1, source = 168 },      -- 青铜龙麒
-    [394220] = { itemID = 201719, versionID = 1, source = 168 },      -- 黑曜龙麒
-    [394737] = { itemID = 201789, versionID = 103, source = 1006 },      -- 勇猛的剑齿兽
-    [394738] = { itemID = 201788, versionID = 103, source = 1006 },      -- 勇猛的剑齿兽
-    [395095] = { itemID = 0, versionID = 0, source = 43 },      -- 雏龙
-    [395644] = { itemID = 0, versionID = 10, source = 10 },      -- 欧恩哈拉的神圣之吻
-    [397406] = { itemID = 206167, versionID = 101, source = 20 },      -- 神谜掠波者
-    [400733] = { itemID = 204091, versionID = 105, source = 19 },      -- 火箭伐木机9001型
-    [400976] = { itemID = 203727, versionID = 101, source = 20 },      -- 闪光的月兽
-    [405623] = { itemID = 0, versionID = 0, source = 1026 },      -- 犰狳滚轮车
-    [406637] = { itemID = 204798, versionID = 105, source = 1017 },      -- 地狱火厚甲龙
-    [407555] = { itemID = 206162, versionID = 104, source = 10 },      -- 泰蕾苟萨的幻影
-    [408313] = { itemID = 205155, versionID = 10, source = 10 }, -- 城里的大滑
-    [408627] = { itemID = 205197, versionID = 10, source = 6 },      -- 火成岩翼蝠
-    [408647] = { itemID = 205203, versionID = 10, source = 4 },      -- 钴蓝岩翼蝠
-    [408648] = { itemID = 0, versionID = 10, source = 1 },      -- 升温岩翼蝠
-    [408649] = { itemID = 205205, versionID =10, source = 1 },      -- 暗影烈焰岩翼蝠
-    [408651] = { itemID = 205204, versionID = 10, source = 7 },      -- 编目岩翼蝠
-    [408653] = { itemID = 205209, versionID = 10, source = 2 },      -- 石块搬运蝠
-    [408654] = { itemID = 205208, versionID = 100, source = 1002 },      -- 流沙岩翼蝠
-    [408655] = { itemID = 205207, versionID = 10, source = 2 },      -- 小食嗅探者
-    [408977] = { itemID = 205233, versionID = 105, source = 42 },      -- 黑曜角斗士的蜿变幼龙
-    [409032] = { itemID = 205245, versionID = 103, source = 1006 },      -- 勇猛的作战蜗牛
-    [409034] = { itemID = 205246, versionID = 103, source = 1006 },      -- 勇猛的作战蜗牛
-    [411565] = { itemID = 206027, versionID = 106, source = 18 },      -- 邪晶战蝎
-    [412088] = { itemID = 206156, versionID = 10, source = 10 },      -- 岩洞灵翼幼龙
-    [413409] = { itemID = 194705, versionID = 0, source = 43 },      -- 高地幼龙
-    [413825] = { itemID = 206566, versionID = 8, source = 10 },      -- 猩红翼手龙
-    [413827] = { itemID = 206567, versionID = 8, source = 10 },      -- 海港狮鹫
-    [413922] = { itemID = 206585, versionID = 10, source = 44 },      -- 英勇
-    [414316] = { itemID = 206673, versionID = 10, source = 1021 },      -- 雪白战狼
-    [414323] = { itemID = 206674, versionID = 10, source = 1021 },      -- 贪婪的黑色狮鹫
-    [414324] = { itemID = 206675, versionID = 10, source = 1021 },      -- 金趾信天翁
-    [414326] = { itemID = 206676, versionID = 10, source = 1021 },      -- 邪能风暴巨龙
-    [414327] = { itemID = 206678, versionID = 10, source = 1021 },      -- 硫磺恶犬
-    [414328] = { itemID = 206679, versionID = 10, source = 1021 },      -- 完美战蝎
-    [414334] = { itemID = 206680, versionID = 10, source = 1021 },      -- 灾缚征服者
-    [414986] = { itemID = 206976, versionID = 106, source = 18 }, -- 皇家群聚者
-    [417245] = { itemID = 207821, versionID = 106, source = 18 },      -- 先祖裂蹄牛
-    [417548] = { itemID = 194034, versionID = 0, source = 43 },      -- 复苏始祖幼龙
-    [417552] = { itemID = 194549, versionID = 0, source = 43 },     -- 载风迅疾幼龙
-    [417554] = { itemID = 194521, versionID = 0, source = 43 },     -- 崖际荒狂幼龙
-    [417556] = { itemID = 204361, versionID = 0, source = 43 },     -- 盘曲蜿变幼龙
-    [417888] = { itemID = 0, versionID = 101, source = 1007 },      -- 阿加驭雷者
-    [418078] = { itemID = 208152, versionID = 10, source = 44 },      -- 帕蒂
-    [418286] = { itemID = 0, versionID = 101, source = 20 },      -- 福星木蛟
-    [419002] = { itemID = 0, versionID = 0, source = 1026 },      -- 雏龙
-    [419345] = { itemID = 208598, versionID = 106, source = 18 },      -- 伊芙的森怖骑行扫帚
-    [419567] = { itemID = 0, versionID = 101, source = 20 },      -- 鲲波尔奔
-    [420097] = { itemID = 208572, versionID = 106, source = 26 }, -- 碧蓝凝世者
-    [422486] = { itemID = 209060, versionID = 105, source = 1017 },      -- 苍郁厚甲龙
-    [423871] = { itemID = 209947, versionID = 10, source = 1022 },      -- 繁花梦麋
-    [423873] = { itemID = 209949, versionID = 10, source = 1022 },      -- 日灼梦麋
-    [423877] = { itemID = 209950, versionID = 10, source = 1022 },      -- 复燃梦麋
-    [423891] = { itemID = 209951, versionID = 10, source = 1022 },      -- 月华梦麋
-    [424009] = { itemID = 210008, versionID = 101, source = 20 },      -- 符契炎魔
-    [424082] = { itemID = 210022, versionID = 10, source = 44 },      -- 米米尔隆的垂直起降喷气机
-    [424474] = { itemID = 210060, versionID = 10, source = 1 },      -- 夕影梦刃豹
-    [424476] = { itemID = 210059, versionID = 10, source = 1022 },      -- 冬夜梦刃豹
-    [424479] = { itemID = 210058, versionID = 10, source = 1022 },      -- 薄暮梦刃豹
-    [424482] = { itemID = 210057, versionID = 10, source = 1022 },      -- 翠晨梦刃豹
-    [424484] = { itemID = 210061, versionID = 10, source = 5 },      -- 阿努雷洛丝，烈焰启迪
-    [424534] = { itemID = 210070, versionID = 103, source = 1006 },      -- 勇猛的月兽
-    [424535] = { itemID = 210069, versionID = 103, source = 1006 },      -- 勇猛的月兽
-    [424539] = { itemID = 210074, versionID = 105, source = 42 },      -- 腾龙角斗士的幼龙
-    [424607] = { itemID = 210142, versionID = 10, source = 1 },      -- 泰瓦恩
-    [425338] = { itemID = 210412, versionID = 10, source = 10 },      -- 繁盛奇想幼龙
-    [425416] = { itemID = 210345, versionID = 105, source = 42 },      -- 苍郁角斗士的蜿变幼龙
-    [426955] = { itemID = 210769, versionID = 10, source = 1022 },      -- 春潮梦爪獍
-    [427041] = { itemID = 210774, versionID = 10, source = 10 },      -- 赭色梦爪獍
-    [427043] = { itemID = 210775, versionID = 10, source = 1022 },      -- 雪绒梦爪獍
-    [427222] = { itemID = 210831, versionID = 10, source = 1022 },      -- 幻濑
-    [427224] = { itemID = 210833, versionID = 10, source = 1022 },      -- 豺爪
-    [427226] = { itemID = 210945, versionID = 10, source = 1022 },      -- 星辰啃食者
-    [427435] = { itemID = 210919, versionID = 106, source = 18 },      -- 猩红烁裘狐
-    [427546] = { itemID = 210946, versionID = 10, source = 1022 },      -- 犸秘斯
-    [427549] = { itemID = 210948, versionID = 10, source = 1022 },      -- 憧憬之翼
-    [427724] = { itemID = 210969, versionID = 10, source = 1022 },      -- 恍螈
-    [427777] = { itemID = 210973, versionID = 100, source = 50 }, -- 觅心法力鳐
-    [428005] = { itemID = 211074, versionID = 106, source = 18 },      -- 珠光铜色圣甲虫
-    [428013] = { itemID = 229348, versionID = 106, source = 26 },      -- 氮素魔影，无法解密的邪能摩托
-    [428060] = { itemID = 211084, versionID = 105, source = 41 },      -- 金色皇家圣甲虫
-    [428067] = { itemID = 211087, versionID = 101, source = 1030 },      -- 仇铸炽火摩托
-    [430225] = { itemID = 211873, versionID = 10, source = 10 },      -- 吉尔尼斯徘徊者
-    [431049] = { itemID = 206156, versionID = 0, source = 43 },      -- 岩洞灵翼幼龙
-    [431050] = { itemID = 210412, versionID = 0, source = 43 },      -- 繁盛奇想幼龙
-    [431357] = { itemID = 212227, versionID = 106, source = 18 }, -- 裘谊之狐
-    [431359] = { itemID = 212228, versionID = 101, source = 20 }, -- 翔天之狐
-    [431360] = { itemID = 212229, versionID = 106, source = 18 }, -- 暮光巡天狐
-    [431992] = { itemID = 212522, versionID = 101, source = 1004 },      -- 罗盘玫瑰
-    [432455] = { itemID = 212599, versionID = 100, source = 52 },      -- 复活节飞毯
-    [432558] = { itemID = 212630, versionID = 106, source = 18 },      -- 威严碧蓝雌孔雀
-    [432562] = { itemID = 212631, versionID = 106, source = 18 },      -- 夺目日冕雌孔雀
-    [432610] = { itemID = 212645, versionID = 10, source = 4 },      -- 泥鳞角行鸟
-    [433281] = { itemID = 212920, versionID = 106, source = 18 },      -- 野蓝战龟
-    [434462] = { itemID = 213438, versionID = 105, source = 1017 },      -- 永恒厚甲龙
-    [434470] = { itemID = 213439, versionID = 103, source = 1006 },      -- 勇猛的梦爪獍
-    [434477] = { itemID = 213440, versionID = 103, source = 1006 },      -- 勇猛的梦爪獍
-    [435044] = { itemID = 213576, versionID = 106, source = 1001 },      -- 金色铁饼
-    [435082] = { itemID = 213584, versionID = 106, source = 1001 },      -- 魔古拓雾者
-    [435084] = { itemID = 213582, versionID = 106, source = 1001 },      -- 苍穹冲浪者
-    [435103] = { itemID = 213598, versionID = 106, source = 1001 },      -- 迅奔追风
-    [435107] = { itemID = 213597, versionID = 106, source = 1001 },      -- 森绿追风
-    [435108] = { itemID = 213596, versionID = 106, source = 1001 },      -- 昼雷追风
-    [435109] = { itemID = 213595, versionID = 106, source = 1001},      -- 覆羽携风者
-    [435115] = { itemID = 213601, versionID = 106, source = 1001},      -- 护卫魁麟
-    [435118] = { itemID = 213600, versionID = 106, source = 1001},      -- 大理石魁麟
-    [435123] = { itemID = 213602, versionID = 106, source = 1001},      -- 鎏金骑乘仙鹤
-    [435124] = { itemID = 213607, versionID = 106, source = 1001},      -- 奢华骑乘仙鹤
-    [435125] = { itemID = 213604, versionID = 106, source = 1001},      -- 热带骑乘仙鹤
-    [435126] = { itemID = 213606, versionID = 106, source = 1001},      -- 银色骑乘仙鹤
-    [435127] = { itemID = 213605, versionID = 106, source = 1001},      -- 粉玫骑乘仙鹤
-    [435128] = { itemID = 213603, versionID = 106, source = 1001},      -- 暗灰骑乘仙鹤
-    [435131] = { itemID = 213608, versionID = 106, source = 1001},      -- 雪色骑乘山羊
-    [435133] = { itemID = 213609, versionID = 106, source = 1001},      -- 幼年赤红骑乘山羊
-    [435145] = { itemID = 213623, versionID = 106, source = 1001},      -- 殷红啸天龙
-    [435146] = { itemID = 213622, versionID = 106, source = 1001},      -- 幽夜飞翼龙
-    [435147] = { itemID = 213621, versionID = 106, source = 1001},      -- 翡翠翼手龙
-    [435149] = { itemID = 213624, versionID = 106, source = 1001},      -- 钴蓝战蝎
-    [435150] = { itemID = 213625, versionID = 106, source = 1001},      -- 魔铁战蝎
-    [435153] = { itemID = 213626, versionID = 106, source = 1001},      -- 紫色影踪派骑乘虎
-    [435160] = { itemID = 213628, versionID = 106, source = 1001},      -- 踏江穆山兽
-    [435161] = { itemID = 213627, versionID = 106, source = 1001},      -- 苍皮穆山兽
-    [437162] = { itemID = 233240, versionID = 106, source = 1015 },      -- 波利·罗杰
-    [439138] = { itemID = 217340, versionID = 10, source = 1 },      -- 浪游荒蚺
-    [440444] = { itemID = 217612, versionID = 9, source = 1 },      -- 佐瓦尔的噬魂者
-    [441313] = { itemID = 0, versionID = 0, source = 43 },      -- 翱翔
-    [441324] = { itemID = 217985, versionID = 105, source = 1023 },      -- 旧忆金色狮鹫
-    [441325] = { itemID = 217987, versionID = 105, source = 1023 },      -- 旧忆双足飞龙
-    [441794] = { itemID = 218111, versionID = 106, source = 1001 },      -- 琥珀翼手龙
-    [442358] = { itemID = 221765, versionID = 11, source = 3 },      -- 矶石宝库机甲
-    [443660] = { itemID = 219450, versionID = 101, source = 20 }, -- 魅力信使
-    [446017] = { itemID = 220766, versionID = 106, source = 1001 },      -- 至尊凤凰
-    [446022] = { itemID = 220768, versionID = 106, source = 1001 },      -- 星光帝王翔龙
-    [446052] = { itemID = 219391, versionID = 11, source = 10 },      -- 地下堡行者的飞船
-    [446352] = { itemID = 221270, versionID = 0, source = 1026 },      -- [PH] Goblin Surfboard - Blue
-    [447057] = { itemID = 221753, versionID = 11, source = 2 },      -- 焖燃燧烬蜂
-    [447151] = { itemID = 223153, versionID = 11, source = 6 },      -- 翔天蜜酒之蜂
-    [447160] = { itemID = 223158, versionID = 11, source = 1 },      -- 暴怒的燧烬蜂
-    [447176] = { itemID = 222989, versionID = 11, source = 2 },      -- 天蓝萤光螨
-    [447185] = { itemID = 223264, versionID = 11, source = 2 },      -- 青绿石群聚虫
-    [447190] = { itemID = 223266, versionID = 11, source = 1 },      -- 影遁群聚虫
-    [447195] = { itemID = 223267, versionID = 11, source = 1 },      -- 群聚虫猎天者
-    [447213] = { itemID = 223270, versionID = 11, source = 4 }, -- 阿鲁尼拉
-    [447405] = { itemID = 221813, versionID = 103, source = 1006 },      -- 勇猛的剥天者
-    [447413] = { itemID = 221814, versionID = 106, source = 18 },      -- 珠辉地精斩浪者
-    [447957] = { itemID = 223274, versionID = 11, source = 2 },      -- 凶猛的利颚爬行者
-    [448186] = { itemID = 221967, versionID = 102, source = 27 },      -- 群体打击者2-30
-    [448188] = { itemID = 223269, versionID = 11, source = 1012 },      -- 主机防御单位1-11
-    [448680] = { itemID = 223276, versionID = 11, source = 2 },      -- 寡妇的幽暗爬行者
-    [448685] = { itemID = 223278, versionID = 11, source = 2 },      -- 传承幽暗爬行者
-    [448689] = { itemID = 223279, versionID = 11, source = 2 },      -- 王庭幽暗爬行者
-    [448845] = { itemID = 223282, versionID = 0, source = 1026 },      -- [PH] Blue Old God Fish Mount
-    [448849] = { itemID = 223284, versionID = 0, source = 1026 },      -- 幽光海滩追猎者
-    [448850] = { itemID = 223286, versionID = 102, source = 34 },      -- 卡赫，深渊传奇
-    [448851] = { itemID = 223285, versionID = 106, source = 18 },      -- 幽光腐化巨兽
-    [448934] = { itemID = 0, versionID = 11, source = 1 },      -- 疑之影
-    [448939] = { itemID = 223314, versionID = 11, source = 2 },      -- 被缚暗影
-    [448941] = { itemID = 223315, versionID = 11, source = 4 },      -- 贝雷达尔之裔
-    [448978] = { itemID = 223317, versionID = 11, source = 2 },      -- 朱红帝国山猫
-    [448979] = { itemID = 223318, versionID = 11, source = 1012 },      -- 果敢帝国山猫
-    [449126] = { itemID = 223449, versionID = 106, source = 18 },      -- 库卡隆战刃豹
-    [449132] = { itemID = 223459, versionID = 0, source = 10 },      -- 黑石战刃豹
-    [449133] = { itemID = 223460, versionID = 0, source = 1026 },      -- [PH] Nightsaber Horde Mount White
-    [449140] = { itemID = 223469, versionID = 106, source = 18 },      -- 哨兵战狼
-    [449141] = { itemID = 223470, versionID = 0, source = 1026 },      -- [PH] Alliance Wolf Mount
-    [449142] = { itemID = 223471, versionID = 0, source = 10 },      -- 卡多雷战狼
-    [449258] = { itemID = 223501, versionID = 11, source = 4 },      -- 老鼹鼠鲁夫斯
-    [449264] = { itemID = 225548, versionID = 11, source = 3 }, -- 烛芯
-    [449269] = { itemID = 223505, versionID = 11, source = 2 }, -- 赤红泥鼻鼹
-    [449325] = { itemID = 223511, versionID = 103, source = 1006 },      -- 勇猛的剥天者
-    [449415] = { itemID = 223572, versionID = 1, source = 169 },      -- 板岩磐羊
-    [449418] = { itemID = 223571, versionID = 11, source = 2 },      -- 页岩磐羊
-    [449466] = { itemID = 223586, versionID = 105, source = 42 },      -- 炉铸角斗士的魔蝠
-    [451486] = { itemID = 224147, versionID = 11, source = 5 },      -- 苏雷吉剃天者
-    [451489] = { itemID = 224150, versionID = 11, source = 4 },      -- 赛斯巴格
-    [451491] = { itemID = 224151, versionID = 11, source = 5 },      -- 扬升剃天者
-    [452643] = { itemID = 224398, versionID = 100, source = 1002 },      -- 乱羽角鹰兽
-    [452645] = { itemID = 224399, versionID = 100, source = 1002 },      -- 阿曼尼猎熊
-    [452779] = { itemID = 224415, versionID = 11, source = 1 },      -- 象牙巨蜢
-    [453255] = { itemID = 224574, versionID = 0, source = 43 },      -- 野乌战龟
-    [453785] = { itemID = 0, versionID = 104, source = 102 },      -- 土灵宣令者的磐羊
-    [454682] = { itemID = 225250, versionID = 101, source = 20 },      -- 星触绒猫
-    [457485] = { itemID = 0, versionID = 101, source = 20 },      -- 灰熊丘陵魁熊
-    [457650] = { itemID = 226040, versionID = 106, source = 18 },      -- 霸业枭雄的黄金鳄鱼
-    [457654] = { itemID = 226041, versionID = 106, source = 18 },      -- 桶腿的光耀鳄鱼
-    [457656] = { itemID = 226042, versionID = 106, source = 1015 },      -- 霸业枭雄的午夜鳄鱼
-    [457659] = { itemID = 226044, versionID = 0, source = 1026 },      -- 霸业枭雄的风霜鳄鱼
-    [458335] = { itemID = 226357, versionID = 105, source = 1017 },      -- 钻石机甲
-    [459193] = { itemID = 226506, versionID = 106, source = 18 },      -- 雷什基加尔之手
-    [459784] = { itemID = 227362, versionID = 101, source = 20 },      -- 金色炽焰凤凰
-    [463025] = { itemID = 228751, versionID = 101, source = 20 },      -- 奔波尔鲛
-    [463133] = { itemID = 228760, versionID = 106, source = 26 },      -- 冷焰风暴
-    [464443] = { itemID = 229128, versionID = 101, source = 20 },      -- 迎福巨熊
-    [465235] = { itemID = 229418, versionID = 101, source = 20 },      -- 鎏金雷龙
-    [466811] = { itemID = 230184, versionID = 101, source = 20 },      -- 混沌熔铸狮鹫
-    [466812] = { itemID = 230185, versionID = 101, source = 20 },      -- 混沌熔铸角鹰兽
-    [466838] = { itemID = 230200, versionID = 101, source = 20 },      -- 混沌熔铸恐翼蝙蝠
-    [466845] = { itemID = 230201, versionID = 101, source = 20 },      -- 混沌熔铸驭风者
-    [468353] = { itemID = 231374, versionID = 100, source = 1002 },      -- 魔化法纹飞毯
-    [471538] = { itemID = 232624, versionID = 100, source = 1002 },      -- 时空鸣蜂
-    [471562] = { itemID = 232639, versionID = 11, source = 17 },      -- 萨伊尔，海妖之目
-    [471696] = { itemID = 233241, versionID = 106, source = 1015 },      -- 铁钩爪
-    [472253] = { itemID = 232901, versionID = 100, source = 54 },      -- 奔月发射器
-    [472479] = { itemID = 232926, versionID = 100, source = 50 },      -- 爱情女巫的扫帚
-    [472487] = { itemID = 233023, versionID = 106, source = 18 },      -- 银月城扫帚
-    [472488] = { itemID = 233020, versionID = 101, source = 20 },      -- 暮光女巫的扫帚
-    [472489] = { itemID = 233019, versionID = 101, source = 20 },      -- 苍穹女巫的扫帚
-    [472752] = { itemID = 232991, versionID = 11, source = 1 },      -- 毁灭者之歌号
-    [473137] = { itemID = 233058, versionID = 11, source = 6 },      -- 索伊兹的复古斩浪者
-    [473472] = { itemID = 235515, versionID = 8, source = 1 },      -- 加尼的垃圾堆
-    [473861] = { itemID = 233354, versionID = 106, source = 18 },      -- 野棕战龟
-    [474086] = { itemID = 233489, versionID = 11, source = 10 },      -- 棱彩毒鳍龙
-    [1214920] = { itemID = 234716, versionID = 100, source = 1002 },     -- 夜幕碎天兽
-    [1214940] = { itemID = 234721, versionID = 100, source = 1002 },     -- 乌祖尔裂肉者
-    [1214946] = { itemID = 234730, versionID = 100, source = 1002 },     -- 希奈丝特拉幼龙
-    [1214974] = { itemID = 234740, versionID = 100, source = 1002 },     -- 铜色鬃毛魁麟
-    [1216542] = { itemID = 235344, versionID = 101, source = 20 },     -- 炽燃皇家火鹰
-    [468205] = { itemID=231297, versionID=101, source=20 }, -- 木雕翔天巨蛇
+  [458] = { itemID = 5656, version = "经典旧世", source = "人类" }, -- 棕马
+  [459] = { itemID = 0, version = "绝版", source = "绝版" }, -- 灰狼
+  [468] = { itemID = 0, version = "绝版", source = "绝版" }, -- 白马
+  [470] = { itemID = 2411, version = "经典旧世", source = "人类" }, -- 黑马
+  [472] = { itemID = 2414, version = "经典旧世", source = "人类" }, -- 杂色马
+  [578] = { itemID = 0, version = "绝版", source = "绝版" }, -- 黑狼
+  [579] = { itemID = 0, version = "绝版", source = "绝版" }, -- 赤狼
+  [580] = { itemID = 1132, version = "经典旧世", source = "兽人" }, -- 森林狼
+  [581] = { itemID = 0, version = "绝版", source = "绝版" }, -- 冬狼
+  [5784] = { itemID = 0, version = "其他", source = "术士" }, -- 地狱战马
+  [6648] = { itemID = 5655, version = "经典旧世", source = "人类" }, -- 栗色马
+  [6653] = { itemID = 5665, version = "经典旧世", source = "兽人" }, -- 恐狼
+  [6654] = { itemID = 5668, version = "经典旧世", source = "兽人" }, -- 棕狼
+  [6777] = { itemID = 5864, version = "经典旧世", source = "矮人" }, -- 灰山羊
+  [6896] = { itemID = 0, version = "绝版", source = "绝版" }, -- 黑山羊
+  [6898] = { itemID = 0, version = "经典旧世", source = "矮人" }, -- 白山羊
+  [6899] = { itemID = 0, version = "经典旧世", source = "矮人" }, -- 棕山羊
+  [8394] = { itemID = 0, version = "经典旧世", source = "暗夜精灵" }, -- 条纹霜刃豹
+  [8395] = { itemID = 0, version = "经典旧世", source = "巨魔" }, -- 绿色迅猛龙
+  [8980] = { itemID = 0, version = "绝版", source = "绝版" }, -- 骸骨军马
+  [10789] = { itemID = 8632, version = "经典旧世", source = "暗夜精灵" }, -- 斑点霜刃豹
+  [10790] = { itemID = 0, version = "绝版", source = "绝版" }, -- 丛林虎
+  [10793] = { itemID = 8629, version = "经典旧世", source = "暗夜精灵" }, -- 条纹夜刃豹
+  [10795] = { itemID = 0, version = "绝版", source = "绝版" }, -- 白色迅猛龙
+  [10796] = { itemID = 8591, version = "经典旧世", source = "巨魔" }, -- 青色迅猛龙
+  [10799] = { itemID = 8592, version = "经典旧世", source = "巨魔" }, -- 紫色迅猛龙
+  [10873] = { itemID = 8563, version = "经典旧世", source = "侏儒" }, -- 红色机械陆行鸟
+  [10969] = { itemID = 8595, version = "经典旧世", source = "侏儒" }, -- 蓝色机械陆行鸟
+  [13819] = { itemID = 0, version = "其他", source = "圣骑士" }, -- 战马
+  [15779] = { itemID = 13326, version = "绝版", source = "绝版" }, -- 白色机械陆行鸟B型
+  [15780] = { itemID = 0, version = "绝版", source = "绝版" }, -- 绿色机械陆行鸟
+  [16055] = { itemID = 12303, version = "绝版", source = "绝版" }, -- 黑色夜刃豹
+  [16056] = { itemID = 12302, version = "绝版", source = "绝版" }, -- 上古霜刃豹
+  [16080] = { itemID = 12330, version = "绝版", source = "绝版" }, -- 赤狼
+  [16081] = { itemID = 12351, version = "绝版", source = "绝版" }, -- 冰狼
+  [16082] = { itemID = 12354, version = "绝版", source = "绝版" }, -- 褐色马
+  [16083] = { itemID = 12353, version = "绝版", source = "绝版" }, -- 白马
+  [16084] = { itemID = 8586, version = "绝版", source = "绝版" }, -- 杂斑红色迅猛龙
+  [17229] = { itemID = 13086, version = "经典旧世", source = "任务" }, -- 冬泉霜刃豹
+  [17450] = { itemID = 13317, version = "绝版", source = "绝版" }, -- 白色迅猛龙
+  [17453] = { itemID = 13321, version = "经典旧世", source = "侏儒" }, -- 绿色机械陆行鸟
+  [17454] = { itemID = 13322, version = "经典旧世", source = "侏儒" }, -- 原色机械陆行鸟
+  [17459] = { itemID = 13327, version = "绝版", source = "绝版" }, -- 冰蓝色机械陆行鸟A型
+  [17460] = { itemID = 13329, version = "绝版", source = "绝版" }, -- 霜山羊
+  [17461] = { itemID = 13328, version = "绝版", source = "绝版" }, -- 黑山羊
+  [17462] = { itemID = 13331, version = "经典旧世", source = "亡灵" }, -- 红色骸骨军马
+  [17463] = { itemID = 13332, version = "经典旧世", source = "亡灵" }, -- 蓝色骸骨军马
+  [17464] = { itemID = 13333, version = "经典旧世", source = "亡灵" }, -- 棕色骸骨军马
+  [17465] = { itemID = 13334, version = "经典旧世", source = "亡灵" }, -- 绿色骷髅战马
+  [17481] = { itemID = 13335, version = "经典旧世", source = "副本掉落" }, -- 瑞文戴尔的死亡战马
+  [18363] = { itemID = 0, version = "未分类", source = "占位符" }, -- 科多兽坐骑
+  [18989] = { itemID = 15277, version = "经典旧世", source = "牛头人" }, -- 灰色科多兽
+  [18990] = { itemID = 15290, version = "经典旧世", source = "牛头人" }, -- 棕色科多兽
+  [18991] = { itemID = 15292, version = "绝版", source = "绝版" }, -- 绿色科多兽
+  [18992] = { itemID = 15293, version = "绝版", source = "绝版" }, -- 蓝色科多兽
+  [22717] = { itemID = 19468, version = "打架", source = "商人出售" }, -- 黑色战驹
+  [22718] = { itemID = 29466, version = "打架", source = "商人出售" }, -- 黑色作战科多兽
+  [22719] = { itemID = 29465, version = "打架", source = "商人出售" }, -- 黑色作战陆行鸟
+  [22720] = { itemID = 29467, version = "打架", source = "商人出售" }, -- 黑色战羊
+  [22721] = { itemID = 29472, version = "打架", source = "商人出售" }, -- 黑色作战迅猛龙
+  [22722] = { itemID = 29470, version = "打架", source = "商人出售" }, -- 红色骷髅战马
+  [22723] = { itemID = 29471, version = "打架", source = "商人出售" }, -- 黑色战虎
+  [22724] = { itemID = 29469, version = "打架", source = "商人出售" }, -- 黑色战狼
+  [23161] = { itemID = 0, version = "其他", source = "术士" }, -- 恐惧战马
+  [23214] = { itemID = 0, version = "其他", source = "圣骑士" }, -- 军马
+  [23219] = { itemID = 18767, version = "经典旧世", source = "暗夜精灵" }, -- 迅捷雾刃豹
+  [23221] = { itemID = 18766, version = "经典旧世", source = "暗夜精灵" }, -- 迅捷霜刃豹
+  [23222] = { itemID = 18774, version = "经典旧世", source = "侏儒" }, -- 迅捷黄色机械陆行鸟
+  [23223] = { itemID = 18773, version = "经典旧世", source = "侏儒" }, -- 迅捷白色机械陆行鸟
+  [23225] = { itemID = 18772, version = "经典旧世", source = "侏儒" }, -- 迅捷绿色机械陆行鸟
+  [23227] = { itemID = 18776, version = "经典旧世", source = "人类" }, -- 迅捷褐色马
+  [23228] = { itemID = 18778, version = "经典旧世", source = "人类" }, -- 迅捷白马
+  [23229] = { itemID = 18777, version = "经典旧世", source = "人类" }, -- 迅捷棕马
+  [23238] = { itemID = 18786, version = "经典旧世", source = "矮人" }, -- 迅捷棕山羊
+  [23239] = { itemID = 18787, version = "经典旧世", source = "矮人" }, -- 迅捷灰山羊
+  [23240] = { itemID = 18785, version = "经典旧世", source = "矮人" }, -- 迅捷白山羊
+  [23241] = { itemID = 18788, version = "经典旧世", source = "巨魔" }, -- 迅捷蓝色迅猛龙
+  [23242] = { itemID = 18789, version = "经典旧世", source = "巨魔" }, -- 迅捷绿色迅猛龙
+  [23243] = { itemID = 18790, version = "经典旧世", source = "巨魔" }, -- 迅捷橙色迅猛龙
+  [23246] = { itemID = 18791, version = "经典旧世", source = "亡灵" }, -- 紫色骷髅战马
+  [23247] = { itemID = 18793, version = "经典旧世", source = "牛头人" }, -- 大型白色科多兽
+  [23248] = { itemID = 18795, version = "经典旧世", source = "牛头人" }, -- 大型灰色科多兽
+  [23249] = { itemID = 18794, version = "经典旧世", source = "牛头人" }, -- 大型棕色科多兽
+  [23250] = { itemID = 18796, version = "经典旧世", source = "兽人" }, -- 迅捷棕狼
+  [23251] = { itemID = 18797, version = "经典旧世", source = "兽人" }, -- 迅捷森林狼
+  [23252] = { itemID = 18798, version = "经典旧世", source = "兽人" }, -- 迅捷灰狼
+  [23338] = { itemID = 18902, version = "经典旧世", source = "暗夜精灵" }, -- 迅捷雷刃豹
+  [23509] = { itemID = 19029, version = "打架", source = "奥特兰克山谷" }, -- 霜狼嗥叫者
+  [23510] = { itemID = 19030, version = "打架", source = "奥特兰克山谷" }, -- 雷矛军用坐骑
+  [24242] = { itemID = 19872, version = "绝版", source = "黑市" }, -- 拉扎什迅猛龙
+  [24252] = { itemID = 19902, version = "绝版", source = "黑市" }, -- 迅捷祖利安猛虎
+  [25863] = { itemID = 0, version = "绝版", source = "绝版" }, -- 黑色其拉作战坦克
+  [25953] = { itemID = 21218, version = "经典旧世", source = "副本掉落" }, -- 蓝色其拉作战坦克
+  [26054] = { itemID = 21321, version = "经典旧世", source = "副本掉落" }, -- 红色其拉作战坦克
+  [26055] = { itemID = 21323, version = "经典旧世", source = "副本掉落" }, -- 黄色其拉作战坦克
+  [26056] = { itemID = 21324, version = "经典旧世", source = "副本掉落" }, -- 绿色其拉作战坦克
+  [26655] = { itemID = 0, version = "绝版", source = "绝版" }, -- 黑色其拉作战坦克
+  [26656] = { itemID = 21176, version = "绝版", source = "绝版" }, -- 黑色其拉作战坦克
+  [28828] = { itemID = 0, version = "未分类", source = "占位符" }, -- 虚空幼龙
+  [30174] = { itemID = 23720, version = "德拉诺之王", source = "钓鱼" }, -- 乌龟坐骑
+  [32235] = { itemID = 25470, version = "燃烧的远征", source = "商人出售" }, -- 金色狮鹫
+  [32239] = { itemID = 25471, version = "燃烧的远征", source = "商人出售" }, -- 黑色狮鹫
+  [32240] = { itemID = 25472, version = "燃烧的远征", source = "商人出售" }, -- 雪色狮鹫
+  [32242] = { itemID = 25473, version = "燃烧的远征", source = "商人出售" }, -- 迅捷蓝色狮鹫
+  [32243] = { itemID = 25474, version = "燃烧的远征", source = "商人出售" }, -- 茶色驭风者
+  [32244] = { itemID = 25475, version = "燃烧的远征", source = "商人出售" }, -- 蓝色驭风者
+  [32245] = { itemID = 25476, version = "燃烧的远征", source = "商人出售" }, -- 绿色驭风者
+  [32246] = { itemID = 25477, version = "燃烧的远征", source = "商人出售" }, -- 迅捷红色驭风者
+  [32289] = { itemID = 25527, version = "燃烧的远征", source = "商人出售" }, -- 迅捷红色狮鹫
+  [32290] = { itemID = 25528, version = "燃烧的远征", source = "商人出售" }, -- 迅捷绿色狮鹫
+  [32292] = { itemID = 25529, version = "燃烧的远征", source = "商人出售" }, -- 迅捷紫色狮鹫
+  [32295] = { itemID = 25531, version = "燃烧的远征", source = "商人出售" }, -- 迅捷绿色驭风者
+  [32296] = { itemID = 25532, version = "燃烧的远征", source = "商人出售" }, -- 迅捷黄色驭风者
+  [32297] = { itemID = 25533, version = "燃烧的远征", source = "商人出售" }, -- 迅捷紫色驭风者
+  [33630] = { itemID = 0, version = "绝版", source = "绝版" }, -- 蓝色机械陆行鸟
+  [33660] = { itemID = 28936, version = "经典旧世", source = "血精灵" }, -- 迅捷粉色陆行鸟
+  [34406] = { itemID = 28481, version = "经典旧世", source = "德莱尼" }, -- 棕色雷象
+  [34767] = { itemID = 0, version = "燃烧的远征", source = "血精灵" }, -- 萨拉斯军马
+  [34769] = { itemID = 0, version = "燃烧的远征", source = "血精灵" }, -- 萨拉斯战马
+  [34790] = { itemID = 29228, version = "打架", source = "哈兰" }, -- 暗色作战塔布羊
+  [34795] = { itemID = 28927, version = "经典旧世", source = "血精灵" }, -- 红色陆行鸟
+  [34896] = { itemID = 29227, version = "燃烧的远征", source = "沙塔尔天空卫队" }, -- 蓝色作战塔布羊
+  [34897] = { itemID = 29231, version = "燃烧的远征", source = "沙塔尔天空卫队" }, -- 白色作战塔布羊
+  [34898] = { itemID = 29229, version = "燃烧的远征", source = "沙塔尔天空卫队" }, -- 银色作战塔布羊
+  [34899] = { itemID = 29230, version = "燃烧的远征", source = "沙塔尔天空卫队" }, -- 褐色作战塔布羊
+  [35018] = { itemID = 29222, version = "经典旧世", source = "血精灵" }, -- 紫色陆行鸟
+  [35020] = { itemID = 29220, version = "经典旧世", source = "血精灵" }, -- 蓝色陆行鸟
+  [35022] = { itemID = 29221, version = "经典旧世", source = "血精灵" }, -- 黑色陆行鸟
+  [35025] = { itemID = 29223, version = "经典旧世", source = "血精灵" }, -- 迅捷绿色陆行鸟
+  [35027] = { itemID = 29224, version = "经典旧世", source = "血精灵" }, -- 迅捷紫色陆行鸟
+  [35028] = { itemID = 34129, version = "打架", source = "商人出售" }, -- 迅捷作战陆行鸟
+  [35710] = { itemID = 29744, version = "经典旧世", source = "德莱尼" }, -- 灰色雷象
+  [35711] = { itemID = 29743, version = "经典旧世", source = "德莱尼" }, -- 紫色雷象
+  [35712] = { itemID = 29746, version = "经典旧世", source = "德莱尼" }, -- 重型绿色雷象
+  [35713] = { itemID = 29745, version = "经典旧世", source = "德莱尼" }, -- 重型蓝色雷象
+  [35714] = { itemID = 29747, version = "经典旧世", source = "德莱尼" }, -- 重型紫色雷象
+  [36702] = { itemID = 30480, version = "燃烧的远征", source = "团本掉落" }, -- 炽热战马
+  [37015] = { itemID = 30609, version = "绝版", source = "角斗士" }, -- 迅捷虚空幼龙
+  [39315] = { itemID = 31830, version = "燃烧的远征", source = "沙塔尔天空卫队" }, -- 蓝色骑乘塔布羊
+  [39316] = { itemID = 28915, version = "打架", source = "哈兰" }, -- 暗色骑乘塔布羊
+  [39317] = { itemID = 31831, version = "燃烧的远征", source = "沙塔尔天空卫队" }, -- 银色骑乘塔布羊
+  [39318] = { itemID = 31833, version = "燃烧的远征", source = "沙塔尔天空卫队" }, -- 褐色骑乘塔布羊
+  [39319] = { itemID = 31835, version = "燃烧的远征", source = "沙塔尔天空卫队" }, -- 白色骑乘塔布羊
+  [39798] = { itemID = 32314, version = "燃烧的远征", source = "沙塔尔天空卫队" }, -- 绿色骑乘虚空鳐
+  [39800] = { itemID = 32317, version = "燃烧的远征", source = "沙塔尔天空卫队" }, -- 红色骑乘虚空鳐
+  [39801] = { itemID = 32316, version = "燃烧的远征", source = "沙塔尔天空卫队" }, -- 紫色骑乘虚空鳐
+  [39802] = { itemID = 32318, version = "燃烧的远征", source = "沙塔尔天空卫队" }, -- 银色骑乘虚空鳐
+  [39803] = { itemID = 32319, version = "燃烧的远征", source = "沙塔尔天空卫队" }, -- 蓝色骑乘虚空鳐
+  [40192] = { itemID = 32458, version = "燃烧的远征", source = "团本掉落" }, -- 奥的灰烬
+  [41252] = { itemID = 32768, version = "燃烧的远征", source = "副本掉落" }, -- 乌鸦之神
+  [41513] = { itemID = 32857, version = "燃烧的远征", source = "灵翼之龙" }, -- 黑色灵翼幼龙
+  [41514] = { itemID = 32858, version = "燃烧的远征", source = "灵翼之龙" }, -- 青色灵翼幼龙
+  [41515] = { itemID = 32859, version = "燃烧的远征", source = "灵翼之龙" }, -- 蓝色灵翼幼龙
+  [41516] = { itemID = 32860, version = "燃烧的远征", source = "灵翼之龙" }, -- 紫色灵翼幼龙
+  [41517] = { itemID = 32861, version = "燃烧的远征", source = "灵翼之龙" }, -- 绿色灵翼幼龙
+  [41518] = { itemID = 32862, version = "燃烧的远征", source = "灵翼之龙" }, -- 红色灵翼幼龙
+  [42776] = { itemID = 49283, version = "促销", source = "卡牌" }, -- 幽灵虎
+  [42777] = { itemID = 49284, version = "促销", source = "卡牌" }, -- 迅捷幽灵虎
+  [43688] = { itemID = 33809, version = "绝版", source = "副本掉落" }, -- 阿曼尼战熊
+  [43899] = { itemID = 33976, version = "绝版", source = "美酒节" }, -- 美酒节赛羊
+  [43900] = { itemID = 33977, version = "事件", source = "美酒节" }, -- 迅捷美酒节赛羊
+  [43927] = { itemID = 33999, version = "燃烧的远征", source = "声望" }, -- 塞纳里奥作战角鹰兽
+  [44151] = { itemID = 34061, version = "专业", source = "工程" }, -- 涡轮加速飞行器
+  [44153] = { itemID = 34060, version = "专业", source = "工程" }, -- 飞行器
+  [44317] = { itemID = 0, version = "绝版", source = "角斗士" }, -- 残酷角斗士的虚空幼龙
+  [44744] = { itemID = 34092, version = "绝版", source = "角斗士" }, -- 残酷角斗士的虚空幼龙
+  [46197] = { itemID = 49285, version = "促销", source = "卡牌" }, -- X-51虚空火箭
+  [46199] = { itemID = 49286, version = "促销", source = "卡牌" }, -- X-51虚空火箭特别加强版
+  [46628] = { itemID = 35513, version = "燃烧的远征", source = "副本掉落" }, -- 迅捷白色陆行鸟
+  [48025] = { itemID = 37012, version = "事件", source = "万圣节" }, -- 无头骑士的坐骑
+  [48027] = { itemID = 35906, version = "打架", source = "商人出售" }, -- 黑色作战雷象
+  [48778] = { itemID = 0, version = "其他", source = "死亡骑士" }, -- 阿彻鲁斯死亡战马
+  [48954] = { itemID = 0, version = "未分类", source = "占位符" }, -- 迅捷斑马
+  [49193] = { itemID = 37676, version = "绝版", source = "角斗士" }, -- 复仇角斗士的虚空幼龙
+  [49322] = { itemID = 37719, version = "绝版", source = "招募/复活卷轴" }, -- 迅捷斑马
+  [49378] = { itemID = 0, version = "未分类", source = "占位符" }, -- 美酒节科多兽
+  [49379] = { itemID = 37828, version = "事件", source = "美酒节" }, -- 大型美酒节科多兽
+  [51412] = { itemID = 49282, version = "促销", source = "卡牌" }, -- 大战熊
+  [54729] = { itemID = 40775, version = "其他", source = "死亡骑士" }, -- 黑锋骸骨狮鹫
+  [54753] = { itemID = 43962, version = "巫妖王之怒", source = "声望" }, -- 白色北极熊坐骑
+  [55164] = { itemID = 0, version = "未分类", source = "占位符" }, -- 迅捷幽灵狮鹫
+  [55531] = { itemID = 44413, version = "专业", source = "工程" }, -- 机械路霸
+  [58615] = { itemID = 43516, version = "绝版", source = "角斗士" }, -- 野蛮角斗士的虚空幼龙
+  [58983] = { itemID = 43599, version = "促销", source = "嘉年华" }, -- 暴雪巨熊
+  [59567] = { itemID = 43952, version = "巫妖王之怒", source = "团本掉落" }, -- 碧蓝幼龙
+  [59568] = { itemID = 43953, version = "巫妖王之怒", source = "团本掉落" }, -- 蓝色幼龙
+  [59569] = { itemID = 43951, version = "巫妖王之怒", source = "副本掉落" }, -- 青铜幼龙
+  [59570] = { itemID = 43955, version = "巫妖王之怒", source = "龙眠联军" }, -- 红色幼龙
+  [59571] = { itemID = 43954, version = "巫妖王之怒", source = "团本掉落" }, -- 暮光幼龙
+  [59572] = { itemID = 0, version = "未分类", source = "占位符" }, -- 黑色北极熊
+  [59650] = { itemID = 43986, version = "巫妖王之怒", source = "成就" }, -- 黑色幼龙
+  [59785] = { itemID = 43956, version = "打架", source = "商人出售" }, -- 黑色猛犸战象
+  [59788] = { itemID = 44077, version = "打架", source = "商人出售" }, -- 黑色猛犸战象
+  [59791] = { itemID = 44230, version = "巫妖王之怒", source = "商人出售" }, -- 长毛猛犸象
+  [59793] = { itemID = 44231, version = "巫妖王之怒", source = "商人出售" }, -- 长毛猛犸象
+  [59797] = { itemID = 44080, version = "巫妖王之怒", source = "霍迪尔之子" }, -- 冰雪猛犸象
+  [59799] = { itemID = 43958, version = "巫妖王之怒", source = "霍迪尔之子" }, -- 冰雪猛犸象
+  [59961] = { itemID = 44160, version = "巫妖王之怒", source = "成就" }, -- 红色始祖幼龙
+  [59976] = { itemID = 44164, version = "绝版", source = "成就" }, -- 黑色始祖幼龙
+  [59996] = { itemID = 44151, version = "巫妖王之怒", source = "副本掉落" }, -- 蓝色始祖幼龙
+  [60002] = { itemID = 44168, version = "巫妖王之怒", source = "野外稀有" }, -- 迷时始祖幼龙
+  [60021] = { itemID = 44175, version = "绝版", source = "黑市" }, -- 被感染的始祖幼龙
+  [60024] = { itemID = 44177, version = "事件", source = "成就" }, -- 紫色始祖幼龙
+  [60025] = { itemID = 44178, version = "其他", source = "坐骑收集" }, -- 白色幼龙
+  [60114] = { itemID = 44225, version = "巫妖王之怒", source = "商人出售" }, -- 装甲棕熊
+  [60116] = { itemID = 44226, version = "巫妖王之怒", source = "商人出售" }, -- 装甲棕熊
+  [60118] = { itemID = 44223, version = "打架", source = "成就" }, -- 黑色战熊
+  [60119] = { itemID = 44224, version = "打架", source = "成就" }, -- 黑色战熊
+  [60136] = { itemID = 0, version = "未分类", source = "占位符" }, -- 重型旅行猛犸象
+  [60140] = { itemID = 0, version = "未分类", source = "占位符" }, -- 重型旅行猛犸象
+  [60424] = { itemID = 44413, version = "专业", source = "工程" }, -- 机械师的摩托车
+  [61229] = { itemID = 44689, version = "巫妖王之怒", source = "商人出售" }, -- 装甲雪色狮鹫
+  [61230] = { itemID = 44690, version = "巫妖王之怒", source = "商人出售" }, -- 装甲蓝色驭风者
+  [61294] = { itemID = 44707, version = "巫妖王之怒", source = "声望" }, -- 绿色始祖幼龙
+  [61309] = { itemID = 44558, version = "专业", source = "裁缝" }, -- 华丽的飞毯
+  [61425] = { itemID = 44235, version = "巫妖王之怒", source = "商人出售" }, -- 旅行者的苔原猛犸象
+  [61447] = { itemID = 44234, version = "巫妖王之怒", source = "商人出售" }, -- 旅行者的苔原猛犸象
+  [61451] = { itemID = 44554, version = "专业", source = "裁缝" }, -- 飞毯
+  [61465] = { itemID = 43959, version = "巫妖王之怒", source = "团本掉落" }, -- 重型黑色猛犸战象
+  [61467] = { itemID = 44083, version = "巫妖王之怒", source = "团本掉落" }, -- 重型黑色猛犸战象
+  [61469] = { itemID = 44086, version = "巫妖王之怒", source = "霍迪尔之子" }, -- 重型冰雪猛犸象
+  [61470] = { itemID = 43961, version = "巫妖王之怒", source = "霍迪尔之子" }, -- 重型冰雪猛犸象
+  [61996] = { itemID = 44843, version = "其他", source = "坐骑收集" }, -- 蓝色龙鹰
+  [61997] = { itemID = 44842, version = "其他", source = "坐骑收集" }, -- 红色龙鹰
+  [62048] = { itemID = 186469, version = "事件", source = "周年庆" }, -- 伊利达雷末日龙鹰
+  [63232] = { itemID = 45125, version = "巫妖王之怒", source = "银色锦标赛" }, -- 暴风城战马
+  [63635] = { itemID = 45593, version = "巫妖王之怒", source = "银色锦标赛" }, -- 暗矛迅猛龙
+  [63636] = { itemID = 45586, version = "巫妖王之怒", source = "银色锦标赛" }, -- 铁炉堡战羊
+  [63637] = { itemID = 45591, version = "巫妖王之怒", source = "银色锦标赛" }, -- 达纳苏斯夜刃豹
+  [63638] = { itemID = 45589, version = "巫妖王之怒", source = "银色锦标赛" }, -- 诺莫瑞根机械陆行鸟
+  [63639] = { itemID = 45590, version = "巫妖王之怒", source = "银色锦标赛" }, -- 埃索达雷象
+  [63640] = { itemID = 45595, version = "巫妖王之怒", source = "银色锦标赛" }, -- 奥格瑞玛战狼
+  [63641] = { itemID = 45592, version = "巫妖王之怒", source = "银色锦标赛" }, -- 雷霆崖科多兽
+  [63642] = { itemID = 45596, version = "巫妖王之怒", source = "银色锦标赛" }, -- 银月城陆行鸟
+  [63643] = { itemID = 45597, version = "巫妖王之怒", source = "银色锦标赛" }, -- 被遗忘者战马
+  [63796] = { itemID = 45693, version = "巫妖王之怒", source = "团本掉落" }, -- 米米尔隆的头部
+  [63844] = { itemID = 45725, version = "巫妖王之怒", source = "银色锦标赛" }, -- 银色角鹰兽
+  [63956] = { itemID = 45801, version = "巫妖王之怒", source = "成就" }, -- 铁箍始祖幼龙
+  [63963] = { itemID = 45802, version = "巫妖王之怒", source = "成就" }, -- 铁锈始祖幼龙
+  [64656] = { itemID = 0, version = "未分类", source = "占位符" }, -- 蓝色骷髅战马
+  [64657] = { itemID = 46100, version = "经典旧世", source = "牛头人" }, -- 白色科多兽
+  [64658] = { itemID = 46099, version = "经典旧世", source = "兽人" }, -- 黑狼
+  [64659] = { itemID = 46102, version = "经典旧世", source = "任务" }, -- 毒皮暴掠龙
+  [64731] = { itemID = 46109, version = "德拉诺之王", source = "钓鱼" }, -- 海龟
+  [64927] = { itemID = 46708, version = "绝版", source = "角斗士" }, -- 致命角斗士的冰霜巨龙
+  [64977] = { itemID = 46308, version = "经典旧世", source = "亡灵" }, -- 黑色骸骨军马
+  [65439] = { itemID = 46171, version = "绝版", source = "角斗士" }, -- 狂怒角斗士的冰霜巨龙
+  [65637] = { itemID = 46745, version = "巫妖王之怒", source = "银色锦标赛" }, -- 重型红色雷象
+  [65638] = { itemID = 46744, version = "巫妖王之怒", source = "银色锦标赛" }, -- 迅捷月刃豹
+  [65639] = { itemID = 46751, version = "巫妖王之怒", source = "银色锦标赛" }, -- 迅捷红色陆行鸟
+  [65640] = { itemID = 46752, version = "巫妖王之怒", source = "银色锦标赛" }, -- 迅捷灰马
+  [65641] = { itemID = 46750, version = "巫妖王之怒", source = "银色锦标赛" }, -- 大型金色科多兽
+  [65642] = { itemID = 46747, version = "巫妖王之怒", source = "银色锦标赛" }, -- 涡轮机械陆行鸟
+  [65643] = { itemID = 46748, version = "巫妖王之怒", source = "银色锦标赛" }, -- 迅捷紫色战羊
+  [65644] = { itemID = 46743, version = "巫妖王之怒", source = "银色锦标赛" }, -- 迅捷紫色迅猛龙
+  [65645] = { itemID = 46746, version = "巫妖王之怒", source = "银色锦标赛" }, -- 白色骷髅战马
+  [65646] = { itemID = 46749, version = "巫妖王之怒", source = "银色锦标赛" }, -- 迅捷紫鬃战狼
+  [65917] = { itemID = 49290, version = "促销", source = "卡牌" }, -- 魔法公鸡
+  [66087] = { itemID = 46813, version = "巫妖王之怒", source = "银色锦标赛" }, -- 银色盟约角鹰兽
+  [66088] = { itemID = 46814, version = "巫妖王之怒", source = "银色锦标赛" }, -- 夺日者龙鹰
+  [66090] = { itemID = 46815, version = "巫妖王之怒", source = "银色锦标赛" }, -- 奎尔多雷战马
+  [66091] = { itemID = 46816, version = "巫妖王之怒", source = "银色锦标赛" }, -- 夺日者陆行鸟
+  [66122] = { itemID = 0, version = "未分类", source = "占位符" }, -- 魔法公鸡
+  [66123] = { itemID = 0, version = "未分类", source = "占位符" }, -- 魔法公鸡
+  [66124] = { itemID = 0, version = "未分类", source = "占位符" }, -- 魔法公鸡
+  [66846] = { itemID = 47101, version = "经典旧世", source = "亡灵" }, -- 赭色骷髅战马
+  [66847] = { itemID = 47100, version = "经典旧世", source = "暗夜精灵" }, -- 条纹晨刃豹
+  [66906] = { itemID = 47179, version = "巫妖王之怒", source = "银色锦标赛" }, -- 银色军马
+  [67336] = { itemID = 47840, version = "绝版", source = "角斗士" }, -- 无情角斗士的冰霜巨龙
+  [67466] = { itemID = 47180, version = "巫妖王之怒", source = "银色锦标赛" }, -- 银色战马
+  [68056] = { itemID = 49046, version = "绝版", source = "成就" }, -- 迅捷部落战狼
+  [68057] = { itemID = 49044, version = "绝版", source = "成就" }, -- 迅捷联盟战马
+  [68187] = { itemID = 49096, version = "绝版", source = "成就" }, -- 十字军的白色战马
+  [68188] = { itemID = 49098, version = "绝版", source = "成就" }, -- 十字军的黑色战马
+  [69395] = { itemID = 49636, version = "巫妖王之怒", source = "团本掉落" }, -- 奥妮克希亚幼龙
+  [69820] = { itemID = 0, version = "其他", source = "圣骑士" }, -- 烈日行者科多兽
+  [69826] = { itemID = 0, version = "其他", source = "圣骑士" }, -- 巨型烈日行者科多兽
+  [71342] = { itemID = 50250, version = "事件", source = "情人节" }, -- X-45偷心火箭
+  [71810] = { itemID = 50435, version = "绝版", source = "角斗士" }, -- 暴怒角斗士的冰霜巨龙
+  [72286] = { itemID = 50818, version = "巫妖王之怒", source = "团本掉落" }, -- 无敌
+  [72807] = { itemID = 51955, version = "巫妖王之怒", source = "成就" }, -- 缚寒冰霜征服者
+  [72808] = { itemID = 51954, version = "巫妖王之怒", source = "成就" }, -- 浴血冰霜征服者
+  [73313] = { itemID = 52200, version = "巫妖王之怒", source = "任务" }, -- 血色死亡战马
+  [73629] = { itemID = 0, version = "其他", source = "圣骑士" }, -- 主教的雷象
+  [73630] = { itemID = 0, version = "其他", source = "圣骑士" }, -- 大主教的雷象
+  [74856] = { itemID = 54069, version = "促销", source = "卡牌" }, -- 炽焰角鹰兽
+  [74918] = { itemID = 54068, version = "促销", source = "卡牌" }, -- 白毛犀牛
+  [75207] = { itemID = 54465, version = "大地的裂变", source = "任务" }, -- 瓦丝琪尔海马
+  [75596] = { itemID = 54797, version = "专业", source = "裁缝" }, -- 凝霜飞毯
+  [75614] = { itemID = 54811, version = "促销", source = "商城出售" }, -- 星骓
+  [75973] = { itemID = 54860, version = "限时活动", source = "商栈" }, -- X-53型观光火箭
+  [84751] = { itemID = 60954, version = "专业", source = "考古" }, -- 化石迅猛龙
+  [87090] = { itemID = 0, version = "经典旧世", source = "地精" }, -- 地精三轮摩托
+  [87091] = { itemID = 0, version = "经典旧世", source = "地精" }, -- 地精三轮摩托涡轮增压型
+  [88331] = { itemID = 62900, version = "大地的裂变", source = "成就" }, -- 火山石幼龙
+  [88335] = { itemID = 62901, version = "大地的裂变", source = "成就" }, -- 东风幼龙
+  [88718] = { itemID = 63042, version = "大地的裂变", source = "野外稀有" }, -- 磷光石幼龙
+  [88741] = { itemID = 65356, version = "大地的裂变", source = "巴拉丁" }, -- 西风幼龙
+  [88742] = { itemID = 63040, version = "大地的裂变", source = "副本掉落" }, -- 北风幼龙
+  [88744] = { itemID = 63041, version = "大地的裂变", source = "团本掉落" }, -- 南风幼龙
+  [88746] = { itemID = 63043, version = "大地的裂变", source = "副本掉落" }, -- 琉璃石幼龙
+  [88748] = { itemID = 63044, version = "大地的裂变", source = "拉穆卡恒" }, -- 棕色骑乘骆驼
+  [88749] = { itemID = 63045, version = "大地的裂变", source = "拉穆卡恒" }, -- 褐色骑乘骆驼
+  [88750] = { itemID = 63046, version = "大地的裂变", source = "宝箱" }, -- 灰色骑乘骆驼
+  [88990] = { itemID = 63125, version = "其他", source = "公会商人" }, -- 暗色凤凰
+  [90621] = { itemID = 62298, version = "其他", source = "公会商人" }, -- 黄金狮王
+  [92155] = { itemID = 64883, version = "专业", source = "考古" }, -- 深蓝其拉作战坦克
+  [92231] = { itemID = 64998, version = "大地的裂变", source = "巴拉丁" }, -- 鬼灵战马
+  [92232] = { itemID = 64999, version = "大地的裂变", source = "巴拉丁" }, -- 鬼灵座狼
+  [93326] = { itemID = 65891, version = "专业", source = "炼金" }, -- 沙石幼龙
+  [93623] = { itemID = 68008, version = "促销", source = "卡牌" }, -- 斑纹幼龙
+  [93644] = { itemID = 67107, version = "其他", source = "公会商人" }, -- 库卡隆横扫者
+  [96491] = { itemID = 68823, version = "大地的裂变", source = "副本掉落" }, -- 装甲拉扎什迅猛龙
+  [96499] = { itemID = 68824, version = "大地的裂变", source = "副本掉落" }, -- 迅捷祖利安黑豹
+  [96503] = { itemID = 68825, version = "促销", source = "卡牌" }, -- 阿曼尼龙鹰
+  [97359] = { itemID = 69213, version = "大地的裂变", source = "成就" }, -- 浴火角鹰兽
+  [97493] = { itemID = 69224, version = "大地的裂变", source = "团本掉落" }, -- 纯血火鹰
+  [97501] = { itemID = 69226, version = "其他", source = "坐骑收集" }, -- 魔能火鹰
+  [97560] = { itemID = 69230, version = "大地的裂变", source = "成就" }, -- 堕落火鹰
+  [97581] = { itemID = 69228, version = "促销", source = "卡牌" }, -- 野蛮迅猛龙
+  [98204] = { itemID = 69747, version = "大地的裂变", source = "副本掉落" }, -- 阿曼尼斗熊
+  [98718] = { itemID = 67151, version = "大地的裂变", source = "野外稀有" }, -- 驯服的海马
+  [98727] = { itemID = 69846, version = "促销", source = "商城出售" }, -- 飞翼守护者
+  [100332] = { itemID = 70909, version = "打架", source = "成就" }, -- 勇猛的战驹
+  [100333] = { itemID = 70910, version = "打架", source = "成就" }, -- 勇猛的战狼
+  [101282] = { itemID = 71339, version = "绝版", source = "角斗士" }, -- 残忍角斗士的暮光幼龙
+  [101542] = { itemID = 71665, version = "大地的裂变", source = "团本掉落" }, -- 奥利瑟拉佐尔的烈焰之爪
+  [101573] = { itemID = 71718, version = "促销", source = "卡牌" }, -- 迅捷海滨陆行鸟
+  [101821] = { itemID = 71954, version = "绝版", source = "角斗士" }, -- 冷酷角斗士的暮光幼龙
+  [102346] = { itemID = 72140, version = "事件", source = "暗月马戏团" }, -- 迅捷森林陆行鸟
+  [102349] = { itemID = 72145, version = "事件", source = "复活节" }, -- 迅捷春日陆行鸟
+  [102350] = { itemID = 72146, version = "事件", source = "情人节" }, -- 迅捷爱情鸟
+  [102488] = { itemID = 72575, version = "促销", source = "卡牌" }, -- 白色骑乘骆驼
+  [102514] = { itemID = 72582, version = "促销", source = "卡牌" }, -- 堕落角鹰兽
+  [103081] = { itemID = 73766, version = "事件", source = "暗月马戏团" }, -- 暗月跳舞熊
+  [103195] = { itemID = 73838, version = "经典旧世", source = "狼人" }, -- 高山马
+  [103196] = { itemID = 73839, version = "经典旧世", source = "狼人" }, -- 迅捷高山马
+  [107203] = { itemID = 0, version = "促销", source = "商城出售" }, -- 泰瑞尔的天使战马
+  [107516] = { itemID = 76889, version = "限时活动", source = "商栈" }, -- 幽灵狮鹫
+  [107517] = { itemID = 76902, version = "限时活动", source = "商栈" }, -- 幽灵驭风者
+  [107842] = { itemID = 77067, version = "大地的裂变", source = "团本掉落" }, -- 炽炎幼龙
+  [107844] = { itemID = 77068, version = "大地的裂变", source = "成就" }, -- 暮光先驱者
+  [107845] = { itemID = 77069, version = "大地的裂变", source = "团本掉落" }, -- 生命缚誓者的仆从
+  [110039] = { itemID = 78919, version = "大地的裂变", source = "团本掉落" }, -- 实验体12-B
+  [110051] = { itemID = 78924, version = "促销", source = "商城出售" }, -- 守护巨龙之心
+  [113120] = { itemID = 79771, version = "促销", source = "卡牌" }, -- 邪能幼龙
+  [113199] = { itemID = 79802, version = "熊猫人之谜", source = "云端祥龙骑士团" }, -- 翠绿云端翔龙
+  [118089] = { itemID = 81354, version = "熊猫人之谜", source = "声望" }, -- 天蓝水黾
+  [118737] = { itemID = 81559, version = "熊猫人之谜", source = "成就" }, -- 熊猫人风筝
+  [120043] = { itemID = 82453, version = "专业", source = "珠宝" }, -- 宝石玛瑙猎豹
+  [120395] = { itemID = 82765, version = "经典旧世", source = "熊猫人" }, -- 绿色龙龟
+  [120822] = { itemID = 82811, version = "经典旧世", source = "熊猫人" }, -- 巨型红色龙龟
+  [121820] = { itemID = 83086, version = "绝版", source = "招募/复活卷轴" }, -- 黑曜夜之翼
+  [121836] = { itemID = 83090, version = "专业", source = "珠宝" }, -- 蓝宝石猎豹
+  [121837] = { itemID = 83088, version = "专业", source = "珠宝" }, -- 翡翠猎豹
+  [121838] = { itemID = 83087, version = "专业", source = "珠宝" }, -- 红宝石猎豹
+  [121839] = { itemID = 83089, version = "专业", source = "珠宝" }, -- 日长石猎豹
+  [122708] = { itemID = 84101, version = "熊猫人之谜", source = "商人出售" }, -- 雄壮远足牦牛
+  [123182] = { itemID = 84753, version = "限时活动", source = "幻境新生:熊猫人" }, -- 咔啡牦牛
+  [123886] = { itemID = 85262, version = "熊猫人之谜", source = "成就" }, -- 琥珀巨蝎
+  [123992] = { itemID = 85430, version = "熊猫人之谜", source = "云端祥龙骑士团" }, -- 碧蓝云端翔龙
+  [123993] = { itemID = 85429, version = "熊猫人之谜", source = "云端祥龙骑士团" }, -- 金色云端翔龙
+  [124408] = { itemID = 85666, version = "其他", source = "公会商人" }, -- 雷霆翡翠云端翔龙
+  [124550] = { itemID = 85785, version = "绝版", source = "角斗士" }, -- 灾变角斗士暮光幼龙
+  [124659] = { itemID = 85870, version = "促销", source = "典藏版" }, -- 皇家魁麟
+  [126507] = { itemID = 87250, version = "专业", source = "工程" }, -- 衰变凯帕铀火箭
+  [126508] = { itemID = 87251, version = "专业", source = "工程" }, -- 对地同步世界旋转器
+  [127154] = { itemID = 87768, version = "熊猫人之谜", source = "任务" }, -- 玛瑙云端翔龙
+  [127156] = { itemID = 87769, version = "熊猫人之谜", source = "成就" }, -- 猩红云端翔龙
+  [127158] = { itemID = 87771, version = "熊猫人之谜", source = "世界BOSS" }, -- 神圣玛瑙云端翔龙
+  [127161] = { itemID = 87773, version = "熊猫人之谜", source = "成就" }, -- 神圣猩红云端翔龙
+  [127164] = { itemID = 87774, version = "熊猫人之谜", source = "声望" }, -- 神圣金色云端翔龙
+  [127165] = { itemID = 87775, version = "事件", source = "时光漫游" }, -- 玉蕾，青龙之女
+  [127169] = { itemID = 87776, version = "其他", source = "坐骑收集" }, -- 神圣碧蓝云端翔龙
+  [127170] = { itemID = 87777, version = "熊猫人之谜", source = "团本掉落" }, -- 星光云端翔龙
+  [127174] = { itemID = 87781, version = "熊猫人之谜", source = "金莲教" }, -- 天蓝骑乘仙鹤
+  [127176] = { itemID = 87782, version = "熊猫人之谜", source = "金莲教" }, -- 金黄骑乘仙鹤
+  [127177] = { itemID = 87783, version = "熊猫人之谜", source = "金莲教" }, -- 帝王骑乘仙鹤
+  [127178] = { itemID = 87784, version = "限时活动", source = "幻境新生:熊猫人" }, -- 丛林骑乘仙鹤
+  [127209] = { itemID = 87786, version = "限时活动", source = "幻境新生:熊猫人" }, -- 黑色骑乘牦牛
+  [127213] = { itemID = 87787, version = "限时活动", source = "幻境新生:熊猫人" }, -- 谦逊远足牦牛
+  [127216] = { itemID = 87788, version = "熊猫人之谜", source = "商人出售" }, -- 灰色骑乘牦牛
+  [127220] = { itemID = 87789, version = "熊猫人之谜", source = "商人出售" }, -- 金色骑乘牦牛
+  [127271] = { itemID = 87791, version = "专业", source = "钓鱼" }, -- 猩红水黾
+  [127286] = { itemID = 87795, version = "经典旧世", source = "熊猫人" }, -- 黑色龙龟
+  [127287] = { itemID = 91008, version = "经典旧世", source = "熊猫人" }, -- 蓝色龙龟
+  [127288] = { itemID = 91005, version = "经典旧世", source = "熊猫人" }, -- 棕色龙龟
+  [127289] = { itemID = 91006, version = "经典旧世", source = "熊猫人" }, -- 紫色龙龟
+  [127290] = { itemID = 91007, version = "经典旧世", source = "熊猫人" }, -- 红色龙龟
+  [127293] = { itemID = 91012, version = "经典旧世", source = "熊猫人" }, -- 巨型绿色龙龟
+  [127295] = { itemID = 91011, version = "经典旧世", source = "熊猫人" }, -- 巨型黑色龙龟
+  [127302] = { itemID = 91013, version = "经典旧世", source = "熊猫人" }, -- 巨型蓝色龙龟
+  [127308] = { itemID = 91014, version = "经典旧世", source = "熊猫人" }, -- 巨型棕色龙龟
+  [127310] = { itemID = 91015, version = "经典旧世", source = "熊猫人" }, -- 巨型紫色龙龟
+  [129552] = { itemID = 89154, version = "绝版", source = "熊猫人黄金挑战" }, -- 赤红熊猫人凤凰
+  [129918] = { itemID = 89304, version = "熊猫人之谜", source = "声望" }, -- 雷霆天神云端翔龙
+  [129932] = { itemID = 89305, version = "熊猫人之谜", source = "影踪派" }, -- 绿色影踪派骑乘虎
+  [129934] = { itemID = 89307, version = "熊猫人之谜", source = "影踪派" }, -- 蓝色影踪派骑乘虎
+  [129935] = { itemID = 89306, version = "熊猫人之谜", source = "影踪派" }, -- 红色影踪派骑乘虎
+  [130086] = { itemID = 89362, version = "熊猫人之谜", source = "阡陌客" }, -- 棕色骑乘山羊
+  [130092] = { itemID = 89363, version = "熊猫人之谜", source = "声望" }, -- 红色筋斗云
+  [130137] = { itemID = 89390, version = "熊猫人之谜", source = "阡陌客" }, -- 白色骑乘山羊
+  [130138] = { itemID = 89391, version = "熊猫人之谜", source = "阡陌客" }, -- 黑色骑乘山羊
+  [130965] = { itemID = 89783, version = "熊猫人之谜", source = "世界BOSS" }, -- 炮舰之子
+  [130985] = { itemID = 89785, version = "熊猫人之谜", source = "成就" }, -- 熊猫人风筝
+  [132036] = { itemID = 90655, version = "熊猫人之谜", source = "野外稀有" }, -- 雷霆红玉云端翔龙
+  [132117] = { itemID = 90710, version = "绝版", source = "熊猫人黄金挑战" }, -- 燃灰熊猫人凤凰
+  [132118] = { itemID = 90711, version = "绝版", source = "熊猫人黄金挑战" }, -- 翠绿熊猫人凤凰
+  [132119] = { itemID = 90712, version = "绝版", source = "熊猫人黄金挑战" }, -- 蓝紫熊猫人凤凰
+  [133023] = { itemID = 91802, version = "其他", source = "坐骑收集" }, -- 翠绿熊猫人风筝
+  [134359] = { itemID = 95416, version = "专业", source = "工程" }, -- 飞天魔像
+  [134573] = { itemID = 92724, version = "促销", source = "商城出售" }, -- 追风
+  [135416] = { itemID = 93168, version = "熊猫人之谜", source = "成就" }, -- 重装狮鹫
+  [135418] = { itemID = 93169, version = "熊猫人之谜", source = "成就" }, -- 重装双足飞龙
+  [136163] = { itemID = 93385, version = "熊猫人之谜", source = "任务" }, -- 雄壮狮鹫
+  [136164] = { itemID = 93386, version = "熊猫人之谜", source = "任务" }, -- 雄壮双足飞龙
+  [136400] = { itemID = 93662, version = "熊猫人之谜", source = "成就" }, -- 装甲啸天龙
+  [136471] = { itemID = 93666, version = "熊猫人之谜", source = "团本掉落" }, -- 赫利东的子嗣
+  [136505] = { itemID = 93671, version = "促销", source = "卡牌" }, -- 幽灵军马
+  [138423] = { itemID = 94228, version = "熊猫人之谜", source = "世界BOSS" }, -- 冰蓝原始恐角龙
+  [138424] = { itemID = 94230, version = "熊猫人之谜", source = "野外稀有" }, -- 珀光原始恐角龙
+  [138425] = { itemID = 94229, version = "熊猫人之谜", source = "野外稀有" }, -- 岩灰原始恐角龙
+  [138426] = { itemID = 94231, version = "熊猫人之谜", source = "野外稀有" }, -- 翡翠原始恐角龙
+  [138640] = { itemID = 94290, version = "熊猫人之谜", source = "任务" }, -- 白色原始迅猛龙
+  [138641] = { itemID = 94291, version = "熊猫人之谜", source = "野外稀有" }, -- 红色原始迅猛龙
+  [138642] = { itemID = 94292, version = "熊猫人之谜", source = "野外稀有" }, -- 黑色原始迅猛龙
+  [138643] = { itemID = 94293, version = "熊猫人之谜", source = "野外稀有" }, -- 绿色原始迅猛龙
+  [139407] = { itemID = 95041, version = "绝版", source = "角斗士" }, -- 恶毒角斗士云端翔龙
+  [139442] = { itemID = 95057, version = "熊猫人之谜", source = "世界BOSS" }, -- 雷霆蓝晶云端翔龙
+  [139448] = { itemID = 95059, version = "熊猫人之谜", source = "团本掉落" }, -- 季鹍之嗣
+  [139595] = { itemID = 95341, version = "促销", source = "商城出售" }, -- 装甲血翼蝠
+  [140249] = { itemID = 95564, version = "熊猫人之谜", source = "成就" }, -- 黄金原始恐角龙
+  [140250] = { itemID = 95565, version = "熊猫人之谜", source = "成就" }, -- 深红原始恐角龙
+  [142073] = { itemID = 98618, version = "促销", source = "炉石传说" }, -- 炉石天马
+  [142266] = { itemID = 98104, version = "其他", source = "坐骑收集" }, -- 红色装甲龙鹰
+  [142478] = { itemID = 98259, version = "其他", source = "坐骑收集" }, -- 蓝色装甲龙鹰
+  [142641] = { itemID = 98405, version = "绝版", source = "搏击俱乐部" }, -- 拳手的健壮穆山兽
+  [142878] = { itemID = 97989, version = "促销", source = "商城出售" }, -- 魔法灵龙
+  [142910] = { itemID = 129922, version = "事件", source = "时光漫游" }, -- 铁箍鬼灵战马
+  [146615] = { itemID = 102514, version = "打架", source = "邪气鞍座" }, -- 勇猛卡多雷作战刃豹
+  [146622] = { itemID = 102533, version = "打架", source = "邪气鞍座" }, -- 邪恶骷髅战马
+  [148392] = { itemID = 104208, version = "熊猫人之谜", source = "成就" }, -- 迦拉卡斯的子嗣
+  [148396] = { itemID = 104246, version = "绝版", source = "成就" }, -- 库卡隆战狼
+  [148417] = { itemID = 104253, version = "熊猫人之谜", source = "团本掉落" }, -- 库卡隆战蝎
+  [148428] = { itemID = 103638, version = "打架", source = "永恒岛" }, -- 灰皮穆山兽
+  [148476] = { itemID = 104269, version = "熊猫人之谜", source = "野外稀有" }, -- 雷霆玛瑙云端翔龙
+  [148618] = { itemID = 104325, version = "绝版", source = "角斗士" }, -- 暴虐角斗士云端翔龙
+  [148619] = { itemID = 104326, version = "绝版", source = "角斗士" }, -- 恶孽角斗士云端翔龙
+  [148620] = { itemID = 104327, version = "绝版", source = "角斗士" }, -- 骄矜角斗士云端翔龙
+  [149801] = { itemID = 106246, version = "绝版", source = "招募/复活卷轴" }, -- 翡翠角鹰兽
+  [153489] = { itemID = 107951, version = "促销", source = "商城出售" }, -- 钢铁碎天兽
+  [155741] = { itemID = 109013, version = "促销", source = "典藏版" }, -- 恐惧渡鸦
+  [163024] = { itemID = 112326, version = "促销", source = "商城出售" }, -- 战火梦魇兽
+  [163025] = { itemID = 112327, version = "促销", source = "商城出售" }, -- 狞笑掠夺者
+  [169952] = { itemID = 115363, version = "专业", source = "裁缝" }, -- 蠕行飞毯
+  [170347] = { itemID = 115484, version = "限时活动", source = "周年庆" }, -- 熔火恶犬
+  [171436] = { itemID = 116383, version = "德拉诺之王", source = "成就" }, -- 踏血小戈隆
+  [171616] = { itemID = 116655, version = "德拉诺之王", source = "商人出售" }, -- 枯皮悬崖践踏者
+  [171617] = { itemID = 116656, version = "德拉诺之王", source = "要塞兽栏" }, -- 驯养的冰蹄牛
+  [171619] = { itemID = 116658, version = "德拉诺之王", source = "野外稀有" }, -- 苔原冰蹄牛
+  [171620] = { itemID = 116659, version = "德拉诺之王", source = "野外稀有" }, -- 血蹄公牛
+  [171621] = { itemID = 116660, version = "德拉诺之王", source = "团本掉落" }, -- 铁蹄毁灭者
+  [171622] = { itemID = 116661, version = "德拉诺之王", source = "野外稀有" }, -- 斑点草地践踏者
+  [171623] = { itemID = 116662, version = "德拉诺之王", source = "要塞兽栏" }, -- 驯养的草地践踏者
+  [171624] = { itemID = 116663, version = "德拉诺之王", source = "要塞入侵" }, -- 暗皮珠齿象
+  [171625] = { itemID = 116664, version = "德拉诺之王", source = "声望" }, -- 土色岩皮雷象
+  [171626] = { itemID = 116665, version = "德拉诺之王", source = "商栈" }, -- 装甲铁牙践踏者
+  [171627] = { itemID = 116666, version = "其他", source = "公会商人" }, -- 黑钢斗猪
+  [171628] = { itemID = 116667, version = "德拉诺之王", source = "商人出售" }, -- 石牙斗猪
+  [171629] = { itemID = 116668, version = "德拉诺之王", source = "要塞兽栏" }, -- 装甲霜鬃野猪
+  [171630] = { itemID = 116669, version = "德拉诺之王", source = "野外稀有" }, -- 装甲刀脊野猪
+  [171632] = { itemID = 116670, version = "德拉诺之王", source = "成就" }, -- 霜原斗猪
+  [171633] = { itemID = 116671, version = "德拉诺之王", source = "声望" }, -- 野生血牙野猪
+  [171634] = { itemID = 116672, version = "德拉诺之王", source = "商人出售" }, -- 驯养的刀脊野猪
+  [171635] = { itemID = 116673, version = "德拉诺之王", source = "要塞入侵" }, -- 巨型冻吻野猪
+  [171636] = { itemID = 116674, version = "德拉诺之王", source = "野外稀有" }, -- 巨型灰牙野猪
+  [171637] = { itemID = 116675, version = "德拉诺之王", source = "要塞兽栏" }, -- 驯养的石牙野猪
+  [171638] = { itemID = 116676, version = "德拉诺之王", source = "要塞兽栏" }, -- 驯养的淡水兽
+  [171824] = { itemID = 116767, version = "德拉诺之王", source = "野外稀有" }, -- 天蓝淡水兽
+  [171825] = { itemID = 116768, version = "德拉诺之王", source = "商人出售" }, -- 苔皮淡水兽
+  [171826] = { itemID = 116769, version = "德拉诺之王", source = "任务" }, -- 泥背淡水兽
+  [171827] = { itemID = 137575, version = "军团再临", source = "团本掉落" }, -- 炎狱地狱火
+  [171828] = { itemID = 116771, version = "德拉诺之王", source = "世界BOSS" }, -- 日光峰林飞鹰
+  [171829] = { itemID = 116772, version = "德拉诺之王", source = "声望" }, -- 暗鬃冲锋者
+  [171830] = { itemID = 116773, version = "德拉诺之王", source = "野外稀有" }, -- 迅捷风蹄塔布羊
+  [171831] = { itemID = 116774, version = "德拉诺之王", source = "要塞兽栏" }, -- 驯养的银鬃塔布羊
+  [171832] = { itemID = 116775, version = "德拉诺之王", source = "声望" }, -- 风蹄公羊
+  [171833] = { itemID = 116776, version = "德拉诺之王", source = "声望" }, -- 苍白食棘者
+  [171834] = { itemID = 116777, version = "打架", source = "邪气鞍座" }, -- 勇猛战羊
+  [171835] = { itemID = 116778, version = "打架", source = "邪气鞍座" }, -- 勇猛作战迅猛龙
+  [171836] = { itemID = 116779, version = "德拉诺之王", source = "要塞入侵" }, -- 钢喉铁颚狼
+  [171837] = { itemID = 116780, version = "德拉诺之王", source = "野外稀有" }, -- 战歌恐牙狼
+  [171838] = { itemID = 116781, version = "德拉诺之王", source = "要塞兽栏" }, -- 装甲霜狼
+  [171839] = { itemID = 116782, version = "德拉诺之王", source = "商栈" }, -- 铁甲战狼
+  [171840] = { itemID = 137576, version = "限时活动", source = "商栈" }, -- 冷焰地狱火
+  [171841] = { itemID = 116784, version = "德拉诺之王", source = "要塞兽栏" }, -- 驯养的啸狼
+  [171842] = { itemID = 116785, version = "德拉诺之王", source = "声望" }, -- 迅捷霜狼
+  [171843] = { itemID = 116786, version = "德拉诺之王", source = "要塞入侵" }, -- 烟灰恐狼
+  [171844] = { itemID = 108883, version = "专业", source = "制皮" }, -- 灰鬃恐狼
+  [171845] = { itemID = 116788, version = "其他", source = "投票" }, -- 督军的死亡之轮
+  [171846] = { itemID = 116789, version = "其他", source = "投票" }, -- 勇士的践踏之刃
+  [171847] = { itemID = 118515, version = "限时活动", source = "商栈" }, -- 烬鬃战马
+  [171848] = { itemID = 116791, version = "绝版", source = "德拉诺黄金挑战" }, -- 挑战者的作战雪人
+  [171849] = { itemID = 116792, version = "德拉诺之王", source = "野外稀有" }, -- 阳炎之肤小戈隆
+  [171850] = { itemID = 137573, version = "军团再临", source = "任务" }, -- 洛希恩徘徊者
+  [171851] = { itemID = 116794, version = "德拉诺之王", source = "野外稀有" }, -- 夜嚎铁颚狼
+  [175700] = { itemID = 118676, version = "其他", source = "坐骑收集" }, -- 翡翠幼龙
+  [179244] = { itemID = 122703, version = "其他", source = "传家宝" }, -- 代驾型机械路霸
+  [179245] = { itemID = 120968, version = "其他", source = "传家宝" }, -- 代驾型机械师的摩托车
+  [179478] = { itemID = 121815, version = "德拉诺之王", source = "野外稀有" }, -- 黑暗之星的灵爪飞鹰
+  [180545] = { itemID = 122469, version = "促销", source = "商城出售" }, -- 秘魔刃豹
+  [182912] = { itemID = 123890, version = "德拉诺之王", source = "团本掉落" }, -- 魔钢歼灭者
+  [183117] = { itemID = 123974, version = "德拉诺之王", source = "声望" }, -- 腐化恐翼鸦
+  [183889] = { itemID = 124089, version = "打架", source = "邪气鞍座" }, -- 勇猛的战斗机械陆行鸟
+  [185052] = { itemID = 124540, version = "打架", source = "邪气鞍座" }, -- 勇猛的科多战兽
+  [186305] = { itemID = 127140, version = "德拉诺之王", source = "成就" }, -- 地火恐狼
+  [186828] = { itemID = 128277, version = "绝版", source = "角斗士" }, -- 原祖角斗士的魔血小戈隆
+  [189043] = { itemID = 128281, version = "绝版", source = "角斗士" }, -- 狂野角斗士的魔血小戈隆
+  [189044] = { itemID = 128282, version = "绝版", source = "角斗士" }, -- 好战角斗士的魔血小戈隆
+  [189364] = { itemID = 128311, version = "德拉诺之王", source = "任务" }, -- 煤拳小戈隆
+  [189998] = { itemID = 128425, version = "促销", source = "典藏版" }, -- 伊利达雷魔犬
+  [189999] = { itemID = 128422, version = "绝版", source = "前夕绝版" }, -- 林地守卫者
+  [190690] = { itemID = 128480, version = "德拉诺之王", source = "声望" }, -- 钢鬃地狱野猪
+  [190977] = { itemID = 128526, version = "德拉诺之王", source = "声望" }, -- 死牙魔能野猪
+  [191314] = { itemID = 128671, version = "事件", source = "冬幕节" }, -- 格噜普斯的爪牙
+  [191633] = { itemID = 128706, version = "德拉诺之王", source = "成就" }, -- 飞天魔龙
+  [193007] = { itemID = 141216, version = "军团再临", source = "成就" }, -- 林地污染者
+  [193695] = { itemID = 129280, version = "打架", source = "成就" }, -- 声威战马
+  [194046] = { itemID = 0, version = "未分类", source = "占位符" }, -- 迅捷幽灵双头飞龙
+  [194464] = { itemID = 129923, version = "事件", source = "时光漫游" }, -- 日蚀龙鹰
+  [196681] = { itemID = 131734, version = "专业", source = "考古" }, -- 艾特洛之魂
+  [200175] = { itemID = 0, version = "其他", source = "恶魔猎手" }, -- 邪刃豹
+  [201098] = { itemID = 133543, version = "事件", source = "时光漫游" }, -- 永恒时空撕裂者
+  [204166] = { itemID = 143864, version = "打架", source = "成就" }, -- 声威战狼
+  [213115] = { itemID = 137570, version = "军团再临", source = "商人出售" }, -- 血牙寡妇蛛
+  [213134] = { itemID = 137574, version = "军团再临", source = "团本掉落" }, -- 邪焰地狱火
+  [213158] = { itemID = 137577, version = "军团再临", source = "任务" }, -- 掠食血眼龙
+  [213163] = { itemID = 137578, version = "军团再临", source = "任务" }, -- 雪羽猎龙
+  [213164] = { itemID = 137579, version = "军团再临", source = "任务" }, -- 火羽恐嘴龙
+  [213165] = { itemID = 137580, version = "军团再临", source = "任务" }, -- 翠绿利爪龙
+  [213209] = { itemID = 137686, version = "专业", source = "锻造" }, -- 钢缚吞噬者
+  [213339] = { itemID = 129962, version = "专业", source = "制皮" }, -- 巨型北地大角鹿
+  [213349] = { itemID = 137615, version = "未分类", source = "未实装" }, -- 炎核地狱火
+  [213350] = { itemID = 137614, version = "其他", source = "坐骑收集" }, -- 霜裂地狱火
+  [214791] = { itemID = 138811, version = "专业", source = "钓鱼" }, -- 深海喂食者
+  [215159] = { itemID = 138258, version = "军团再临", source = "解密" }, -- 失落已久的角鹰兽
+  [215545] = { itemID = 186479, version = "暗影国度", source = "温西尔" }, -- 精铸墓翼蝠
+  [215558] = { itemID = 138387, version = "其他", source = "成就" }, -- 骑乘巨鼠
+  [222202] = { itemID = 140228, version = "打架", source = "荣誉等级" }, -- 声威青铜骏马
+  [222236] = { itemID = 140230, version = "打架", source = "荣誉等级" }, -- 声威皇室骏马
+  [222237] = { itemID = 140232, version = "打架", source = "荣誉等级" }, -- 声威森林骏马
+  [222238] = { itemID = 140233, version = "打架", source = "荣誉等级" }, -- 声威牙白骏马
+  [222240] = { itemID = 140408, version = "打架", source = "荣誉等级" }, -- 声威蔚蓝骏马
+  [222241] = { itemID = 140407, version = "打架", source = "荣誉等级" }, -- 声威午夜骏马
+  [223018] = { itemID = 138201, version = "军团再临", source = "解密" }, -- 深海水母
+  [223341] = { itemID = 140353, version = "打架", source = "邪气鞍座" }, -- 勇猛的吉尔尼斯战马
+  [223354] = { itemID = 140354, version = "打架", source = "邪气鞍座" }, -- 勇猛的战车
+  [223363] = { itemID = 140348, version = "打架", source = "邪气鞍座" }, -- 勇猛作战陆行鸟
+  [223578] = { itemID = 140350, version = "打架", source = "邪气鞍座" }, -- 勇猛的作战雷象
+  [223814] = { itemID = 140500, version = "其他", source = "成就" }, -- 机械化木材采集器
+  [225765] = { itemID = 141217, version = "军团再临", source = "成就" }, -- 魔羽角鹰兽
+  [227956] = { itemID = 141713, version = "军团再临", source = "商人出售" }, -- 阿坎迪安战龟
+  [227986] = { itemID = 141843, version = "绝版", source = "角斗士" }, -- 血仇角斗士的风暴巨龙
+  [227988] = { itemID = 141844, version = "绝版", source = "角斗士" }, -- 无畏角斗士的风暴巨龙
+  [227989] = { itemID = 141845, version = "绝版", source = "角斗士" }, -- 残虐角斗士的风暴巨龙
+  [227991] = { itemID = 141846, version = "绝版", source = "角斗士" }, -- 凶猛角斗士的风暴巨龙
+  [227994] = { itemID = 141847, version = "绝版", source = "角斗士" }, -- 暴烈角斗士的风暴巨龙
+  [227995] = { itemID = 141848, version = "绝版", source = "角斗士" }, -- 专横角斗士的风暴巨龙
+  [228919] = { itemID = 142398, version = "事件", source = "暗月马戏团" }, -- 暗水鳐鱼
+  [229376] = { itemID = 0, version = "军团再临", source = "职业坐骑" }, -- 大法师的棱光飞碟
+  [229377] = { itemID = 0, version = "军团再临", source = "职业坐骑" }, -- 大祭司的光誓寻觅者
+  [229385] = { itemID = 142225, version = "军团再临", source = "职业坐骑" }, -- 班禄，大宗师的伙伴
+  [229386] = { itemID = 142227, version = "军团再临", source = "职业坐骑" }, -- 狩猎大师的忠诚狼鹰
+  [229387] = { itemID = 142231, version = "军团再临", source = "职业坐骑" }, -- 死亡领主的邪嗣征服者
+  [229388] = { itemID = 142232, version = "军团再临", source = "职业坐骑" }, -- 战争领主的嗜血战龙
+  [229417] = { itemID = 0, version = "军团再临", source = "职业坐骑" }, -- 屠魔者的破邪尖啸者
+  [229438] = { itemID = 142226, version = "军团再临", source = "职业坐骑" }, -- 狩猎大师的凶猛狼鹰
+  [229439] = { itemID = 142228, version = "军团再临", source = "职业坐骑" }, -- 狩猎大师的恐怖狼鹰
+  [229486] = { itemID = 142235, version = "打架", source = "邪气鞍座" }, -- 邪恶战熊
+  [229487] = { itemID = 142234, version = "打架", source = "邪气鞍座" }, -- 邪恶战熊
+  [229499] = { itemID = 142236, version = "军团再临", source = "副本掉落" }, -- 午夜
+  [229512] = { itemID = 142237, version = "打架", source = "邪气鞍座" }, -- 邪恶战狮
+  [230401] = { itemID = 142369, version = "打架", source = "声望" }, -- 乳白陆行鸟
+  [230844] = { itemID = 142403, version = "绝版", source = "搏击俱乐部" }, -- 拳手的健壮蜥蜴
+  [230987] = { itemID = 142436, version = "军团再临", source = "任务" }, -- 奥术师的魔刃豹
+  [230988] = { itemID = 142437, version = "打架", source = "邪气鞍座" }, -- 邪恶战蝎
+  [231428] = { itemID = 142552, version = "军团再临", source = "副本掉落" }, -- 燃烬巨龙
+  [231434] = { itemID = 143493, version = "军团再临", source = "职业坐骑" }, -- 暗影之刃的谋杀预兆
+  [231435] = { itemID = 143502, version = "军团再临", source = "职业坐骑" }, -- 大领主的金辉战马
+  [231442] = { itemID = 143489, version = "军团再临", source = "职业坐骑" }, -- 先知的狂怒风暴
+  [231523] = { itemID = 143492, version = "军团再临", source = "职业坐骑" }, -- 暗影之刃的致命预兆
+  [231524] = { itemID = 143491, version = "军团再临", source = "职业坐骑" }, -- 暗影之刃的怨恨预兆
+  [231525] = { itemID = 143490, version = "军团再临", source = "职业坐骑" }, -- 暗影之刃的猩红预兆
+  [231587] = { itemID = 143503, version = "军团再临", source = "职业坐骑" }, -- 大领主的复仇战马
+  [231588] = { itemID = 143504, version = "军团再临", source = "职业坐骑" }, -- 大领主的警戒战马
+  [231589] = { itemID = 143505, version = "军团再临", source = "职业坐骑" }, -- 大领主的英勇战马
+  [232405] = { itemID = 143631, version = "绝版", source = "风暴英雄" }, -- 原始火刃豹
+  [232412] = { itemID = 0, version = "军团再临", source = "职业坐骑" }, -- 虚空之王的混沌愤怒战马
+  [232519] = { itemID = 143643, version = "军团再临", source = "团本掉落" }, -- 深渊蠕虫
+  [232523] = { itemID = 143648, version = "打架", source = "邪气鞍座" }, -- 邪恶战龟
+  [232525] = { itemID = 143649, version = "打架", source = "邪气鞍座" }, -- 邪恶战龟
+  [233364] = { itemID = 143764, version = "军团再临", source = "巅峰大使" }, -- 织魔飞毯
+  [235764] = { itemID = 152843, version = "军团再临", source = "野外稀有" }, -- 暗孢法力鳐
+  [237286] = { itemID = 163576, version = "争霸艾泽拉斯", source = "地区" }, -- 沙丘食腐狼
+  [237287] = { itemID = 161773, version = "争霸艾泽拉斯", source = "声望" }, -- 灰白土狼
+  [238452] = { itemID = 143637, version = "军团再临", source = "职业坐骑" }, -- 虚空之王的硫磺愤怒战马
+  [238454] = { itemID = 142233, version = "军团再临", source = "职业坐骑" }, -- 虚空之王的诅咒愤怒战马
+  [239013] = { itemID = 152788, version = "军团再临", source = "声望" }, -- 光铸战争机甲
+  [239049] = { itemID = 161215, version = "争霸艾泽拉斯", source = "成就" }, -- 黑曜三叶虫
+  [239363] = { itemID = 0, version = "未分类", source = "占位符" }, -- 迅捷幽灵角鹰兽
+  [239766] = { itemID = 151626, version = "限时活动", source = "甲虫的召唤" }, -- 蓝色其拉主战坦克
+  [239767] = { itemID = 151625, version = "限时活动", source = "甲虫的召唤" }, -- 红色其拉主战坦克
+  [239770] = { itemID = 0, version = "限时活动", source = "甲虫的召唤" }, -- 黑色其拉主战坦克
+  [242305] = { itemID = 152791, version = "军团再临", source = "声望" }, -- 黑色废墟游荡者
+  [242874] = { itemID = 147807, version = "军团再临", source = "巅峰大使" }, -- 至高岭大角鹿
+  [242875] = { itemID = 147804, version = "军团再临", source = "巅峰大使" }, -- 野生梦境角马
+  [242881] = { itemID = 147806, version = "军团再临", source = "巅峰大使" }, -- 云翼角鹰兽
+  [242882] = { itemID = 147805, version = "军团再临", source = "巅峰大使" }, -- 瓦拉加尔风暴之翼幼龙
+  [242896] = { itemID = 152870, version = "打架", source = "邪气鞍座" }, -- 勇猛的战狐
+  [242897] = { itemID = 152869, version = "打架", source = "邪气鞍座" }, -- 勇猛的战狐
+  [243025] = { itemID = 147835, version = "军团再临", source = "解密" }, -- 谜语人的灵蛇
+  [243201] = { itemID = 153493, version = "绝版", source = "角斗士" }, -- 恶魔角斗士的风暴巨龙
+  [243512] = { itemID = 147901, version = "促销", source = "商城出售" }, -- 微光逐星者
+  [243651] = { itemID = 152789, version = "军团再临", source = "团本掉落" }, -- 带镣铐的乌祖尔
+  [243652] = { itemID = 152790, version = "军团再临", source = "野外稀有" }, -- 邪犬
+  [243795] = { itemID = 163575, version = "争霸艾泽拉斯", source = "地区" }, -- 跃泽巨蛛
+  [244712] = { itemID = 161664, version = "争霸艾泽拉斯", source = "声望" }, -- 幽灵飞翼龙
+  [245723] = { itemID = 151618, version = "促销", source = "嘉年华" }, -- 暴风城逐天战机
+  [245725] = { itemID = 151617, version = "促销", source = "嘉年华" }, -- 奥格瑞玛拦截飞艇
+  [247402] = { itemID = 151623, version = "军团再临", source = "解密" }, -- 清醒的梦魇
+  [247448] = { itemID = 153485, version = "事件", source = "暗月马戏团" }, -- 暗月飞船
+  [250735] = { itemID = 163216, version = "争霸艾泽拉斯", source = "成就" }, -- 充血抱齿兽
+  [253004] = { itemID = 152794, version = "军团再临", source = "声望" }, -- 紫色废墟游荡者
+  [253005] = { itemID = 152795, version = "军团再临", source = "声望" }, -- 绿色废墟游荡者
+  [253006] = { itemID = 152793, version = "军团再临", source = "声望" }, -- 褐色废墟游荡者
+  [253007] = { itemID = 152797, version = "军团再临", source = "声望" }, -- 蓝色废墟游荡者
+  [253008] = { itemID = 152796, version = "军团再临", source = "声望" }, -- 棕色废墟游荡者
+  [253058] = { itemID = 152814, version = "军团再临", source = "野外稀有" }, -- 疯狂的混沌奔行者
+  [253087] = { itemID = 152815, version = "军团再临", source = "成就" }, -- 安托兰阴暗恶犬
+  [253088] = { itemID = 152816, version = "军团再临", source = "团本掉落" }, -- 安托兰灼焦恶犬
+  [253106] = { itemID = 152842, version = "军团再临", source = "野外稀有" }, -- 活跃法力鳐
+  [253107] = { itemID = 152844, version = "军团再临", source = "野外稀有" }, -- 柔光法力鳐
+  [253108] = { itemID = 152841, version = "军团再临", source = "野外稀有" }, -- 邪光法力鳐
+  [253109] = { itemID = 152840, version = "军团再临", source = "野外稀有" }, -- 荧光法力鳐
+  [253639] = { itemID = 152901, version = "绝版", source = "前夕绝版" }, -- 紫罗兰魔翼鸦
+  [253660] = { itemID = 152903, version = "军团再临", source = "野外稀有" }, -- 毒牙撕咬者
+  [253661] = { itemID = 152905, version = "军团再临", source = "野外稀有" }, -- 赤红涎喉者
+  [253662] = { itemID = 152904, version = "军团再临", source = "野外稀有" }, -- 酸液喷射者
+  [253711] = { itemID = 152912, version = "专业", source = "钓鱼" }, -- 池塘水母
+  [254069] = { itemID = 153042, version = "军团再临", source = "巅峰大使" }, -- 荣耀邪能碾压者
+  [254258] = { itemID = 153043, version = "军团再临", source = "巅峰大使" }, -- 祝福邪能碾压者
+  [254259] = { itemID = 153044, version = "军团再临", source = "巅峰大使" }, -- 复仇邪能碾压者
+  [254260] = { itemID = 153041, version = "军团再临", source = "成就" }, -- 黯蹄废墟游荡者
+  [254811] = { itemID = 163586, version = "争霸艾泽拉斯", source = "海岛探险" }, -- 呱呱鹦鹉
+  [254812] = { itemID = 233242, version = "限时活动", source = "霸业风暴" }, -- 皇家海羽鹦鹉
+  [254813] = { itemID = 159842, version = "争霸艾泽拉斯", source = "副本掉落" }, -- 鲨鱼饵
+  [255695] = { itemID = 153539, version = "促销", source = "典藏版" }, -- 海鬃骏马
+  [255696] = { itemID = 153540, version = "促销", source = "典藏版" }, -- 奢华暴掠龙
+  [256123] = { itemID = 153594, version = "专业", source = "工程" }, -- 斯克维里加全地形载具
+  [258022] = { itemID = 155656, version = "经典旧世", source = "光铸德莱尼" }, -- 光铸邪能碾压者
+  [258060] = { itemID = 155662, version = "经典旧世", source = "至高岭牛头人" }, -- 至高岭雷蹄驼鹿
+  [258845] = { itemID = 156487, version = "经典旧世", source = "夜之子" }, -- 夜之子魔刃豹
+  [259202] = { itemID = 156486, version = "经典旧世", source = "虚空精灵" }, -- 星怨虚空陆行鸟
+  [259213] = { itemID = 161911, version = "争霸艾泽拉斯", source = "声望" }, -- 海军骏马
+  [259395] = { itemID = 156564, version = "促销", source = "商城出售" }, -- 戌禅，神圣护卫
+  [259740] = { itemID = 163183, version = "争霸艾泽拉斯", source = "商人出售" }, -- 青绿沼泽跃蛙
+  [259741] = { itemID = 170069, version = "争霸艾泽拉斯", source = "任务" }, -- 蜜背收割者
+  [260172] = { itemID = 161912, version = "争霸艾泽拉斯", source = "声望" }, -- 暗斑灰马
+  [260173] = { itemID = 161910, version = "争霸艾泽拉斯", source = "声望" }, -- 雾黑军马
+  [260174] = { itemID = 163574, version = "争霸艾泽拉斯", source = "地区" }, -- 惊怖驮骡
+  [260175] = { itemID = 163573, version = "争霸艾泽拉斯", source = "地区" }, -- 金鬃
+  [261395] = { itemID = 156798, version = "争霸艾泽拉斯", source = "解密" }, -- 主脑
+  [261433] = { itemID = 163122, version = "打架", source = "邪气鞍座" }, -- 勇猛的战蜥
+  [261434] = { itemID = 163121, version = "打架", source = "邪气鞍座" }, -- 勇猛的战蜥
+  [261437] = { itemID = 161134, version = "专业", source = "工程" }, -- 机甲大亨Mk2型
+  [262022] = { itemID = 156879, version = "绝版", source = "角斗士" }, -- 悚然角斗士的始祖幼龙
+  [262023] = { itemID = 156880, version = "绝版", source = "角斗士" }, -- 惊恶角斗士的始祖幼龙
+  [262024] = { itemID = 156881, version = "绝版", source = "角斗士" }, -- 罪邪角斗士的始祖幼龙
+  [262027] = { itemID = 156884, version = "绝版", source = "角斗士" }, -- 腐化角斗士的始祖幼龙
+  [263707] = { itemID = 157870, version = "经典旧世", source = "赞达拉巨魔" }, -- 赞达拉恐角龙
+  [264058] = { itemID = 163042, version = "绝版", source = "黑市" }, -- 雄壮商队雷龙
+  [266058] = { itemID = 159921, version = "争霸艾泽拉斯", source = "副本掉落" }, -- 墓穴猎手
+  [266925] = { itemID = 166745, version = "争霸艾泽拉斯", source = "海岛探险" }, -- 泥翼信天翁
+  [267270] = { itemID = 159146, version = "争霸艾泽拉斯", source = "任务" }, -- 库亚冯
+  [267274] = { itemID = 161330, version = "经典旧世", source = "玛格汉兽人" }, -- 玛格汉恐狼
+  [270560] = { itemID = 163124, version = "打架", source = "邪气鞍座" }, -- 勇猛的作战裂蹄牛
+  [270562] = { itemID = 0, version = "其他", source = "圣骑士" }, -- 暗炉山羊
+  [270564] = { itemID = 0, version = "其他", source = "圣骑士" }, -- 晨炉山羊
+  [271646] = { itemID = 161331, version = "经典旧世", source = "黑铁矮人" }, -- 黑铁熔火犬
+  [272472] = { itemID = 163128, version = "争霸艾泽拉斯", source = "任务" }, -- 幽暗城天灾蝙蝠
+  [272481] = { itemID = 163123, version = "打架", source = "邪气鞍座" }, -- 勇猛的作战淡水兽
+  [272770] = { itemID = 160589, version = "促销", source = "商城出售" }, -- 惊魂号
+  [273541] = { itemID = 160829, version = "争霸艾泽拉斯", source = "副本掉落" }, -- 孢林抱齿兽
+  [274610] = { itemID = 163127, version = "争霸艾泽拉斯", source = "任务" }, -- 泰达希尔角鹰兽
+  [275623] = { itemID = 161479, version = "争霸艾泽拉斯", source = "野外稀有" }, -- 纳沙塔尔鲜血巨蛇
+  [275837] = { itemID = 161665, version = "争霸艾泽拉斯", source = "声望" }, -- 钴蓝翼手龙
+  [275838] = { itemID = 161666, version = "争霸艾泽拉斯", source = "声望" }, -- 捕获的沼泽追猎者
+  [275840] = { itemID = 161667, version = "争霸艾泽拉斯", source = "声望" }, -- 沃顿奈破沙者
+  [275841] = { itemID = 161774, version = "争霸艾泽拉斯", source = "声望" }, -- 远征队群居血虱
+  [275859] = { itemID = 161908, version = "争霸艾泽拉斯", source = "声望" }, -- 薄暮维克雷斯狮鹫
+  [275866] = { itemID = 161909, version = "争霸艾泽拉斯", source = "声望" }, -- 斯托颂眺海狮鹫
+  [275868] = { itemID = 161879, version = "争霸艾泽拉斯", source = "声望" }, -- 普罗德摩尔观潮狮鹫
+  [278803] = { itemID = 163131, version = "专业", source = "钓鱼" }, -- 无尽之海鳐鱼
+  [278966] = { itemID = 163186, version = "促销", source = "炉石传说" }, -- 炽焰炉石天马
+  [278979] = { itemID = 163585, version = "争霸艾泽拉斯", source = "海岛探险" }, -- 拍浪水母
+  [279454] = { itemID = 163577, version = "争霸艾泽拉斯", source = "成就" }, -- 征服者的镰牙之喉
+  [279456] = { itemID = 163579, version = "争霸艾泽拉斯", source = "阿拉希" }, -- 高地野马
+  [279457] = { itemID = 163578, version = "争霸艾泽拉斯", source = "阿拉希" }, -- 失意高地野马
+  [279466] = { itemID = 163584, version = "争霸艾泽拉斯", source = "海岛探险" }, -- 暮光复仇者
+  [279467] = { itemID = 163583, version = "争霸艾泽拉斯", source = "海岛探险" }, -- 岩角跃渊者
+  [279469] = { itemID = 163582, version = "争霸艾泽拉斯", source = "海岛探险" }, -- 秦薛的永恒魁麟
+  [279474] = { itemID = 163589, version = "争霸艾泽拉斯", source = "商人出售" }, -- 灰皮恐角龙
+  [279569] = { itemID = 163644, version = "争霸艾泽拉斯", source = "阿拉希" }, -- 迅捷白化迅猛龙
+  [279608] = { itemID = 163646, version = "争霸艾泽拉斯", source = "阿拉希" }, -- 小毛驴
+  [279611] = { itemID = 163645, version = "争霸艾泽拉斯", source = "阿拉希" }, -- 啮颅者
+  [279868] = { itemID = 163706, version = "争霸艾泽拉斯", source = "阿拉希" }, -- 枯木恐翼蝠
+  [280729] = { itemID = 163981, version = "争霸艾泽拉斯", source = "成就" }, -- 狂暴的邪能之爪
+  [280730] = { itemID = 163982, version = "其他", source = "成就" }, -- 纯心骏马
+  [281044] = { itemID = 164250, version = "打架", source = "荣誉等级" }, -- 声威血铸骏马
+  [281554] = { itemID = 164571, version = "促销", source = "魔兽争霸" }, -- 清道夫
+  [281887] = { itemID = 165019, version = "打架", source = "邪气鞍座" }, -- 黑色邪恶作战刃豹
+  [281888] = { itemID = 173714, version = "打架", source = "邪气鞍座" }, -- 白色邪恶作战刃豹
+  [281889] = { itemID = 173713, version = "打架", source = "邪气鞍座" }, -- 白色邪恶骨骥
+  [281890] = { itemID = 165020, version = "打架", source = "邪气鞍座" }, -- 黑色邪恶骨骥
+  [282682] = { itemID = 164762, version = "经典旧世", source = "库尔提拉斯人" }, -- 库尔提拉斯军马
+  [288438] = { itemID = 166438, version = "争霸艾泽拉斯", source = "黑海岸" }, -- 黑掌
+  [288495] = { itemID = 166432, version = "争霸艾泽拉斯", source = "黑海岸" }, -- 灰谷奇美拉
+  [288499] = { itemID = 166433, version = "争霸艾泽拉斯", source = "黑海岸" }, -- 惊恐的科多兽
+  [288503] = { itemID = 166803, version = "争霸艾泽拉斯", source = "黑海岸" }, -- 珀色夜刃豹
+  [288505] = { itemID = 166435, version = "争霸艾泽拉斯", source = "黑海岸" }, -- 卡多雷夜刃豹
+  [288506] = { itemID = 166436, version = "争霸艾泽拉斯", source = "商人出售" }, -- 沙色夜刃豹
+  [288587] = { itemID = 166442, version = "争霸艾泽拉斯", source = "商人出售" }, -- 靛蓝沼泽跃蛙
+  [288589] = { itemID = 166443, version = "争霸艾泽拉斯", source = "商人出售" }, -- 土黄沼泽跃蛙
+  [288711] = { itemID = 166471, version = "争霸艾泽拉斯", source = "海岛探险" }, -- 咸水海马
+  [288712] = { itemID = 166470, version = "争霸艾泽拉斯", source = "海岛探险" }, -- 石皮大角鹿
+  [288714] = { itemID = 166469, version = "争霸艾泽拉斯", source = "商人出售" }, -- 嗜血恐翼蝠
+  [288720] = { itemID = 166468, version = "争霸艾泽拉斯", source = "海岛探险" }, -- 充血猎蝠
+  [288721] = { itemID = 166467, version = "争霸艾泽拉斯", source = "海岛探险" }, -- 海岛雷鳞龙
+  [288722] = { itemID = 166466, version = "争霸艾泽拉斯", source = "海岛探险" }, -- 复活的骒马
+  [288735] = { itemID = 166464, version = "争霸艾泽拉斯", source = "商人出售" }, -- 赤壳三叶虫
+  [288736] = { itemID = 166465, version = "争霸艾泽拉斯", source = "商人出售" }, -- 靛壳三叶虫
+  [288740] = { itemID = 166463, version = "争霸艾泽拉斯", source = "商人出售" }, -- 女祭司的月刃豹
+  [289083] = { itemID = 166518, version = "争霸艾泽拉斯", source = "团本掉落" }, -- 加氏灭世机甲
+  [289101] = { itemID = 166539, version = "争霸艾泽拉斯", source = "成就" }, -- 达萨罗破风龙
+  [289555] = { itemID = 166705, version = "争霸艾泽拉斯", source = "团本掉落" }, -- 冰川狂潮
+  [289639] = { itemID = 166724, version = "绝版", source = "搏击俱乐部" }, -- 布鲁斯
+  [290132] = { itemID = 166776, version = "促销", source = "商城出售" }, -- 希尔维安神游者
+  [290133] = { itemID = 166775, version = "促销", source = "商城出售" }, -- 狡狐魔使
+  [290134] = { itemID = 166774, version = "促销", source = "商城出售" }, -- 霍格鲁斯，鸿运亥客
+  [290328] = { itemID = 169162, version = "争霸艾泽拉斯", source = "成就" }, -- 奇迹之翼2.0版
+  [290608] = { itemID = 0, version = "其他", source = "圣骑士" }, -- 十字军恐角龙
+  [290718] = { itemID = 168830, version = "争霸艾泽拉斯", source = "副本掉落" }, -- R-21/X型空中单位
+  [291492] = { itemID = 168823, version = "争霸艾泽拉斯", source = "野外稀有" }, -- 生锈的机械爬蛛
+  [291538] = { itemID = 167170, version = "争霸艾泽拉斯", source = "声望" }, -- 破镣者海波鳐
+  [292407] = { itemID = 167167, version = "争霸艾泽拉斯", source = "声望" }, -- 剑鱼人海波鳐
+  [292419] = { itemID = 167171, version = "争霸艾泽拉斯", source = "成就" }, -- 艾萨莉膨水鳐
+  [294038] = { itemID = 169198, version = "争霸艾泽拉斯", source = "巅峰大使" }, -- 皇家毒鳍龙
+  [294039] = { itemID = 169194, version = "争霸艾泽拉斯", source = "成就" }, -- 劈背凿孔蟹
+  [294143] = { itemID = 167751, version = "争霸艾泽拉斯", source = "碎片合成" }, -- X-995型机械猫
+  [294197] = { itemID = 172012, version = "限时活动", source = "周年庆" }, -- 黑曜石灭世者
+  [294568] = { itemID = 167894, version = "事件", source = "时光漫游" }, -- 兽王的钢牙雷象
+  [294569] = { itemID = 167895, version = "事件", source = "时光漫游" }, -- 兽王的战狼
+  [295386] = { itemID = 168056, version = "争霸艾泽拉斯", source = "成就" }, -- 铁甲霜爪狼
+  [295387] = { itemID = 168055, version = "争霸艾泽拉斯", source = "成就" }, -- 血肋战马
+  [296788] = { itemID = 168329, version = "争霸艾泽拉斯", source = "成就" }, -- 机轮车W型
+  [297157] = { itemID = 168370, version = "争霸艾泽拉斯", source = "野外稀有" }, -- 锈废漂移者
+  [297560] = { itemID = 168408, version = "争霸艾泽拉斯", source = "任务" }, -- 托卡利的子嗣
+  [298367] = { itemID = 174842, version = "争霸艾泽拉斯", source = "野外稀有" }, -- 茉莉
+  [299158] = { itemID = 168826, version = "争霸艾泽拉斯", source = "副本掉落" }, -- 麦卡贡维和者
+  [299159] = { itemID = 168827, version = "争霸艾泽拉斯", source = "任务" }, -- 废铁机甲蛛
+  [299170] = { itemID = 168829, version = "争霸艾泽拉斯", source = "声望" }, -- 锈栓抵抗者
+  [300146] = { itemID = 169199, version = "争霸艾泽拉斯", source = "任务" }, -- 毒鳍龙猎藻者
+  [300147] = { itemID = 169200, version = "争霸艾泽拉斯", source = "任务" }, -- 深瑚毒鳍龙
+  [300149] = { itemID = 169163, version = "争霸艾泽拉斯", source = "野外稀有" }, -- 喑声翔渊者
+  [300150] = { itemID = 169201, version = "争霸艾泽拉斯", source = "野外稀有" }, -- 法比乌斯
+  [300151] = { itemID = 169203, version = "争霸艾泽拉斯", source = "商人出售" }, -- 墨鳞觅暗者
+  [300153] = { itemID = 169202, version = "争霸艾泽拉斯", source = "商人出售" }, -- 赤红浪骁
+  [300154] = { itemID = 233243, version = "限时活动", source = "霸业风暴" }, -- 银白浪骁
+  [302143] = { itemID = 174862, version = "绝版", source = "前夕绝版" }, -- 纯净的虚空之翼
+  [302361] = { itemID = 207964, version = "促销", source = "商城出售" }, -- 大理石暴风之爪
+  [302362] = { itemID = 207963, version = "促销", source = "商城出售" }, -- 大理石雷霆之翼
+  [302794] = { itemID = 0, version = "未分类", source = "占位符" }, -- 迅捷幽灵深水鳐
+  [302795] = { itemID = 0, version = "未分类", source = "占位符" }, -- 迅捷幽灵磁力飞行器
+  [302796] = { itemID = 0, version = "未分类", source = "占位符" }, -- 迅捷幽灵装甲狮鹫
+  [302797] = { itemID = 0, version = "未分类", source = "占位符" }, -- 迅捷幽灵翼手龙
+  [303767] = { itemID = 0, version = "地心之战", source = "成就" }, -- 蜜背巢母
+  [305182] = { itemID = 174654, version = "争霸艾泽拉斯", source = "成就" }, -- 恩佐斯的黑蟒
+  [305592] = { itemID = 174067, version = "经典旧世", source = "机械侏儒" }, -- 麦卡贡机械陆行鸟
+  [306421] = { itemID = 172023, version = "限时活动", source = "奥特兰克山谷" }, -- 霜狼咆哮者
+  [306423] = { itemID = 174066, version = "经典旧世", source = "狐人" }, -- 商队土狼
+  [307256] = { itemID = 173299, version = "绝版", source = "招募/复活卷轴" }, -- 探险者的丛林中转机
+  [307263] = { itemID = 173297, version = "绝版", source = "招募/复活卷轴" }, -- 探险者的迷沙骆驼
+  [307932] = { itemID = 0, version = "促销", source = "商城出售" }, -- 咒缚恒龙
+  [308078] = { itemID = 0, version = "促销", source = "商城出售" }, -- 吱吱，狡黠灵兽
+  [308087] = { itemID = 0, version = "促销", source = "商城出售" }, -- 祥韵，天佑金犊
+  [308250] = { itemID = 172022, version = "限时活动", source = "奥特兰克山谷" }, -- 雷矛军用山羊
+  [308814] = { itemID = 174872, version = "争霸艾泽拉斯", source = "团本掉落" }, -- 尼奥罗萨全视者
+  [312751] = { itemID = 173887, version = "争霸艾泽拉斯", source = "突袭" }, -- 亥离之嗣
+  [312753] = { itemID = 180581, version = "暗影国度", source = "温西尔" }, -- 碎愿者加尔贡
+  [312754] = { itemID = 180948, version = "暗影国度", source = "温西尔" }, -- 战斗加尔贡弗雷德尼克
+  [312759] = { itemID = 180263, version = "暗影国度", source = "法夜" }, -- 梦光符文牡鹿
+  [312761] = { itemID = 180721, version = "暗影国度", source = "法夜" }, -- 魔化梦光符文牡鹿
+  [312762] = { itemID = 184167, version = "暗影国度", source = "野外稀有" }, -- 渊誓猎魂犬
+  [312763] = { itemID = 183052, version = "暗影国度", source = "盟约通用" }, -- 暗穴硬壳虫
+  [312765] = { itemID = 180773, version = "暗影国度", source = "野外稀有" }, -- 日舞者
+  [312767] = { itemID = 180728, version = "暗影国度", source = "野外稀有" }, -- 迅捷厄蹄马
+  [312776] = { itemID = 183617, version = "暗影国度", source = "盟约通用" }, -- 啾鸣心蛛
+  [312777] = { itemID = 181316, version = "暗影国度", source = "盟约通用" }, -- 银端惊惧之翼
+  [315014] = { itemID = 174752, version = "争霸艾泽拉斯", source = "突袭" }, -- 皎白云端翔龙
+  [315132] = { itemID = 0, version = "促销", source = "商城出售" }, -- 奔波尔鲲
+  [315427] = { itemID = 174649, version = "争霸艾泽拉斯", source = "突袭" }, -- 莱加尼战争翔龙
+  [315847] = { itemID = 174641, version = "争霸艾泽拉斯", source = "突袭" }, -- 四风幼龙
+  [315987] = { itemID = 174653, version = "争霸艾泽拉斯", source = "惊魂幻象" }, -- 邮件吞噬者
+  [316275] = { itemID = 174753, version = "争霸艾泽拉斯", source = "突袭" }, -- 废土劫掠者
+  [316276] = { itemID = 174754, version = "争霸艾泽拉斯", source = "声望" }, -- 废土恐天鹫
+  [316337] = { itemID = 174769, version = "争霸艾泽拉斯", source = "突袭" }, -- 恶毒工蜂
+  [316339] = { itemID = 174771, version = "争霸艾泽拉斯", source = "任务" }, -- 影钩工蜂
+  [316340] = { itemID = 174770, version = "争霸艾泽拉斯", source = "商人出售" }, -- 邪恶群居蜂
+  [316343] = { itemID = 174861, version = "争霸艾泽拉斯", source = "成就" }, -- 蠕动的寄生虫
+  [316493] = { itemID = 174860, version = "争霸艾泽拉斯", source = "野外稀有" }, -- 轻盈的迅蹄驼
+  [316637] = { itemID = 174836, version = "绝版", source = "钥石大师" }, -- 觉醒的钻心之蛇
+  [316722] = { itemID = 174841, version = "争霸艾泽拉斯", source = "突袭" }, -- 任衙的忠犬
+  [316723] = { itemID = 174840, version = "争霸艾泽拉斯", source = "突袭" }, -- 馨劳
+  [316802] = { itemID = 174859, version = "争霸艾泽拉斯", source = "任务" }, -- 春裘羊驼
+  [317177] = { itemID = 0, version = "促销", source = "商城出售" }, -- 暖日绒猫
+  [318051] = { itemID = 180748, version = "暗影国度", source = "法夜" }, -- 丝柔烁光蛾
+  [326390] = { itemID = 0, version = "促销", source = "商城出售" }, -- 汽鳞焚化者
+  [327405] = { itemID = 182081, version = "暗影国度", source = "巅峰大使" }, -- 巨型灭爪鹏
+  [327407] = { itemID = 184014, version = "打架", source = "邪气鞍座" }, -- 邪恶战蛛
+  [327408] = { itemID = 184013, version = "打架", source = "邪气鞍座" }, -- 邪恶战蛛
+  [332243] = { itemID = 180413, version = "暗影国度", source = "法夜" }, -- 影叶符文牡鹿
+  [332244] = { itemID = 180414, version = "暗影国度", source = "法夜" }, -- 唤醒者的符文牡鹿
+  [332245] = { itemID = 180415, version = "暗影国度", source = "法夜" }, -- 冬脉符文牡鹿
+  [332246] = { itemID = 180722, version = "暗影国度", source = "法夜" }, -- 魔化影叶符文牡鹿
+  [332247] = { itemID = 180723, version = "暗影国度", source = "法夜" }, -- 魔化唤醒者的符文牡鹿
+  [332248] = { itemID = 180724, version = "暗影国度", source = "法夜" }, -- 魔化冬脉符文牡鹿
+  [332252] = { itemID = 180727, version = "暗影国度", source = "野外稀有" }, -- 闪雾奔行者
+  [332256] = { itemID = 180729, version = "暗影国度", source = "声望" }, -- 暮舞炽蓝蛾
+  [332400] = { itemID = 183937, version = "绝版", source = "角斗士" }, -- 罪孽角斗士的噬魂者
+  [332455] = { itemID = 182077, version = "暗影国度", source = "通灵" }, -- 战育荒牛
+  [332456] = { itemID = 182076, version = "暗影国度", source = "通灵" }, -- 凋腐荒牛
+  [332457] = { itemID = 182075, version = "暗影国度", source = "通灵" }, -- 骨蹄荒牛
+  [332460] = { itemID = 182074, version = "暗影国度", source = "通灵" }, -- 魂选荒牛
+  [332462] = { itemID = 181822, version = "暗影国度", source = "通灵" }, -- 重装战育荒牛
+  [332464] = { itemID = 181821, version = "暗影国度", source = "通灵" }, -- 重装凋腐荒牛
+  [332466] = { itemID = 181815, version = "暗影国度", source = "通灵" }, -- 重装骨蹄荒牛
+  [332467] = { itemID = 181820, version = "暗影国度", source = "通灵" }, -- 重装魂选荒牛
+  [332478] = { itemID = 182085, version = "暗影国度", source = "野外稀有" }, -- 灼背血牙猪
+  [332480] = { itemID = 182084, version = "暗影国度", source = "野外稀有" }, -- 血刺
+  [332484] = { itemID = 182082, version = "暗影国度", source = "声望" }, -- 艳丽血牙猪
+  [332882] = { itemID = 180461, version = "暗影国度", source = "温西尔" }, -- 可怖的惊惧之翼
+  [332903] = { itemID = 182596, version = "暗影国度", source = "成就" }, -- 城墙尖啸者
+  [332904] = { itemID = 185996, version = "暗影国度", source = "巅峰大使" }, -- 收割者的惊惧之翼
+  [332905] = { itemID = 180582, version = "暗影国度", source = "野外稀有" }, -- 末日迷沼飞虫
+  [332923] = { itemID = 182954, version = "暗影国度", source = "温西尔" }, -- 裁决加尔贡
+  [332927] = { itemID = 183715, version = "暗影国度", source = "温西尔" }, -- 堕罪加尔贡
+  [332932] = { itemID = 180945, version = "暗影国度", source = "温西尔" }, -- 地穴加尔贡
+  [332949] = { itemID = 182209, version = "暗影国度", source = "温西尔" }, -- 欲望之战斗加尔贡
+  [333021] = { itemID = 182332, version = "暗影国度", source = "温西尔" }, -- 墓碑战斗加尔贡
+  [333023] = { itemID = 183798, version = "暗影国度", source = "温西尔" }, -- 战斗加尔贡西勒莎
+  [333027] = { itemID = 182589, version = "暗影国度", source = "野外稀有" }, -- 忠诚的饕餮者
+  [334352] = { itemID = 180731, version = "暗影国度", source = "宝箱" }, -- 灵种摇篮
+  [334364] = { itemID = 180725, version = "暗影国度", source = "野外稀有" }, -- 锥喉林地咀嚼者
+  [334365] = { itemID = 180726, version = "暗影国度", source = "盟约通用" }, -- 灰白酸喉者
+  [334366] = { itemID = 180730, version = "暗影国度", source = "法夜" }, -- 野生烁裘徘徊者
+  [334382] = { itemID = 180761, version = "暗影国度", source = "格里恩" }, -- 忠诚灵豹
+  [334386] = { itemID = 180762, version = "暗影国度", source = "格里恩" }, -- 谦逊灵豹
+  [334391] = { itemID = 180763, version = "暗影国度", source = "格里恩" }, -- 勇气灵豹
+  [334398] = { itemID = 180764, version = "暗影国度", source = "格里恩" }, -- 纯洁灵豹
+  [334403] = { itemID = 180765, version = "暗影国度", source = "格里恩" }, -- 永恒纯洁灵豹
+  [334406] = { itemID = 180766, version = "暗影国度", source = "格里恩" }, -- 永恒勇气灵豹
+  [334408] = { itemID = 180767, version = "暗影国度", source = "格里恩" }, -- 永恒忠诚灵豹
+  [334409] = { itemID = 180768, version = "暗影国度", source = "格里恩" }, -- 永恒谦逊灵豹
+  [334433] = { itemID = 180772, version = "暗影国度", source = "宝箱" }, -- 银风翼狮
+  [334482] = { itemID = 192557, version = "绝版", source = "钥石大师" }, -- 复苏死亡行者
+  [336036] = { itemID = 181819, version = "暗影国度", source = "副本掉落" }, -- 髓牙
+  [336038] = { itemID = 181818, version = "暗影国度", source = "地区" }, -- 羽翼未丰的绽翼兽
+  [336039] = { itemID = 181300, version = "暗影国度", source = "盟约通用" }, -- 阴森绽翼兽
+  [336041] = { itemID = 182078, version = "暗影国度", source = "通灵" }, -- 骨缝血肉大鹏
+  [336042] = { itemID = 182079, version = "暗影国度", source = "野外稀有" }, -- 巨型死亡大鹏
+  [336045] = { itemID = 182080, version = "暗影国度", source = "通灵" }, -- 掠食的凋零大鹏
+  [336064] = { itemID = 181317, version = "暗影国度", source = "盟约通用" }, -- 无畏的暮行者
+  [339588] = { itemID = 182614, version = "暗影国度", source = "野外稀有" }, -- 罪奔者布兰契
+  [339632] = { itemID = 182650, version = "暗影国度", source = "野外稀有" }, -- 树栖巨口蟾
+  [339956] = { itemID = 186655, version = "暗影国度", source = "成就" }, -- 渊誓军马
+  [339957] = { itemID = 186653, version = "暗影国度", source = "成就" }, -- 赫雷斯迪莫拉克之手
+  [340068] = { itemID = 182717, version = "绝版", source = "钥石大师" }, -- 罪触死亡行者
+  [340503] = { itemID = 183053, version = "暗影国度", source = "法夜" }, -- 幽影镰角虫
+  [341639] = { itemID = 183518, version = "暗影国度", source = "声望" }, -- 王庭罪奔者
+  [341766] = { itemID = 183615, version = "暗影国度", source = "盟约通用" }, -- 战缝黑暗犬
+  [341776] = { itemID = 183618, version = "暗影国度", source = "盟约通用" }, -- 高风暗鬃狮
+  [341821] = { itemID = 0, version = "促销", source = "商城出售" }, -- 雪暴
+  [342334] = { itemID = 183740, version = "暗影国度", source = "声望" }, -- 鎏金徘徊者
+  [342335] = { itemID = 183741, version = "暗影国度", source = "野外稀有" }, -- 晋升天鬃马
+  [342666] = { itemID = 183800, version = "暗影国度", source = "巅峰大使" }, -- 琥珀炽蓝蛾
+  [342667] = { itemID = 183801, version = "暗影国度", source = "法夜" }, -- 活力炽蓝蛾
+  [342668] = { itemID = 187666, version = "暗影国度", source = "原生体合成" }, -- 砂翼猎鹰
+  [342671] = { itemID = 187639, version = "暗影国度", source = "原生体合成" }, -- 灰白皇家元鹿
+  [342678] = { itemID = 187660, version = "暗影国度", source = "原生体合成" }, -- 蹁跹元蜂
+  [342680] = { itemID = 187676, version = "暗影国度", source = "野外稀有" }, -- 深星元水母
+  [343550] = { itemID = 186480, version = "暗影国度", source = "声望" }, -- 饱经战火的北风长
+  [344228] = { itemID = 184062, version = "暗影国度", source = "野外稀有" }, -- 战缚军犬
+  [344574] = { itemID = 184160, version = "暗影国度", source = "巅峰大使" }, -- 浑圆通灵鳐
+  [344575] = { itemID = 184162, version = "暗影国度", source = "巅峰大使" }, -- 致命通灵鳐
+  [344576] = { itemID = 184161, version = "暗影国度", source = "巅峰大使" }, -- 群居通灵鳐
+  [344577] = { itemID = 184168, version = "暗影国度", source = "解密" }, -- 被缚的影犬
+  [344578] = { itemID = 184166, version = "暗影国度", source = "托加斯特" }, -- 回廊潜行猎犬
+  [344659] = { itemID = 184183, version = "暗影国度", source = "成就" }, -- 贪食的饕餮者
+  [346136] = { itemID = 0, version = "促销", source = "怀旧服" }, -- 翠绿相位捕猎者
+  [346141] = { itemID = 0, version = "暗影国度", source = "副本掉落" }, -- 软泥之蛇
+  [346554] = { itemID = 186637, version = "暗影国度", source = "成就" }, -- 塔扎维什齿轮滑翔器
+  [346719] = { itemID = 187669, version = "暗影国度", source = "原生体合成" }, -- 小夜曲
+  [347250] = { itemID = 186489, version = "暗影国度", source = "通灵" }, -- 冥蝇王
+  [347251] = { itemID = 186648, version = "暗影国度", source = "声望" }, -- 翔天刀翼兽
+  [347255] = { itemID = 0, version = "打架", source = "邪气鞍座" }, -- 勇猛的战蟾
+  [347256] = { itemID = 0, version = "打架", source = "邪气鞍座" }, -- 勇猛的战蟾
+  [347536] = { itemID = 186641, version = "暗影国度", source = "巅峰大使" }, -- 驯养的重殴者
+  [347810] = { itemID = 186644, version = "暗影国度", source = "巅峰大使" }, -- 绿柱石碎皮兽
+  [347812] = { itemID = 0, version = "促销", source = "商城出售" }, -- 蓝玉灼天者
+  [348162] = { itemID = 0, version = "促销", source = "商城出售" }, -- 漫游古树
+  [348769] = { itemID = 186179, version = "打架", source = "邪气鞍座" }, -- 邪恶的战争戈姆
+  [348770] = { itemID = 186178, version = "打架", source = "邪气鞍座" }, -- 邪恶的战争戈姆
+  [349823] = { itemID = 184672, version = "打架", source = "邪气鞍座" }, -- 勇猛的战争追猎者
+  [349824] = { itemID = 187644, version = "打架", source = "邪气鞍座" }, -- 勇猛的战争追猎者
+  [349935] = { itemID = 204382, version = "巨龙时代", source = "商人出售" }, -- 高贵的驼牛
+  [349943] = { itemID = 192766, version = "限时活动", source = "商栈" }, -- 琥珀掠蜓
+  [350219] = { itemID = 192777, version = "巨龙时代", source = "宝箱" }, -- 岩浆之壳
+  [351195] = { itemID = 186642, version = "暗影国度", source = "团本掉落" }, -- 复仇
+  [351408] = { itemID = 192792, version = "巨龙时代", source = "成就" }, -- 拜赐雷背蜥蜴头领
+  [352309] = { itemID = 185973, version = "暗影国度", source = "托加斯特" }, -- 芭美兹拉之手
+  [352441] = { itemID = 186000, version = "暗影国度", source = "巅峰大使" }, -- 荒猎团斩肢者
+  [352742] = { itemID = 186103, version = "暗影国度", source = "巅峰大使" }, -- 不朽的黑暗犬
+  [352926] = { itemID = 192800, version = "巨龙时代", source = "碎片合成" }, -- 天皮角行鸟
+  [353036] = { itemID = 186177, version = "绝版", source = "角斗士" }, -- 不羁角斗士的噬魂者
+  [353263] = { itemID = 186638, version = "暗影国度", source = "副本掉落" }, -- 财团主宰的齿轮滑翔器
+  [353856] = { itemID = 186493, version = "暗影国度", source = "法夜" }, -- 炽蓝仙野荒蚺
+  [353857] = { itemID = 186494, version = "暗影国度", source = "法夜" }, -- 金秋荒蚺
+  [353858] = { itemID = 186495, version = "暗影国度", source = "法夜" }, -- 寒冬荒蚺
+  [353859] = { itemID = 186492, version = "暗影国度", source = "法夜" }, -- 盛夏荒蚺
+  [353866] = { itemID = 186478, version = "暗影国度", source = "温西尔" }, -- 黑曜墓翼蝠
+  [353872] = { itemID = 186476, version = "暗影国度", source = "温西尔" }, -- 堕罪墓翼蝠
+  [353873] = { itemID = 186477, version = "暗影国度", source = "温西尔" }, -- 苍白的墓翼蝠
+  [353875] = { itemID = 186482, version = "暗影国度", source = "格里恩" }, -- 极乐北风长
+  [353877] = { itemID = 186483, version = "暗影国度", source = "任务" }, -- 弃誓北风长
+  [353880] = { itemID = 186485, version = "暗影国度", source = "格里恩" }, -- 晋升者的北风长
+  [353883] = { itemID = 186487, version = "暗影国度", source = "通灵" }, -- 玛卓克萨斯冥蝇
+  [353884] = { itemID = 186488, version = "暗影国度", source = "通灵" }, -- 君威冥蝇
+  [353885] = { itemID = 186490, version = "暗影国度", source = "声望" }, -- 战场群聚者
+  [354351] = { itemID = 186656, version = "暗影国度", source = "团本掉落" }, -- 圣所阴郁军马
+  [354352] = { itemID = 186657, version = "暗影国度", source = "巅峰大使" }, -- 灵魂羁绊阴郁军马
+  [354353] = { itemID = 186659, version = "暗影国度", source = "野外稀有" }, -- 堕落军马
+  [354354] = { itemID = 186713, version = "暗影国度", source = "解密" }, -- 耐迦尼赫玛特之手
+  [354355] = { itemID = 186654, version = "暗影国度", source = "成就" }, -- 莎莱兰佳之手
+  [354356] = { itemID = 186647, version = "暗影国度", source = "声望" }, -- 琥珀碎皮兽
+  [354357] = { itemID = 186645, version = "暗影国度", source = "野外稀有" }, -- 猩红碎皮兽
+  [354358] = { itemID = 186646, version = "暗影国度", source = "任务" }, -- 暗殴
+  [354359] = { itemID = 186649, version = "暗影国度", source = "巅峰大使" }, -- 暴躁的刀翼兽
+  [354360] = { itemID = 186652, version = "暗影国度", source = "野外稀有" }, -- 榴石刀翼兽
+  [354361] = { itemID = 186651, version = "暗影国度", source = "任务" }, -- 黯光刀翼兽
+  [354362] = { itemID = 186643, version = "暗影国度", source = "任务" }, -- 游荡者梅莉
+  [356488] = { itemID = 0, version = "促销", source = "炉石传说" }, -- 传说中的萨齐
+  [356501] = { itemID = 187183, version = "暗影国度", source = "野外稀有" }, -- 暴怒的重殴者
+  [358072] = { itemID = 0, version = "促销", source = "商城出售" }, -- 魔缚暴风雪
+  [358319] = { itemID = 187525, version = "绝版", source = "钥石大师" }, -- 曲魂死亡行者
+  [359013] = { itemID = 187595, version = "事件", source = "时光漫游" }, -- 瓦尔莎拉角鹰兽
+  [359229] = { itemID = 187629, version = "暗影国度", source = "声望" }, -- 舒心元袋熊
+  [359230] = { itemID = 187630, version = "暗影国度", source = "原生体合成" }, -- 好奇的水晶探嗅者
+  [359231] = { itemID = 187631, version = "暗影国度", source = "原生体合成" }, -- 黑化的元袋熊
+  [359232] = { itemID = 187632, version = "暗影国度", source = "原生体合成" }, -- 吉饰元袋熊
+  [359276] = { itemID = 187640, version = "暗影国度", source = "声望" }, -- 祝圣原型牡鹿
+  [359277] = { itemID = 187641, version = "暗影国度", source = "原生体合成" }, -- 断离之扎雷骁骑
+  [359278] = { itemID = 187638, version = "暗影国度", source = "原生体合成" }, -- 亡奔者
+  [359317] = { itemID = 0, version = "促销", source = "商城出售" }, -- 纹洛，天河之威
+  [359318] = { itemID = 188674, version = "事件", source = "时光漫游" }, -- 御风法典
+  [359364] = { itemID = 187663, version = "暗影国度", source = "原生体合成" }, -- 铜翼元蜂
+  [359366] = { itemID = 187665, version = "暗影国度", source = "原生体合成" }, -- 嗡嗡
+  [359367] = { itemID = 187664, version = "暗影国度", source = "原生体合成" }, -- 打造的怨恨飞蜂
+  [359372] = { itemID = 187667, version = "暗影国度", source = "原生体合成" }, -- 抗渊元鹰
+  [359373] = { itemID = 187668, version = "暗影国度", source = "原生体合成" }, -- 俯冲元鹰
+  [359376] = { itemID = 187670, version = "暗影国度", source = "原生体合成" }, -- 青铜元螺
+  [359377] = { itemID = 187671, version = "暗影国度", source = "原生体合成" }, -- 未成功的迅螺原型
+  [359378] = { itemID = 187672, version = "暗影国度", source = "原生体合成" }, -- 猩红元螺
+  [359379] = { itemID = 187675, version = "暗影国度", source = "成就" }, -- 闪光元水母
+  [359380] = { itemID = 187674, version = "限时活动", source = "商栈" }, -- 邃渊追猎者
+  [359381] = { itemID = 187673, version = "暗影国度", source = "成就" }, -- 晦言元水母
+  [359401] = { itemID = 187677, version = "暗影国度", source = "原生体合成" }, -- 源生爬蛛
+  [359402] = { itemID = 187678, version = "暗影国度", source = "原生体合成" }, -- 匍匐元蛛
+  [359403] = { itemID = 187679, version = "暗影国度", source = "原生体合成" }, -- 不可言喻的掠行者
+  [359407] = { itemID = 187682, version = "绝版", source = "钥石大师" }, -- 荒折死亡行者
+  [359409] = { itemID = 198871, version = "巨龙时代", source = "商人出售" }, -- 伊斯卡拉商人的奥獭
+  [359413] = { itemID = 187683, version = "暗影国度", source = "原生体合成" }, -- 金甲元蟾
+  [359545] = { itemID = 190771, version = "绝版", source = "前夕绝版" }, -- 蟹化的扎雷骁骑
+  [359622] = { itemID = 201440, version = "巨龙时代", source = "野外稀有" }, -- 被解放的狐龙
+  [359843] = { itemID = 0, version = "促销", source = "典藏版" }, -- 绿绦织梦者
+  [360954] = { itemID = 194705, version = "巨龙时代", source = "任务" }, -- 高地幼龙
+  [363136] = { itemID = 188696, version = "暗影国度", source = "托加斯特" }, -- 巨型黑檀之爪噬渊鼠
+  [363178] = { itemID = 188700, version = "暗影国度", source = "托加斯特" }, -- 巨型影皮噬渊鼠
+  [363297] = { itemID = 188736, version = "暗影国度", source = "成就" }, -- 巨型碎魂噬渊鼠
+  [363613] = { itemID = 0, version = "其他", source = "圣骑士" }, -- 光铸废墟奔踏者
+  [363701] = { itemID = 188808, version = "暗影国度", source = "任务" }, -- 耐心的元蟾
+  [363703] = { itemID = 188809, version = "暗影国度", source = "原生体合成" }, -- 跃蟾原型
+  [363706] = { itemID = 188810, version = "暗影国度", source = "原生体合成" }, -- 褐红元蟾
+  [365559] = { itemID = 189507, version = "绝版", source = "角斗士" }, -- 宇宙角斗士的噬魂者
+  [366647] = { itemID = 189978, version = "限时活动", source = "商栈" }, -- 品红云端翔龙
+  [366789] = { itemID = 190168, version = "限时活动", source = "商栈" }, -- 硬壳爬蟹
+  [366790] = { itemID = 190169, version = "限时活动", source = "商栈" }, -- 呆鸣鹦鹉
+  [366791] = { itemID = 190170, version = "暗影国度", source = "成就" }, -- 老基格沃斯先生
+  [366962] = { itemID = 190231, version = "促销", source = "商城出售" }, -- 艾什阿达，晨曦使者
+  [367190] = { itemID = 0, version = "未分类", source = "占位符" }, -- [DND] Test Mount JZB
+  [367620] = { itemID = 190539, version = "限时活动", source = "商栈" }, -- 潜瑚海波鳐
+  [367673] = { itemID = 190580, version = "暗影国度", source = "原生体合成" }, -- 心契元狼
+  [367676] = { itemID = 190581, version = "促销", source = "商城出售" }, -- 虚空巨噬浮龙
+  [367826] = { itemID = 190613, version = "限时活动", source = "商栈" }, -- 野绿战龟
+  [367875] = { itemID = 190636, version = "促销", source = "商城出售" }, -- 重装攻城科多兽
+  [368105] = { itemID = 190765, version = "暗影国度", source = "野外稀有" }, -- 巨型降祸噬渊鼠
+  [368126] = { itemID = 190767, version = "限时活动", source = "商栈" }, -- 重装金色翼手龙
+  [368128] = { itemID = 190766, version = "暗影国度", source = "宝箱" }, -- 巨型怨缚噬渊鼠
+  [368158] = { itemID = 190768, version = "暗影国度", source = "团本掉落" }, -- 扎雷监察者
+  [368893] = { itemID = 204361, version = "巨龙时代", source = "任务" }, -- 盘曲蜿变幼龙
+  [368896] = { itemID = 194034, version = "巨龙时代", source = "任务" }, -- 复苏始祖幼龙
+  [368899] = { itemID = 194549, version = "巨龙时代", source = "任务" }, -- 载风迅疾幼龙
+  [368901] = { itemID = 194521, version = "巨龙时代", source = "任务" }, -- 崖际荒狂幼龙
+  [369451] = { itemID = 0, version = "促销", source = "商城出售" }, -- 玉儿，皓月先知
+  [369476] = { itemID = 191114, version = "促销", source = "暗黑破坏神" }, -- 愤怒阿玛甘
+  [369480] = { itemID = 0, version = "限时活动", source = "商栈" }, -- 天蓝沼泽跃蛙
+  [369666] = { itemID = 191123, version = "经典旧世", source = "黑铁矮人" }, -- 恐吼
+  [370346] = { itemID = 191290, version = "绝版", source = "角斗士" }, -- 永恒角斗士的噬魂者
+  [370620] = { itemID = 191566, version = "经典旧世", source = "血精灵" }, -- 珍稀的翡翠陆行鸟
+  [370770] = { itemID = 0, version = "促销", source = "怀旧服" }, -- 海象人踏浪风筝
+  [371176] = { itemID = 191838, version = "巨龙时代", source = "商人出售" }, -- 地底岩浆猛犸
+  [372995] = { itemID = 0, version = "未分类", source = "占位符" }, -- 迅捷幽灵幼龙
+  [373859] = { itemID = 192601, version = "巨龙时代", source = "商人出售" }, -- 忠诚的岩浆猛犸
+  [373967] = { itemID = 192751, version = "巨龙时代", source = "成就" }, -- 雷触驼牛
+  [374032] = { itemID = 192761, version = "巨龙时代", source = "声望" }, -- 驯服的掠蜓
+  [374034] = { itemID = 192762, version = "巨龙时代", source = "声望" }, -- 碧蓝掠蜓
+  [374048] = { itemID = 192764, version = "巨龙时代", source = "声望" }, -- 翠绿掠蜓
+  [374071] = { itemID = 192765, version = "巨龙时代", source = "成就" }, -- 拜赐扬沙蜓
+  [374090] = { itemID = 192772, version = "巨龙时代", source = "野外稀有" }, -- 远古蝾螈
+  [374097] = { itemID = 192774, version = "巨龙时代", source = "成就" }, -- 珊鳞蝾螈
+  [374098] = { itemID = 192775, version = "巨龙时代", source = "商人出售" }, -- 雷革蝾螈
+  [374138] = { itemID = 192779, version = "巨龙时代", source = "宝箱" }, -- 沸涌蛞蝓
+  [374155] = { itemID = 192784, version = "巨龙时代", source = "成就" }, -- 谢拉克
+  [374157] = { itemID = 192785, version = "巨龙时代", source = "碎片合成" }, -- 黏黏的蜗牛元素
+  [374162] = { itemID = 192786, version = "巨龙时代", source = "解密" }, -- 好斗的界螺
+  [374172] = { itemID = 192788, version = "巨龙时代", source = "成就" }, -- 拜赐拖网猛犸象
+  [374194] = { itemID = 192790, version = "巨龙时代", source = "碎片合成" }, -- 青苔猛犸象
+  [374196] = { itemID = 192791, version = "巨龙时代", source = "宝箱" }, -- 平原行者运载兽
+  [374204] = { itemID = 192796, version = "巨龙时代", source = "声望" }, -- 探险者的石皮驮兽
+  [374247] = { itemID = 192799, version = "巨龙时代", source = "任务" }, -- 莉姬，雷背践踏者
+  [374275] = { itemID = 192806, version = "巨龙时代", source = "成就" }, -- 狂怒的岩浆猛犸
+  [374278] = { itemID = 192807, version = "巨龙时代", source = "野外稀有" }, -- 复苏岩浆猛犸
+  [376873] = { itemID = 198870, version = "巨龙时代", source = "任务" }, -- 奥图
+  [376875] = { itemID = 198872, version = "巨龙时代", source = "声望" }, -- 棕色侦查奥獭
+  [376879] = { itemID = 198873, version = "巨龙时代", source = "任务" }, -- 象牙商人的奥獭
+  [376880] = { itemID = 200118, version = "巨龙时代", source = "声望" }, -- 黄色侦查奥獭
+  [376898] = { itemID = 211862, version = "巨龙时代", source = "成就" }, -- 拜赐奥獭先锋
+  [376910] = { itemID = 201426, version = "巨龙时代", source = "声望" }, -- 棕色战争奥獭
+  [376912] = { itemID = 198654, version = "其他", source = "坐骑收集" }, -- 热忱的载人奥獭
+  [376913] = { itemID = 201425, version = "巨龙时代", source = "声望" }, -- 黄色战争奥獭
+  [377071] = { itemID = 202086, version = "绝版", source = "角斗士" }, -- 猩红角斗士的幼龙
+  [381529] = { itemID = 0, version = "促销", source = "商城出售" }, -- 雷角兜虫泰利克斯
+  [384963] = { itemID = 198808, version = "经典旧世", source = "龙希尔" }, -- 护卫龙麒
+  [385115] = { itemID = 198811, version = "经典旧世", source = "龙希尔" }, -- 威严的重装龙麒
+  [385131] = { itemID = 198809, version = "经典旧世", source = "龙希尔" }, -- 重装龙麒踏魔者
+  [385134] = { itemID = 198810, version = "经典旧世", source = "龙希尔" }, -- 迅捷的重装龙麒
+  [385260] = { itemID = 198822, version = "巨龙时代", source = "成就" }, -- 拜赐欧胡纳侦察者
+  [385262] = { itemID = 198824, version = "巨龙时代", source = "商人出售" }, -- 暗翼欧胡纳
+  [385266] = { itemID = 198825, version = "巨龙时代", source = "野外稀有" }, -- 泽尼特幼隼
+  [385738] = { itemID = 201454, version = "巨龙时代", source = "任务" }, -- 喜怒无常的天爪狐龙
+  [386452] = { itemID = 0, version = "促销", source = "任务" }, -- 霜巢始祖魔龙
+  [387231] = { itemID = 199412, version = "绝版", source = "钥石大师" }, -- 雹风厚甲龙
+  [394216] = { itemID = 201702, version = "经典旧世", source = "龙希尔" }, -- 猩红龙麒
+  [394218] = { itemID = 201704, version = "经典旧世", source = "龙希尔" }, -- 蓝玉龙麒
+  [394219] = { itemID = 201720, version = "经典旧世", source = "龙希尔" }, -- 青铜龙麒
+  [394220] = { itemID = 201719, version = "经典旧世", source = "龙希尔" }, -- 黑曜龙麒
+  [394737] = { itemID = 201789, version = "打架", source = "邪气鞍座" }, -- 勇猛的剑齿兽
+  [394738] = { itemID = 201788, version = "打架", source = "邪气鞍座" }, -- 勇猛的剑齿兽
+  [395095] = { itemID = 0, version = "未分类", source = "占位符" }, -- 雏龙
+  [395644] = { itemID = 0, version = "巨龙时代", source = "任务" }, -- 欧恩哈拉的神圣之吻
+  [397406] = { itemID = 206167, version = "促销", source = "商城出售" }, -- 神谜掠波者
+  [400733] = { itemID = 204091, version = "绝版", source = "招募/复活卷轴" }, -- 火箭伐木机9001型
+  [400976] = { itemID = 203727, version = "促销", source = "商城出售" }, -- 闪光的月兽
+  [405623] = { itemID = 0, version = "未分类", source = "未实装" }, -- 犰狳滚轮车
+  [406637] = { itemID = 204798, version = "绝版", source = "钥石大师" }, -- 地狱火厚甲龙
+  [407555] = { itemID = 206162, version = "其他", source = "任务" }, -- 泰蕾苟萨的幻影
+  [408313] = { itemID = 205155, version = "巨龙时代", source = "任务" }, -- 城里的大滑
+  [408627] = { itemID = 205197, version = "巨龙时代", source = "商人出售" }, -- 火成岩翼蝠
+  [408647] = { itemID = 205203, version = "巨龙时代", source = "野外稀有" }, -- 钴蓝岩翼蝠
+  [408648] = { itemID = 0, version = "巨龙时代", source = "成就" }, -- 升温岩翼蝠
+  [408649] = { itemID = 205205, version = "巨龙时代", source = "成就" }, -- 暗影烈焰岩翼蝠
+  [408651] = { itemID = 205204, version = "巨龙时代", source = "宝箱" }, -- 编目岩翼蝠
+  [408653] = { itemID = 205209, version = "巨龙时代", source = "声望" }, -- 石块搬运蝠
+  [408654] = { itemID = 205208, version = "事件", source = "时光漫游" }, -- 流沙岩翼蝠
+  [408655] = { itemID = 205207, version = "巨龙时代", source = "声望" }, -- 小食嗅探者
+  [408977] = { itemID = 205233, version = "绝版", source = "角斗士" }, -- 黑曜角斗士的蜿变幼龙
+  [409032] = { itemID = 205245, version = "打架", source = "邪气鞍座" }, -- 勇猛的作战蜗牛
+  [409034] = { itemID = 205246, version = "打架", source = "邪气鞍座" }, -- 勇猛的作战蜗牛
+  [411565] = { itemID = 206027, version = "限时活动", source = "商栈" }, -- 邪晶战蝎
+  [412088] = { itemID = 206156, version = "巨龙时代", source = "任务" }, -- 岩洞灵翼幼龙
+  [413409] = { itemID = 194705, version = "未分类", source = "占位符" }, -- 高地幼龙
+  [413825] = { itemID = 206566, version = "争霸艾泽拉斯", source = "任务" }, -- 猩红翼手龙
+  [413827] = { itemID = 206567, version = "争霸艾泽拉斯", source = "任务" }, -- 海港狮鹫
+  [413922] = { itemID = 206585, version = "巨龙时代", source = "解密" }, -- 英勇
+  [414316] = { itemID = 206673, version = "巨龙时代", source = "时光裂隙" }, -- 雪白战狼
+  [414323] = { itemID = 206674, version = "巨龙时代", source = "时光裂隙" }, -- 贪婪的黑色狮鹫
+  [414324] = { itemID = 206675, version = "巨龙时代", source = "时光裂隙" }, -- 金趾信天翁
+  [414326] = { itemID = 206676, version = "巨龙时代", source = "时光裂隙" }, -- 邪能风暴巨龙
+  [414327] = { itemID = 206678, version = "巨龙时代", source = "时光裂隙" }, -- 硫磺恶犬
+  [414328] = { itemID = 206679, version = "巨龙时代", source = "时光裂隙" }, -- 完美战蝎
+  [414334] = { itemID = 206680, version = "巨龙时代", source = "时光裂隙" }, -- 灾缚征服者
+  [414986] = { itemID = 206976, version = "限时活动", source = "商栈" }, -- 皇家群聚者
+  [417245] = { itemID = 207821, version = "限时活动", source = "商栈" }, -- 先祖裂蹄牛
+  [417548] = { itemID = 194034, version = "未分类", source = "占位符" }, -- 复苏始祖幼龙
+  [417552] = { itemID = 194549, version = "未分类", source = "占位符" }, -- 载风迅疾幼龙
+  [417554] = { itemID = 194521, version = "未分类", source = "占位符" }, -- 崖际荒狂幼龙
+  [417556] = { itemID = 204361, version = "未分类", source = "占位符" }, -- 盘曲蜿变幼龙
+  [417888] = { itemID = 0, version = "促销", source = "典藏版" }, -- 阿加驭雷者
+  [418078] = { itemID = 208152, version = "巨龙时代", source = "解密" }, -- 帕蒂
+  [418286] = { itemID = 0, version = "促销", source = "商城出售" }, -- 福星木蛟
+  [419002] = { itemID = 0, version = "未分类", source = "未实装" }, -- 雏龙
+  [419345] = { itemID = 208598, version = "限时活动", source = "商栈" }, -- 伊芙的森怖骑行扫帚
+  [419567] = { itemID = 0, version = "促销", source = "商城出售" }, -- 鲲波尔奔
+  [420097] = { itemID = 208572, version = "限时活动", source = "周年庆" }, -- 碧蓝凝世者
+  [422486] = { itemID = 209060, version = "绝版", source = "钥石大师" }, -- 苍郁厚甲龙
+  [423871] = { itemID = 209947, version = "巨龙时代", source = "翡翠梦境" }, -- 繁花梦麋
+  [423873] = { itemID = 209949, version = "巨龙时代", source = "翡翠梦境" }, -- 日灼梦麋
+  [423877] = { itemID = 209950, version = "巨龙时代", source = "翡翠梦境" }, -- 复燃梦麋
+  [423891] = { itemID = 209951, version = "巨龙时代", source = "翡翠梦境" }, -- 月华梦麋
+  [424009] = { itemID = 210008, version = "促销", source = "商城出售" }, -- 符契炎魔
+  [424082] = { itemID = 210022, version = "巨龙时代", source = "解密" }, -- 米米尔隆的垂直起降喷气机
+  [424474] = { itemID = 210060, version = "巨龙时代", source = "成就" }, -- 夕影梦刃豹
+  [424476] = { itemID = 210059, version = "巨龙时代", source = "翡翠梦境" }, -- 冬夜梦刃豹
+  [424479] = { itemID = 210058, version = "巨龙时代", source = "翡翠梦境" }, -- 薄暮梦刃豹
+  [424482] = { itemID = 210057, version = "巨龙时代", source = "翡翠梦境" }, -- 翠晨梦刃豹
+  [424484] = { itemID = 210061, version = "巨龙时代", source = "团本掉落" }, -- 阿努雷洛丝，烈焰启迪
+  [424534] = { itemID = 210070, version = "打架", source = "邪气鞍座" }, -- 勇猛的月兽
+  [424535] = { itemID = 210069, version = "打架", source = "邪气鞍座" }, -- 勇猛的月兽
+  [424539] = { itemID = 210074, version = "绝版", source = "角斗士" }, -- 腾龙角斗士的幼龙
+  [424607] = { itemID = 210142, version = "巨龙时代", source = "成就" }, -- 泰瓦恩
+  [425338] = { itemID = 210412, version = "巨龙时代", source = "任务" }, -- 繁盛奇想幼龙
+  [425416] = { itemID = 210345, version = "绝版", source = "角斗士" }, -- 苍郁角斗士的蜿变幼龙
+  [426955] = { itemID = 210769, version = "巨龙时代", source = "翡翠梦境" }, -- 春潮梦爪獍
+  [427041] = { itemID = 210774, version = "巨龙时代", source = "任务" }, -- 赭色梦爪獍
+  [427043] = { itemID = 210775, version = "巨龙时代", source = "翡翠梦境" }, -- 雪绒梦爪獍
+  [427222] = { itemID = 210831, version = "巨龙时代", source = "翡翠梦境" }, -- 幻濑
+  [427224] = { itemID = 210833, version = "巨龙时代", source = "翡翠梦境" }, -- 豺爪
+  [427226] = { itemID = 210945, version = "巨龙时代", source = "翡翠梦境" }, -- 星辰啃食者
+  [427435] = { itemID = 210919, version = "限时活动", source = "商栈" }, -- 猩红烁裘狐
+  [427546] = { itemID = 210946, version = "巨龙时代", source = "翡翠梦境" }, -- 犸秘斯
+  [427549] = { itemID = 210948, version = "巨龙时代", source = "翡翠梦境" }, -- 憧憬之翼
+  [427724] = { itemID = 210969, version = "巨龙时代", source = "翡翠梦境" }, -- 恍螈
+  [427777] = { itemID = 210973, version = "事件", source = "情人节" }, -- 觅心法力鳐
+  [428005] = { itemID = 211074, version = "限时活动", source = "商栈" }, -- 珠光铜色圣甲虫
+  [428013] = { itemID = 229348, version = "限时活动", source = "周年庆" }, -- 氮素魔影，无法解密的邪能摩托
+  [428060] = { itemID = 211084, version = "绝版", source = "黑市" }, -- 金色皇家圣甲虫
+  [428067] = { itemID = 211087, version = "促销", source = "联名活动" }, -- 仇铸炽火摩托
+  [430225] = { itemID = 211873, version = "巨龙时代", source = "任务" }, -- 吉尔尼斯徘徊者
+  [431049] = { itemID = 206156, version = "未分类", source = "占位符" }, -- 岩洞灵翼幼龙
+  [431050] = { itemID = 210412, version = "未分类", source = "占位符" }, -- 繁盛奇想幼龙
+  [431357] = { itemID = 212227, version = "限时活动", source = "商栈" }, -- 裘谊之狐
+  [431359] = { itemID = 212228, version = "促销", source = "商城出售" }, -- 翔天之狐
+  [431360] = { itemID = 212229, version = "限时活动", source = "商栈" }, -- 暮光巡天狐
+  [431992] = { itemID = 212522, version = "促销", source = "炉石传说" }, -- 罗盘玫瑰
+  [432455] = { itemID = 212599, version = "事件", source = "复活节" }, -- 复活节飞毯
+  [432558] = { itemID = 212630, version = "限时活动", source = "商栈" }, -- 威严碧蓝雌孔雀
+  [432562] = { itemID = 212631, version = "限时活动", source = "商栈" }, -- 夺目日冕雌孔雀
+  [432610] = { itemID = 212645, version = "巨龙时代", source = "野外稀有" }, -- 泥鳞角行鸟
+  [433281] = { itemID = 212920, version = "限时活动", source = "商栈" }, -- 野蓝战龟
+  [434462] = { itemID = 213438, version = "绝版", source = "钥石大师" }, -- 永恒厚甲龙
+  [434470] = { itemID = 213439, version = "打架", source = "邪气鞍座" }, -- 勇猛的梦爪獍
+  [434477] = { itemID = 213440, version = "打架", source = "邪气鞍座" }, -- 勇猛的梦爪獍
+  [435044] = { itemID = 213576, version = "限时活动", source = "幻境新生:熊猫人" }, -- 金色铁饼
+  [435082] = { itemID = 213584, version = "限时活动", source = "幻境新生:熊猫人" }, -- 魔古拓雾者
+  [435084] = { itemID = 213582, version = "限时活动", source = "幻境新生:熊猫人" }, -- 苍穹冲浪者
+  [435103] = { itemID = 213598, version = "限时活动", source = "幻境新生:熊猫人" }, -- 迅奔追风
+  [435107] = { itemID = 213597, version = "限时活动", source = "幻境新生:熊猫人" }, -- 森绿追风
+  [435108] = { itemID = 213596, version = "限时活动", source = "幻境新生:熊猫人" }, -- 昼雷追风
+  [435109] = { itemID = 213595, version = "限时活动", source = "幻境新生:熊猫人" }, -- 覆羽携风者
+  [435115] = { itemID = 213601, version = "限时活动", source = "幻境新生:熊猫人" }, -- 护卫魁麟
+  [435118] = { itemID = 213600, version = "限时活动", source = "幻境新生:熊猫人" }, -- 大理石魁麟
+  [435123] = { itemID = 213602, version = "限时活动", source = "幻境新生:熊猫人" }, -- 鎏金骑乘仙鹤
+  [435124] = { itemID = 213607, version = "限时活动", source = "幻境新生:熊猫人" }, -- 奢华骑乘仙鹤
+  [435125] = { itemID = 213604, version = "限时活动", source = "幻境新生:熊猫人" }, -- 热带骑乘仙鹤
+  [435126] = { itemID = 213606, version = "限时活动", source = "幻境新生:熊猫人" }, -- 银色骑乘仙鹤
+  [435127] = { itemID = 213605, version = "限时活动", source = "幻境新生:熊猫人" }, -- 粉玫骑乘仙鹤
+  [435128] = { itemID = 213603, version = "限时活动", source = "幻境新生:熊猫人" }, -- 暗灰骑乘仙鹤
+  [435131] = { itemID = 213608, version = "限时活动", source = "幻境新生:熊猫人" }, -- 雪色骑乘山羊
+  [435133] = { itemID = 213609, version = "限时活动", source = "幻境新生:熊猫人" }, -- 幼年赤红骑乘山羊
+  [435145] = { itemID = 213623, version = "限时活动", source = "幻境新生:熊猫人" }, -- 殷红啸天龙
+  [435146] = { itemID = 213622, version = "限时活动", source = "幻境新生:熊猫人" }, -- 幽夜飞翼龙
+  [435147] = { itemID = 213621, version = "限时活动", source = "幻境新生:熊猫人" }, -- 翡翠翼手龙
+  [435149] = { itemID = 213624, version = "限时活动", source = "幻境新生:熊猫人" }, -- 钴蓝战蝎
+  [435150] = { itemID = 213625, version = "限时活动", source = "幻境新生:熊猫人" }, -- 魔铁战蝎
+  [435153] = { itemID = 213626, version = "限时活动", source = "幻境新生:熊猫人" }, -- 紫色影踪派骑乘虎
+  [435160] = { itemID = 213628, version = "限时活动", source = "幻境新生:熊猫人" }, -- 踏江穆山兽
+  [435161] = { itemID = 213627, version = "限时活动", source = "幻境新生:熊猫人" }, -- 苍皮穆山兽
+  [437162] = { itemID = 233240, version = "限时活动", source = "霸业风暴" }, -- 波利·罗杰
+  [439138] = { itemID = 217340, version = "巨龙时代", source = "成就" }, -- 浪游荒蚺
+  [440444] = { itemID = 217612, version = "暗影国度", source = "成就" }, -- 佐瓦尔的噬魂者
+  [441313] = { itemID = 0, version = "未分类", source = "占位符" }, -- 翱翔
+  [441324] = { itemID = 217985, version = "绝版", source = "前夕绝版" }, -- 旧忆金色狮鹫
+  [441325] = { itemID = 217987, version = "绝版", source = "前夕绝版" }, -- 旧忆双足飞龙
+  [441794] = { itemID = 218111, version = "限时活动", source = "幻境新生:熊猫人" }, -- 琥珀翼手龙
+  [442358] = { itemID = 221765, version = "地心之战", source = "副本掉落" }, -- 矶石宝库机甲
+  [443660] = { itemID = 219450, version = "促销", source = "商城出售" }, -- 魅力信使
+  [446017] = { itemID = 220766, version = "限时活动", source = "幻境新生:熊猫人" }, -- 至尊凤凰
+  [446022] = { itemID = 220768, version = "限时活动", source = "幻境新生:熊猫人" }, -- 星光帝王翔龙
+  [446052] = { itemID = 219391, version = "地心之战", source = "任务" }, -- 地下堡行者的飞船
+  [446352] = { itemID = 221270, version = "未分类", source = "未实装" }, -- [PH] Goblin Surfboard - Blue
+  [447057] = { itemID = 221753, version = "地心之战", source = "声望" }, -- 焖燃燧烬蜂
+  [447151] = { itemID = 223153, version = "地心之战", source = "商人出售" }, -- 翔天蜜酒之蜂
+  [447160] = { itemID = 223158, version = "地心之战", source = "成就" }, -- 暴怒的燧烬蜂
+  [447176] = { itemID = 222989, version = "地心之战", source = "声望" }, -- 天蓝萤光螨
+  [447185] = { itemID = 223264, version = "地心之战", source = "声望" }, -- 青绿石群聚虫
+  [447190] = { itemID = 223266, version = "地心之战", source = "成就" }, -- 影遁群聚虫
+  [447195] = { itemID = 223267, version = "地心之战", source = "成就" }, -- 群聚虫猎天者
+  [447213] = { itemID = 223270, version = "地心之战", source = "野外稀有" }, -- 阿鲁尼拉
+  [447405] = { itemID = 221813, version = "打架", source = "邪气鞍座" }, -- 勇猛的剥天者
+  [447413] = { itemID = 221814, version = "限时活动", source = "商栈" }, -- 珠辉地精斩浪者
+  [447957] = { itemID = 223274, version = "地心之战", source = "声望" }, -- 凶猛的利颚爬行者
+  [448186] = { itemID = 221967, version = "专业", source = "工程" }, -- 群体打击者2-30
+  [448188] = { itemID = 223269, version = "地心之战", source = "地区" }, -- 主机防御单位1-11
+  [448680] = { itemID = 223276, version = "地心之战", source = "声望" }, -- 寡妇的幽暗爬行者
+  [448685] = { itemID = 223278, version = "地心之战", source = "声望" }, -- 传承幽暗爬行者
+  [448689] = { itemID = 223279, version = "地心之战", source = "声望" }, -- 王庭幽暗爬行者
+  [448845] = { itemID = 223282, version = "未分类", source = "未实装" }, -- [PH] Blue Old God Fish Mount
+  [448849] = { itemID = 223284, version = "未分类", source = "未实装" }, -- 幽光海滩追猎者
+  [448850] = { itemID = 223286, version = "专业", source = "钓鱼" }, -- 卡赫，深渊传奇
+  [448851] = { itemID = 223285, version = "限时活动", source = "商栈" }, -- 幽光腐化巨兽
+  [448934] = { itemID = 0, version = "地心之战", source = "成就" }, -- 疑之影
+  [448939] = { itemID = 223314, version = "地心之战", source = "声望" }, -- 被缚暗影
+  [448941] = { itemID = 223315, version = "地心之战", source = "野外稀有" }, -- 贝雷达尔之裔
+  [448978] = { itemID = 223317, version = "地心之战", source = "声望" }, -- 朱红帝国山猫
+  [448979] = { itemID = 223318, version = "地心之战", source = "地区" }, -- 果敢帝国山猫
+  [449126] = { itemID = 223449, version = "限时活动", source = "商栈" }, -- 库卡隆战刃豹
+  [449132] = { itemID = 223459, version = "未分类", source = "任务" }, -- 黑石战刃豹
+  [449133] = { itemID = 223460, version = "未分类", source = "未实装" }, -- [PH] Nightsaber Horde Mount White
+  [449140] = { itemID = 223469, version = "限时活动", source = "商栈" }, -- 哨兵战狼
+  [449141] = { itemID = 223470, version = "未分类", source = "未实装" }, -- [PH] Alliance Wolf Mount
+  [449142] = { itemID = 223471, version = "未分类", source = "任务" }, -- 卡多雷战狼
+  [449258] = { itemID = 223501, version = "地心之战", source = "野外稀有" }, -- 老鼹鼠鲁夫斯
+  [449264] = { itemID = 225548, version = "地心之战", source = "副本掉落" }, -- 烛芯
+  [449269] = { itemID = 223505, version = "地心之战", source = "声望" }, -- 赤红泥鼻鼹
+  [449325] = { itemID = 223511, version = "打架", source = "邪气鞍座" }, -- 勇猛的剥天者
+  [449415] = { itemID = 223572, version = "经典旧世", source = "土灵" }, -- 板岩磐羊
+  [449418] = { itemID = 223571, version = "地心之战", source = "声望" }, -- 页岩磐羊
+  [449466] = { itemID = 223586, version = "绝版", source = "角斗士" }, -- 炉铸角斗士的魔蝠
+  [451486] = { itemID = 224147, version = "地心之战", source = "团本掉落" }, -- 苏雷吉剃天者
+  [451489] = { itemID = 224150, version = "地心之战", source = "野外稀有" }, -- 赛斯巴格
+  [451491] = { itemID = 224151, version = "地心之战", source = "团本掉落" }, -- 扬升剃天者
+  [452643] = { itemID = 224398, version = "事件", source = "时光漫游" }, -- 乱羽角鹰兽
+  [452645] = { itemID = 224399, version = "事件", source = "时光漫游" }, -- 阿曼尼猎熊
+  [452779] = { itemID = 224415, version = "地心之战", source = "成就" }, -- 象牙巨蜢
+  [453255] = { itemID = 224574, version = "未分类", source = "占位符" }, -- 野乌战龟
+  [453785] = { itemID = 0, version = "其他", source = "圣骑士" }, -- 土灵宣令者的磐羊
+  [454682] = { itemID = 225250, version = "促销", source = "商城出售" }, -- 星触绒猫
+  [457485] = { itemID = 0, version = "促销", source = "商城出售" }, -- 灰熊丘陵魁熊
+  [457650] = { itemID = 226040, version = "限时活动", source = "商栈" }, -- 霸业枭雄的黄金鳄鱼
+  [457654] = { itemID = 226041, version = "限时活动", source = "商栈" }, -- 桶腿的光耀鳄鱼
+  [457656] = { itemID = 226042, version = "限时活动", source = "霸业风暴" }, -- 霸业枭雄的午夜鳄鱼
+  [457659] = { itemID = 226044, version = "未分类", source = "未实装" }, -- 霸业枭雄的风霜鳄鱼
+  [458335] = { itemID = 226357, version = "绝版", source = "钥石大师" }, -- 钻石机甲
+  [459193] = { itemID = 226506, version = "限时活动", source = "商栈" }, -- 雷什基加尔之手
+  [459784] = { itemID = 227362, version = "促销", source = "商城出售" }, -- 金色炽焰凤凰
+  [463025] = { itemID = 228751, version = "促销", source = "商城出售" }, -- 奔波尔鲛
+  [463133] = { itemID = 228760, version = "限时活动", source = "周年庆" }, -- 冷焰风暴
+  [464443] = { itemID = 229128, version = "促销", source = "商城出售" }, -- 迎福巨熊
+  [465235] = { itemID = 229418, version = "促销", source = "商城出售" }, -- 鎏金雷龙
+  [466811] = { itemID = 230184, version = "促销", source = "商城出售" }, -- 混沌熔铸狮鹫
+  [466812] = { itemID = 230185, version = "促销", source = "商城出售" }, -- 混沌熔铸角鹰兽
+  [466838] = { itemID = 230200, version = "促销", source = "商城出售" }, -- 混沌熔铸恐翼蝙蝠
+  [466845] = { itemID = 230201, version = "促销", source = "商城出售" }, -- 混沌熔铸驭风者
+  [468353] = { itemID = 231374, version = "事件", source = "时光漫游" }, -- 魔化法纹飞毯
+  [471538] = { itemID = 232624, version = "事件", source = "时光漫游" }, -- 时空鸣蜂
+  [471562] = { itemID = 232639, version = "地心之战", source = "碎片合成" }, -- 萨伊尔，海妖之目
+  [471696] = { itemID = 233241, version = "限时活动", source = "霸业风暴" }, -- 铁钩爪
+  [472253] = { itemID = 232901, version = "事件", source = "春节" }, -- 奔月发射器
+  [472479] = { itemID = 232926, version = "事件", source = "情人节" }, -- 爱情女巫的扫帚
+  [472487] = { itemID = 233023, version = "限时活动", source = "商栈" }, -- 银月城扫帚
+  [472488] = { itemID = 233020, version = "促销", source = "商城出售" }, -- 暮光女巫的扫帚
+  [472489] = { itemID = 233019, version = "促销", source = "商城出售" }, -- 苍穹女巫的扫帚
+  [472752] = { itemID = 232991, version = "地心之战", source = "成就" }, -- 毁灭者之歌号
+  [473137] = { itemID = 233058, version = "地心之战", source = "商人出售" }, -- 索伊兹的复古斩浪者
+  [473472] = { itemID = 235515, version = "争霸艾泽拉斯", source = "成就" }, -- 加尼的垃圾堆
+  [473861] = { itemID = 233354, version = "限时活动", source = "商栈" }, -- 野棕战龟
+  [474086] = { itemID = 233489, version = "地心之战", source = "任务" }, -- 棱彩毒鳍龙
+  [1214920] = { itemID = 234716, version = "事件", source = "时光漫游" }, -- 夜幕碎天兽
+  [1214940] = { itemID = 234721, version = "事件", source = "时光漫游" }, -- 乌祖尔裂肉者
+  [1214946] = { itemID = 234730, version = "事件", source = "时光漫游" }, -- 希奈丝特拉幼龙
+  [1214974] = { itemID = 234740, version = "事件", source = "时光漫游" }, -- 铜色鬃毛魁麟
+  [1216542] = { itemID = 235344, version = "促销", source = "商城出售" }, -- 炽燃皇家火鹰
+  [468205] = { itemID = 231297, version = "促销", source = "商城出售" }, -- 木雕翔天巨蛇
 
 
-    [465999] = { itemID=229935, versionID=11, source=6 }, -- 猩红装甲惊哮犬
-    [466000] = { itemID=229924, versionID=11, source=6 }, -- 暗索嚼压者
-    [466001] = { itemID=229937, versionID=11, source=1012 }, -- 黑水碾骨者
-    [466002] = { itemID=229936, versionID=11, source=6 }, -- 紫罗兰装甲惊哮犬
-    [466013] = { itemID=229946, versionID=11, source=6 }, -- 黄褐运载火箭
-    [466014] = { itemID=0, versionID=11, source=1012 }, -- 热砂补给机
-    [466016] = { itemID=229944, versionID=11, source=6 }, -- 紧身特快
-    [466017] = { itemID=229941, versionID=11, source=6 }, -- 创新调查者
-    [466018] = { itemID=229950, versionID=11, source=6 }, -- 暗索歼灭者
-    [466019] = { itemID=229948, versionID=11, source=6 }, -- 黑水伐木机尊享版MK2型
-    [466020] = { itemID=229949, versionID=11, source=6 }, -- 私人订制地精S.C.R.A.P拆废机
-    [466022] = { itemID=229951, versionID=11, source=1012 }, -- 风险投资协调器
-    [466023] = { itemID=229952, versionID=11, source=6 }, -- 资产倡导者
-    [466024] = { itemID=229957, versionID=11, source=1012 }, -- 锈水轰炸机
-    [466025] = { itemID=229954, versionID=11, source=6 }, -- 差额操纵者
-    [466026] = { itemID=229953, versionID=11, source=4 }, -- 回收的地精亿万富豪飞行器
-    [466027] = { itemID=229955, versionID=11, source=4 }, -- 暗索谍眼飞行器
-    [466028] = { itemID=229956, versionID=11, source=6 }, -- 钞绿色飞行器
-    [466133] = { itemID=229974, versionID=11, source=10 }, -- 地下堡行者的地精疾行器
-    [466145] = { itemID=229988, versionID=103, source=1006 }, -- 勇猛的电鳗
-    [466146] = { itemID=229989, versionID=103, source=1006 }, -- 勇猛的电鳗
-    [466423] = { itemID=0, versionID=0, source=43 }, -- 不稳定的火箭
-    [466464] = { itemID=0, versionID=0, source=43 }, -- 不稳定的火箭
-    [473188] = { itemID=233064, versionID=11, source=10 }, -- 青铜地精斩浪者
-    [473739] = { itemID=233282, versionID=101, source=20 }, -- 绒毛米克西
-    [473741] = { itemID=233283, versionID=101, source=20 }, -- 柔爪米克西
-    [473743] = { itemID=233284, versionID=101, source=20 }, -- 滚爪米克西
-    [473744] = { itemID=233285, versionID=101, source=20 }, -- 茶毛米克西
-    [473745] = { itemID=233286, versionID=101, source=20 }, -- 酿盗米克西
-    [1216422] = { itemID=235286, versionID=101, source=1018 }, -- 附煞云端翔龙
-    [1216430] = { itemID=235287, versionID=101, source=1018 }, -- 附煞骑乘虎
-    [1217235] = { itemID=235549, versionID=105, source=1017 }, -- 赤红切割坦克
-    [1217340] = { itemID=235554, versionID=0, source=9999 }, -- 午夜暗月军马
-    [1217341] = { itemID=235555, versionID=106, source=18 }, -- 活跃暗月军马
-    [1217342] = { itemID=235556, versionID=106, source=18 }, -- 紫罗兰暗月军马
-    [1217343] = { itemID=235557, versionID=106, source=18 }, -- 雪白暗月军马
-    [1217760] = { itemID=235626, versionID=11, source=5 }, -- 加老大
-    [1217965] = { itemID=235646, versionID=106, source=18 }, -- 闪雾自由奔行者
-    [1217994] = { itemID=235650, versionID=106, source=18 }, -- 珠光彩蝶
-    [1218012] = { itemID=235657, versionID=106, source=18 }, -- 红玉彩蝶
-    [1218013] = { itemID=235658, versionID=106, source=18 }, -- 春日彩蝶
-    [1218014] = { itemID=235659, versionID=0, source=9999 }, -- 午夜彩蝶
-    [1218069] = { itemID=235662, versionID=106, source=18 }, -- 翡翠蜗牛
-    [1221155] = { itemID=236960, versionID=11, source=5 }, -- 原型A.S.M.R.
-    [1221694] = { itemID=237141, versionID=105, source=1017 }, -- 进取型切割坦克
-    [466011] = { itemID=229940, versionID=11, source=1012 }, -- 狂龙弗莱兰多
-    [466012] = { itemID=229945, versionID=11, source=6 }, -- 雷鼓哑炮火箭
-    [466021] = { itemID=229947, versionID=11, source=1012 }, -- 紫罗兰地精伐木机
-    [466144] = { itemID=229987, versionID=105, source=42 }, -- 至臻角斗士的魔蝠
-    [468068] = { itemID=231173, versionID=11, source=1 }, -- 渣客大师的磁力机甲
-    [353264] = { itemID=186639, versionID=11, source=44 }, -- 赛财团受托人的齿轮滑翔器
-  [353265] = { itemID=186640, versionID=11, source=2 }, -- 破坏者的齿轮滑翔器
-  [424601] = { itemID=210141, versionID=106, source=18 }, -- 棕毛尖刺獒犬
-  [428062] = { itemID=211085, versionID=11, source=18 }, -- 珠光蓝玉圣甲虫
-  [428068] = { itemID=211089, versionID=11, source=1032 }, -- 虚空之火亡命摩托
-  [447189] = { itemID=223265, versionID=11, source=1032 }, -- 筑巢的群聚虫
-  [472157] = { itemID=232617, versionID=105, source=42 }, -- 星界角斗士的魔蝠
-  [1218229] = { itemID=235700, versionID=11, source=1032 }, -- 虚痕狮鹫
-  [1218305] = { itemID=235705, versionID=11, source=1032 }, -- 虚铸骏马
-  [1218306] = { itemID=235706, versionID=11, source=1032 }, -- 虚痕狼母
-  [1218307] = { itemID=235707, versionID=11, source=1032 }, -- 虚痕驭风者
-  [1218314] = { itemID=235709, versionID=11, source=1032 }, -- 尼奥罗萨暗影蠕虫
-  [1218316] = { itemID=235711, versionID=11, source=1032 }, -- 守护巨龙之堕
-  [1218317] = { itemID=235712, versionID=11, source=30 }, -- 虚空水晶猎豹
-  [1219705] = { itemID=236415, versionID=106, source=18 }, -- 斑点黑色骑乘山羊
-  [1221132] = { itemID=242713, versionID=11, source=10 }, -- 耀辉卡雷鹏
-  [1223187] = { itemID=237484, versionID=11, source=2 }, -- 废土恐兽
-  [1223191] = { itemID=237485, versionID=11, source=1 }, -- 凶夜恐魔
-  [1224048] = { itemID=238051, versionID=11, source=10 }, -- 地下堡行者的法力飞掠机
-  [1226144] = { itemID=238739, versionID=100, source=1002 }, -- 时流冒险家
-  [1226421] = { itemID=238829, versionID=11, source=2 }, -- 光耀帝国山猫
-  [1226511] = { itemID=238897, versionID=106, source=18 }, -- 阳春收获刺猬
-  [1226531] = { itemID=238900, versionID=0, source=9999 }, -- 盛夏收获刺猬
-  [1226532] = { itemID=238901, versionID=0, source=9999 }, -- 凛冬收获刺猬
-  [1226533] = { itemID=238902, versionID=0, source=9999 }, -- 暮秋收获刺猬
-  [1226740] = { itemID=238941, versionID=106, source=18 }, -- 冷焰炣美拉
-  [1226760] = { itemID=238943, versionID=101, source=20 }, -- 先知的巨鸦
-  [1226851] = { itemID=238966, versionID=0, source=9999 }, -- 邪裔炣美拉
-  [1226855] = { itemID=238967, versionID=106, source=18 }, -- 熔岩炣美拉
-  [1226856] = { itemID=238968, versionID=0, source=9999 }, -- 火裔炣美拉
-  [1226983] = { itemID=238994, versionID=101, source=20 }, -- 大法师的巨鸦
-  [1227076] = { itemID=239020, versionID=106, source=1033 }, -- 霸王陆龟
-  [1227192] = { itemID=239076, versionID=101, source=20 }, -- 萨巴卡的使者
-  [1228865] = { itemID=239563, versionID=11, source=10 }, -- 虚痕山猫
-  [1229276] = { itemID=239665, versionID=106, source=1031 }, -- 猎血魔蝠
-  [1229283] = { itemID=239667, versionID=106, source=1031 }, -- 灰疫魔蝠
-  [1229288] = { itemID=239687, versionID=106, source=1031 }, -- 失心魔蝠
-  [1233511] = { itemID=242714, versionID=11, source=1 }, -- 晦影卡雷鹏
-  [1233518] = { itemID=242717, versionID=11, source=10 }, -- 淡紫卡雷鹏
-  [1233542] = { itemID=242728, versionID=11, source=2 }, -- 寒骨者
-  [1233546] = { itemID=242729, versionID=11, source=2 }, -- 红玉虚空蠕行者
-  [1233547] = { itemID=242730, versionID=11, source=10 }, -- 酸蚀虚空蠕行者
-  [1233559] = { itemID=242733, versionID=11, source=10 }, -- 蓝巴里
-  [1233561] = { itemID=242734, versionID=11, source=7 }, -- 好奇的岩背兽
-  [1233925] = { itemID=242795, versionID=101, source=20 }, -- 兰娜瑟尔的血色瀑流
-  [1234303] = { itemID=243019, versionID=101, source=1007 }, -- 虚翼龙鹰
-  [1234305] = { itemID=243020, versionID=101, source=1007 }, -- 光翼龙鹰
-  [1234573] = { itemID=243061, versionID=11, source=3 }, -- 无缚吞星者
-  [1234820] = { itemID=243157, versionID=103, source=1006 }, -- 勇猛的虚空蠕行者
-  [1234821] = { itemID=243159, versionID=103, source=1006 }, -- 勇猛的虚空蠕行者
-  [1234859] = { itemID=243593, versionID=0, source=9999 }, -- 悚然女妖军马
-  [1234971] = { itemID=243194, versionID=101, source=20 }, -- 鲛波尔奔
-  [1235513] = { itemID=250721, versionID=106, source=1031 }, -- 雪白至高岭雄鹰
-  [1235756] = { itemID=243572, versionID=106, source=18 }, -- 特级大师的先知棋盘
-  [1235763] = { itemID=243590, versionID=0, source=9999 }, -- 特级大师的深海棋盘
-  [1235803] = { itemID=243591, versionID=106, source=30 }, -- 特级大师的皇家棋盘
-  [1235806] = { itemID=243592, versionID=0, source=9999 }, -- 特级大师的云烟棋盘
-  [1235817] = { itemID=243594, versionID=101, source=20 }, -- 被遗忘者的怪诞军马
-  [1235819] = { itemID=243596, versionID=106, source=18 }, -- 哀嚎女妖军马
-  [1235820] = { itemID=243597, versionID=106, source=18 }, -- 病态女妖军马
-  [1236262] = { itemID=0, versionID=101, source=1018 }, -- 少昊的贤明翔龙
-  [1237631] = { itemID=245695, versionID=100, source=1002 }, -- 月照夜刃豹
-  [1237703] = { itemID=245694, versionID=100, source=1002 }, -- 乳白狂鬃龙
-  [1238729] = { itemID=250423, versionID=106, source=1031 }, -- 炉渣蜥蜴
-  [1239138] = { itemID=245610, versionID=101, source=1007 }, -- 虚空之光飙飞者
-  [1240003] = { itemID=245936, versionID=106, source=18 }, -- 轻装死牙魔能野猪
-  [1240632] = { itemID=246067, versionID=11, source=4 }, -- 珠光三叶虫
-  [1241070] = { itemID=246159, versionID=11, source=4 }, -- 流离的饕餮者
-  [1241076] = { itemID=246160, versionID=11, source=4 }, -- 司萨阿布斯最后的午餐
-  [1241263] = { itemID=246237, versionID=11, source=6 }, -- OC91战车
-  [1241429] = { itemID=246264, versionID=101, source=1019 }, -- 伊纳瑞斯的天使战马
-  [1242272] = { itemID=246445, versionID=25, source=1023 }, -- 皇家虚空之翼
-  [1243589] = { itemID=246732, versionID=11, source=5 }, -- 虚铸监察者
-  [1244247] = { itemID=246917, versionID=11, source=4 }, -- 雷鸣脊背雷象
-  [1244259] = { itemID=246919, versionID=11, source=4 }, -- 余烬焦灼雷象
-  [1244260] = { itemID=246920, versionID=11, source=4 }, -- 虚空噬灭雷象
-  [1244261] = { itemID=246921, versionID=11, source=4 }, -- 军团锤炼雷象
-  [1245197] = { itemID=247720, versionID=100, source=49 }, -- 无头骑士的悚然战马
-  [1245198] = { itemID=209024, versionID=100, source=49 }, -- 无头骑士的恐怖战马
-  [1245202] = { itemID=247722, versionID=100, source=49 }, -- 无头骑士的炽燃战马
-  [1245205] = { itemID=247723, versionID=100, source=49 }, -- 无头骑士的圣洁战马
-  [1245357] = { itemID=247791, versionID=11, source=6 }, -- 华丽的诺瑟隆狮鹫
-  [1245358] = { itemID=247792, versionID=11, source=10 }, -- 高阶萨满祭司的飞天狮鹫
-  [1245359] = { itemID=247793, versionID=11, source=4 }, -- 烬羽高地狮鹫
-  [1245361] = { itemID=247794, versionID=11, source=10 }, -- 烬翼巡天向导
-  [1245370] = { itemID=247795, versionID=106, source=18 }, -- 暴躁风蹄羊
-  [1245517] = { itemID=247822, versionID=11, source=4 }, -- 赤红虚空飞镰虫
-  [1245604] = { itemID=247848, versionID=11, source=4 }, -- 星牯
-  [1246781] = { itemID=248248, versionID=105, source=1017 }, -- 碧蓝虚空飞镰虫
-  [1247662] = { itemID=248761, versionID=100, source=47 }, -- 美酒节轰炸机
-  [1248309] = { itemID=248994, versionID=11, source=2 }, -- 卡鲁亚克冠角鹿
-  [1250285] = { itemID=250105, versionID=11, source=4 }, -- 御鲨冠角鹿
-  [1250287] = { itemID=250106, versionID=11, source=4 }, -- 履冰冠角鹿
-  [1250288] = { itemID=250108, versionID=11, source=4 }, -- 攀崖冠角鹿
-  [1250482] = { itemID=250192, versionID=106, source=1031 }, -- 苍白乌祖尔
-  [1250578] = { itemID=250240, versionID=11, source=1 }, -- 迷失相位的岩背兽
-  [1250879] = { itemID=250424, versionID=106, source=1031 }, -- 魔石蜥蜴
-  [1250880] = { itemID=250425, versionID=106, source=1031 }, -- 邪能页岩蜥蜴
-  [1250881] = { itemID=250426, versionID=106, source=1031 }, -- 青绿石蜥蜴
-  [1250882] = { itemID=250428, versionID=106, source=1031 }, -- 伊利达雷恐惧猎犬
-  [1250884] = { itemID=250427, versionID=106, source=1031 }, -- 伊利达雷瘟疫魔犬
-  [1250886] = { itemID=250429, versionID=106, source=1031 }, -- 高地大角鹿
-  [1251255] = { itemID=250723, versionID=106, source=1031 }, -- 树冠至高岭雄鹰
-  [1251265] = { itemID=250728, versionID=106, source=1031 }, -- 魔力莓魔刃豹
-  [1251279] = { itemID=250745, versionID=106, source=1031 }, -- 邪痕法力鳐
-  [1251281] = { itemID=250746, versionID=106, source=1031 }, -- 血齿法力鳐
-  [1251283] = { itemID=250747, versionID=106, source=1031 }, -- 白化法力鳐
-  [1251284] = { itemID=250748, versionID=106, source=1031 }, -- 幽光法力鳐
-  [1251295] = { itemID=250751, versionID=106, source=1031 }, -- 暮光骏马
-  [1251297] = { itemID=250752, versionID=106, source=1031 }, -- 金色逐日圣马
-  [1251298] = { itemID=250756, versionID=106, source=1031 }, -- 绿松骏马
-  [1251300] = { itemID=250757, versionID=106, source=1031 }, -- 幽霾梦魇
-  [1251305] = { itemID=250761, versionID=106, source=1031 }, -- 凯旋骨骥
-  [1251307] = { itemID=250760, versionID=106, source=1031 }, -- 浴血骨骥
-  [1251309] = { itemID=250759, versionID=106, source=1031 }, -- 疫毒骨骥
-  [1251311] = { itemID=250758, versionID=106, source=1031 }, -- 湮灭骨骥
-  [1251396] = { itemID=250802, versionID=106, source=1031 }, -- 长角漆黑塔布羊
-  [1251397] = { itemID=250803, versionID=106, source=1031 }, -- 榴红废墟游荡者
-  [1251398] = { itemID=250804, versionID=106, source=1031 }, -- 长角黯蹄塔布羊
-  [1251399] = { itemID=250805, versionID=106, source=1031 }, -- 长角阿古斯塔布羊
-  [1251400] = { itemID=250806, versionID=106, source=1031 }, -- 长角蓝玉塔布羊
-  [1251680] = { itemID=250926, versionID=106, source=18 }, -- 高地雄火鸡
-  [1251685] = { itemID=250927, versionID=100, source=53 }, -- 机灵的火鸡
-  [1251689] = { itemID=250928, versionID=100, source=53 }, -- 阴暗的火鸡
-  [1251690] = { itemID=250929, versionID=106, source=18 }, -- 珍稀的火鸡
-  [1253129] = { itemID=251796, versionID=12, source=6 }, -- 栗色骏马
-  [1253130] = { itemID=251795, versionID=12, source=6 }, -- 硫磺骏马
-  [1254363] = { itemID=0, versionID=106, source=1031 }, -- (PH) Legion Remix Mount
-  [1255159] = { itemID=0, versionID=106, source=1031 }, -- 机械改装原型豹MK-0
-  [1255179] = { itemID=0, versionID=106, source=1031 }, -- 钢铁改装原型豹MK-0
-  [1255264] = { itemID=252954, versionID=106, source=1031 }, -- 蔑邪邪嗣征服者
-  [1255431] = { itemID=253013, versionID=106, source=1031 }, -- 屠魔者的蔑邪尖啸者
-  [1255456] = { itemID=253025, versionID=106, source=1031 }, -- 蔑邪狼鹰
-  [1255463] = { itemID=253026, versionID=106, source=1031 }, -- 大法师的蔑邪飞碟
-  [1255467] = { itemID=253027, versionID=106, source=1031 }, -- 蔑邪大宗师的伙伴
-  [1255471] = { itemID=253028, versionID=106, source=1031 }, -- 蔑邪大领主的战马
-  [1255475] = { itemID=253029, versionID=106, source=1031 }, -- 大祭司的蔑邪寻觅者
-  [1255477] = { itemID=253030, versionID=106, source=1031 }, -- 暗影之刃的蔑邪预兆
-  [1255478] = { itemID=253031, versionID=106, source=1031 }, -- 先知的蔑邪风暴
-  [1255480] = { itemID=253032, versionID=106, source=1031 }, -- 蔑邪虚空之王的恐惧战马
-  [1255482] = { itemID=253033, versionID=106, source=1031 }, -- 蔑邪战龙
-  [1256677] = { itemID=253573, versionID=11, source=4 }, -- 钴蓝相位捕猎者
+  [465999] = { itemID = 229935, version = "地心之战", source = "商人出售" }, -- 猩红装甲惊哮犬
+  [466000] = { itemID = 229924, version = "地心之战", source = "商人出售" }, -- 暗索嚼压者
+  [466001] = { itemID = 229937, version = "地心之战", source = "地区" }, -- 黑水碾骨者
+  [466002] = { itemID = 229936, version = "地心之战", source = "商人出售" }, -- 紫罗兰装甲惊哮犬
+  [466013] = { itemID = 229946, version = "地心之战", source = "商人出售" }, -- 黄褐运载火箭
+  [466014] = { itemID = 0, version = "地心之战", source = "地区" }, -- 热砂补给机
+  [466016] = { itemID = 229944, version = "地心之战", source = "商人出售" }, -- 紧身特快
+  [466017] = { itemID = 229941, version = "地心之战", source = "商人出售" }, -- 创新调查者
+  [466018] = { itemID = 229950, version = "地心之战", source = "商人出售" }, -- 暗索歼灭者
+  [466019] = { itemID = 229948, version = "地心之战", source = "商人出售" }, -- 黑水伐木机尊享版MK2型
+  [466020] = { itemID = 229949, version = "地心之战", source = "商人出售" }, -- 私人订制地精S.C.R.A.P拆废机
+  [466022] = { itemID = 229951, version = "地心之战", source = "地区" }, -- 风险投资协调器
+  [466023] = { itemID = 229952, version = "地心之战", source = "商人出售" }, -- 资产倡导者
+  [466024] = { itemID = 229957, version = "地心之战", source = "地区" }, -- 锈水轰炸机
+  [466025] = { itemID = 229954, version = "地心之战", source = "商人出售" }, -- 差额操纵者
+  [466026] = { itemID = 229953, version = "地心之战", source = "野外稀有" }, -- 回收的地精亿万富豪飞行器
+  [466027] = { itemID = 229955, version = "地心之战", source = "野外稀有" }, -- 暗索谍眼飞行器
+  [466028] = { itemID = 229956, version = "地心之战", source = "商人出售" }, -- 钞绿色飞行器
+  [466133] = { itemID = 229974, version = "地心之战", source = "任务" }, -- 地下堡行者的地精疾行器
+  [466145] = { itemID = 229988, version = "打架", source = "邪气鞍座" }, -- 勇猛的电鳗
+  [466146] = { itemID = 229989, version = "打架", source = "邪气鞍座" }, -- 勇猛的电鳗
+  [466423] = { itemID = 0, version = "未分类", source = "占位符" }, -- 不稳定的火箭
+  [466464] = { itemID = 0, version = "未分类", source = "占位符" }, -- 不稳定的火箭
+  [473188] = { itemID = 233064, version = "地心之战", source = "任务" }, -- 青铜地精斩浪者
+  [473739] = { itemID = 233282, version = "促销", source = "商城出售" }, -- 绒毛米克西
+  [473741] = { itemID = 233283, version = "促销", source = "商城出售" }, -- 柔爪米克西
+  [473743] = { itemID = 233284, version = "促销", source = "商城出售" }, -- 滚爪米克西
+  [473744] = { itemID = 233285, version = "促销", source = "商城出售" }, -- 茶毛米克西
+  [473745] = { itemID = 233286, version = "促销", source = "商城出售" }, -- 酿盗米克西
+  [1216422] = { itemID = 235286, version = "促销", source = "怀旧服" }, -- 附煞云端翔龙
+  [1216430] = { itemID = 235287, version = "促销", source = "怀旧服" }, -- 附煞骑乘虎
+  [1217235] = { itemID = 235549, version = "绝版", source = "钥石大师" }, -- 赤红切割坦克
+  [1217340] = { itemID = 235554, version = "未分类", source = "不知道" }, -- 午夜暗月军马
+  [1217341] = { itemID = 235555, version = "限时活动", source = "商栈" }, -- 活跃暗月军马
+  [1217342] = { itemID = 235556, version = "限时活动", source = "商栈" }, -- 紫罗兰暗月军马
+  [1217343] = { itemID = 235557, version = "限时活动", source = "商栈" }, -- 雪白暗月军马
+  [1217760] = { itemID = 235626, version = "地心之战", source = "团本掉落" }, -- 加老大
+  [1217965] = { itemID = 235646, version = "限时活动", source = "商栈" }, -- 闪雾自由奔行者
+  [1217994] = { itemID = 235650, version = "限时活动", source = "商栈" }, -- 珠光彩蝶
+  [1218012] = { itemID = 235657, version = "限时活动", source = "商栈" }, -- 红玉彩蝶
+  [1218013] = { itemID = 235658, version = "限时活动", source = "商栈" }, -- 春日彩蝶
+  [1218014] = { itemID = 235659, version = "未分类", source = "不知道" }, -- 午夜彩蝶
+  [1218069] = { itemID = 235662, version = "限时活动", source = "商栈" }, -- 翡翠蜗牛
+  [1221155] = { itemID = 236960, version = "地心之战", source = "团本掉落" }, -- 原型A.S.M.R.
+  [1221694] = { itemID = 237141, version = "绝版", source = "钥石大师" }, -- 进取型切割坦克
+  [466011] = { itemID = 229940, version = "地心之战", source = "地区" }, -- 狂龙弗莱兰多
+  [466012] = { itemID = 229945, version = "地心之战", source = "商人出售" }, -- 雷鼓哑炮火箭
+  [466021] = { itemID = 229947, version = "地心之战", source = "地区" }, -- 紫罗兰地精伐木机
+  [466144] = { itemID = 229987, version = "绝版", source = "角斗士" }, -- 至臻角斗士的魔蝠
+  [468068] = { itemID = 231173, version = "地心之战", source = "成就" }, -- 渣客大师的磁力机甲
+  [353264] = { itemID = 186639, version = "地心之战", source = "解密" }, -- 赛财团受托人的齿轮滑翔器
+  [353265] = { itemID = 186640, version = "地心之战", source = "声望" }, -- 破坏者的齿轮滑翔器
+  [424601] = { itemID = 210141, version = "限时活动", source = "商栈" }, -- 棕毛尖刺獒犬
+  [428062] = { itemID = 211085, version = "地心之战", source = "商栈" }, -- 珠光蓝玉圣甲虫
+  [428068] = { itemID = 211089, version = "地心之战", source = "惊魂幻象" }, -- 虚空之火亡命摩托
+  [447189] = { itemID = 223265, version = "地心之战", source = "惊魂幻象" }, -- 筑巢的群聚虫
+  [472157] = { itemID = 232617, version = "绝版", source = "角斗士" }, -- 星界角斗士的魔蝠
+  [1218229] = { itemID = 235700, version = "地心之战", source = "惊魂幻象" }, -- 虚痕狮鹫
+  [1218305] = { itemID = 235705, version = "地心之战", source = "惊魂幻象" }, -- 虚铸骏马
+  [1218306] = { itemID = 235706, version = "地心之战", source = "惊魂幻象" }, -- 虚痕狼母
+  [1218307] = { itemID = 235707, version = "地心之战", source = "惊魂幻象" }, -- 虚痕驭风者
+  [1218314] = { itemID = 235709, version = "地心之战", source = "惊魂幻象" }, -- 尼奥罗萨暗影蠕虫
+  [1218316] = { itemID = 235711, version = "地心之战", source = "惊魂幻象" }, -- 守护巨龙之堕
+  [1218317] = { itemID = 235712, version = "地心之战", source = "珠宝" }, -- 虚空水晶猎豹
+  [1219705] = { itemID = 236415, version = "限时活动", source = "商栈" }, -- 斑点黑色骑乘山羊
+  [1221132] = { itemID = 242713, version = "地心之战", source = "任务" }, -- 耀辉卡雷鹏
+  [1223187] = { itemID = 237484, version = "地心之战", source = "声望" }, -- 废土恐兽
+  [1223191] = { itemID = 237485, version = "地心之战", source = "成就" }, -- 凶夜恐魔
+  [1224048] = { itemID = 238051, version = "地心之战", source = "任务" }, -- 地下堡行者的法力飞掠机
+  [1226144] = { itemID = 238739, version = "事件", source = "时光漫游" }, -- 时流冒险家
+  [1226421] = { itemID = 238829, version = "地心之战", source = "声望" }, -- 光耀帝国山猫
+  [1226511] = { itemID = 238897, version = "限时活动", source = "商栈" }, -- 阳春收获刺猬
+  [1226531] = { itemID = 238900, version = "未分类", source = "不知道" }, -- 盛夏收获刺猬
+  [1226532] = { itemID = 238901, version = "未分类", source = "不知道" }, -- 凛冬收获刺猬
+  [1226533] = { itemID = 238902, version = "未分类", source = "不知道" }, -- 暮秋收获刺猬
+  [1226740] = { itemID = 238941, version = "限时活动", source = "商栈" }, -- 冷焰炣美拉
+  [1226760] = { itemID = 238943, version = "促销", source = "商城出售" }, -- 先知的巨鸦
+  [1226851] = { itemID = 238966, version = "未分类", source = "不知道" }, -- 邪裔炣美拉
+  [1226855] = { itemID = 238967, version = "限时活动", source = "商栈" }, -- 熔岩炣美拉
+  [1226856] = { itemID = 238968, version = "未分类", source = "不知道" }, -- 火裔炣美拉
+  [1226983] = { itemID = 238994, version = "促销", source = "商城出售" }, -- 大法师的巨鸦
+  [1227076] = { itemID = 239020, version = "限时活动", source = "卑鄙双雄" }, -- 霸王陆龟
+  [1227192] = { itemID = 239076, version = "促销", source = "商城出售" }, -- 萨巴卡的使者
+  [1228865] = { itemID = 239563, version = "地心之战", source = "任务" }, -- 虚痕山猫
+  [1229276] = { itemID = 239665, version = "限时活动", source = "幻境新生:军团" }, -- 猎血魔蝠
+  [1229283] = { itemID = 239667, version = "限时活动", source = "幻境新生:军团" }, -- 灰疫魔蝠
+  [1229288] = { itemID = 239687, version = "限时活动", source = "幻境新生:军团" }, -- 失心魔蝠
+  [1233511] = { itemID = 242714, version = "地心之战", source = "成就" }, -- 晦影卡雷鹏
+  [1233518] = { itemID = 242717, version = "地心之战", source = "任务" }, -- 淡紫卡雷鹏
+  [1233542] = { itemID = 242728, version = "地心之战", source = "声望" }, -- 寒骨者
+  [1233546] = { itemID = 242729, version = "地心之战", source = "声望" }, -- 红玉虚空蠕行者
+  [1233547] = { itemID = 242730, version = "地心之战", source = "任务" }, -- 酸蚀虚空蠕行者
+  [1233559] = { itemID = 242733, version = "地心之战", source = "任务" }, -- 蓝巴里
+  [1233561] = { itemID = 242734, version = "地心之战", source = "宝箱" }, -- 好奇的岩背兽
+  [1233925] = { itemID = 242795, version = "促销", source = "商城出售" }, -- 兰娜瑟尔的血色瀑流
+  [1234303] = { itemID = 243019, version = "促销", source = "典藏版" }, -- 虚翼龙鹰
+  [1234305] = { itemID = 243020, version = "促销", source = "典藏版" }, -- 光翼龙鹰
+  [1234573] = { itemID = 243061, version = "地心之战", source = "副本掉落" }, -- 无缚吞星者
+  [1234820] = { itemID = 243157, version = "打架", source = "邪气鞍座" }, -- 勇猛的虚空蠕行者
+  [1234821] = { itemID = 243159, version = "打架", source = "邪气鞍座" }, -- 勇猛的虚空蠕行者
+  [1234859] = { itemID = 243593, version = "未分类", source = "不知道" }, -- 悚然女妖军马
+  [1234971] = { itemID = 243194, version = "促销", source = "商城出售" }, -- 鲛波尔奔
+  [1235513] = { itemID = 250721, version = "限时活动", source = "幻境新生:军团" }, -- 雪白至高岭雄鹰
+  [1235756] = { itemID = 243572, version = "限时活动", source = "商栈" }, -- 特级大师的先知棋盘
+  [1235763] = { itemID = 243590, version = "未分类", source = "不知道" }, -- 特级大师的深海棋盘
+  [1235803] = { itemID = 243591, version = "限时活动", source = "珠宝" }, -- 特级大师的皇家棋盘
+  [1235806] = { itemID = 243592, version = "未分类", source = "不知道" }, -- 特级大师的云烟棋盘
+  [1235817] = { itemID = 243594, version = "促销", source = "商城出售" }, -- 被遗忘者的怪诞军马
+  [1235819] = { itemID = 243596, version = "限时活动", source = "商栈" }, -- 哀嚎女妖军马
+  [1235820] = { itemID = 243597, version = "限时活动", source = "商栈" }, -- 病态女妖军马
+  [1236262] = { itemID = 0, version = "促销", source = "怀旧服" }, -- 少昊的贤明翔龙
+  [1237631] = { itemID = 245695, version = "事件", source = "时光漫游" }, -- 月照夜刃豹
+  [1237703] = { itemID = 245694, version = "事件", source = "时光漫游" }, -- 乳白狂鬃龙
+  [1238729] = { itemID = 250423, version = "限时活动", source = "幻境新生:军团" }, -- 炉渣蜥蜴
+  [1239138] = { itemID = 245610, version = "促销", source = "典藏版" }, -- 虚空之光飙飞者
+  [1240003] = { itemID = 245936, version = "限时活动", source = "商栈" }, -- 轻装死牙魔能野猪
+  [1240632] = { itemID = 246067, version = "地心之战", source = "野外稀有" }, -- 珠光三叶虫
+  [1241070] = { itemID = 246159, version = "地心之战", source = "野外稀有" }, -- 流离的饕餮者
+  [1241076] = { itemID = 246160, version = "地心之战", source = "野外稀有" }, -- 司萨阿布斯最后的午餐
+  [1241263] = { itemID = 246237, version = "地心之战", source = "商人出售" }, -- OC91战车
+  [1241429] = { itemID = 246264, version = "促销", source = "暗黑破坏神" }, -- 伊纳瑞斯的天使战马
+  [1242272] = { itemID = 246445, version = "未分类", source = "前夕绝版" }, -- 皇家虚空之翼
+  [1243589] = { itemID = 246732, version = "地心之战", source = "团本掉落" }, -- 虚铸监察者
+  [1244247] = { itemID = 246917, version = "地心之战", source = "野外稀有" }, -- 雷鸣脊背雷象
+  [1244259] = { itemID = 246919, version = "地心之战", source = "野外稀有" }, -- 余烬焦灼雷象
+  [1244260] = { itemID = 246920, version = "地心之战", source = "野外稀有" }, -- 虚空噬灭雷象
+  [1244261] = { itemID = 246921, version = "地心之战", source = "野外稀有" }, -- 军团锤炼雷象
+  [1245197] = { itemID = 247720, version = "事件", source = "万圣节" }, -- 无头骑士的悚然战马
+  [1245198] = { itemID = 209024, version = "事件", source = "万圣节" }, -- 无头骑士的恐怖战马
+  [1245202] = { itemID = 247722, version = "事件", source = "万圣节" }, -- 无头骑士的炽燃战马
+  [1245205] = { itemID = 247723, version = "事件", source = "万圣节" }, -- 无头骑士的圣洁战马
+  [1245357] = { itemID = 247791, version = "地心之战", source = "商人出售" }, -- 华丽的诺瑟隆狮鹫
+  [1245358] = { itemID = 247792, version = "地心之战", source = "任务" }, -- 高阶萨满祭司的飞天狮鹫
+  [1245359] = { itemID = 247793, version = "地心之战", source = "野外稀有" }, -- 烬羽高地狮鹫
+  [1245361] = { itemID = 247794, version = "地心之战", source = "任务" }, -- 烬翼巡天向导
+  [1245370] = { itemID = 247795, version = "限时活动", source = "商栈" }, -- 暴躁风蹄羊
+  [1245517] = { itemID = 247822, version = "地心之战", source = "野外稀有" }, -- 赤红虚空飞镰虫
+  [1245604] = { itemID = 247848, version = "地心之战", source = "野外稀有" }, -- 星牯
+  [1246781] = { itemID = 248248, version = "绝版", source = "钥石大师" }, -- 碧蓝虚空飞镰虫
+  [1247662] = { itemID = 248761, version = "事件", source = "美酒节" }, -- 美酒节轰炸机
+  [1248309] = { itemID = 248994, version = "地心之战", source = "声望" }, -- 卡鲁亚克冠角鹿
+  [1250285] = { itemID = 250105, version = "地心之战", source = "野外稀有" }, -- 御鲨冠角鹿
+  [1250287] = { itemID = 250106, version = "地心之战", source = "野外稀有" }, -- 履冰冠角鹿
+  [1250288] = { itemID = 250108, version = "地心之战", source = "野外稀有" }, -- 攀崖冠角鹿
+  [1250482] = { itemID = 250192, version = "限时活动", source = "幻境新生:军团" }, -- 苍白乌祖尔
+  [1250578] = { itemID = 250240, version = "地心之战", source = "成就" }, -- 迷失相位的岩背兽
+  [1250879] = { itemID = 250424, version = "限时活动", source = "幻境新生:军团" }, -- 魔石蜥蜴
+  [1250880] = { itemID = 250425, version = "限时活动", source = "幻境新生:军团" }, -- 邪能页岩蜥蜴
+  [1250881] = { itemID = 250426, version = "限时活动", source = "幻境新生:军团" }, -- 青绿石蜥蜴
+  [1250882] = { itemID = 250428, version = "限时活动", source = "幻境新生:军团" }, -- 伊利达雷恐惧猎犬
+  [1250884] = { itemID = 250427, version = "限时活动", source = "幻境新生:军团" }, -- 伊利达雷瘟疫魔犬
+  [1250886] = { itemID = 250429, version = "限时活动", source = "幻境新生:军团" }, -- 高地大角鹿
+  [1251255] = { itemID = 250723, version = "限时活动", source = "幻境新生:军团" }, -- 树冠至高岭雄鹰
+  [1251265] = { itemID = 250728, version = "限时活动", source = "幻境新生:军团" }, -- 魔力莓魔刃豹
+  [1251279] = { itemID = 250745, version = "限时活动", source = "幻境新生:军团" }, -- 邪痕法力鳐
+  [1251281] = { itemID = 250746, version = "限时活动", source = "幻境新生:军团" }, -- 血齿法力鳐
+  [1251283] = { itemID = 250747, version = "限时活动", source = "幻境新生:军团" }, -- 白化法力鳐
+  [1251284] = { itemID = 250748, version = "限时活动", source = "幻境新生:军团" }, -- 幽光法力鳐
+  [1251295] = { itemID = 250751, version = "限时活动", source = "幻境新生:军团" }, -- 暮光骏马
+  [1251297] = { itemID = 250752, version = "限时活动", source = "幻境新生:军团" }, -- 金色逐日圣马
+  [1251298] = { itemID = 250756, version = "限时活动", source = "幻境新生:军团" }, -- 绿松骏马
+  [1251300] = { itemID = 250757, version = "限时活动", source = "幻境新生:军团" }, -- 幽霾梦魇
+  [1251305] = { itemID = 250761, version = "限时活动", source = "幻境新生:军团" }, -- 凯旋骨骥
+  [1251307] = { itemID = 250760, version = "限时活动", source = "幻境新生:军团" }, -- 浴血骨骥
+  [1251309] = { itemID = 250759, version = "限时活动", source = "幻境新生:军团" }, -- 疫毒骨骥
+  [1251311] = { itemID = 250758, version = "限时活动", source = "幻境新生:军团" }, -- 湮灭骨骥
+  [1251396] = { itemID = 250802, version = "限时活动", source = "幻境新生:军团" }, -- 长角漆黑塔布羊
+  [1251397] = { itemID = 250803, version = "限时活动", source = "幻境新生:军团" }, -- 榴红废墟游荡者
+  [1251398] = { itemID = 250804, version = "限时活动", source = "幻境新生:军团" }, -- 长角黯蹄塔布羊
+  [1251399] = { itemID = 250805, version = "限时活动", source = "幻境新生:军团" }, -- 长角阿古斯塔布羊
+  [1251400] = { itemID = 250806, version = "限时活动", source = "幻境新生:军团" }, -- 长角蓝玉塔布羊
+  [1251680] = { itemID = 250926, version = "限时活动", source = "商栈" }, -- 高地雄火鸡
+  [1251685] = { itemID = 250927, version = "事件", source = "冬幕节" }, -- 机灵的火鸡
+  [1251689] = { itemID = 250928, version = "事件", source = "冬幕节" }, -- 阴暗的火鸡
+  [1251690] = { itemID = 250929, version = "限时活动", source = "商栈" }, -- 珍稀的火鸡
+  [1253129] = { itemID = 251796, version = "至暗之夜", source = "商人出售" }, -- 栗色骏马
+  [1253130] = { itemID = 251795, version = "至暗之夜", source = "商人出售" }, -- 硫磺骏马
+  [1254363] = { itemID = 0, version = "限时活动", source = "幻境新生:军团" }, -- (PH) Legion Remix Mount
+  [1255159] = { itemID = 0, version = "限时活动", source = "幻境新生:军团" }, -- 机械改装原型豹MK-0
+  [1255179] = { itemID = 0, version = "限时活动", source = "幻境新生:军团" }, -- 钢铁改装原型豹MK-0
+  [1255264] = { itemID = 252954, version = "限时活动", source = "幻境新生:军团" }, -- 蔑邪邪嗣征服者
+  [1255431] = { itemID = 253013, version = "限时活动", source = "幻境新生:军团" }, -- 屠魔者的蔑邪尖啸者
+  [1255456] = { itemID = 253025, version = "限时活动", source = "幻境新生:军团" }, -- 蔑邪狼鹰
+  [1255463] = { itemID = 253026, version = "限时活动", source = "幻境新生:军团" }, -- 大法师的蔑邪飞碟
+  [1255467] = { itemID = 253027, version = "限时活动", source = "幻境新生:军团" }, -- 蔑邪大宗师的伙伴
+  [1255471] = { itemID = 253028, version = "限时活动", source = "幻境新生:军团" }, -- 蔑邪大领主的战马
+  [1255475] = { itemID = 253029, version = "限时活动", source = "幻境新生:军团" }, -- 大祭司的蔑邪寻觅者
+  [1255477] = { itemID = 253030, version = "限时活动", source = "幻境新生:军团" }, -- 暗影之刃的蔑邪预兆
+  [1255478] = { itemID = 253031, version = "限时活动", source = "幻境新生:军团" }, -- 先知的蔑邪风暴
+  [1255480] = { itemID = 253032, version = "限时活动", source = "幻境新生:军团" }, -- 蔑邪虚空之王的恐惧战马
+  [1255482] = { itemID = 253033, version = "限时活动", source = "幻境新生:军团" }, -- 蔑邪战龙
+  [1256677] = { itemID = 253573, version = "地心之战", source = "野外稀有" }, -- 钴蓝相位捕猎者
 
 
 
-[3363] = { itemID=260916, versionID=12, source=10 }, -- 失落的虚空幼龙
-  [332482] = { itemID=182083, versionID=106, source=18 }, -- 劈骨者的颅猪
-  [428065] = { itemID=211086, versionID=11, source=1026 }, -- 珠光碧玉圣甲虫
-  [447173] = { itemID=222988, versionID=12, source=0 }, -- 年老的萤光螨
-  [451487] = { itemID=224148, versionID=11, source=4 }, -- 重新训练的剃天者
-  [1233516] = { itemID=242715, versionID=11, source=4 }, -- 迅翼卡雷鹏
-  [1238827] = { itemID=0, versionID=101, source=48 }, -- 迅捷幽灵龙鹰
-  [1242904] = { itemID=246590, versionID=11, source=3 }, -- 贝洛朗的灰烬
-  [1243003] = { itemID=246594, versionID=11, source=1 }, -- 圣光锻铸机甲
-  [1243593] = { itemID=246734, versionID=11, source=4 }, -- 凶猛恐惧山猫
-  [1243597] = { itemID=246735, versionID=11, source=4 }, -- 根须猎手恐惧山猫
-  [1247422] = { itemID=248681, versionID=105, source=1017 }, -- 炽燃勇驹
-  [1251433] = { itemID=250782, versionID=12, source=4 }, -- 阿曼尼日羽巨鹰
-  [1251630] = { itemID=250889, versionID=12, source=4 }, -- 阿曼尼唤风者
-  [1253927] = { itemID=252012, versionID=11, source=4 }, -- 活泼的瓣翼鸟
-  [1253929] = { itemID=252014, versionID=11, source=4 }, -- 天蓝孢子滑翔者
-  [1253938] = { itemID=252017, versionID=11, source=4 }, -- 赤红孢子滑翔者
-  [1255246] = { itemID=252950, versionID=11, source=10 }, -- 星焰虚空幼龙
-  [1257058] = { itemID=262620, versionID=12, source=4 }, -- 灾殃腐食者
-  [1257081] = { itemID=262621, versionID=12, source=4 }, -- 伤愈腐食者
-  [1258573] = { itemID=254735, versionID=12, source=1 }, -- 苍雷踏云
-  [1258574] = { itemID=254736, versionID=12, source=1 }, -- 岚舞天骏
-  [1260354] = { itemID=256423, versionID=12, source=4 }, -- 未被污染的林地爬行者
-  [1260356] = { itemID=256424, versionID=12, source=10 }, -- 艾林莎兰的回响
-  [1261155] = { itemID=257085, versionID=12, source=4 }, -- 强化风暴鳐鱼
-  [1261291] = { itemID=257142, versionID=12, source=4 }, -- 炽燃龙鹰
-  [1261302] = { itemID=257147, versionID=12, source=4 }, -- 钴蓝龙鹰
-  [1261316] = { itemID=257152, versionID=12, source=4 }, -- 阿曼尼锐爪巨鹰
-  [1261322] = { itemID=257154, versionID=12, source=6 }, -- 赤红银月城陆行鸟
-  [1261323] = { itemID=257156, versionID=12, source=6 }, -- 天蓝陆行鸟
-  [1261332] = { itemID=257176, versionID=12, source=4 }, -- 暮蛮掠心者
-  [1261336] = { itemID=257191, versionID=12, source=4 }, -- 寻猎者的狂妄
-  [1261337] = { itemID=257192, versionID=12, source=4 }, -- 寻猎者的愤怒
-  [1261338] = { itemID=257193, versionID=12, source=4 }, -- 寻猎者的梦魇
-  [1261348] = { itemID=257197, versionID=12, source=10 }, -- 神佑阿曼尼掘地者
-  [1261351] = { itemID=257200, versionID=12, source=4 }, -- 枯木穿山甲
-  [1261357] = { itemID=257219, versionID=12, source=10 }, -- 阿曼尼祝福之熊
-  [1261360] = { itemID=257223, versionID=12, source=10 }, -- 先祖战熊
-  [1261391] = { itemID=257240, versionID=12, source=4 }, -- 被遗弃的血色战马
-  [1261576] = { itemID=257444, versionID=12, source=4 }, -- 妖祟邪羽飞鹰
-  [1261584] = { itemID=257447, versionID=12, source=4 }, -- 巡行裂爪兽
-  [1261585] = { itemID=257448, versionID=12, source=4 }, -- 狂热裂爪兽
-  [1261629] = { itemID=257502, versionID=12, source=4 }, -- 凶狠的钳嘴蜥
-  [1261648] = { itemID=257504, versionID=12, source=4 }, -- 凶狠的钳嘴蜥
-  [1261668] = { itemID=257511, versionID=12, source=4 }, -- 青铜荒蚺
-  [1261671] = { itemID=257513, versionID=12, source=4 }, -- 青铜北风长
-  [1261677] = { itemID=257514, versionID=12, source=4 }, -- 青铜冥蝇
-  [1261681] = { itemID=257516, versionID=12, source=4 }, -- 青铜墓翼蝠
-  [1262840] = { itemID=260228, versionID=105, source=42 }, -- 星河角斗士的残虐幼龙
-  [1262886] = { itemID=258188, versionID=12, source=27 }, -- 磨轮号Mk. 11型
-  [1263369] = { itemID=258488, versionID=12, source=4 }, -- 天爪烁裘狐
-  [1263387] = { itemID=258515, versionID=12, source=4 }, -- 赤红元狼
-  [1264621] = { itemID=259227, versionID=12, source=10 }, -- 进击的布鲁诺
-  [1264643] = { itemID=259238, versionID=12, source=10 }, -- 脱缰野马飞弹
-  [1264988] = { itemID=259463, versionID=12, source=4 }, -- 雪爪烁裘徘徊者
-  [1265784] = { itemID=260231, versionID=12, source=6 }, -- 光亮陆行鸟
-  [1266248] = { itemID=260409, versionID=12, source=4 }, -- 野红战龟
-  [1266579] = { itemID=260580, versionID=12, source=4 }, -- 云裔刀翼兽
-  [1266700] = { itemID=260635, versionID=12, source=4 }, -- 猩红掠心者
-  [1266980] = { itemID=260887, versionID=12, source=4 }, -- 阴暗掠心者
-  [1266993] = { itemID=260893, versionID=12, source=4 }, -- 树栖拟态壳蜗牛
-  [1266997] = { itemID=260894, versionID=12, source=4 }, -- 卷心菜拟态壳蜗牛
-  [1267002] = { itemID=260895, versionID=12, source=4 }, -- 薰衣草拟态壳蜗牛
-  [1267004] = { itemID=260896, versionID=12, source=4 }, -- 缀饰拟态壳蜗牛
-  [1268809] = { itemID=262438, versionID=12, source=6 }, -- 奇异的地精斩浪者
-  [1268924] = { itemID=262500, versionID=12, source=6 }, -- 银月城奥术防御者
-  [1268926] = { itemID=262502, versionID=12, source=6 }, -- 精灵奥术守护者
-  [1268949] = { itemID=263222, versionID=12, source=4 }, -- 奥能虚空构造体
-  [1269181] = { itemID=262661, versionID=12, source=4 }, -- 瘴气腹足蜗牛
-  [1269273] = { itemID=262705, versionID=12, source=4 }, -- 凶恶噬人藤
-  [1269277] = { itemID=262706, versionID=12, source=4 }, -- 猛毒噬人藤
-  [1269279] = { itemID=262707, versionID=12, source=4 }, -- 染血噬人藤
-  [1269280] = { itemID=262708, versionID=12, source=4 }, -- 蛮荒噬人藤
-  [1269556] = { itemID=262909, versionID=12, source=27 }, -- 亚速X6000型
-  [1270520] = { itemID=263449, versionID=12, source=31 }, -- 毛茸茸的舒适飞毯
-  [1270521] = { itemID=263450, versionID=12, source=31 }, -- 粗犷的舒适飞毯
-  [1270522] = { itemID=263451, versionID=12, source=31 }, -- 舒适的贝拉梅斯飞毯
-  [1270523] = { itemID=263452, versionID=12, source=31 }, -- 舒适的银月城飞毯
-  [1270675] = { itemID=263580, versionID=12, source=4 }, -- 鲜艳的叶绿犀龙
-  [1271549] = { itemID=264273, versionID=12, source=4 }, -- 邪能尖塔飞鹰
-  [1276650] = { itemID=265656, versionID=12, source=1 }, -- 阿努莎拉，暗影启迪
-  [1243598] = { itemID=246736, versionID=11, source=4 }, -- 象牙恐惧山猫
-  [1261296] = { itemID=257144, versionID=12, source=4 }, -- 幽影龙鹰
-  [1261298] = { itemID=257145, versionID=12, source=4 }, -- 猩红龙鹰
-  [1261583] = { itemID=257446, versionID=12, source=4 }, -- 饕餮裂爪兽
-  [1284640] = { itemID=269009, versionID=12, source=5 }, -- 金色烬灭灾变者
+  [3363] = { itemID = 260916, version = "至暗之夜", source = "任务" }, -- 失落的虚空幼龙
+  [332482] = { itemID = 182083, version = "限时活动", source = "商栈" }, -- 劈骨者的颅猪
+  [428065] = { itemID = 211086, version = "地心之战", source = "未实装" }, -- 珠光碧玉圣甲虫
+  [447173] = { itemID = 222988, version = "至暗之夜", source = "无用占位符" }, -- 年老的萤光螨
+  [451487] = { itemID = 224148, version = "地心之战", source = "野外稀有" }, -- 重新训练的剃天者
+  [1233516] = { itemID = 242715, version = "地心之战", source = "野外稀有" }, -- 迅翼卡雷鹏
+  [1238827] = { itemID = 0, version = "促销", source = "卡牌" }, -- 迅捷幽灵龙鹰
+  [1242904] = { itemID = 246590, version = "地心之战", source = "副本掉落" }, -- 贝洛朗的灰烬
+  [1243003] = { itemID = 246594, version = "地心之战", source = "成就" }, -- 圣光锻铸机甲
+  [1243593] = { itemID = 246734, version = "地心之战", source = "野外稀有" }, -- 凶猛恐惧山猫
+  [1243597] = { itemID = 246735, version = "地心之战", source = "野外稀有" }, -- 根须猎手恐惧山猫
+  [1247422] = { itemID = 248681, version = "绝版", source = "钥石大师" }, -- 炽燃勇驹
+  [1251433] = { itemID = 250782, version = "至暗之夜", source = "野外稀有" }, -- 阿曼尼日羽巨鹰
+  [1251630] = { itemID = 250889, version = "至暗之夜", source = "野外稀有" }, -- 阿曼尼唤风者
+  [1253927] = { itemID = 252012, version = "地心之战", source = "野外稀有" }, -- 活泼的瓣翼鸟
+  [1253929] = { itemID = 252014, version = "地心之战", source = "野外稀有" }, -- 天蓝孢子滑翔者
+  [1253938] = { itemID = 252017, version = "地心之战", source = "野外稀有" }, -- 赤红孢子滑翔者
+  [1255246] = { itemID = 252950, version = "地心之战", source = "任务" }, -- 星焰虚空幼龙
+  [1257058] = { itemID = 262620, version = "至暗之夜", source = "野外稀有" }, -- 灾殃腐食者
+  [1257081] = { itemID = 262621, version = "至暗之夜", source = "野外稀有" }, -- 伤愈腐食者
+  [1258573] = { itemID = 254735, version = "至暗之夜", source = "成就" }, -- 苍雷踏云
+  [1258574] = { itemID = 254736, version = "至暗之夜", source = "成就" }, -- 岚舞天骏
+  [1260354] = { itemID = 256423, version = "至暗之夜", source = "野外稀有" }, -- 未被污染的林地爬行者
+  [1260356] = { itemID = 256424, version = "至暗之夜", source = "任务" }, -- 艾林莎兰的回响
+  [1261155] = { itemID = 257085, version = "至暗之夜", source = "野外稀有" }, -- 强化风暴鳐鱼
+  [1261291] = { itemID = 257142, version = "至暗之夜", source = "野外稀有" }, -- 炽燃龙鹰
+  [1261302] = { itemID = 257147, version = "至暗之夜", source = "野外稀有" }, -- 钴蓝龙鹰
+  [1261316] = { itemID = 257152, version = "至暗之夜", source = "野外稀有" }, -- 阿曼尼锐爪巨鹰
+  [1261322] = { itemID = 257154, version = "至暗之夜", source = "商人出售" }, -- 赤红银月城陆行鸟
+  [1261323] = { itemID = 257156, version = "至暗之夜", source = "商人出售" }, -- 天蓝陆行鸟
+  [1261332] = { itemID = 257176, version = "至暗之夜", source = "野外稀有" }, -- 暮蛮掠心者
+  [1261336] = { itemID = 257191, version = "至暗之夜", source = "野外稀有" }, -- 寻猎者的狂妄
+  [1261337] = { itemID = 257192, version = "至暗之夜", source = "野外稀有" }, -- 寻猎者的愤怒
+  [1261338] = { itemID = 257193, version = "至暗之夜", source = "野外稀有" }, -- 寻猎者的梦魇
+  [1261348] = { itemID = 257197, version = "至暗之夜", source = "任务" }, -- 神佑阿曼尼掘地者
+  [1261351] = { itemID = 257200, version = "至暗之夜", source = "野外稀有" }, -- 枯木穿山甲
+  [1261357] = { itemID = 257219, version = "至暗之夜", source = "任务" }, -- 阿曼尼祝福之熊
+  [1261360] = { itemID = 257223, version = "至暗之夜", source = "任务" }, -- 先祖战熊
+  [1261391] = { itemID = 257240, version = "至暗之夜", source = "野外稀有" }, -- 被遗弃的血色战马
+  [1261576] = { itemID = 257444, version = "至暗之夜", source = "野外稀有" }, -- 妖祟邪羽飞鹰
+  [1261584] = { itemID = 257447, version = "至暗之夜", source = "野外稀有" }, -- 巡行裂爪兽
+  [1261585] = { itemID = 257448, version = "至暗之夜", source = "野外稀有" }, -- 狂热裂爪兽
+  [1261629] = { itemID = 257502, version = "至暗之夜", source = "野外稀有" }, -- 凶狠的钳嘴蜥
+  [1261648] = { itemID = 257504, version = "至暗之夜", source = "野外稀有" }, -- 凶狠的钳嘴蜥
+  [1261668] = { itemID = 257511, version = "至暗之夜", source = "野外稀有" }, -- 青铜荒蚺
+  [1261671] = { itemID = 257513, version = "至暗之夜", source = "野外稀有" }, -- 青铜北风长
+  [1261677] = { itemID = 257514, version = "至暗之夜", source = "野外稀有" }, -- 青铜冥蝇
+  [1261681] = { itemID = 257516, version = "至暗之夜", source = "野外稀有" }, -- 青铜墓翼蝠
+  [1262840] = { itemID = 260228, version = "绝版", source = "角斗士" }, -- 星河角斗士的残虐幼龙
+  [1262886] = { itemID = 258188, version = "至暗之夜", source = "工程" }, -- 磨轮号Mk. 11型
+  [1263369] = { itemID = 258488, version = "至暗之夜", source = "野外稀有" }, -- 天爪烁裘狐
+  [1263387] = { itemID = 258515, version = "至暗之夜", source = "野外稀有" }, -- 赤红元狼
+  [1264621] = { itemID = 259227, version = "至暗之夜", source = "任务" }, -- 进击的布鲁诺
+  [1264643] = { itemID = 259238, version = "至暗之夜", source = "任务" }, -- 脱缰野马飞弹
+  [1264988] = { itemID = 259463, version = "至暗之夜", source = "野外稀有" }, -- 雪爪烁裘徘徊者
+  [1265784] = { itemID = 260231, version = "至暗之夜", source = "商人出售" }, -- 光亮陆行鸟
+  [1266248] = { itemID = 260409, version = "至暗之夜", source = "野外稀有" }, -- 野红战龟
+  [1266579] = { itemID = 260580, version = "至暗之夜", source = "野外稀有" }, -- 云裔刀翼兽
+  [1266700] = { itemID = 260635, version = "至暗之夜", source = "野外稀有" }, -- 猩红掠心者
+  [1266980] = { itemID = 260887, version = "至暗之夜", source = "野外稀有" }, -- 阴暗掠心者
+  [1266993] = { itemID = 260893, version = "至暗之夜", source = "野外稀有" }, -- 树栖拟态壳蜗牛
+  [1266997] = { itemID = 260894, version = "至暗之夜", source = "野外稀有" }, -- 卷心菜拟态壳蜗牛
+  [1267002] = { itemID = 260895, version = "至暗之夜", source = "野外稀有" }, -- 薰衣草拟态壳蜗牛
+  [1267004] = { itemID = 260896, version = "至暗之夜", source = "野外稀有" }, -- 缀饰拟态壳蜗牛
+  [1268809] = { itemID = 262438, version = "至暗之夜", source = "商人出售" }, -- 奇异的地精斩浪者
+  [1268924] = { itemID = 262500, version = "至暗之夜", source = "商人出售" }, -- 银月城奥术防御者
+  [1268926] = { itemID = 262502, version = "至暗之夜", source = "商人出售" }, -- 精灵奥术守护者
+  [1268949] = { itemID = 263222, version = "至暗之夜", source = "野外稀有" }, -- 奥能虚空构造体
+  [1269181] = { itemID = 262661, version = "至暗之夜", source = "野外稀有" }, -- 瘴气腹足蜗牛
+  [1269273] = { itemID = 262705, version = "至暗之夜", source = "野外稀有" }, -- 凶恶噬人藤
+  [1269277] = { itemID = 262706, version = "至暗之夜", source = "野外稀有" }, -- 猛毒噬人藤
+  [1269279] = { itemID = 262707, version = "至暗之夜", source = "野外稀有" }, -- 染血噬人藤
+  [1269280] = { itemID = 262708, version = "至暗之夜", source = "野外稀有" }, -- 蛮荒噬人藤
+  [1269556] = { itemID = 262909, version = "至暗之夜", source = "工程" }, -- 亚速X6000型
+  [1270520] = { itemID = 263449, version = "至暗之夜", source = "裁缝" }, -- 毛茸茸的舒适飞毯
+  [1270521] = { itemID = 263450, version = "至暗之夜", source = "裁缝" }, -- 粗犷的舒适飞毯
+  [1270522] = { itemID = 263451, version = "至暗之夜", source = "裁缝" }, -- 舒适的贝拉梅斯飞毯
+  [1270523] = { itemID = 263452, version = "至暗之夜", source = "裁缝" }, -- 舒适的银月城飞毯
+  [1270675] = { itemID = 263580, version = "至暗之夜", source = "野外稀有" }, -- 鲜艳的叶绿犀龙
+  [1271549] = { itemID = 264273, version = "至暗之夜", source = "野外稀有" }, -- 邪能尖塔飞鹰
+  [1276650] = { itemID = 265656, version = "至暗之夜", source = "成就" }, -- 阿努莎拉，暗影启迪
+  [1243598] = { itemID = 246736, version = "地心之战", source = "野外稀有" }, -- 象牙恐惧山猫
+  [1261296] = { itemID = 257144, version = "至暗之夜", source = "野外稀有" }, -- 幽影龙鹰
+  [1261298] = { itemID = 257145, version = "至暗之夜", source = "野外稀有" }, -- 猩红龙鹰
+  [1261583] = { itemID = 257446, version = "至暗之夜", source = "野外稀有" }, -- 饕餮裂爪兽
+  [1284640] = { itemID = 269009, version = "至暗之夜", source = "团本掉落" }, -- 金色烬灭灾变者
 }
 -- 测试打印
 print("|cff00ff00[cupcko debug]|r [cupcko_data.lua] externalMountData content:")

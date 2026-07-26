@@ -2,7 +2,7 @@
 -- 作者: cupcko
 -- 功能：
 --   1) 读取外部数据 externalMountData(模拟.json -> lua)，形如：
---         externalMountData[spellID] = { itemID=xxxxx, versionID=2, source=3 }
+--         externalMountData[spellID] = { itemID=xxxxx, version="地心之战", source="副本掉落" }
 --   2) 按照版本(通过手动Tab)筛选显示坐骑
 --   3) 对比游戏内坐骑 SpellID，找出新增/未记录的坐骑
 --   4) 插件界面加个按钮弹窗，显示新增坐骑的数据（可复制）
@@ -23,186 +23,181 @@ end
 
 ----------------------------------------------------------------
 -- 0.1) 定义一个版本表 & 当前版本过滤
--- 你可以根据需要增删版本；0表示“全部”
+-- 你可以根据需要增删版本；"总览"表示"全部"
 ----------------------------------------------------------------
 local expansions = {
-    { versionID = 1000,  name = "总览" },
-    { versionID = 12, name = "至暗之夜" },
-    { versionID = 11, name = "地心之战" },
-    { versionID = 10, name = "巨龙时代" },
-    { versionID = 9,  name = "暗影国度" },
-    { versionID = 8,  name = "争霸艾泽拉斯" },
-    { versionID = 7,  name = "军团再临" },
-    { versionID = 6,  name = "德拉诺之王" },
-    { versionID = 5,  name = "熊猫人之谜" },
-    { versionID = 4,  name = "大地的裂变" },
-    { versionID = 3,  name = "巫妖王之怒" },
-    { versionID = 2,  name = "燃烧的远征" },
-    { versionID = 1,  name = "经典旧世" },
-    { versionID = 100, name = "事件" },
-    { versionID = 101, name = "促销" },
-    { versionID = 102, name = "专业" },
-    { versionID = 103, name = "打架" },
-    { versionID = 104, name = "其他" },
-    { versionID = 106, name = "限时活动" },
-    { versionID = 105, name = "绝版" },
-    { versionID = 0, name = "未分类" },
-    --{ versionID = 107, name = "收藏" },
+    { name = "总览" },
+    { name = "至暗之夜" },
+    { name = "地心之战" },
+    { name = "巨龙时代" },
+    { name = "暗影国度" },
+    { name = "争霸艾泽拉斯" },
+    { name = "军团再临" },
+    { name = "德拉诺之王" },
+    { name = "熊猫人之谜" },
+    { name = "大地的裂变" },
+    { name = "巫妖王之怒" },
+    { name = "燃烧的远征" },
+    { name = "经典旧世" },
+    { name = "事件" },
+    { name = "促销" },
+    { name = "专业" },
+    { name = "打架" },
+    { name = "其他" },
+    { name = "限时活动" },
+    { name = "绝版" },
+    { name = "未分类" },
+    --{ name = "收藏" },
 }
 
 -- 定义坐骑来源（source）列表
 local sources = {
-    { cls = 0,  name = "无用占位符" },
-    { cls = 1,  name = "成就" },
-    { cls = 2,  name = "声望" },
-    { cls = 3,  name = "副本掉落" },
-    { cls = 4,  name = "野外稀有" },
-    { cls = 5,  name = "团本掉落" },
-    { cls = 6,  name = "商人出售" },
-    { cls = 7,  name = "宝箱" },
-    { cls = 8,  name = "世界BOSS" },
-    { cls = 9,  name = "版本活动" },
-    { cls = 10, name = "任务" },
-    { cls = 11, name = "法夜" },
-    { cls = 12, name = "通灵" },
-    { cls = 13, name = "温西尔" },
-    { cls = 14, name = "格里恩" },
-    { cls = 15, name = "指挥台" },
-    { cls = 16, name = "巅峰大使" },
-    { cls = 17, name = "碎片合成" },
-    { cls = 18, name = "商栈" },
-    { cls = 19, name = "招募/复活卷轴" },
-    { cls = 20, name = "商城出售" },
-    { cls = 21, name = "典藏礼包" },
-    { cls = 22, name = "嘉年华" },
-    { cls = 23, name = "活动" },
-    { cls = 24, name = "种族购买" },
-    { cls = 25, name = "绝版" },
-    { cls = 26, name = "周年庆" },
-    { cls = 27, name = "工程" },
-    { cls = 28, name = "锻造" },
-    { cls = 29, name = "制皮" },
-    { cls = 30, name = "珠宝" },
-    { cls = 31, name = "裁缝" },
-    { cls = 32, name = "附魔" },
-    { cls = 33, name = "炼金" },
-    { cls = 34, name = "钓鱼" },
-    { cls = 35, name = "考古" },
-    { cls = 36, name = "铭文" },
-    { cls = 37, name = "采药" },
-    { cls = 38, name = "挖矿" },
-    { cls = 39, name = "烹饪" },
-    { cls = 40, name = "公会商人" },
-    { cls = 41, name = "黑市" },
-    { cls = 42, name = "角斗士" },
-    { cls = 43, name = "占位符" },
-    { cls = 44,  name = "解密" },
-    { cls = 45,  name = "商城下架" },
-    { cls = 46,  name = "商人下架" },
-    { cls = 47,  name = "美酒节" },
-    { cls = 48,  name = "卡牌" },
-    { cls = 49,  name = "万圣节" },
-    { cls = 50,  name = "情人节" },
-    { cls = 51,  name = "暗月马戏团" },
-    { cls = 52,  name = "复活节" },
-    { cls = 53,  name = "冬幕节" },
-    { cls = 54,  name = "春节" },
-    { cls = 101,  name = "死亡骑士" },
-    { cls = 102,  name = "圣骑士" },
-    { cls = 103,  name = "恶魔猎手" },
-    { cls = 104,  name = "术士" },
-    { cls = 150,  name = "兽人" },
-    { cls = 151,  name = "牛头人" },
-    { cls = 152,  name = "亡灵" },
-    { cls = 153,  name = "巨魔" },
-    { cls = 154,  name = "暗夜精灵" },
-    { cls = 155,  name = "狼人" },
-    { cls = 156,  name = "熊猫人" },
-    { cls = 157,  name = "光铸德莱尼" },
-    { cls = 158,  name = "至高岭牛头人" },
-    { cls = 159,  name = "夜之子" },
-    { cls = 160,  name = "虚空精灵" },
-    { cls = 161,  name = "赞达拉巨魔" },
-    { cls = 162,  name = "玛格汉兽人" },
-    { cls = 163,  name = "黑铁矮人" },
-    { cls = 164,  name = "库尔提拉斯人" },
-    { cls = 165,  name = "机械侏儒" },
-    { cls = 166,  name = "狐人" },
-    { cls = 167,  name = "血精灵" },
-    { cls = 168,  name = "龙希尔" },
-    { cls = 169,  name = "土灵" },
-    { cls = 170,  name = "矮人" },
-    { cls = 171,  name = "人类" },
-    { cls = 172,  name = "侏儒" },
-    { cls = 173,  name = "地精" },
-    { cls = 174,  name = "德莱尼" },
-    { cls = 201,  name = "哈兰" },
-    { cls = 202,  name = "灵翼之龙" },
-    { cls = 203,  name = "沙塔尔天空卫队" },
-    { cls = 203,  name = "纳格兰" },
-    { cls = 301,  name = "银色锦标赛" },
-    { cls = 302,  name = "霍迪尔之子" },
-    { cls = 303,  name = "龙眠联军" },
-    { cls = 401,  name = "巴拉丁" },
-    { cls = 402,  name = "拉穆卡恒" },
-    { cls = 501,  name = "云端祥龙骑士团" },
-    { cls = 502,  name = "影踪派" },
-    { cls = 503,  name = "阡陌客" },
-    { cls = 504,  name = "永恒岛" },
-    { cls = 505,  name = "金莲教" },
-    { cls = 506,  name = "至尊天神" },
-    { cls = 601,  name = "要塞兽栏" },
-    { cls = 602,  name = "要塞入侵" },
-    { cls = 603,  name = "德拉诺黄金挑战" },
-    { cls = 801,  name = "阿拉希" },
-    { cls = 802,  name = "黑海岸" },
-    { cls = 803,  name = "突袭" },
-    { cls = 804,  name = "惊魂幻象" },
-    { cls = 904,  name = "温西尔" },
-    { cls = 905,  name = "法夜" },
-    { cls = 906,  name = "通灵" },
-    { cls = 907,  name = "格里恩" },
-    { cls = 908,  name = "原生体合成" },
-    { cls = 909,  name = "托加斯特" },
-    { cls = 910,  name = "盟约通用" },
-    { cls = 1001,  name = "幻境新生:熊猫人" },
-    { cls = 1031,  name = "幻境新生:军团" },
-    { cls = 1002,  name = "时光漫游" },
-    { cls = 1003,  name = "熊猫人黄金挑战" },
-    { cls = 1004,  name = "炉石传说" },
-    { cls = 1005,  name = "搏击俱乐部" },
-    { cls = 1006,  name = "邪气鞍座" },
-    { cls = 1007,  name = "典藏版" },
-    { cls = 1008,  name = "投票" },
-    { cls = 1009,  name = "荣誉等级" },
-    { cls = 1010,  name = "职业坐骑" },
-    { cls = 1011,  name = "风暴英雄" },
-    { cls = 1012,  name = "地区" },
-    { cls = 1013,  name = "限时" },
-    { cls = 1014,  name = "海岛探险" },
-    { cls = 1015,  name = "霸业风暴" },
-    { cls = 1016,  name = "魔兽争霸" },
-    { cls = 1017,  name = "钥石大师" },
-    { cls = 1018,  name = "怀旧服" },
-    { cls = 1019,  name = "暗黑破坏神" },
-    { cls = 1020,  name = "临时" },
-    { cls = 1021,  name = "时光裂隙" },
-    { cls = 1022,  name = "翡翠梦境" },
-    { cls = 1023,  name = "前夕绝版" },
-    { cls = 1024,  name = "坐骑收集" },
-    { cls = 1025,  name = "传家宝" },
-    { cls = 1026,  name = "未实装" },
-    { cls = 1027,  name = "未分类" },
-    { cls = 1028,  name = "奥特兰克山谷" },
-    { cls = 1029,  name = "甲虫的召唤" },
-    { cls = 1030,  name = "联名活动" },
-    { cls = 1032,  name = "惊魂幻象" },
-    { cls = 1033,  name = "卑鄙双雄" },
-    { cls = 9999,  name = "不知道" },
+    "无用占位符",
+    "成就",
+    "声望",
+    "副本掉落",
+    "野外稀有",
+    "团本掉落",
+    "商人出售",
+    "宝箱",
+    "世界BOSS",
+    "版本活动",
+    "任务",
+    "法夜",
+    "通灵",
+    "温西尔",
+    "格里恩",
+    "指挥台",
+    "巅峰大使",
+    "碎片合成",
+    "商栈",
+    "招募/复活卷轴",
+    "商城出售",
+    "典藏礼包",
+    "嘉年华",
+    "活动",
+    "种族购买",
+    "绝版",
+    "周年庆",
+    "工程",
+    "锻造",
+    "制皮",
+    "珠宝",
+    "裁缝",
+    "附魔",
+    "炼金",
+    "钓鱼",
+    "考古",
+    "铭文",
+    "采药",
+    "挖矿",
+    "烹饪",
+    "公会商人",
+    "黑市",
+    "角斗士",
+    "占位符",
+    "解密",
+    "商城下架",
+    "商人下架",
+    "美酒节",
+    "卡牌",
+    "万圣节",
+    "情人节",
+    "暗月马戏团",
+    "复活节",
+    "冬幕节",
+    "春节",
+    "死亡骑士",
+    "圣骑士",
+    "恶魔猎手",
+    "术士",
+    "兽人",
+    "牛头人",
+    "亡灵",
+    "巨魔",
+    "暗夜精灵",
+    "狼人",
+    "熊猫人",
+    "光铸德莱尼",
+    "至高岭牛头人",
+    "夜之子",
+    "虚空精灵",
+    "赞达拉巨魔",
+    "玛格汉兽人",
+    "黑铁矮人",
+    "库尔提拉斯人",
+    "机械侏儒",
+    "狐人",
+    "血精灵",
+    "龙希尔",
+    "土灵",
+    "矮人",
+    "人类",
+    "侏儒",
+    "地精",
+    "德莱尼",
+    "哈兰",
+    "灵翼之龙",
+    "沙塔尔天空卫队",
+    "纳格兰",
+    "银色锦标赛",
+    "霍迪尔之子",
+    "龙眠联军",
+    "巴拉丁",
+    "拉穆卡恒",
+    "云端祥龙骑士团",
+    "影踪派",
+    "阡陌客",
+    "永恒岛",
+    "金莲教",
+    "至尊天神",
+    "要塞兽栏",
+    "要塞入侵",
+    "德拉诺黄金挑战",
+    "阿拉希",
+    "黑海岸",
+    "突袭",
+    "惊魂幻象",
+    "原生体合成",
+    "托加斯特",
+    "盟约通用",
+    "幻境新生:熊猫人",
+    "幻境新生:军团",
+    "时光漫游",
+    "熊猫人黄金挑战",
+    "炉石传说",
+    "搏击俱乐部",
+    "邪气鞍座",
+    "典藏版",
+    "投票",
+    "荣誉等级",
+    "职业坐骑",
+    "风暴英雄",
+    "地区",
+    "限时",
+    "海岛探险",
+    "霸业风暴",
+    "魔兽争霸",
+    "钥石大师",
+    "怀旧服",
+    "暗黑破坏神",
+    "临时",
+    "时光裂隙",
+    "翡翠梦境",
+    "前夕绝版",
+    "坐骑收集",
+    "传家宝",
+    "未实装",
+    "未分类",
+    "奥特兰克山谷",
+    "甲虫的召唤",
+    "联名活动",
+    "卑鄙双雄",
+    "不知道",
 }
 -- print(0.01)
--- 当前选中版本（Tab）
-local currentVersionFilter = 1000  -- 0表示显示全部
+-- 当前选中版本（Tab）；"总览"表示显示全部
+local currentVersionFilter = "总览"
 
 ----------------------------------------------------------------
 -- 1) 主插件框体
@@ -299,7 +294,7 @@ scrollFrame:SetScrollChild(contentFrame)
 ----------------------------------------------------------------
 -- 2) 收集“新增坐骑信息”的表
 ----------------------------------------------------------------
-local newMounts = {} -- [spellID] = { name=..., itemID=?, versionID=? }
+local newMounts = {} -- [spellID] = { name=..., itemID=?, version=?, source=? }
 
 ----------------------------------------------------------------
 -- 2.1) 手动创建Tab，并维护“选中”状态
@@ -321,7 +316,7 @@ end
 -- 当点击某个Tab时
 local function OnTabClick(self)
     local idx = self:GetID()
-    currentVersionFilter = expansions[idx].versionID
+    currentVersionFilter = expansions[idx].name
     SetSelectedTab(idx)
     -- print("当前选中 =>", currentVersionFilter)
     RefreshMountList()
@@ -352,17 +347,17 @@ end
 -- 默认选中第1个Tab(“总览”)
 SetSelectedTab(1)
 
--- 根据 versionID 找到 expansions 里的下标 i，执行 SetSelectedTab(i) + RefreshMountList
-local function GotoTabByVersionID(vID)
+-- 根据版本名找到 expansions 里的下标 i，执行 SetSelectedTab(i) + RefreshMountList
+local function GotoTabByVersion(vName)
     for i, expInfo in ipairs(expansions) do
-        if expInfo.versionID == vID then
-            currentVersionFilter = vID
+        if expInfo.name == vName then
+            currentVersionFilter = vName
             SetSelectedTab(i)  -- 高亮/禁用对应Tab
             RefreshMountList()
             return
         end
     end
-    print("没找到对应 versionID=", vID, "的Tab")
+    print("没找到对应版本=", vName, "的Tab")
 end
 
 ----------------------------------------------------------------
@@ -382,8 +377,8 @@ function RefreshMountList()
     end
 
     -- 如果当前选择是总览，则执行总览逻辑
-    if currentVersionFilter == 1000 then
-      
+    if currentVersionFilter == "总览" then
+
 
         -- 统计完后，开始画总览
         local mountIDs = C_MountJournal.GetMountIDs()
@@ -391,15 +386,15 @@ function RefreshMountList()
 
         local versionStats = {}
         for _, expInfo in ipairs(expansions) do
-            versionStats[expInfo.versionID] = { total = 0, owned = 0 }
+            versionStats[expInfo.name] = { total = 0, owned = 0 }
         end
-        
+
         -- 遍历坐骑统计
         for _, mID in ipairs(mountIDs) do
             local name, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(mID)
             if name and spellID then
                 local data = externalMountData[spellID]
-                local mountVersion = data and data.versionID or 0
+                local mountVersion = data and data.version or "未分类"
 
                 if versionStats[mountVersion] then
                     versionStats[mountVersion].total = versionStats[mountVersion].total + 1
@@ -431,7 +426,7 @@ function RefreshMountList()
 
 
         for i, expInfo in ipairs(expansions) do
-            local stats = versionStats[expInfo.versionID]
+            local stats = versionStats[expInfo.name]
             if stats and stats.total > 0 then
                 local percentage = (stats.owned / stats.total) * 100
                 -- 若下一个 catWidth 超出 usableWidth，则换行
@@ -457,7 +452,7 @@ function RefreshMountList()
                 -----------------------------------------
                 -- 点击 => 跳转到相应版本Tab
                 catFrame:SetScript("OnClick", function()
-                GotoTabByVersionID(expInfo.versionID)
+                GotoTabByVersion(expInfo.name)
                 end)
 
                 local tabName = catFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
@@ -498,7 +493,7 @@ function RefreshMountList()
                 -- 不管点击标题还是进度条，都算点在 catFrame 上
                 -----------------------------------------
                 catFrame:SetScript("OnClick", function()
-                    GotoTabByVersionID(expInfo.versionID)
+                    GotoTabByVersion(expInfo.name)
                 end)
 
                 -- 最后更新 yOff
@@ -529,12 +524,12 @@ function RefreshMountList()
             C_MountJournal.GetMountInfoByID(mID)
         if name and spellID then
             local data = externalMountData[spellID]
-            local mountItemID  = data and data.itemID    or 0
-            local mountVersion = data and data.versionID or 0
-            local mountSource  = data and data.source    or 0
+            local mountItemID  = data and data.itemID  or 0
+            local mountVersion = data and data.version or "未分类"
+            local mountSource  = data and data.source  or "未分类"
 
-            -- 版本过滤 (1000=总览，显示全部; 非1000=只显示指定版本)
-            if currentVersionFilter == 1000 or mountVersion == currentVersionFilter then
+            -- 版本过滤 ("总览"=显示全部; 其它=只显示指定版本)
+            if currentVersionFilter == "总览" or mountVersion == currentVersionFilter then
                 if not groupedMounts[mountSource] then
                     groupedMounts[mountSource] = {}
                 end
@@ -551,10 +546,10 @@ function RefreshMountList()
             -- 若 externalMountData[spellID] 不存在 => 说明是新增坐骑
             if not data then
                 newMounts[spellID] = {
-                    name      = name,
-                    itemID    = 0,   -- 先默认0
-                    versionID = 0,   -- 先默认0
-                    source    = 0,   -- 先默认0
+                    name    = name,
+                    itemID  = 0,            -- 先默认0
+                    version = "未分类",     -- 先默认"未分类"
+                    source  = "未分类",     -- 先默认"未分类"
                 }
             end
         end
@@ -562,9 +557,9 @@ function RefreshMountList()
 
     -- 获取所有有坐骑的source信息
     local activeSources = {}
-    for _, srcInfo in ipairs(sources) do
-        if groupedMounts[srcInfo.cls] and #groupedMounts[srcInfo.cls] > 0 then
-            table.insert(activeSources, srcInfo)
+    for _, srcName in ipairs(sources) do
+        if groupedMounts[srcName] and #groupedMounts[srcName] > 0 then
+            table.insert(activeSources, srcName)
         end
     end
 
@@ -588,7 +583,7 @@ function RefreshMountList()
     end
 
     -- 分配源到列（每300像素增加一列）
-    for i, srcInfo in ipairs(activeSources) do
+    for i, srcName in ipairs(activeSources) do
         local columnIndex = math.floor((i - 1) / math.floor(#activeSources / numColumns + 0.5)) + 1
         if columnIndex > numColumns then
             columnIndex = numColumns
@@ -598,14 +593,14 @@ function RefreshMountList()
         -- 创建源标题
         local header = contentFrame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
         header:SetPoint("TOPLEFT", contentFrame, "TOPLEFT", col.x, col.y)
-        header:SetText(srcInfo.name)
+        header:SetText(srcName)
         header:SetWidth(columnWidth - 20) -- 预留边距
         header:SetJustifyH("LEFT")
 
         col.y = col.y - 25 -- 标题高度和间距
 
         -- 获取该source的所有坐骑
-        local mountsThisSource = groupedMounts[srcInfo.cls]
+        local mountsThisSource = groupedMounts[srcName]
         if mountsThisSource and #mountsThisSource > 0 then
             local mountIconSize = 30
             local mountSpacing = 6
@@ -773,7 +768,7 @@ showDiffButton:SetScript("OnClick", function()
     scroll:SetScrollChild(editBox)
 
     local lines = {}
-    table.insert(lines, "-- 差异SpellID => { itemID=?, versionID=?, source=? }")
+    table.insert(lines, "-- 差异SpellID => { itemID=?, version=\"?\", source=\"?\" }")
     table.insert(lines, "{")
 
     -- 对 newMounts 的 key 进行排序
@@ -785,8 +780,8 @@ showDiffButton:SetScript("OnClick", function()
 
     for _, sID in ipairs(sortedKeys) do
         local info = newMounts[sID]
-        table.insert(lines, string.format("  [%d] = { itemID=%d, versionID=%d, source=%d }, -- %s",
-            sID, info.itemID or 0, info.versionID or 0, info.source or 0, info.name or ""))
+        table.insert(lines, string.format('  [%d] = { itemID=%d, version="%s", source="%s" }, -- %s',
+            sID, info.itemID or 0, info.version or "未分类", info.source or "未分类", info.name or ""))
     end
 
     table.insert(lines, "}")

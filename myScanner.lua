@@ -8,7 +8,7 @@ local M = {}
 --====================================================================--
 -- mountID -> itemID  (阶段1得到)
 local itemMountMap  = {}
--- mountSpellID -> { itemID=?, versionID=0 } (阶段2得到)
+-- mountSpellID -> { itemID=?, version="未分类" } (阶段2得到)
 local scannedMounts = {}
 
 -- 配置参数 (可根据需要调整)
@@ -139,7 +139,7 @@ local function ScanMountSpells()
         if mountID then
             local itemID = itemMountMap[mountID]
             if itemID then
-                scannedMounts[mountSpellID] = { itemID = itemID, versionID=0 }
+                scannedMounts[mountSpellID] = { itemID = itemID, version = "未分类" }
             end
         end
 
@@ -191,10 +191,10 @@ local function ShowScanResults()
     scroll:SetScrollChild(editBox)
 
     local lines = {}
-    table.insert(lines, "-- scannedMounts (mountSpellID => { itemID=?, versionID=0 })")
+    table.insert(lines, "-- scannedMounts (mountSpellID => { itemID=?, version=\"未分类\" })")
     table.insert(lines, "{")
     for spellID, data in pairs(scannedMounts) do
-        table.insert(lines, string.format("  [%d] = { itemID=%d, versionID=0 },", spellID, data.itemID))
+        table.insert(lines, string.format('  [%d] = { itemID=%d, version="未分类" },', spellID, data.itemID))
     end
     table.insert(lines, "}")
 
