@@ -6,6 +6,7 @@
 ## DefaultState: Enabled
 
 # 加载主脚本
-cupcko_data.lua  
+cupcko_data.lua
+cupcko_theme.lua
 myScanner.lua
 cupcko_mca.lua

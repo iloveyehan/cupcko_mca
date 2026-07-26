@@ -288,7 +288,7 @@ externalMountData =                                            -- 新增坐骑Sp
   [73630] = { itemID = 0, version = "其他", source = "圣骑士" }, -- 大主教的雷象
   [74856] = { itemID = 54069, version = "促销", source = "卡牌" }, -- 炽焰角鹰兽
   [74918] = { itemID = 54068, version = "促销", source = "卡牌" }, -- 白毛犀牛
-  [75207] = { itemID = 54465, version = "大地的裂变", source = "任务" }, -- 瓦丝琪尔海马
+  [75207] = { itemID = 54465, version = "其他", source = "任务" }, -- 瓦丝琪尔海马
   [75596] = { itemID = 54797, version = "专业", source = "裁缝" }, -- 凝霜飞毯
   [75614] = { itemID = 54811, version = "促销", source = "商城出售" }, -- 星骓
   [75973] = { itemID = 54860, version = "限时活动", source = "商栈" }, -- X-53型观光火箭
@@ -1070,7 +1070,7 @@ externalMountData =                                            -- 新增坐骑Sp
   [385262] = { itemID = 198824, version = "巨龙时代", source = "商人出售" }, -- 暗翼欧胡纳
   [385266] = { itemID = 198825, version = "巨龙时代", source = "野外稀有" }, -- 泽尼特幼隼
   [385738] = { itemID = 201454, version = "巨龙时代", source = "任务" }, -- 喜怒无常的天爪狐龙
-  [386452] = { itemID = 0, version = "促销", source = "任务" }, -- 霜巢始祖魔龙
+  [386452] = { itemID = 258476, version = "促销", source = "怀旧服" }, -- 霜巢始祖魔龙
   [387231] = { itemID = 199412, version = "绝版", source = "钥石大师" }, -- 雹风厚甲龙
   [394216] = { itemID = 201702, version = "经典旧世", source = "龙希尔" }, -- 猩红龙麒
   [394218] = { itemID = 201704, version = "经典旧世", source = "龙希尔" }, -- 蓝玉龙麒
@@ -1388,7 +1388,7 @@ externalMountData =                                            -- 新增坐骑Sp
   [1233546] = { itemID = 242729, version = "地心之战", source = "声望" }, -- 红玉虚空蠕行者
   [1233547] = { itemID = 242730, version = "地心之战", source = "任务" }, -- 酸蚀虚空蠕行者
   [1233559] = { itemID = 242733, version = "地心之战", source = "任务" }, -- 蓝巴里
-  [1233561] = { itemID = 242734, version = "地心之战", source = "宝箱" }, -- 好奇的岩背兽
+  [1233561] = { itemID = 242734, version = "地心之战", source = "巅峰大使" }, -- 好奇的岩背兽
   [1233925] = { itemID = 242795, version = "促销", source = "商城出售" }, -- 兰娜瑟尔的血色瀑流
   [1234303] = { itemID = 243019, version = "促销", source = "典藏版" }, -- 虚翼龙鹰
   [1234305] = { itemID = 243020, version = "促销", source = "典藏版" }, -- 光翼龙鹰
@@ -1400,7 +1400,7 @@ externalMountData =                                            -- 新增坐骑Sp
   [1235513] = { itemID = 250721, version = "限时活动", source = "幻境新生:军团" }, -- 雪白至高岭雄鹰
   [1235756] = { itemID = 243572, version = "限时活动", source = "商栈" }, -- 特级大师的先知棋盘
   [1235763] = { itemID = 243590, version = "未分类", source = "不知道" }, -- 特级大师的深海棋盘
-  [1235803] = { itemID = 243591, version = "限时活动", source = "珠宝" }, -- 特级大师的皇家棋盘
+  [1235803] = { itemID = 243591, version = "限时活动", source = "商栈" }, -- 特级大师的皇家棋盘
   [1235806] = { itemID = 243592, version = "未分类", source = "不知道" }, -- 特级大师的云烟棋盘
   [1235817] = { itemID = 243594, version = "促销", source = "商城出售" }, -- 被遗忘者的怪诞军马
   [1235819] = { itemID = 243596, version = "限时活动", source = "商栈" }, -- 哀嚎女妖军马
@@ -1423,10 +1423,10 @@ externalMountData =                                            -- 新增坐骑Sp
   [1244260] = { itemID = 246920, version = "地心之战", source = "野外稀有" }, -- 虚空噬灭雷象
   [1244261] = { itemID = 246921, version = "地心之战", source = "野外稀有" }, -- 军团锤炼雷象
   [1245197] = { itemID = 247720, version = "事件", source = "万圣节" }, -- 无头骑士的悚然战马
-  [1245198] = { itemID = 209024, version = "事件", source = "万圣节" }, -- 无头骑士的恐怖战马
+  [1245198] = { itemID = 247721, version = "事件", source = "万圣节" }, -- 无头骑士的恐怖战马
   [1245202] = { itemID = 247722, version = "事件", source = "万圣节" }, -- 无头骑士的炽燃战马
   [1245205] = { itemID = 247723, version = "事件", source = "万圣节" }, -- 无头骑士的圣洁战马
-  [1245357] = { itemID = 247791, version = "地心之战", source = "商人出售" }, -- 华丽的诺瑟隆狮鹫
+  [1245357] = { itemID = 247791, version = "未分类", source = "不知道" }, -- 华丽的诺瑟隆狮鹫
   [1245358] = { itemID = 247792, version = "地心之战", source = "任务" }, -- 高阶萨满祭司的飞天狮鹫
   [1245359] = { itemID = 247793, version = "地心之战", source = "野外稀有" }, -- 烬羽高地狮鹫
   [1245361] = { itemID = 247794, version = "地心之战", source = "任务" }, -- 烬翼巡天向导
@@ -1467,14 +1467,14 @@ externalMountData =                                            -- 新增坐骑Sp
   [1251399] = { itemID = 250805, version = "限时活动", source = "幻境新生:军团" }, -- 长角阿古斯塔布羊
   [1251400] = { itemID = 250806, version = "限时活动", source = "幻境新生:军团" }, -- 长角蓝玉塔布羊
   [1251680] = { itemID = 250926, version = "限时活动", source = "商栈" }, -- 高地雄火鸡
-  [1251685] = { itemID = 250927, version = "事件", source = "冬幕节" }, -- 机灵的火鸡
-  [1251689] = { itemID = 250928, version = "事件", source = "冬幕节" }, -- 阴暗的火鸡
+  [1251685] = { itemID = 250927, version = "未分类", source = "不知道" }, -- 机灵的火鸡
+  [1251689] = { itemID = 250928, version = "未分类", source = "不知道" }, -- 阴暗的火鸡
   [1251690] = { itemID = 250929, version = "限时活动", source = "商栈" }, -- 珍稀的火鸡
-  [1253129] = { itemID = 251796, version = "至暗之夜", source = "商人出售" }, -- 栗色骏马
+  [1253129] = { itemID = 251796, version = "限时", source = "幻境新生:军团" }, -- 栗色骏马
   [1253130] = { itemID = 251795, version = "至暗之夜", source = "商人出售" }, -- 硫磺骏马
-  [1254363] = { itemID = 0, version = "限时活动", source = "幻境新生:军团" }, -- (PH) Legion Remix Mount
-  [1255159] = { itemID = 0, version = "限时活动", source = "幻境新生:军团" }, -- 机械改装原型豹MK-0
-  [1255179] = { itemID = 0, version = "限时活动", source = "幻境新生:军团" }, -- 钢铁改装原型豹MK-0
+  [1254363] = { itemID = 0, version = "未分类", source = "不知道" }, -- (PH) Legion Remix Mount
+  [1255159] = { itemID = 252679, version = "限时活动", source = "幻境新生:军团" }, -- 机械改装原型豹MK-0
+  [1255179] = { itemID = 252681, version = "限时活动", source = "幻境新生:军团" }, -- 钢铁改装原型豹MK-0
   [1255264] = { itemID = 252954, version = "限时活动", source = "幻境新生:军团" }, -- 蔑邪邪嗣征服者
   [1255431] = { itemID = 253013, version = "限时活动", source = "幻境新生:军团" }, -- 屠魔者的蔑邪尖啸者
   [1255456] = { itemID = 253025, version = "限时活动", source = "幻境新生:军团" }, -- 蔑邪狼鹰
@@ -1490,92 +1490,156 @@ externalMountData =                                            -- 新增坐骑Sp
 
 
 
-  [3363] = { itemID = 260916, version = "至暗之夜", source = "任务" }, -- 失落的虚空幼龙
+  [3363] = { itemID = 260916, version = "专业", source = "钓鱼" }, -- 失落的虚空幼龙
   [332482] = { itemID = 182083, version = "限时活动", source = "商栈" }, -- 劈骨者的颅猪
   [428065] = { itemID = 211086, version = "地心之战", source = "未实装" }, -- 珠光碧玉圣甲虫
-  [447173] = { itemID = 222988, version = "至暗之夜", source = "无用占位符" }, -- 年老的萤光螨
+  [447173] = { itemID = 222988, version = "至暗之夜", source = "任务" }, -- 年老的萤光螨
   [451487] = { itemID = 224148, version = "地心之战", source = "野外稀有" }, -- 重新训练的剃天者
   [1233516] = { itemID = 242715, version = "地心之战", source = "野外稀有" }, -- 迅翼卡雷鹏
-  [1238827] = { itemID = 0, version = "促销", source = "卡牌" }, -- 迅捷幽灵龙鹰
+  [1238827] = { itemID = 0, version = "未分类", source = "不知道" }, -- 迅捷幽灵龙鹰
   [1242904] = { itemID = 246590, version = "地心之战", source = "副本掉落" }, -- 贝洛朗的灰烬
   [1243003] = { itemID = 246594, version = "地心之战", source = "成就" }, -- 圣光锻铸机甲
   [1243593] = { itemID = 246734, version = "地心之战", source = "野外稀有" }, -- 凶猛恐惧山猫
   [1243597] = { itemID = 246735, version = "地心之战", source = "野外稀有" }, -- 根须猎手恐惧山猫
-  [1247422] = { itemID = 248681, version = "绝版", source = "钥石大师" }, -- 炽燃勇驹
-  [1251433] = { itemID = 250782, version = "至暗之夜", source = "野外稀有" }, -- 阿曼尼日羽巨鹰
-  [1251630] = { itemID = 250889, version = "至暗之夜", source = "野外稀有" }, -- 阿曼尼唤风者
+  [1247422] = { itemID = 248681, version = "促销", source = "商城出售" }, -- 炽燃勇驹
+  [1251433] = { itemID = 250782, version = "至暗之夜", source = "丰饶" }, -- 阿曼尼日羽巨鹰
+  [1251630] = { itemID = 250889, version = "至暗之夜", source = "声望" }, -- 阿曼尼唤风者
   [1253927] = { itemID = 252012, version = "地心之战", source = "野外稀有" }, -- 活泼的瓣翼鸟
   [1253929] = { itemID = 252014, version = "地心之战", source = "野外稀有" }, -- 天蓝孢子滑翔者
   [1253938] = { itemID = 252017, version = "地心之战", source = "野外稀有" }, -- 赤红孢子滑翔者
   [1255246] = { itemID = 252950, version = "地心之战", source = "任务" }, -- 星焰虚空幼龙
-  [1257058] = { itemID = 262620, version = "至暗之夜", source = "野外稀有" }, -- 灾殃腐食者
-  [1257081] = { itemID = 262621, version = "至暗之夜", source = "野外稀有" }, -- 伤愈腐食者
-  [1258573] = { itemID = 254735, version = "至暗之夜", source = "成就" }, -- 苍雷踏云
-  [1258574] = { itemID = 254736, version = "至暗之夜", source = "成就" }, -- 岚舞天骏
-  [1260354] = { itemID = 256423, version = "至暗之夜", source = "野外稀有" }, -- 未被污染的林地爬行者
+  [1257058] = { itemID = 262620, version = "绝版", source = "钥石大师" }, -- 灾殃腐食者
+  [1257081] = { itemID = 262621, version = "绝版", source = "钥石大师" }, -- 伤愈腐食者
+  [1258573] = { itemID = 254735, version = "促销", source = "商城出售" }, -- 苍雷踏云
+  [1258574] = { itemID = 254736, version = "促销", source = "商城出售" }, -- 岚舞天骏
+  [1260354] = { itemID = 256423, version = "至暗之夜", source = "宝箱" }, -- 未被污染的林地爬行者
   [1260356] = { itemID = 256424, version = "至暗之夜", source = "任务" }, -- 艾林莎兰的回响
   [1261155] = { itemID = 257085, version = "至暗之夜", source = "野外稀有" }, -- 强化风暴鳐鱼
-  [1261291] = { itemID = 257142, version = "至暗之夜", source = "野外稀有" }, -- 炽燃龙鹰
+  [1261291] = { itemID = 257142, version = "至暗之夜", source = "声望" }, -- 炽燃龙鹰
   [1261302] = { itemID = 257147, version = "至暗之夜", source = "野外稀有" }, -- 钴蓝龙鹰
   [1261316] = { itemID = 257152, version = "至暗之夜", source = "野外稀有" }, -- 阿曼尼锐爪巨鹰
-  [1261322] = { itemID = 257154, version = "至暗之夜", source = "商人出售" }, -- 赤红银月城陆行鸟
-  [1261323] = { itemID = 257156, version = "至暗之夜", source = "商人出售" }, -- 天蓝陆行鸟
-  [1261332] = { itemID = 257176, version = "至暗之夜", source = "野外稀有" }, -- 暮蛮掠心者
-  [1261336] = { itemID = 257191, version = "至暗之夜", source = "野外稀有" }, -- 寻猎者的狂妄
-  [1261337] = { itemID = 257192, version = "至暗之夜", source = "野外稀有" }, -- 寻猎者的愤怒
-  [1261338] = { itemID = 257193, version = "至暗之夜", source = "野外稀有" }, -- 寻猎者的梦魇
+  [1261322] = { itemID = 257154, version = "至暗之夜", source = "声望" }, -- 赤红银月城陆行鸟
+  [1261323] = { itemID = 257156, version = "至暗之夜", source = "野外稀有" }, -- 天蓝陆行鸟
+  [1261332] = { itemID = 257176, version = "至暗之夜", source = "巅峰大使" }, -- 暮蛮掠心者
+  [1261336] = { itemID = 257191, version = "至暗之夜", source = "声望" }, -- 寻猎者的狂妄
+  [1261337] = { itemID = 257192, version = "至暗之夜", source = "声望" }, -- 寻猎者的愤怒
+  [1261338] = { itemID = 257193, version = "至暗之夜", source = "成就" }, -- 寻猎者的梦魇
   [1261348] = { itemID = 257197, version = "至暗之夜", source = "任务" }, -- 神佑阿曼尼掘地者
   [1261351] = { itemID = 257200, version = "至暗之夜", source = "野外稀有" }, -- 枯木穿山甲
-  [1261357] = { itemID = 257219, version = "至暗之夜", source = "任务" }, -- 阿曼尼祝福之熊
-  [1261360] = { itemID = 257223, version = "至暗之夜", source = "任务" }, -- 先祖战熊
-  [1261391] = { itemID = 257240, version = "至暗之夜", source = "野外稀有" }, -- 被遗弃的血色战马
-  [1261576] = { itemID = 257444, version = "至暗之夜", source = "野外稀有" }, -- 妖祟邪羽飞鹰
-  [1261584] = { itemID = 257447, version = "至暗之夜", source = "野外稀有" }, -- 巡行裂爪兽
-  [1261585] = { itemID = 257448, version = "至暗之夜", source = "野外稀有" }, -- 狂热裂爪兽
-  [1261629] = { itemID = 257502, version = "至暗之夜", source = "野外稀有" }, -- 凶狠的钳嘴蜥
-  [1261648] = { itemID = 257504, version = "至暗之夜", source = "野外稀有" }, -- 凶狠的钳嘴蜥
-  [1261668] = { itemID = 257511, version = "至暗之夜", source = "野外稀有" }, -- 青铜荒蚺
-  [1261671] = { itemID = 257513, version = "至暗之夜", source = "野外稀有" }, -- 青铜北风长
-  [1261677] = { itemID = 257514, version = "至暗之夜", source = "野外稀有" }, -- 青铜冥蝇
-  [1261681] = { itemID = 257516, version = "至暗之夜", source = "野外稀有" }, -- 青铜墓翼蝠
+  [1261357] = { itemID = 257219, version = "至暗之夜", source = "声望" }, -- 阿曼尼祝福之熊
+  [1261360] = { itemID = 257223, version = "至暗之夜", source = "宝箱" }, -- 先祖战熊
+  [1261391] = { itemID = 257240, version = "至暗之夜", source = "任务" }, -- 被遗弃的血色战马
+  [1261576] = { itemID = 257444, version = "至暗之夜", source = "宝箱" }, -- 妖祟邪羽飞鹰
+  [1261584] = { itemID = 257447, version = "至暗之夜", source = "声望" }, -- 巡行裂爪兽
+  [1261585] = { itemID = 257448, version = "至暗之夜", source = "声望" }, -- 狂热裂爪兽
+  [1261629] = { itemID = 257502, version = "打架", source = "邪气鞍座" }, -- 凶狠的钳嘴蜥
+  [1261648] = { itemID = 257504, version = "打架", source = "邪气鞍座" }, -- 凶狠的钳嘴蜥
+  [1261668] = { itemID = 257511, version = "事件", source = "时光漫游" }, -- 青铜荒蚺
+  [1261671] = { itemID = 257513, version = "事件", source = "时光漫游" }, -- 青铜北风长
+  [1261677] = { itemID = 257514, version = "事件", source = "时光漫游" }, -- 青铜冥蝇
+  [1261681] = { itemID = 257516, version = "事件", source = "时光漫游" }, -- 青铜墓翼蝠
   [1262840] = { itemID = 260228, version = "绝版", source = "角斗士" }, -- 星河角斗士的残虐幼龙
-  [1262886] = { itemID = 258188, version = "至暗之夜", source = "工程" }, -- 磨轮号Mk. 11型
-  [1263369] = { itemID = 258488, version = "至暗之夜", source = "野外稀有" }, -- 天爪烁裘狐
-  [1263387] = { itemID = 258515, version = "至暗之夜", source = "野外稀有" }, -- 赤红元狼
-  [1264621] = { itemID = 259227, version = "至暗之夜", source = "任务" }, -- 进击的布鲁诺
-  [1264643] = { itemID = 259238, version = "至暗之夜", source = "任务" }, -- 脱缰野马飞弹
-  [1264988] = { itemID = 259463, version = "至暗之夜", source = "野外稀有" }, -- 雪爪烁裘徘徊者
-  [1265784] = { itemID = 260231, version = "至暗之夜", source = "商人出售" }, -- 光亮陆行鸟
-  [1266248] = { itemID = 260409, version = "至暗之夜", source = "野外稀有" }, -- 野红战龟
-  [1266579] = { itemID = 260580, version = "至暗之夜", source = "野外稀有" }, -- 云裔刀翼兽
+  [1262886] = { itemID = 258188, version = "地心之战", source = "成就" }, -- 磨轮号Mk. 11型
+  [1263369] = { itemID = 258488, version = "未分类", source = "不知道" }, -- 天爪烁裘狐
+  [1263387] = { itemID = 258515, version = "事件", source = "时光漫游" }, -- 赤红元狼
+  [1264621] = { itemID = 259227, version = "绝版", source = "搏击俱乐部" }, -- 进击的布鲁诺
+  [1264643] = { itemID = 259238, version = "绝版", source = "搏击俱乐部" }, -- 脱缰野马飞弹
+  [1264988] = { itemID = 259463, version = "事件", source = "时光漫游" }, -- 雪爪烁裘徘徊者
+  [1265784] = { itemID = 260231, version = "至暗之夜", source = "副本掉落" }, -- 光亮陆行鸟
+  [1266248] = { itemID = 260409, version = "限时活动", source = "商栈" }, -- 野红战龟
+  [1266579] = { itemID = 260580, version = "限时活动", source = "商栈" }, -- 云裔刀翼兽
   [1266700] = { itemID = 260635, version = "至暗之夜", source = "野外稀有" }, -- 猩红掠心者
-  [1266980] = { itemID = 260887, version = "至暗之夜", source = "野外稀有" }, -- 阴暗掠心者
-  [1266993] = { itemID = 260893, version = "至暗之夜", source = "野外稀有" }, -- 树栖拟态壳蜗牛
-  [1266997] = { itemID = 260894, version = "至暗之夜", source = "野外稀有" }, -- 卷心菜拟态壳蜗牛
-  [1267002] = { itemID = 260895, version = "至暗之夜", source = "野外稀有" }, -- 薰衣草拟态壳蜗牛
-  [1267004] = { itemID = 260896, version = "至暗之夜", source = "野外稀有" }, -- 缀饰拟态壳蜗牛
-  [1268809] = { itemID = 262438, version = "至暗之夜", source = "商人出售" }, -- 奇异的地精斩浪者
-  [1268924] = { itemID = 262500, version = "至暗之夜", source = "商人出售" }, -- 银月城奥术防御者
-  [1268926] = { itemID = 262502, version = "至暗之夜", source = "商人出售" }, -- 精灵奥术守护者
-  [1268949] = { itemID = 263222, version = "至暗之夜", source = "野外稀有" }, -- 奥能虚空构造体
-  [1269181] = { itemID = 262661, version = "至暗之夜", source = "野外稀有" }, -- 瘴气腹足蜗牛
-  [1269273] = { itemID = 262705, version = "至暗之夜", source = "野外稀有" }, -- 凶恶噬人藤
-  [1269277] = { itemID = 262706, version = "至暗之夜", source = "野外稀有" }, -- 猛毒噬人藤
-  [1269279] = { itemID = 262707, version = "至暗之夜", source = "野外稀有" }, -- 染血噬人藤
-  [1269280] = { itemID = 262708, version = "至暗之夜", source = "野外稀有" }, -- 蛮荒噬人藤
-  [1269556] = { itemID = 262909, version = "至暗之夜", source = "工程" }, -- 亚速X6000型
-  [1270520] = { itemID = 263449, version = "至暗之夜", source = "裁缝" }, -- 毛茸茸的舒适飞毯
-  [1270521] = { itemID = 263450, version = "至暗之夜", source = "裁缝" }, -- 粗犷的舒适飞毯
-  [1270522] = { itemID = 263451, version = "至暗之夜", source = "裁缝" }, -- 舒适的贝拉梅斯飞毯
-  [1270523] = { itemID = 263452, version = "至暗之夜", source = "裁缝" }, -- 舒适的银月城飞毯
-  [1270675] = { itemID = 263580, version = "至暗之夜", source = "野外稀有" }, -- 鲜艳的叶绿犀龙
-  [1271549] = { itemID = 264273, version = "至暗之夜", source = "野外稀有" }, -- 邪能尖塔飞鹰
+  [1266980] = { itemID = 260887, version = "至暗之夜", source = "成就" }, -- 阴暗掠心者
+  [1266993] = { itemID = 260893, version = "限时活动", source = "商栈" }, -- 树栖拟态壳蜗牛
+  [1266997] = { itemID = 260894, version = "未分类", source = "不知道" }, -- 卷心菜拟态壳蜗牛
+  [1267002] = { itemID = 260895, version = "未分类", source = "不知道" }, -- 薰衣草拟态壳蜗牛
+  [1267004] = { itemID = 260896, version = "未分类", source = "不知道" }, -- 缀饰拟态壳蜗牛
+  [1268809] = { itemID = 262438, version = "促销", source = "不知道" }, -- 奇异的地精斩浪者
+  [1268924] = { itemID = 262500, version = "至暗之夜", source = "地下堡" }, -- 银月城奥术防御者
+  [1268926] = { itemID = 262502, version = "至暗之夜", source = "地下堡" }, -- 精灵奥术守护者
+  [1268949] = { itemID = 263222, version = "至暗之夜", source = "地下堡" }, -- 奥能虚空构造体
+  [1269181] = { itemID = 262661, version = "限时活动", source = "商栈" }, -- 瘴气腹足蜗牛
+  [1269273] = { itemID = 262705, version = "限时活动", source = "商栈" }, -- 凶恶噬人藤
+  [1269277] = { itemID = 262706, version = "未分类", source = "不知道" }, -- 猛毒噬人藤
+  [1269279] = { itemID = 262707, version = "未分类", source = "不知道" }, -- 染血噬人藤
+  [1269280] = { itemID = 262708, version = "未分类", source = "不知道" }, -- 蛮荒噬人藤
+  [1269556] = { itemID = 262909, version = "未分类", source = "不知道" }, -- 亚速X6000型
+  [1270520] = { itemID = 263449, version = "未分类", source = "不知道" }, -- 毛茸茸的舒适飞毯
+  [1270521] = { itemID = 263450, version = "未分类", source = "不知道" }, -- 粗犷的舒适飞毯
+  [1270522] = { itemID = 263451, version = "限时活动", source = "商栈" }, -- 舒适的贝拉梅斯飞毯
+  [1270523] = { itemID = 263452, version = "限时活动", source = "商栈" }, -- 舒适的银月城飞毯
+  [1270675] = { itemID = 263580, version = "至暗之夜", source = "任务" }, -- 鲜艳的叶绿犀龙
+  [1271549] = { itemID = 264273, version = "未分类", source = "不知道" }, -- 邪能尖塔飞鹰
   [1276650] = { itemID = 265656, version = "至暗之夜", source = "成就" }, -- 阿努莎拉，暗影启迪
   [1243598] = { itemID = 246736, version = "地心之战", source = "野外稀有" }, -- 象牙恐惧山猫
-  [1261296] = { itemID = 257144, version = "至暗之夜", source = "野外稀有" }, -- 幽影龙鹰
-  [1261298] = { itemID = 257145, version = "至暗之夜", source = "野外稀有" }, -- 猩红龙鹰
-  [1261583] = { itemID = 257446, version = "至暗之夜", source = "野外稀有" }, -- 饕餮裂爪兽
-  [1284640] = { itemID = 269009, version = "至暗之夜", source = "团本掉落" }, -- 金色烬灭灾变者
+  [1261296] = { itemID = 257144, version = "至暗之夜", source = "成就" }, -- 幽影龙鹰
+  [1261298] = { itemID = 257145, version = "至暗之夜", source = "成就" }, -- 猩红龙鹰
+  [1261583] = { itemID = 257446, version = "至暗之夜", source = "宝箱" }, -- 饕餮裂爪兽
+  [1284640] = { itemID = 269009, version = "促销", source = "商城出售" }, -- 金色烬灭灾变者
+  [350220] = { itemID=0, version="未分类", source="未分类" }, -- 炽热岩浆蛞蝓
+  [404018] = { itemID=0, version="未分类", source="未分类" }, -- 黑毛獒犬
+  [1243582] = { itemID=0, version="未分类", source="未分类" }, -- 黄昏恐惧山猫
+  [1251697] = { itemID=0, version="未分类", source="未分类" }, -- 霜落翔林者
+  [1251762] = { itemID=0, version="未分类", source="未分类" }, -- 烬绒翔林者
+  [1251764] = { itemID=0, version="未分类", source="未分类" }, -- 幽桠翔林者
+  [1251765] = { itemID=0, version="未分类", source="未分类" }, -- 花枝翔林者
+  [1253924] = { itemID=0, version="未分类", source="未分类" }, -- 璀璨的瓣翼鸟
+  [1261293] = { itemID=0, version="未分类", source="未分类" }, -- 榄石龙鹰
+  [1261334] = { itemID=0, version="未分类", source="未分类" }, -- 被禁锢的斯托玛兰防御者
+  [1261349] = { itemID=0, version="未分类", source="未分类" }, -- 巨型穿山甲
+  [1261362] = { itemID=0, version="未分类", source="未分类" }, -- 枯木战熊之母
+  [1261369] = { itemID=0, version="未分类", source="未分类" }, -- 阿曼尼妖术熊
+  [1261579] = { itemID=0, version="未分类", source="未分类" }, -- 贪婪的裂爪兽
+  [1263635] = { itemID=0, version="未分类", source="未分类" }, -- 幽灵陆行鸟
+  [1264184] = { itemID=0, version="未分类", source="未分类" }, -- 威拉诺兹之嗣
+  [1265785] = { itemID=0, version="未分类", source="未分类" }, -- 翡翠陆行鸟
+  [1266702] = { itemID=0, version="未分类", source="未分类" }, -- 虚缚风暴鳐鱼
+  [1266703] = { itemID=0, version="未分类", source="未分类" }, -- 实验室培育的风暴鳐鱼
+  [1266982] = { itemID=0, version="未分类", source="未分类" }, -- 伯爵的猩红行驾
+  [1267077] = { itemID=0, version="未分类", source="未分类" }, -- 绯红女爵
+  [1270673] = { itemID=0, version="未分类", source="未分类" }, -- 活泼的叶绿犀龙
+  [1271698] = { itemID=0, version="未分类", source="未分类" }, -- 无缚法力浮龙
+  [1279352] = { itemID=0, version="未分类", source="未分类" }, -- 石铸哨兵
+  [1282268] = { itemID=0, version="未分类", source="未分类" }, -- 吉尔尼斯铁质战马
+  [1282274] = { itemID=0, version="未分类", source="未分类" }, -- 吉尔尼斯铜质战马
+  [1282275] = { itemID=0, version="未分类", source="未分类" }, -- 焚木村反叛者驮马
+  [1282276] = { itemID=0, version="未分类", source="未分类" }, -- 吉尔尼斯效忠者驮马
+  [1282450] = { itemID=0, version="未分类", source="未分类" }, -- 繁花背林狒
+  [1282453] = { itemID=0, version="未分类", source="未分类" }, -- 琥珀背林狒
+  [1282471] = { itemID=0, version="未分类", source="未分类" }, -- 魔导师的法术之蜂
+  [1282936] = { itemID=0, version="未分类", source="未分类" }, -- 虚空之触陆行鸟
+  [1283906] = { itemID=0, version="未分类", source="未分类" }, -- [PH] Giant Eagle Sunwalker Mount Blue
+  [1283908] = { itemID=0, version="未分类", source="未分类" }, -- 暮绘阳鹏
+  [1283910] = { itemID=0, version="未分类", source="未分类" }, -- 焰绘阳鹏
+  [1283911] = { itemID=0, version="未分类", source="未分类" }, -- [PH] Giant Eagle Sunwalker Mount White
+  [1284679] = { itemID=0, version="未分类", source="未分类" }, -- 附煞座狼
+  [1284973] = { itemID=0, version="未分类", source="未分类" }, -- 熠光孢子滑翔者
+  [1285897] = { itemID=0, version="未分类", source="未分类" }, -- 附煞猫头鹰
+  [1286606] = { itemID=0, version="未分类", source="未分类" }, -- 虚空腐化的邪鹰
+  [1287357] = { itemID=0, version="未分类", source="未分类" }, -- 虚触毒鳍龙
+  [1287359] = { itemID=0, version="未分类", source="未分类" }, -- 虚空腐化的山猫
+  [1289395] = { itemID=0, version="未分类", source="未分类" }, -- 迅捷幽灵龙鹰
+  [1291315] = { itemID=0, version="未分类", source="未分类" }, -- 栖竹者森森
+  [1292102] = { itemID=0, version="未分类", source="未分类" }, -- 黑水极限烟火火箭
+  [1292342] = { itemID=0, version="未分类", source="未分类" }, -- Green Rocket Mount [PH]
+  [1292344] = { itemID=0, version="未分类", source="未分类" }, -- 锈水极限烟火火箭
+  [1292345] = { itemID=0, version="未分类", source="未分类" }, -- Pink Rocket Mount [PH]
+  [1292356] = { itemID=0, version="未分类", source="未分类" }, -- 日耀流蛾
+  [1293456] = { itemID=0, version="未分类", source="未分类" }, -- 萨拉兔斯
+  [1294648] = { itemID=0, version="未分类", source="未分类" }, -- 虚空法师的星辰切割者
+  [1294663] = { itemID=0, version="未分类", source="未分类" }, -- 虚铸虚无机甲
+  [1294677] = { itemID=0, version="未分类", source="未分类" }, -- [PH] Horse with Hat
+  [1294767] = { itemID=0, version="未分类", source="未分类" }, -- 荒芜之地秃鹫
+  [1296731] = { itemID=0, version="未分类", source="未分类" }, -- 天蓝死亡行者
+  [1296734] = { itemID=0, version="未分类", source="未分类" }, -- 紫水晶机甲
+  [1296756] = { itemID=0, version="未分类", source="未分类" }, -- 蓝筹股切割坦克
+  [1296758] = { itemID=0, version="未分类", source="未分类" }, -- 盈利绿切割坦克
+  [1296759] = { itemID=0, version="未分类", source="未分类" }, -- 高收益切割坦克
+  [1296760] = { itemID=0, version="未分类", source="未分类" }, -- 投机型切割坦克
+  [1297427] = { itemID=0, version="未分类", source="未分类" }, -- 受折磨的饕餮者
+  [1298439] = { itemID=0, version="未分类", source="未分类" }, -- 烈阳节的绘纹巨鹏
+  [1299156] = { itemID=0, version="未分类", source="未分类" }, -- 极昼
+
 }
 -- 测试打印
 print("|cff00ff00[cupcko debug]|r [cupcko_data.lua] externalMountData content:")

@@ -3,6 +3,9 @@ local addonName, addonTable = ...
 
 local M = {}
 
+local Theme = addonTable.Theme
+local C = Theme and Theme.colors or nil
+
 --====================================================================--
 -- 1) 全局/内部表
 --====================================================================--
@@ -29,42 +32,41 @@ local loadedCount  = 0     -- 已经收到事件 (成功或不成功) 的个数
 --====================================================================--
 local function CreateProgressBar()
     local frame = CreateFrame("Frame", "ScanProgressFrame", UIParent, "BackdropTemplate")
-    frame:SetSize(300, 40)
+    frame:SetSize(320, 84)
     frame:SetPoint("CENTER", 0, 200)
     frame:EnableMouse(true)
     frame:SetMovable(true)
     frame:RegisterForDrag("LeftButton")
     frame:SetScript("OnDragStart", frame.StartMoving)
     frame:SetScript("OnDragStop", frame.StopMovingOrSizing)
+    frame:SetClampedToScreen(true)
+    Theme.ApplyPanel(frame, { bg = C.bg, border = C.border })
+    tinsert(UISpecialFrames, "ScanProgressFrame")
 
-    frame:SetBackdrop({
-        bgFile   = "Interface\\DialogFrame\\UI-DialogBox-Background",
-        edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
-        tile     = true, tileSize = 32, edgeSize = 32,
-        insets   = { left=8, right=8, top=8, bottom=8 }
-    })
+    local header = Theme.CreateHeader(frame, "扫描进度")
 
-    local title = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-    title:SetPoint("TOP", 0, -5)
-    title:SetText("扫描进度")
+    local statusText = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    statusText:SetPoint("TOP", header, "BOTTOM", 0, -6)
+    statusText:SetText("Ready...")
+    statusText:SetTextColor(C.textDim[1], C.textDim[2], C.textDim[3], C.textDim[4])
 
-    local statusBar = CreateFrame("StatusBar", nil, frame, "BackdropTemplate")
-    statusBar:SetSize(260, 14)
-    statusBar:SetPoint("TOP", 0, -20)
-    statusBar:SetStatusBarTexture("Interface\\TARGETINGFRAME\\UI-StatusBar")
+    local statusBar = Theme.CreateStatusBar(frame, 280, 16)
+    statusBar:SetPoint("BOTTOM", 0, 14)
+    statusBar:SetStatusBarColor(C.accent[1], C.accent[2], C.accent[3], 1)
     statusBar:SetMinMaxValues(0, 1)
     statusBar:SetValue(0)
 
-    local statusText = statusBar:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    statusText:SetPoint("CENTER")
-    statusText:SetText("0%")
+    local pctText = statusBar:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    pctText:SetPoint("CENTER")
+    pctText:SetText("0%")
+    pctText:SetTextColor(C.text[1], C.text[2], C.text[3], C.text[4])
 
-    -- 关闭按钮
-    local closeBtn = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
-    closeBtn:SetPoint("TOPRIGHT", -3, -3)
+    local closeBtn = Theme.CreateCloseButton(frame)
+    closeBtn:SetPoint("TOPRIGHT", -8, -6)
 
     frame.statusBar  = statusBar
     frame.statusText = statusText
+    frame.pctText    = pctText
 
     return frame
 end
@@ -111,7 +113,10 @@ local function ScanItems()
         if progressFrame then
             local fraction = itemID / totalItems
             progressFrame.statusBar:SetValue(fraction)
-            progressFrame.statusText:SetText(string.format("Item Scan: %.1f%%", fraction*100))
+            progressFrame.statusText:SetText(string.format("物品扫描  %.1f%%", fraction*100))
+            if progressFrame.pctText then
+                progressFrame.pctText:SetText(string.format("%d%%", math.floor(fraction*100)))
+            end
         end
 
         -- 每处理 CHUNK_SIZE 个，yield
@@ -147,7 +152,10 @@ local function ScanMountSpells()
         if progressFrame then
             local fraction = mountSpellID / SPELL_MAX_ID
             progressFrame.statusBar:SetValue(fraction)
-            progressFrame.statusText:SetText(string.format("Spell Scan: %.1f%%", fraction*100))
+            progressFrame.statusText:SetText(string.format("法术扫描  %.1f%%", fraction*100))
+            if progressFrame.pctText then
+                progressFrame.pctText:SetText(string.format("%d%%", math.floor(fraction*100)))
+            end
         end
 
         if (mountSpellID % CHUNK_SIZE) == 0 then
@@ -161,34 +169,36 @@ end
 --====================================================================--
 local function ShowScanResults()
     local frame = CreateFrame("Frame", "CupckoScanFrame", UIParent, "BackdropTemplate")
-    frame:SetSize(400, 300)
+    frame:SetSize(460, 360)
     frame:SetPoint("CENTER")
     frame:EnableMouse(true)
     frame:SetMovable(true)
     frame:RegisterForDrag("LeftButton")
     frame:SetScript("OnDragStart", frame.StartMoving)
     frame:SetScript("OnDragStop", frame.StopMovingOrSizing)
+    frame:SetClampedToScreen(true)
+    Theme.ApplyPanel(frame, { bg = C.bg, border = C.border })
+    tinsert(UISpecialFrames, "CupckoScanFrame")
 
-    frame:SetBackdrop({
-        bgFile   = "Interface\\DialogFrame\\UI-DialogBox-Background",
-        edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
-        tile     = true, tileSize = 32, edgeSize = 32,
-        insets   = { left=8, right=8, top=8, bottom=8 }
-    })
+    Theme.CreateHeader(frame, "扫描结果")
+    local close = Theme.CreateCloseButton(frame)
+    close:SetPoint("TOPRIGHT", -8, -6)
 
-    local close = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
-    close:SetPoint("TOPRIGHT", -3, -3)
+    local rContainer, rScroll, rContent, rSlider = Theme.CreateScrollArea(frame)
+    rContainer:SetPoint("TOPLEFT", frame, "TOPLEFT", 10, -46)
+    rContainer:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -10, 12)
+    Theme.ApplyPanel(rContainer, { bg = C.canvas, border = C.borderInner })
 
-    local scroll = CreateFrame("ScrollFrame", nil, frame, "UIPanelScrollFrameTemplate")
-    scroll:SetPoint("TOPLEFT", 15, -15)
-    scroll:SetPoint("BOTTOMRIGHT", -35, 15)
-
-    local editBox = CreateFrame("EditBox", nil, scroll)
+    local editBox = CreateFrame("EditBox", nil, rScroll)
     editBox:SetMultiLine(true)
     editBox:SetFontObject(ChatFontNormal)
-    editBox:SetWidth(330)
     editBox:SetAutoFocus(false)
-    scroll:SetScrollChild(editBox)
+    editBox:SetWidth(math.max(rScroll:GetWidth() - 8, 1))
+    editBox:SetPoint("TOPLEFT", rScroll, "TOPLEFT", 4, -4)
+    rScroll:SetScrollChild(editBox)
+    rContainer:HookScript("OnSizeChanged", function()
+        editBox:SetWidth(math.max(rScroll:GetWidth() - 8, 1))
+    end)
 
     local lines = {}
     table.insert(lines, "-- scannedMounts (mountSpellID => { itemID=?, version=\"未分类\" })")
@@ -211,14 +221,16 @@ local function MainScanCoroutine()
     print("|cff00ff00[SCAN]|r 开始请求加载 itemID ...")
     if progressFrame then
         progressFrame.statusBar:SetValue(0)
-        progressFrame.statusText:SetText("Item Scan: 0%")
+        progressFrame.statusText:SetText("物品扫描  0%")
+        if progressFrame.pctText then progressFrame.pctText:SetText("0%") end
     end
     ScanItems()
 
     print("|cff00ff00[SCAN]|r 开始扫描 mountSpellID ...")
     if progressFrame then
         progressFrame.statusBar:SetValue(0)
-        progressFrame.statusText:SetText("Spell Scan: 0%")
+        progressFrame.statusText:SetText("法术扫描  0%")
+        if progressFrame.pctText then progressFrame.pctText:SetText("0%") end
     end
     ScanMountSpells()
 
@@ -274,7 +286,8 @@ function M.StartScan(parentFrame)
     else
         progressFrame:Show()
         progressFrame.statusBar:SetValue(0)
-        progressFrame.statusText:SetText("Ready...")
+        progressFrame.statusText:SetText("就绪...")
+        if progressFrame.pctText then progressFrame.pctText:SetText("0%") end
     end
 
     -- 启动协程
