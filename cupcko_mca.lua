@@ -249,7 +249,7 @@ local function OnTabClick(self)
     local idx = self:GetID()
     currentVersionFilter = expansions[idx].name
     SetSelectedTab(idx)
-    RefreshMountList()
+    RefreshMountList(true)  -- 切换 Tab：滚动回到顶部
 end
 
 for i, expInfo in ipairs(expansions) do
@@ -270,7 +270,7 @@ local function GotoTabByVersion(vName)
         if expInfo.name == vName then
             currentVersionFilter = vName
             SetSelectedTab(i)
-            RefreshMountList()
+            RefreshMountList(true)  -- 跳转 Tab：滚动回到顶部
             return
         end
     end
@@ -296,7 +296,7 @@ local newMounts = {}
 ----------------------------------------------------------------
 -- 3) 刷新坐骑列表
 ----------------------------------------------------------------
-function RefreshMountList()
+function RefreshMountList(resetScroll)
     -- 清理旧内容
     for _, child in ipairs({ cContent:GetChildren() }) do
         child:Hide()
@@ -305,6 +305,12 @@ function RefreshMountList()
     for _, region in ipairs({ cContent:GetRegions() }) do
         region:Hide()
         region:ClearAllPoints()
+    end
+
+    -- 仅在主动切换 Tab 时把滚动归零；事件/resize 等刷新保留滚动位置
+    if resetScroll then
+        cScroll:SetVerticalScroll(0)
+        if cSlider then cSlider:SetValue(0) end
     end
 
     -- 确保内容宽度最新
@@ -628,10 +634,10 @@ currentVersionLabel:SetPoint("RIGHT", closeButton, "LEFT", -10, 0)
 currentVersionLabel:SetWidth(220)
 currentVersionLabel:SetJustifyH("RIGHT")
 currentVersionLabel:SetTextColor(C.textDim[1], C.textDim[2], C.textDim[3], C.textDim[4])
--- 在 RefreshMountList 后更新版本标签
+-- 在 RefreshMountList 后更新版本标签（转发参数，保留 resetScroll 标志）
 local _origRefresh = RefreshMountList
-RefreshMountList = function()
-    _origRefresh()
+RefreshMountList = function(...)
+    _origRefresh(...)
     currentVersionLabel:SetText(currentVersionFilter)
 end
 
